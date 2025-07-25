@@ -395,3 +395,5 @@ https://chynet01.yn8n.com	@#@#		@#@#		@#@#
 https://chynet06.yn8n.com	@#@#		@#@#		@#@#	
 https://chynet03.yn8n.com	@#@#		@#@#		@#@#	
 https://chynet02.yn8n.com	@#@#		@#@#		@#@#	
+https://hoshinonetwork.dpdns.org	@#@#		@#@#		@#@#	
+https://hoshinonetwork.qzz.io	@#@#	Hoshino2025	@#@#		@#@#	
