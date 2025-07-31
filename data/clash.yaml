@@ -5,315 +5,355 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇭🇰 香港-线路1-1F, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: c2265253-70f2-4ca8-8277-778ebaa32e59, udp: true}
-  - {name: 🇸🇬 新加坡NO.1, server: haa.dashuai.cyou, port: 45054, type: vmess, uuid: c4ae17d9-522f-466a-bf72-bca17af43088, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇹🇭 泰国NO1, server: haa.dashuai.cyou, port: 45060, type: vmess, uuid: c4ae17d9-522f-466a-bf72-bca17af43088, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇰🇷 韩国-1B, server: hg.dport.top, port: 33656, type: hysteria2, password: 39054b15-2280-4258-86f3-dcaa390efcdb, auth: 39054b15-2280-4258-86f3-dcaa390efcdb, sni: hg.dport.top, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
-  - {name: 🇹🇷 土耳其-1A, server: nexiateq.688997.xyz, port: 20957, type: hysteria2, password: a49a43f3-8689-40ee-8498-bce66deb1f46, auth: a49a43f3-8689-40ee-8498-bce66deb1f46, sni: nexiateq.688997.xyz, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
-  - {name: 🇹🇷 土耳其-1B, server: teq.dport.top, port: 33658, type: hysteria2, password: 39054b15-2280-4258-86f3-dcaa390efcdb, auth: 39054b15-2280-4258-86f3-dcaa390efcdb, sni: teq.dport.top, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1L, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 15939d72-b7e2-4a20-a02b-2efa9ef450dc, udp: true}
-  - {name: 🇺🇸 美国-1B, server: mg.dport.top, port: 33650, type: hysteria2, password: 39054b15-2280-4258-86f3-dcaa390efcdb, auth: 39054b15-2280-4258-86f3-dcaa390efcdb, sni: mg.dport.top, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
-  - {name: 🇯🇵 日本-1A, server: nexiarb.688997.xyz, port: 20257, type: hysteria2, password: a49a43f3-8689-40ee-8498-bce66deb1f46, auth: a49a43f3-8689-40ee-8498-bce66deb1f46, sni: nexiarb.688997.xyz, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
-  - {name: 🇭🇰 香港-线路1-1C, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: acaa2704-53cc-4310-83d4-331dc5079db4, udp: true}
-  - {name: 🇭🇰 香港-线路1-1E, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: f82df097-539b-4029-90e8-f27b46c016c2, udp: true}
-  - {name: 🇰🇷 韩国 专线NO2, server: xdd.dashuai.cyou, port: 45075, type: vmess, uuid: c4ae17d9-522f-466a-bf72-bca17af43088, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇹🇼 台湾2, server: xdd.dashuai.cyou, port: 45077, type: vmess, uuid: c4ae17d9-522f-466a-bf72-bca17af43088, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1N, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 9d6ee83a-f8b8-4151-b5f4-bb84ca3fc06e, udp: true}
-  - {name: 🇺🇸 美国-1A, server: nexiamg.688997.xyz, port: 20157, type: hysteria2, password: a49a43f3-8689-40ee-8498-bce66deb1f46, auth: a49a43f3-8689-40ee-8498-bce66deb1f46, sni: nexiamg.688997.xyz, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
-  - {name: 🇩🇪 德国-1A, server: nexiadg.688997.xyz, port: 20557, type: hysteria2, password: a49a43f3-8689-40ee-8498-bce66deb1f46, auth: a49a43f3-8689-40ee-8498-bce66deb1f46, sni: nexiadg.688997.xyz, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
-  - {name: 🇭🇰 香港-线路1-1A, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 7fb46dfd-104c-437d-8e60-cd7c50e37f88, udp: true}
-  - {name: 🇯🇵 日本NO.1, server: haa.dashuai.cyou, port: 45056, type: vmess, uuid: c4ae17d9-522f-466a-bf72-bca17af43088, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1B, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 00e1a1ce-7f58-4798-9d04-6269ec9abebf, udp: true}
-  - {name: 🇦🇺 澳大利亚原生1, server: haa.dashuai.cyou, port: 45062, type: vmess, uuid: c4ae17d9-522f-466a-bf72-bca17af43088, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇯🇵 日本NO.2, server: xdd.dashuai.cyou, port: 45057, type: vmess, uuid: c4ae17d9-522f-466a-bf72-bca17af43088, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇯🇵 日本-1B, server: rb.dport.top, port: 33657, type: hysteria2, password: 39054b15-2280-4258-86f3-dcaa390efcdb, auth: 39054b15-2280-4258-86f3-dcaa390efcdb, sni: rb.dport.top, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
-  - {name: 🇭🇰 香港-线路1-1H, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: cbc350ce-b314-4735-a3b3-0a48e03d701b, udp: true}
-  - {name: 🇩🇪 德国-1B, server: dg.dport.top, port: 33653, type: hysteria2, password: 39054b15-2280-4258-86f3-dcaa390efcdb, auth: 39054b15-2280-4258-86f3-dcaa390efcdb, sni: dg.dport.top, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
-  - {name: 🇨🇦 加拿大1, server: haa.dashuai.cyou, port: 45064, type: vmess, uuid: c4ae17d9-522f-466a-bf72-bca17af43088, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇹🇼 台湾1, server: haa.dashuai.cyou, port: 45078, type: vmess, uuid: c4ae17d9-522f-466a-bf72-bca17af43088, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇲🇾 马来西亚专线NO1, server: haa.dashuai.cyou, port: 45058, type: vmess, uuid: c4ae17d9-522f-466a-bf72-bca17af43088, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇭🇰 香港-线路1-1J, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 3c4c4da4-d91f-49fa-8f25-a118f7d7c9e3, udp: true}
-  - {name: 🇭🇰 香港-线路1-1O, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 1736fc55-7afb-48e3-ac27-31ced865232f, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1I, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 0f5810d4-2e0e-4643-a4fc-7b443c028b4a, udp: true}
-  - {name: 🇨🇦 加拿大2, server: xdd.dashuai.cyou, port: 45065, type: vmess, uuid: c4ae17d9-522f-466a-bf72-bca17af43088, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1E, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: f82df097-539b-4029-90e8-f27b46c016c2, udp: true}
-  - {name: 🇭🇰 香港-线路1-1N, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 9d6ee83a-f8b8-4151-b5f4-bb84ca3fc06e, udp: true}
-  - {name: 🇹🇭 泰国NO2, server: xdd.dashuai.cyou, port: 45061, type: vmess, uuid: c4ae17d9-522f-466a-bf72-bca17af43088, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1G, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: f03a185f-e411-4cc4-b2f8-fa3974cf5e83, udp: true}
-  - {name: 🇫🇷 法国1, server: haa.dashuai.cyou, port: 45072, type: vmess, uuid: c4ae17d9-522f-466a-bf72-bca17af43088, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇳🇱 荷兰-1A, server: nexiahl.688997.xyz, port: 20457, type: hysteria2, password: a49a43f3-8689-40ee-8498-bce66deb1f46, auth: a49a43f3-8689-40ee-8498-bce66deb1f46, sni: nexiahl.688997.xyz, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
-  - {name: 🇭🇰 香港-线路1-1I, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 0f5810d4-2e0e-4643-a4fc-7b443c028b4a, udp: true}
-  - {name: 🇺🇸 美国NO.1, server: haa.dashuai.cyou, port: 45052, type: vmess, uuid: c4ae17d9-522f-466a-bf72-bca17af43088, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇮🇳 印度2, server: xdd.dashuai.cyou, port: 45073, type: vmess, uuid: c4ae17d9-522f-466a-bf72-bca17af43088, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇸🇬 新加坡NO.2, server: xdd.dashuai.cyou, port: 45055, type: vmess, uuid: c4ae17d9-522f-466a-bf72-bca17af43088, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1O, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 1736fc55-7afb-48e3-ac27-31ced865232f, udp: true}
-  - {name: 🇫🇷 法国, server: fg.dport.top, port: 33652, type: hysteria2, password: 39054b15-2280-4258-86f3-dcaa390efcdb, auth: 39054b15-2280-4258-86f3-dcaa390efcdb, sni: fg.dport.top, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
-  - {name: 🇭🇰 香港-线路1-1B, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 00e1a1ce-7f58-4798-9d04-6269ec9abebf, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1H, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: cbc350ce-b314-4735-a3b3-0a48e03d701b, udp: true}
-  - {name: 🇭🇰 香港NO.2, server: xdd.dashuai.cyou, port: 45051, type: vmess, uuid: c4ae17d9-522f-466a-bf72-bca17af43088, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇫🇷 法国2, server: xdd.dashuai.cyou, port: 45071, type: vmess, uuid: c4ae17d9-522f-466a-bf72-bca17af43088, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇮🇳 印度1, server: haa.dashuai.cyou, port: 45074, type: vmess, uuid: c4ae17d9-522f-466a-bf72-bca17af43088, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1C, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: acaa2704-53cc-4310-83d4-331dc5079db4, udp: true}
-  - {name: 🇲🇾 马来西亚专线NO2, server: xdd.dashuai.cyou, port: 45059, type: vmess, uuid: c4ae17d9-522f-466a-bf72-bca17af43088, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1M, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 15d22df0-d6be-4045-8ea6-29f1d9502205, udp: true}
-  - {name: 🇧🇷 巴西-1B, server: bx.dport.top, port: 33654, type: hysteria2, password: 39054b15-2280-4258-86f3-dcaa390efcdb, auth: 39054b15-2280-4258-86f3-dcaa390efcdb, sni: bx.dport.top, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
-  - {name: 🇭🇰 香港-线路1-1G, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: f03a185f-e411-4cc4-b2f8-fa3974cf5e83, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1D, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 65d8fb05-9116-41c7-867f-7caf16822ed0, udp: true}
-  - {name: 🇳🇱 荷兰-1B, server: hl.dport.top, port: 33659, type: hysteria2, password: 39054b15-2280-4258-86f3-dcaa390efcdb, auth: 39054b15-2280-4258-86f3-dcaa390efcdb, sni: hl.dport.top, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
-  - {name: 🇭🇰 香港-线路1-1K, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: cfdf94e0-6dc5-4d86-b758-cba4d8b2edde, udp: true}
-  - {name: 🇭🇰 香港-线路1-1D, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 65d8fb05-9116-41c7-867f-7caf16822ed0, udp: true}
-  - {name: 🇬🇧 英国1, server: haa.dashuai.cyou, port: 45066, type: vmess, uuid: c4ae17d9-522f-466a-bf72-bca17af43088, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇭🇰 香港-线路1-1M, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 15d22df0-d6be-4045-8ea6-29f1d9502205, udp: true}
-  - {name: 🇷🇺 俄罗斯, server: nexiaels.688997.xyz, port: 20757, type: hysteria2, password: a49a43f3-8689-40ee-8498-bce66deb1f46, auth: a49a43f3-8689-40ee-8498-bce66deb1f46, sni: nexiaels.688997.xyz, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
-  - {name: 🇦🇺 澳大利亚原生2, server: xdd.dashuai.cyou, port: 45063, type: vmess, uuid: c4ae17d9-522f-466a-bf72-bca17af43088, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇰🇷 韩国 专线NO1, server: haa.dashuai.cyou, port: 45076, type: vmess, uuid: c4ae17d9-522f-466a-bf72-bca17af43088, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇧🇷 巴西-1A, server: nexiabx.688997.xyz, port: 20857, type: hysteria2, password: a49a43f3-8689-40ee-8498-bce66deb1f46, auth: a49a43f3-8689-40ee-8498-bce66deb1f46, sni: nexiabx.688997.xyz, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1A, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 7fb46dfd-104c-437d-8e60-cd7c50e37f88, udp: true}
-  - {name: 🇺🇸 美国NO.2, server: xdd.dashuai.cyou, port: 45053, type: vmess, uuid: c4ae17d9-522f-466a-bf72-bca17af43088, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇭🇰 香港-线路1-1L, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 15939d72-b7e2-4a20-a02b-2efa9ef450dc, udp: true}
-  - {name: 🇬🇧 英国2, server: xdd.dashuai.cyou, port: 45067, type: vmess, uuid: c4ae17d9-522f-466a-bf72-bca17af43088, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1J, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 3c4c4da4-d91f-49fa-8f25-a118f7d7c9e3, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1F, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: c2265253-70f2-4ca8-8277-778ebaa32e59, udp: true}
-  - {name: 🇰🇷 韩国-1A, server: nexiahg.688997.xyz, port: 20357, type: hysteria2, password: a49a43f3-8689-40ee-8498-bce66deb1f46, auth: a49a43f3-8689-40ee-8498-bce66deb1f46, sni: nexiahg.688997.xyz, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
+  - {name: 🇳🇱 荷兰-1A, server: hl.dport.top, port: 33659, type: hysteria2, password: 39054b15-2280-4258-86f3-dcaa390efcdb, auth: 39054b15-2280-4258-86f3-dcaa390efcdb, sni: hl.dport.top, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
+  - {name: 🇭🇰 香港-线路1-1K, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: f82df097-539b-4029-90e8-f27b46c016c2, udp: true}
+  - {name: 🇹🇷 土耳其-1A, server: teq.dport.top, port: 33658, type: hysteria2, password: 39054b15-2280-4258-86f3-dcaa390efcdb, auth: 39054b15-2280-4258-86f3-dcaa390efcdb, sni: teq.dport.top, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1F, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 0f5810d4-2e0e-4643-a4fc-7b443c028b4a, udp: true}
+  - {name: 🇭🇰 香港-线路1-1B, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 1736fc55-7afb-48e3-ac27-31ced865232f, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1N, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 3c4c4da4-d91f-49fa-8f25-a118f7d7c9e3, udp: true}
+  - {name: 🇭🇰 香港-线路1-1N, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 3c4c4da4-d91f-49fa-8f25-a118f7d7c9e3, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1P, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: fa60b0fa-9f43-4f9c-8685-aea20b68e4f1, udp: true}
+  - {name: 🇭🇰 香港-线路1-1H, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 7fb46dfd-104c-437d-8e60-cd7c50e37f88, udp: true}
+  - {name: 🇯🇵 日本-1C, server: rb.dport.top, port: 33657, type: hysteria2, password: 94ea0794-d493-423d-82b3-ff7e5e8625a9, auth: 94ea0794-d493-423d-82b3-ff7e5e8625a9, sni: rb.dport.top, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
+  - {name: 🇭🇰 香港-线路1-1J, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: f03a185f-e411-4cc4-b2f8-fa3974cf5e83, udp: true}
+  - {name: 🇯🇵 日本-1A, server: rb.dport.top, port: 33657, type: hysteria2, password: 39054b15-2280-4258-86f3-dcaa390efcdb, auth: 39054b15-2280-4258-86f3-dcaa390efcdb, sni: rb.dport.top, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
+  - {name: 🇬🇧 英国2, server: xdd.dashuai.cyou, port: 45067, type: vmess, uuid: 01890ebf-670d-41b8-a866-48bc636ae79d, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇧🇷 巴西-1A, server: bx.dport.top, port: 33654, type: hysteria2, password: 39054b15-2280-4258-86f3-dcaa390efcdb, auth: 39054b15-2280-4258-86f3-dcaa390efcdb, sni: bx.dport.top, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
+  - {name: 🇳🇱 荷兰-1C, server: hl.dport.top, port: 33659, type: hysteria2, password: 94ea0794-d493-423d-82b3-ff7e5e8625a9, auth: 94ea0794-d493-423d-82b3-ff7e5e8625a9, sni: hl.dport.top, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
+  - {name: 🇹🇷 土耳其-1C, server: teq.dport.top, port: 33658, type: hysteria2, password: 94ea0794-d493-423d-82b3-ff7e5e8625a9, auth: 94ea0794-d493-423d-82b3-ff7e5e8625a9, sni: teq.dport.top, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
+  - {name: 🇯🇵 日本NO.1, server: haa.dashuai.cyou, port: 45056, type: vmess, uuid: 01890ebf-670d-41b8-a866-48bc636ae79d, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇭🇰 香港-线路1-1C, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 15d22df0-d6be-4045-8ea6-29f1d9502205, udp: true}
+  - {name: 🇸🇬 新加坡NO.2, server: xdd.dashuai.cyou, port: 45055, type: vmess, uuid: 01890ebf-670d-41b8-a866-48bc636ae79d, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇩🇪 德国-1B, server: nexiadg.688997.xyz, port: 20557, type: hysteria2, password: a49a43f3-8689-40ee-8498-bce66deb1f46, auth: a49a43f3-8689-40ee-8498-bce66deb1f46, sni: nexiadg.688997.xyz, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
+  - {name: 🇹🇭 泰国NO2, server: xdd.dashuai.cyou, port: 45061, type: vmess, uuid: 01890ebf-670d-41b8-a866-48bc636ae79d, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1J, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: f03a185f-e411-4cc4-b2f8-fa3974cf5e83, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1C, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 15d22df0-d6be-4045-8ea6-29f1d9502205, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1B, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 1736fc55-7afb-48e3-ac27-31ced865232f, udp: true}
+  - {name: 🇫🇷 法国-1B, server: fg.dport.top, port: 33652, type: hysteria2, password: 94ea0794-d493-423d-82b3-ff7e5e8625a9, auth: 94ea0794-d493-423d-82b3-ff7e5e8625a9, sni: fg.dport.top, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
+  - {name: 🇭🇰 香港-线路1-1E, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: c2265253-70f2-4ca8-8277-778ebaa32e59, udp: true}
+  - {name: 🇹🇷 土耳其-1B, server: nexiateq.688997.xyz, port: 20957, type: hysteria2, password: a49a43f3-8689-40ee-8498-bce66deb1f46, auth: a49a43f3-8689-40ee-8498-bce66deb1f46, sni: nexiateq.688997.xyz, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
+  - {name: 🇭🇰 香港-线路1-1F, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 0f5810d4-2e0e-4643-a4fc-7b443c028b4a, udp: true}
   - {name: 🇬🇧 英国, server: nexiayg.688997.xyz, port: 20657, type: hysteria2, password: a49a43f3-8689-40ee-8498-bce66deb1f46, auth: a49a43f3-8689-40ee-8498-bce66deb1f46, sni: nexiayg.688997.xyz, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1K, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: cfdf94e0-6dc5-4d86-b758-cba4d8b2edde, udp: true}
-  - {name: 🇭🇰 香港, server: xg.dashuai.cyou, port: 19901, type: vmess, uuid: c4ae17d9-522f-466a-bf72-bca17af43088, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇭🇰 香港NO.2, server: xdd.dashuai.cyou, port: 45051, type: vmess, uuid: 01890ebf-670d-41b8-a866-48bc636ae79d, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇭🇰 香港-线路1-1O, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: acaa2704-53cc-4310-83d4-331dc5079db4, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1I, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: cbc350ce-b314-4735-a3b3-0a48e03d701b, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1O, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: acaa2704-53cc-4310-83d4-331dc5079db4, udp: true}
+  - {name: 🇲🇾 马来西亚专线NO1, server: haa.dashuai.cyou, port: 45058, type: vmess, uuid: 01890ebf-670d-41b8-a866-48bc636ae79d, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1G, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 00e1a1ce-7f58-4798-9d04-6269ec9abebf, udp: true}
+  - {name: 🇭🇰 香港-线路1-1L, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 65d8fb05-9116-41c7-867f-7caf16822ed0, udp: true}
+  - {name: 🇮🇳 印度1, server: haa.dashuai.cyou, port: 45074, type: vmess, uuid: 01890ebf-670d-41b8-a866-48bc636ae79d, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇯🇵 日本NO.2, server: xdd.dashuai.cyou, port: 45057, type: vmess, uuid: 01890ebf-670d-41b8-a866-48bc636ae79d, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1E, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: c2265253-70f2-4ca8-8277-778ebaa32e59, udp: true}
+  - {name: 🇲🇾 马来西亚专线NO2, server: xdd.dashuai.cyou, port: 45059, type: vmess, uuid: 01890ebf-670d-41b8-a866-48bc636ae79d, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1M, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 15939d72-b7e2-4a20-a02b-2efa9ef450dc, udp: true}
+  - {name: 🇬🇧 英国1, server: haa.dashuai.cyou, port: 45066, type: vmess, uuid: 01890ebf-670d-41b8-a866-48bc636ae79d, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国NO.2, server: xdd.dashuai.cyou, port: 45053, type: vmess, uuid: 01890ebf-670d-41b8-a866-48bc636ae79d, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇧🇷 巴西-1B, server: nexiabx.688997.xyz, port: 20857, type: hysteria2, password: a49a43f3-8689-40ee-8498-bce66deb1f46, auth: a49a43f3-8689-40ee-8498-bce66deb1f46, sni: nexiabx.688997.xyz, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1L, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 65d8fb05-9116-41c7-867f-7caf16822ed0, udp: true}
+  - {name: 🇧🇷 巴西-1C, server: bx.dport.top, port: 33654, type: hysteria2, password: 94ea0794-d493-423d-82b3-ff7e5e8625a9, auth: 94ea0794-d493-423d-82b3-ff7e5e8625a9, sni: bx.dport.top, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
+  - {name: 🇭🇰 香港-线路1-1P, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: fa60b0fa-9f43-4f9c-8685-aea20b68e4f1, udp: true}
+  - {name: 🇷🇺 俄罗斯, server: nexiaels.688997.xyz, port: 20757, type: hysteria2, password: a49a43f3-8689-40ee-8498-bce66deb1f46, auth: a49a43f3-8689-40ee-8498-bce66deb1f46, sni: nexiaels.688997.xyz, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
+  - {name: 🇸🇬 新加坡NO.1, server: haa.dashuai.cyou, port: 45054, type: vmess, uuid: 01890ebf-670d-41b8-a866-48bc636ae79d, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇰🇷 韩国-1A, server: hg.dport.top, port: 33656, type: hysteria2, password: 39054b15-2280-4258-86f3-dcaa390efcdb, auth: 39054b15-2280-4258-86f3-dcaa390efcdb, sni: hg.dport.top, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
+  - {name: 🇺🇸 美国-1C, server: mg.dport.top, port: 33650, type: hysteria2, password: 94ea0794-d493-423d-82b3-ff7e5e8625a9, auth: 94ea0794-d493-423d-82b3-ff7e5e8625a9, sni: mg.dport.top, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
+  - {name: 🇹🇼 台湾2, server: xdd.dashuai.cyou, port: 45077, type: vmess, uuid: 01890ebf-670d-41b8-a866-48bc636ae79d, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇦🇺 澳大利亚原生2, server: xdd.dashuai.cyou, port: 45063, type: vmess, uuid: 01890ebf-670d-41b8-a866-48bc636ae79d, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇭🇰 香港-线路1-1I, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: cbc350ce-b314-4735-a3b3-0a48e03d701b, udp: true}
+  - {name: 🇯🇵 日本-1B, server: nexiarb.688997.xyz, port: 20257, type: hysteria2, password: a49a43f3-8689-40ee-8498-bce66deb1f46, auth: a49a43f3-8689-40ee-8498-bce66deb1f46, sni: nexiarb.688997.xyz, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
+  - {name: 🇦🇺 澳大利亚原生1, server: haa.dashuai.cyou, port: 45062, type: vmess, uuid: 01890ebf-670d-41b8-a866-48bc636ae79d, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇩🇪 德国-1A, server: dg.dport.top, port: 33653, type: hysteria2, password: 39054b15-2280-4258-86f3-dcaa390efcdb, auth: 39054b15-2280-4258-86f3-dcaa390efcdb, sni: dg.dport.top, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1D, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: cfdf94e0-6dc5-4d86-b758-cba4d8b2edde, udp: true}
+  - {name: 🇩🇪 德国-1C, server: dg.dport.top, port: 33653, type: hysteria2, password: 94ea0794-d493-423d-82b3-ff7e5e8625a9, auth: 94ea0794-d493-423d-82b3-ff7e5e8625a9, sni: dg.dport.top, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
+  - {name: 🇺🇸 美国NO.1, server: haa.dashuai.cyou, port: 45052, type: vmess, uuid: 01890ebf-670d-41b8-a866-48bc636ae79d, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国-1A, server: mg.dport.top, port: 33650, type: hysteria2, password: 39054b15-2280-4258-86f3-dcaa390efcdb, auth: 39054b15-2280-4258-86f3-dcaa390efcdb, sni: mg.dport.top, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
+  - {name: 🇫🇷 法国-1A, server: fg.dport.top, port: 33652, type: hysteria2, password: 39054b15-2280-4258-86f3-dcaa390efcdb, auth: 39054b15-2280-4258-86f3-dcaa390efcdb, sni: fg.dport.top, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
+  - {name: 🇺🇸 美国-1B, server: nexiamg.688997.xyz, port: 20157, type: hysteria2, password: a49a43f3-8689-40ee-8498-bce66deb1f46, auth: a49a43f3-8689-40ee-8498-bce66deb1f46, sni: nexiamg.688997.xyz, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
+  - {name: 🇭🇰 香港-线路1-1D, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: cfdf94e0-6dc5-4d86-b758-cba4d8b2edde, udp: true}
+  - {name: 🇹🇼 台湾1, server: haa.dashuai.cyou, port: 45078, type: vmess, uuid: 01890ebf-670d-41b8-a866-48bc636ae79d, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇨🇦 加拿大1, server: haa.dashuai.cyou, port: 45064, type: vmess, uuid: 01890ebf-670d-41b8-a866-48bc636ae79d, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇰🇷 韩国-1B, server: nexiahg.688997.xyz, port: 20357, type: hysteria2, password: a49a43f3-8689-40ee-8498-bce66deb1f46, auth: a49a43f3-8689-40ee-8498-bce66deb1f46, sni: nexiahg.688997.xyz, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
+  - {name: 🇰🇷 韩国 专线NO1, server: haa.dashuai.cyou, port: 45076, type: vmess, uuid: 01890ebf-670d-41b8-a866-48bc636ae79d, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1K, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: f82df097-539b-4029-90e8-f27b46c016c2, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1A, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 9d6ee83a-f8b8-4151-b5f4-bb84ca3fc06e, udp: true}
+  - {name: 🇰🇷 韩国 专线NO2, server: xdd.dashuai.cyou, port: 45075, type: vmess, uuid: 01890ebf-670d-41b8-a866-48bc636ae79d, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇭🇰 香港-线路1-1G, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 00e1a1ce-7f58-4798-9d04-6269ec9abebf, udp: true}
+  - {name: 🇫🇷 法国2, server: xdd.dashuai.cyou, port: 45071, type: vmess, uuid: 01890ebf-670d-41b8-a866-48bc636ae79d, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇭🇰 香港-线路1-1M, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 15939d72-b7e2-4a20-a02b-2efa9ef450dc, udp: true}
+  - {name: 🇹🇭 泰国NO1, server: haa.dashuai.cyou, port: 45060, type: vmess, uuid: 01890ebf-670d-41b8-a866-48bc636ae79d, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇰🇷 韩国-1C, server: hg.dport.top, port: 33656, type: hysteria2, password: 94ea0794-d493-423d-82b3-ff7e5e8625a9, auth: 94ea0794-d493-423d-82b3-ff7e5e8625a9, sni: hg.dport.top, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1H, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 7fb46dfd-104c-437d-8e60-cd7c50e37f88, udp: true}
+  - {name: 🇳🇱 荷兰-1B, server: nexiahl.688997.xyz, port: 20457, type: hysteria2, password: a49a43f3-8689-40ee-8498-bce66deb1f46, auth: a49a43f3-8689-40ee-8498-bce66deb1f46, sni: nexiahl.688997.xyz, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
+  - {name: 🇨🇦 加拿大2, server: xdd.dashuai.cyou, port: 45065, type: vmess, uuid: 01890ebf-670d-41b8-a866-48bc636ae79d, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇫🇷 法国1, server: haa.dashuai.cyou, port: 45072, type: vmess, uuid: 01890ebf-670d-41b8-a866-48bc636ae79d, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇭🇰 香港-线路1-1A, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 9d6ee83a-f8b8-4151-b5f4-bb84ca3fc06e, udp: true}
+  - {name: 🇭🇰 香港, server: xg.dashuai.cyou, port: 19901, type: vmess, uuid: 01890ebf-670d-41b8-a866-48bc636ae79d, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇮🇳 印度2, server: xdd.dashuai.cyou, port: 45073, type: vmess, uuid: 01890ebf-670d-41b8-a866-48bc636ae79d, alterId: 0, cipher: auto, tls: false, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰 香港-线路1-1F
-      - 🇸🇬 新加坡NO.1
-      - 🇹🇭 泰国NO1
-      - 🇰🇷 韩国-1B
+      - 🇳🇱 荷兰-1A
+      - 🇭🇰 香港-线路1-1K
       - 🇹🇷 土耳其-1A
-      - 🇹🇷 土耳其-1B
-      - 🇮🇪 爱尔兰-都柏林-1L
-      - 🇺🇸 美国-1B
-      - 🇯🇵 日本-1A
-      - 🇭🇰 香港-线路1-1C
-      - 🇭🇰 香港-线路1-1E
-      - 🇰🇷 韩国 专线NO2
-      - 🇹🇼 台湾2
+      - 🇮🇪 爱尔兰-都柏林-1F
+      - 🇭🇰 香港-线路1-1B
       - 🇮🇪 爱尔兰-都柏林-1N
-      - 🇺🇸 美国-1A
-      - 🇩🇪 德国-1A
-      - 🇭🇰 香港-线路1-1A
-      - 🇯🇵 日本NO.1
-      - 🇮🇪 爱尔兰-都柏林-1B
-      - 🇦🇺 澳大利亚原生1
-      - 🇯🇵 日本NO.2
-      - 🇯🇵 日本-1B
+      - 🇭🇰 香港-线路1-1N
+      - 🇮🇪 爱尔兰-都柏林-1P
       - 🇭🇰 香港-线路1-1H
-      - 🇩🇪 德国-1B
-      - 🇨🇦 加拿大1
-      - 🇹🇼 台湾1
-      - 🇲🇾 马来西亚专线NO1
+      - 🇯🇵 日本-1C
       - 🇭🇰 香港-线路1-1J
+      - 🇯🇵 日本-1A
+      - 🇬🇧 英国2
+      - 🇧🇷 巴西-1A
+      - 🇳🇱 荷兰-1C
+      - 🇹🇷 土耳其-1C
+      - 🇯🇵 日本NO.1
+      - 🇭🇰 香港-线路1-1C
+      - 🇸🇬 新加坡NO.2
+      - 🇩🇪 德国-1B
+      - 🇹🇭 泰国NO2
+      - 🇮🇪 爱尔兰-都柏林-1J
+      - 🇮🇪 爱尔兰-都柏林-1C
+      - 🇮🇪 爱尔兰-都柏林-1B
+      - 🇫🇷 法国-1B
+      - 🇭🇰 香港-线路1-1E
+      - 🇹🇷 土耳其-1B
+      - 🇭🇰 香港-线路1-1F
+      - 🇬🇧 英国
+      - 🇭🇰 香港NO.2
       - 🇭🇰 香港-线路1-1O
       - 🇮🇪 爱尔兰-都柏林-1I
-      - 🇨🇦 加拿大2
-      - 🇮🇪 爱尔兰-都柏林-1E
-      - 🇭🇰 香港-线路1-1N
-      - 🇹🇭 泰国NO2
-      - 🇮🇪 爱尔兰-都柏林-1G
-      - 🇫🇷 法国1
-      - 🇳🇱 荷兰-1A
-      - 🇭🇰 香港-线路1-1I
-      - 🇺🇸 美国NO.1
-      - 🇮🇳 印度2
-      - 🇸🇬 新加坡NO.2
       - 🇮🇪 爱尔兰-都柏林-1O
-      - 🇫🇷 法国
-      - 🇭🇰 香港-线路1-1B
-      - 🇮🇪 爱尔兰-都柏林-1H
-      - 🇭🇰 香港NO.2
-      - 🇫🇷 法国2
+      - 🇲🇾 马来西亚专线NO1
+      - 🇮🇪 爱尔兰-都柏林-1G
+      - 🇭🇰 香港-线路1-1L
       - 🇮🇳 印度1
-      - 🇮🇪 爱尔兰-都柏林-1C
+      - 🇯🇵 日本NO.2
+      - 🇮🇪 爱尔兰-都柏林-1E
       - 🇲🇾 马来西亚专线NO2
       - 🇮🇪 爱尔兰-都柏林-1M
-      - 🇧🇷 巴西-1B
-      - 🇭🇰 香港-线路1-1G
-      - 🇮🇪 爱尔兰-都柏林-1D
-      - 🇳🇱 荷兰-1B
-      - 🇭🇰 香港-线路1-1K
-      - 🇭🇰 香港-线路1-1D
       - 🇬🇧 英国1
-      - 🇭🇰 香港-线路1-1M
-      - 🇷🇺 俄罗斯
-      - 🇦🇺 澳大利亚原生2
-      - 🇰🇷 韩国 专线NO1
-      - 🇧🇷 巴西-1A
-      - 🇮🇪 爱尔兰-都柏林-1A
       - 🇺🇸 美国NO.2
-      - 🇭🇰 香港-线路1-1L
-      - 🇬🇧 英国2
-      - 🇮🇪 爱尔兰-都柏林-1J
-      - 🇮🇪 爱尔兰-都柏林-1F
+      - 🇧🇷 巴西-1B
+      - 🇮🇪 爱尔兰-都柏林-1L
+      - 🇧🇷 巴西-1C
+      - 🇭🇰 香港-线路1-1P
+      - 🇷🇺 俄罗斯
+      - 🇸🇬 新加坡NO.1
       - 🇰🇷 韩国-1A
-      - 🇬🇧 英国
+      - 🇺🇸 美国-1C
+      - 🇹🇼 台湾2
+      - 🇦🇺 澳大利亚原生2
+      - 🇭🇰 香港-线路1-1I
+      - 🇯🇵 日本-1B
+      - 🇦🇺 澳大利亚原生1
+      - 🇩🇪 德国-1A
+      - 🇮🇪 爱尔兰-都柏林-1D
+      - 🇩🇪 德国-1C
+      - 🇺🇸 美国NO.1
+      - 🇺🇸 美国-1A
+      - 🇫🇷 法国-1A
+      - 🇺🇸 美国-1B
+      - 🇭🇰 香港-线路1-1D
+      - 🇹🇼 台湾1
+      - 🇨🇦 加拿大1
+      - 🇰🇷 韩国-1B
+      - 🇰🇷 韩国 专线NO1
       - 🇮🇪 爱尔兰-都柏林-1K
+      - 🇮🇪 爱尔兰-都柏林-1A
+      - 🇰🇷 韩国 专线NO2
+      - 🇭🇰 香港-线路1-1G
+      - 🇫🇷 法国2
+      - 🇭🇰 香港-线路1-1M
+      - 🇹🇭 泰国NO1
+      - 🇰🇷 韩国-1C
+      - 🇮🇪 爱尔兰-都柏林-1H
+      - 🇳🇱 荷兰-1B
+      - 🇨🇦 加拿大2
+      - 🇫🇷 法国1
+      - 🇭🇰 香港-线路1-1A
       - 🇭🇰 香港
+      - 🇮🇳 印度2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇭🇰 香港-线路1-1F
-      - 🇸🇬 新加坡NO.1
-      - 🇹🇭 泰国NO1
-      - 🇰🇷 韩国-1B
+      - 🇳🇱 荷兰-1A
+      - 🇭🇰 香港-线路1-1K
       - 🇹🇷 土耳其-1A
-      - 🇹🇷 土耳其-1B
-      - 🇮🇪 爱尔兰-都柏林-1L
-      - 🇺🇸 美国-1B
-      - 🇯🇵 日本-1A
-      - 🇭🇰 香港-线路1-1C
-      - 🇭🇰 香港-线路1-1E
-      - 🇰🇷 韩国 专线NO2
-      - 🇹🇼 台湾2
+      - 🇮🇪 爱尔兰-都柏林-1F
+      - 🇭🇰 香港-线路1-1B
       - 🇮🇪 爱尔兰-都柏林-1N
-      - 🇺🇸 美国-1A
-      - 🇩🇪 德国-1A
-      - 🇭🇰 香港-线路1-1A
-      - 🇯🇵 日本NO.1
-      - 🇮🇪 爱尔兰-都柏林-1B
-      - 🇦🇺 澳大利亚原生1
-      - 🇯🇵 日本NO.2
-      - 🇯🇵 日本-1B
+      - 🇭🇰 香港-线路1-1N
+      - 🇮🇪 爱尔兰-都柏林-1P
       - 🇭🇰 香港-线路1-1H
-      - 🇩🇪 德国-1B
-      - 🇨🇦 加拿大1
-      - 🇹🇼 台湾1
-      - 🇲🇾 马来西亚专线NO1
+      - 🇯🇵 日本-1C
       - 🇭🇰 香港-线路1-1J
+      - 🇯🇵 日本-1A
+      - 🇬🇧 英国2
+      - 🇧🇷 巴西-1A
+      - 🇳🇱 荷兰-1C
+      - 🇹🇷 土耳其-1C
+      - 🇯🇵 日本NO.1
+      - 🇭🇰 香港-线路1-1C
+      - 🇸🇬 新加坡NO.2
+      - 🇩🇪 德国-1B
+      - 🇹🇭 泰国NO2
+      - 🇮🇪 爱尔兰-都柏林-1J
+      - 🇮🇪 爱尔兰-都柏林-1C
+      - 🇮🇪 爱尔兰-都柏林-1B
+      - 🇫🇷 法国-1B
+      - 🇭🇰 香港-线路1-1E
+      - 🇹🇷 土耳其-1B
+      - 🇭🇰 香港-线路1-1F
+      - 🇬🇧 英国
+      - 🇭🇰 香港NO.2
       - 🇭🇰 香港-线路1-1O
       - 🇮🇪 爱尔兰-都柏林-1I
-      - 🇨🇦 加拿大2
-      - 🇮🇪 爱尔兰-都柏林-1E
-      - 🇭🇰 香港-线路1-1N
-      - 🇹🇭 泰国NO2
-      - 🇮🇪 爱尔兰-都柏林-1G
-      - 🇫🇷 法国1
-      - 🇳🇱 荷兰-1A
-      - 🇭🇰 香港-线路1-1I
-      - 🇺🇸 美国NO.1
-      - 🇮🇳 印度2
-      - 🇸🇬 新加坡NO.2
       - 🇮🇪 爱尔兰-都柏林-1O
-      - 🇫🇷 法国
-      - 🇭🇰 香港-线路1-1B
-      - 🇮🇪 爱尔兰-都柏林-1H
-      - 🇭🇰 香港NO.2
-      - 🇫🇷 法国2
+      - 🇲🇾 马来西亚专线NO1
+      - 🇮🇪 爱尔兰-都柏林-1G
+      - 🇭🇰 香港-线路1-1L
       - 🇮🇳 印度1
-      - 🇮🇪 爱尔兰-都柏林-1C
+      - 🇯🇵 日本NO.2
+      - 🇮🇪 爱尔兰-都柏林-1E
       - 🇲🇾 马来西亚专线NO2
       - 🇮🇪 爱尔兰-都柏林-1M
-      - 🇧🇷 巴西-1B
-      - 🇭🇰 香港-线路1-1G
-      - 🇮🇪 爱尔兰-都柏林-1D
-      - 🇳🇱 荷兰-1B
-      - 🇭🇰 香港-线路1-1K
-      - 🇭🇰 香港-线路1-1D
       - 🇬🇧 英国1
-      - 🇭🇰 香港-线路1-1M
-      - 🇷🇺 俄罗斯
-      - 🇦🇺 澳大利亚原生2
-      - 🇰🇷 韩国 专线NO1
-      - 🇧🇷 巴西-1A
-      - 🇮🇪 爱尔兰-都柏林-1A
       - 🇺🇸 美国NO.2
-      - 🇭🇰 香港-线路1-1L
-      - 🇬🇧 英国2
-      - 🇮🇪 爱尔兰-都柏林-1J
-      - 🇮🇪 爱尔兰-都柏林-1F
+      - 🇧🇷 巴西-1B
+      - 🇮🇪 爱尔兰-都柏林-1L
+      - 🇧🇷 巴西-1C
+      - 🇭🇰 香港-线路1-1P
+      - 🇷🇺 俄罗斯
+      - 🇸🇬 新加坡NO.1
       - 🇰🇷 韩国-1A
-      - 🇬🇧 英国
+      - 🇺🇸 美国-1C
+      - 🇹🇼 台湾2
+      - 🇦🇺 澳大利亚原生2
+      - 🇭🇰 香港-线路1-1I
+      - 🇯🇵 日本-1B
+      - 🇦🇺 澳大利亚原生1
+      - 🇩🇪 德国-1A
+      - 🇮🇪 爱尔兰-都柏林-1D
+      - 🇩🇪 德国-1C
+      - 🇺🇸 美国NO.1
+      - 🇺🇸 美国-1A
+      - 🇫🇷 法国-1A
+      - 🇺🇸 美国-1B
+      - 🇭🇰 香港-线路1-1D
+      - 🇹🇼 台湾1
+      - 🇨🇦 加拿大1
+      - 🇰🇷 韩国-1B
+      - 🇰🇷 韩国 专线NO1
       - 🇮🇪 爱尔兰-都柏林-1K
+      - 🇮🇪 爱尔兰-都柏林-1A
+      - 🇰🇷 韩国 专线NO2
+      - 🇭🇰 香港-线路1-1G
+      - 🇫🇷 法国2
+      - 🇭🇰 香港-线路1-1M
+      - 🇹🇭 泰国NO1
+      - 🇰🇷 韩国-1C
+      - 🇮🇪 爱尔兰-都柏林-1H
+      - 🇳🇱 荷兰-1B
+      - 🇨🇦 加拿大2
+      - 🇫🇷 法国1
+      - 🇭🇰 香港-线路1-1A
       - 🇭🇰 香港
+      - 🇮🇳 印度2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰 香港-线路1-1F
-      - 🇸🇬 新加坡NO.1
-      - 🇹🇭 泰国NO1
-      - 🇰🇷 韩国-1B
+      - 🇳🇱 荷兰-1A
+      - 🇭🇰 香港-线路1-1K
       - 🇹🇷 土耳其-1A
-      - 🇹🇷 土耳其-1B
-      - 🇮🇪 爱尔兰-都柏林-1L
-      - 🇺🇸 美国-1B
-      - 🇯🇵 日本-1A
-      - 🇭🇰 香港-线路1-1C
-      - 🇭🇰 香港-线路1-1E
-      - 🇰🇷 韩国 专线NO2
-      - 🇹🇼 台湾2
+      - 🇮🇪 爱尔兰-都柏林-1F
+      - 🇭🇰 香港-线路1-1B
       - 🇮🇪 爱尔兰-都柏林-1N
-      - 🇺🇸 美国-1A
-      - 🇩🇪 德国-1A
-      - 🇭🇰 香港-线路1-1A
-      - 🇯🇵 日本NO.1
-      - 🇮🇪 爱尔兰-都柏林-1B
-      - 🇦🇺 澳大利亚原生1
-      - 🇯🇵 日本NO.2
-      - 🇯🇵 日本-1B
+      - 🇭🇰 香港-线路1-1N
+      - 🇮🇪 爱尔兰-都柏林-1P
       - 🇭🇰 香港-线路1-1H
-      - 🇩🇪 德国-1B
-      - 🇨🇦 加拿大1
-      - 🇹🇼 台湾1
-      - 🇲🇾 马来西亚专线NO1
+      - 🇯🇵 日本-1C
       - 🇭🇰 香港-线路1-1J
+      - 🇯🇵 日本-1A
+      - 🇬🇧 英国2
+      - 🇧🇷 巴西-1A
+      - 🇳🇱 荷兰-1C
+      - 🇹🇷 土耳其-1C
+      - 🇯🇵 日本NO.1
+      - 🇭🇰 香港-线路1-1C
+      - 🇸🇬 新加坡NO.2
+      - 🇩🇪 德国-1B
+      - 🇹🇭 泰国NO2
+      - 🇮🇪 爱尔兰-都柏林-1J
+      - 🇮🇪 爱尔兰-都柏林-1C
+      - 🇮🇪 爱尔兰-都柏林-1B
+      - 🇫🇷 法国-1B
+      - 🇭🇰 香港-线路1-1E
+      - 🇹🇷 土耳其-1B
+      - 🇭🇰 香港-线路1-1F
+      - 🇬🇧 英国
+      - 🇭🇰 香港NO.2
       - 🇭🇰 香港-线路1-1O
       - 🇮🇪 爱尔兰-都柏林-1I
-      - 🇨🇦 加拿大2
-      - 🇮🇪 爱尔兰-都柏林-1E
-      - 🇭🇰 香港-线路1-1N
-      - 🇹🇭 泰国NO2
-      - 🇮🇪 爱尔兰-都柏林-1G
-      - 🇫🇷 法国1
-      - 🇳🇱 荷兰-1A
-      - 🇭🇰 香港-线路1-1I
-      - 🇺🇸 美国NO.1
-      - 🇮🇳 印度2
-      - 🇸🇬 新加坡NO.2
       - 🇮🇪 爱尔兰-都柏林-1O
-      - 🇫🇷 法国
-      - 🇭🇰 香港-线路1-1B
-      - 🇮🇪 爱尔兰-都柏林-1H
-      - 🇭🇰 香港NO.2
-      - 🇫🇷 法国2
+      - 🇲🇾 马来西亚专线NO1
+      - 🇮🇪 爱尔兰-都柏林-1G
+      - 🇭🇰 香港-线路1-1L
       - 🇮🇳 印度1
-      - 🇮🇪 爱尔兰-都柏林-1C
+      - 🇯🇵 日本NO.2
+      - 🇮🇪 爱尔兰-都柏林-1E
       - 🇲🇾 马来西亚专线NO2
       - 🇮🇪 爱尔兰-都柏林-1M
-      - 🇧🇷 巴西-1B
-      - 🇭🇰 香港-线路1-1G
-      - 🇮🇪 爱尔兰-都柏林-1D
-      - 🇳🇱 荷兰-1B
-      - 🇭🇰 香港-线路1-1K
-      - 🇭🇰 香港-线路1-1D
       - 🇬🇧 英国1
-      - 🇭🇰 香港-线路1-1M
-      - 🇷🇺 俄罗斯
-      - 🇦🇺 澳大利亚原生2
-      - 🇰🇷 韩国 专线NO1
-      - 🇧🇷 巴西-1A
-      - 🇮🇪 爱尔兰-都柏林-1A
       - 🇺🇸 美国NO.2
-      - 🇭🇰 香港-线路1-1L
-      - 🇬🇧 英国2
-      - 🇮🇪 爱尔兰-都柏林-1J
-      - 🇮🇪 爱尔兰-都柏林-1F
+      - 🇧🇷 巴西-1B
+      - 🇮🇪 爱尔兰-都柏林-1L
+      - 🇧🇷 巴西-1C
+      - 🇭🇰 香港-线路1-1P
+      - 🇷🇺 俄罗斯
+      - 🇸🇬 新加坡NO.1
       - 🇰🇷 韩国-1A
-      - 🇬🇧 英国
+      - 🇺🇸 美国-1C
+      - 🇹🇼 台湾2
+      - 🇦🇺 澳大利亚原生2
+      - 🇭🇰 香港-线路1-1I
+      - 🇯🇵 日本-1B
+      - 🇦🇺 澳大利亚原生1
+      - 🇩🇪 德国-1A
+      - 🇮🇪 爱尔兰-都柏林-1D
+      - 🇩🇪 德国-1C
+      - 🇺🇸 美国NO.1
+      - 🇺🇸 美国-1A
+      - 🇫🇷 法国-1A
+      - 🇺🇸 美国-1B
+      - 🇭🇰 香港-线路1-1D
+      - 🇹🇼 台湾1
+      - 🇨🇦 加拿大1
+      - 🇰🇷 韩国-1B
+      - 🇰🇷 韩国 专线NO1
       - 🇮🇪 爱尔兰-都柏林-1K
+      - 🇮🇪 爱尔兰-都柏林-1A
+      - 🇰🇷 韩国 专线NO2
+      - 🇭🇰 香港-线路1-1G
+      - 🇫🇷 法国2
+      - 🇭🇰 香港-线路1-1M
+      - 🇹🇭 泰国NO1
+      - 🇰🇷 韩国-1C
+      - 🇮🇪 爱尔兰-都柏林-1H
+      - 🇳🇱 荷兰-1B
+      - 🇨🇦 加拿大2
+      - 🇫🇷 法国1
+      - 🇭🇰 香港-线路1-1A
       - 🇭🇰 香港
+      - 🇮🇳 印度2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -332,101 +372,112 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰 香港-线路1-1F
-      - 🇸🇬 新加坡NO.1
-      - 🇹🇭 泰国NO1
-      - 🇰🇷 韩国-1B
+      - 🇳🇱 荷兰-1A
+      - 🇭🇰 香港-线路1-1K
       - 🇹🇷 土耳其-1A
-      - 🇹🇷 土耳其-1B
-      - 🇮🇪 爱尔兰-都柏林-1L
-      - 🇺🇸 美国-1B
-      - 🇯🇵 日本-1A
-      - 🇭🇰 香港-线路1-1C
-      - 🇭🇰 香港-线路1-1E
-      - 🇰🇷 韩国 专线NO2
-      - 🇹🇼 台湾2
+      - 🇮🇪 爱尔兰-都柏林-1F
+      - 🇭🇰 香港-线路1-1B
       - 🇮🇪 爱尔兰-都柏林-1N
-      - 🇺🇸 美国-1A
-      - 🇩🇪 德国-1A
-      - 🇭🇰 香港-线路1-1A
-      - 🇯🇵 日本NO.1
-      - 🇮🇪 爱尔兰-都柏林-1B
-      - 🇦🇺 澳大利亚原生1
-      - 🇯🇵 日本NO.2
-      - 🇯🇵 日本-1B
+      - 🇭🇰 香港-线路1-1N
+      - 🇮🇪 爱尔兰-都柏林-1P
       - 🇭🇰 香港-线路1-1H
-      - 🇩🇪 德国-1B
-      - 🇨🇦 加拿大1
-      - 🇹🇼 台湾1
-      - 🇲🇾 马来西亚专线NO1
+      - 🇯🇵 日本-1C
       - 🇭🇰 香港-线路1-1J
+      - 🇯🇵 日本-1A
+      - 🇬🇧 英国2
+      - 🇧🇷 巴西-1A
+      - 🇳🇱 荷兰-1C
+      - 🇹🇷 土耳其-1C
+      - 🇯🇵 日本NO.1
+      - 🇭🇰 香港-线路1-1C
+      - 🇸🇬 新加坡NO.2
+      - 🇩🇪 德国-1B
+      - 🇹🇭 泰国NO2
+      - 🇮🇪 爱尔兰-都柏林-1J
+      - 🇮🇪 爱尔兰-都柏林-1C
+      - 🇮🇪 爱尔兰-都柏林-1B
+      - 🇫🇷 法国-1B
+      - 🇭🇰 香港-线路1-1E
+      - 🇹🇷 土耳其-1B
+      - 🇭🇰 香港-线路1-1F
+      - 🇬🇧 英国
+      - 🇭🇰 香港NO.2
       - 🇭🇰 香港-线路1-1O
       - 🇮🇪 爱尔兰-都柏林-1I
-      - 🇨🇦 加拿大2
-      - 🇮🇪 爱尔兰-都柏林-1E
-      - 🇭🇰 香港-线路1-1N
-      - 🇹🇭 泰国NO2
-      - 🇮🇪 爱尔兰-都柏林-1G
-      - 🇫🇷 法国1
-      - 🇳🇱 荷兰-1A
-      - 🇭🇰 香港-线路1-1I
-      - 🇺🇸 美国NO.1
-      - 🇮🇳 印度2
-      - 🇸🇬 新加坡NO.2
       - 🇮🇪 爱尔兰-都柏林-1O
-      - 🇫🇷 法国
-      - 🇭🇰 香港-线路1-1B
-      - 🇮🇪 爱尔兰-都柏林-1H
-      - 🇭🇰 香港NO.2
-      - 🇫🇷 法国2
+      - 🇲🇾 马来西亚专线NO1
+      - 🇮🇪 爱尔兰-都柏林-1G
+      - 🇭🇰 香港-线路1-1L
       - 🇮🇳 印度1
-      - 🇮🇪 爱尔兰-都柏林-1C
+      - 🇯🇵 日本NO.2
+      - 🇮🇪 爱尔兰-都柏林-1E
       - 🇲🇾 马来西亚专线NO2
       - 🇮🇪 爱尔兰-都柏林-1M
-      - 🇧🇷 巴西-1B
-      - 🇭🇰 香港-线路1-1G
-      - 🇮🇪 爱尔兰-都柏林-1D
-      - 🇳🇱 荷兰-1B
-      - 🇭🇰 香港-线路1-1K
-      - 🇭🇰 香港-线路1-1D
       - 🇬🇧 英国1
-      - 🇭🇰 香港-线路1-1M
-      - 🇷🇺 俄罗斯
-      - 🇦🇺 澳大利亚原生2
-      - 🇰🇷 韩国 专线NO1
-      - 🇧🇷 巴西-1A
-      - 🇮🇪 爱尔兰-都柏林-1A
       - 🇺🇸 美国NO.2
-      - 🇭🇰 香港-线路1-1L
-      - 🇬🇧 英国2
-      - 🇮🇪 爱尔兰-都柏林-1J
-      - 🇮🇪 爱尔兰-都柏林-1F
+      - 🇧🇷 巴西-1B
+      - 🇮🇪 爱尔兰-都柏林-1L
+      - 🇧🇷 巴西-1C
+      - 🇭🇰 香港-线路1-1P
+      - 🇷🇺 俄罗斯
+      - 🇸🇬 新加坡NO.1
       - 🇰🇷 韩国-1A
-      - 🇬🇧 英国
+      - 🇺🇸 美国-1C
+      - 🇹🇼 台湾2
+      - 🇦🇺 澳大利亚原生2
+      - 🇭🇰 香港-线路1-1I
+      - 🇯🇵 日本-1B
+      - 🇦🇺 澳大利亚原生1
+      - 🇩🇪 德国-1A
+      - 🇮🇪 爱尔兰-都柏林-1D
+      - 🇩🇪 德国-1C
+      - 🇺🇸 美国NO.1
+      - 🇺🇸 美国-1A
+      - 🇫🇷 法国-1A
+      - 🇺🇸 美国-1B
+      - 🇭🇰 香港-线路1-1D
+      - 🇹🇼 台湾1
+      - 🇨🇦 加拿大1
+      - 🇰🇷 韩国-1B
+      - 🇰🇷 韩国 专线NO1
       - 🇮🇪 爱尔兰-都柏林-1K
+      - 🇮🇪 爱尔兰-都柏林-1A
+      - 🇰🇷 韩国 专线NO2
+      - 🇭🇰 香港-线路1-1G
+      - 🇫🇷 法国2
+      - 🇭🇰 香港-线路1-1M
+      - 🇹🇭 泰国NO1
+      - 🇰🇷 韩国-1C
+      - 🇮🇪 爱尔兰-都柏林-1H
+      - 🇳🇱 荷兰-1B
+      - 🇨🇦 加拿大2
+      - 🇫🇷 法国1
+      - 🇭🇰 香港-线路1-1A
       - 🇭🇰 香港
+      - 🇮🇳 印度2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 香港-线路1-1F
+      - 🇭🇰 香港-线路1-1K
+      - 🇭🇰 香港-线路1-1B
+      - 🇭🇰 香港-线路1-1N
+      - 🇭🇰 香港-线路1-1H
+      - 🇭🇰 香港-线路1-1J
       - 🇭🇰 香港-线路1-1C
       - 🇭🇰 香港-线路1-1E
-      - 🇹🇼 台湾2
-      - 🇭🇰 香港-线路1-1A
-      - 🇭🇰 香港-线路1-1H
-      - 🇹🇼 台湾1
-      - 🇭🇰 香港-线路1-1J
-      - 🇭🇰 香港-线路1-1O
-      - 🇭🇰 香港-线路1-1N
-      - 🇭🇰 香港-线路1-1I
-      - 🇭🇰 香港-线路1-1B
+      - 🇭🇰 香港-线路1-1F
       - 🇭🇰 香港NO.2
-      - 🇭🇰 香港-线路1-1G
-      - 🇭🇰 香港-线路1-1K
-      - 🇭🇰 香港-线路1-1D
-      - 🇭🇰 香港-线路1-1M
+      - 🇭🇰 香港-线路1-1O
       - 🇭🇰 香港-线路1-1L
+      - 🇭🇰 香港-线路1-1P
+      - 🇹🇼 台湾2
+      - 🇭🇰 香港-线路1-1I
+      - 🇭🇰 香港-线路1-1D
+      - 🇹🇼 台湾1
+      - 🇭🇰 香港-线路1-1G
+      - 🇭🇰 香港-线路1-1M
+      - 🇭🇰 香港-线路1-1A
       - 🇭🇰 香港
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
@@ -434,236 +485,266 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇭🇰 香港-线路1-1F
-      - 🇸🇬 新加坡NO.1
-      - 🇹🇭 泰国NO1
-      - 🇰🇷 韩国-1B
+      - 🇳🇱 荷兰-1A
+      - 🇭🇰 香港-线路1-1K
       - 🇹🇷 土耳其-1A
-      - 🇹🇷 土耳其-1B
-      - 🇮🇪 爱尔兰-都柏林-1L
-      - 🇺🇸 美国-1B
-      - 🇯🇵 日本-1A
-      - 🇭🇰 香港-线路1-1C
-      - 🇭🇰 香港-线路1-1E
-      - 🇰🇷 韩国 专线NO2
-      - 🇹🇼 台湾2
+      - 🇮🇪 爱尔兰-都柏林-1F
+      - 🇭🇰 香港-线路1-1B
       - 🇮🇪 爱尔兰-都柏林-1N
-      - 🇺🇸 美国-1A
-      - 🇩🇪 德国-1A
-      - 🇭🇰 香港-线路1-1A
-      - 🇯🇵 日本NO.1
-      - 🇮🇪 爱尔兰-都柏林-1B
-      - 🇦🇺 澳大利亚原生1
-      - 🇯🇵 日本NO.2
-      - 🇯🇵 日本-1B
+      - 🇭🇰 香港-线路1-1N
+      - 🇮🇪 爱尔兰-都柏林-1P
       - 🇭🇰 香港-线路1-1H
-      - 🇩🇪 德国-1B
-      - 🇨🇦 加拿大1
-      - 🇹🇼 台湾1
-      - 🇲🇾 马来西亚专线NO1
+      - 🇯🇵 日本-1C
       - 🇭🇰 香港-线路1-1J
+      - 🇯🇵 日本-1A
+      - 🇬🇧 英国2
+      - 🇧🇷 巴西-1A
+      - 🇳🇱 荷兰-1C
+      - 🇹🇷 土耳其-1C
+      - 🇯🇵 日本NO.1
+      - 🇭🇰 香港-线路1-1C
+      - 🇸🇬 新加坡NO.2
+      - 🇩🇪 德国-1B
+      - 🇹🇭 泰国NO2
+      - 🇮🇪 爱尔兰-都柏林-1J
+      - 🇮🇪 爱尔兰-都柏林-1C
+      - 🇮🇪 爱尔兰-都柏林-1B
+      - 🇫🇷 法国-1B
+      - 🇭🇰 香港-线路1-1E
+      - 🇹🇷 土耳其-1B
+      - 🇭🇰 香港-线路1-1F
+      - 🇬🇧 英国
+      - 🇭🇰 香港NO.2
       - 🇭🇰 香港-线路1-1O
       - 🇮🇪 爱尔兰-都柏林-1I
-      - 🇨🇦 加拿大2
-      - 🇮🇪 爱尔兰-都柏林-1E
-      - 🇭🇰 香港-线路1-1N
-      - 🇹🇭 泰国NO2
-      - 🇮🇪 爱尔兰-都柏林-1G
-      - 🇫🇷 法国1
-      - 🇳🇱 荷兰-1A
-      - 🇭🇰 香港-线路1-1I
-      - 🇺🇸 美国NO.1
-      - 🇮🇳 印度2
-      - 🇸🇬 新加坡NO.2
       - 🇮🇪 爱尔兰-都柏林-1O
-      - 🇫🇷 法国
-      - 🇭🇰 香港-线路1-1B
-      - 🇮🇪 爱尔兰-都柏林-1H
-      - 🇭🇰 香港NO.2
-      - 🇫🇷 法国2
+      - 🇲🇾 马来西亚专线NO1
+      - 🇮🇪 爱尔兰-都柏林-1G
+      - 🇭🇰 香港-线路1-1L
       - 🇮🇳 印度1
-      - 🇮🇪 爱尔兰-都柏林-1C
+      - 🇯🇵 日本NO.2
+      - 🇮🇪 爱尔兰-都柏林-1E
       - 🇲🇾 马来西亚专线NO2
       - 🇮🇪 爱尔兰-都柏林-1M
-      - 🇧🇷 巴西-1B
-      - 🇭🇰 香港-线路1-1G
-      - 🇮🇪 爱尔兰-都柏林-1D
-      - 🇳🇱 荷兰-1B
-      - 🇭🇰 香港-线路1-1K
-      - 🇭🇰 香港-线路1-1D
       - 🇬🇧 英国1
-      - 🇭🇰 香港-线路1-1M
-      - 🇷🇺 俄罗斯
-      - 🇦🇺 澳大利亚原生2
-      - 🇰🇷 韩国 专线NO1
-      - 🇧🇷 巴西-1A
-      - 🇮🇪 爱尔兰-都柏林-1A
       - 🇺🇸 美国NO.2
-      - 🇭🇰 香港-线路1-1L
-      - 🇬🇧 英国2
-      - 🇮🇪 爱尔兰-都柏林-1J
-      - 🇮🇪 爱尔兰-都柏林-1F
+      - 🇧🇷 巴西-1B
+      - 🇮🇪 爱尔兰-都柏林-1L
+      - 🇧🇷 巴西-1C
+      - 🇭🇰 香港-线路1-1P
+      - 🇷🇺 俄罗斯
+      - 🇸🇬 新加坡NO.1
       - 🇰🇷 韩国-1A
-      - 🇬🇧 英国
+      - 🇺🇸 美国-1C
+      - 🇹🇼 台湾2
+      - 🇦🇺 澳大利亚原生2
+      - 🇭🇰 香港-线路1-1I
+      - 🇯🇵 日本-1B
+      - 🇦🇺 澳大利亚原生1
+      - 🇩🇪 德国-1A
+      - 🇮🇪 爱尔兰-都柏林-1D
+      - 🇩🇪 德国-1C
+      - 🇺🇸 美国NO.1
+      - 🇺🇸 美国-1A
+      - 🇫🇷 法国-1A
+      - 🇺🇸 美国-1B
+      - 🇭🇰 香港-线路1-1D
+      - 🇹🇼 台湾1
+      - 🇨🇦 加拿大1
+      - 🇰🇷 韩国-1B
+      - 🇰🇷 韩国 专线NO1
       - 🇮🇪 爱尔兰-都柏林-1K
+      - 🇮🇪 爱尔兰-都柏林-1A
+      - 🇰🇷 韩国 专线NO2
+      - 🇭🇰 香港-线路1-1G
+      - 🇫🇷 法国2
+      - 🇭🇰 香港-线路1-1M
+      - 🇹🇭 泰国NO1
+      - 🇰🇷 韩国-1C
+      - 🇮🇪 爱尔兰-都柏林-1H
+      - 🇳🇱 荷兰-1B
+      - 🇨🇦 加拿大2
+      - 🇫🇷 法国1
+      - 🇭🇰 香港-线路1-1A
       - 🇭🇰 香港
+      - 🇮🇳 印度2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇭🇰 香港-线路1-1F
-      - 🇸🇬 新加坡NO.1
-      - 🇹🇭 泰国NO1
-      - 🇰🇷 韩国-1B
+      - 🇳🇱 荷兰-1A
+      - 🇭🇰 香港-线路1-1K
       - 🇹🇷 土耳其-1A
-      - 🇹🇷 土耳其-1B
-      - 🇮🇪 爱尔兰-都柏林-1L
-      - 🇺🇸 美国-1B
-      - 🇯🇵 日本-1A
-      - 🇭🇰 香港-线路1-1C
-      - 🇭🇰 香港-线路1-1E
-      - 🇰🇷 韩国 专线NO2
-      - 🇹🇼 台湾2
+      - 🇮🇪 爱尔兰-都柏林-1F
+      - 🇭🇰 香港-线路1-1B
       - 🇮🇪 爱尔兰-都柏林-1N
-      - 🇺🇸 美国-1A
-      - 🇩🇪 德国-1A
-      - 🇭🇰 香港-线路1-1A
-      - 🇯🇵 日本NO.1
-      - 🇮🇪 爱尔兰-都柏林-1B
-      - 🇦🇺 澳大利亚原生1
-      - 🇯🇵 日本NO.2
-      - 🇯🇵 日本-1B
+      - 🇭🇰 香港-线路1-1N
+      - 🇮🇪 爱尔兰-都柏林-1P
       - 🇭🇰 香港-线路1-1H
-      - 🇩🇪 德国-1B
-      - 🇨🇦 加拿大1
-      - 🇹🇼 台湾1
-      - 🇲🇾 马来西亚专线NO1
+      - 🇯🇵 日本-1C
       - 🇭🇰 香港-线路1-1J
+      - 🇯🇵 日本-1A
+      - 🇬🇧 英国2
+      - 🇧🇷 巴西-1A
+      - 🇳🇱 荷兰-1C
+      - 🇹🇷 土耳其-1C
+      - 🇯🇵 日本NO.1
+      - 🇭🇰 香港-线路1-1C
+      - 🇸🇬 新加坡NO.2
+      - 🇩🇪 德国-1B
+      - 🇹🇭 泰国NO2
+      - 🇮🇪 爱尔兰-都柏林-1J
+      - 🇮🇪 爱尔兰-都柏林-1C
+      - 🇮🇪 爱尔兰-都柏林-1B
+      - 🇫🇷 法国-1B
+      - 🇭🇰 香港-线路1-1E
+      - 🇹🇷 土耳其-1B
+      - 🇭🇰 香港-线路1-1F
+      - 🇬🇧 英国
+      - 🇭🇰 香港NO.2
       - 🇭🇰 香港-线路1-1O
       - 🇮🇪 爱尔兰-都柏林-1I
-      - 🇨🇦 加拿大2
-      - 🇮🇪 爱尔兰-都柏林-1E
-      - 🇭🇰 香港-线路1-1N
-      - 🇹🇭 泰国NO2
-      - 🇮🇪 爱尔兰-都柏林-1G
-      - 🇫🇷 法国1
-      - 🇳🇱 荷兰-1A
-      - 🇭🇰 香港-线路1-1I
-      - 🇺🇸 美国NO.1
-      - 🇮🇳 印度2
-      - 🇸🇬 新加坡NO.2
       - 🇮🇪 爱尔兰-都柏林-1O
-      - 🇫🇷 法国
-      - 🇭🇰 香港-线路1-1B
-      - 🇮🇪 爱尔兰-都柏林-1H
-      - 🇭🇰 香港NO.2
-      - 🇫🇷 法国2
+      - 🇲🇾 马来西亚专线NO1
+      - 🇮🇪 爱尔兰-都柏林-1G
+      - 🇭🇰 香港-线路1-1L
       - 🇮🇳 印度1
-      - 🇮🇪 爱尔兰-都柏林-1C
+      - 🇯🇵 日本NO.2
+      - 🇮🇪 爱尔兰-都柏林-1E
       - 🇲🇾 马来西亚专线NO2
       - 🇮🇪 爱尔兰-都柏林-1M
-      - 🇧🇷 巴西-1B
-      - 🇭🇰 香港-线路1-1G
-      - 🇮🇪 爱尔兰-都柏林-1D
-      - 🇳🇱 荷兰-1B
-      - 🇭🇰 香港-线路1-1K
-      - 🇭🇰 香港-线路1-1D
       - 🇬🇧 英国1
-      - 🇭🇰 香港-线路1-1M
-      - 🇷🇺 俄罗斯
-      - 🇦🇺 澳大利亚原生2
-      - 🇰🇷 韩国 专线NO1
-      - 🇧🇷 巴西-1A
-      - 🇮🇪 爱尔兰-都柏林-1A
       - 🇺🇸 美国NO.2
-      - 🇭🇰 香港-线路1-1L
-      - 🇬🇧 英国2
-      - 🇮🇪 爱尔兰-都柏林-1J
-      - 🇮🇪 爱尔兰-都柏林-1F
+      - 🇧🇷 巴西-1B
+      - 🇮🇪 爱尔兰-都柏林-1L
+      - 🇧🇷 巴西-1C
+      - 🇭🇰 香港-线路1-1P
+      - 🇷🇺 俄罗斯
+      - 🇸🇬 新加坡NO.1
       - 🇰🇷 韩国-1A
-      - 🇬🇧 英国
+      - 🇺🇸 美国-1C
+      - 🇹🇼 台湾2
+      - 🇦🇺 澳大利亚原生2
+      - 🇭🇰 香港-线路1-1I
+      - 🇯🇵 日本-1B
+      - 🇦🇺 澳大利亚原生1
+      - 🇩🇪 德国-1A
+      - 🇮🇪 爱尔兰-都柏林-1D
+      - 🇩🇪 德国-1C
+      - 🇺🇸 美国NO.1
+      - 🇺🇸 美国-1A
+      - 🇫🇷 法国-1A
+      - 🇺🇸 美国-1B
+      - 🇭🇰 香港-线路1-1D
+      - 🇹🇼 台湾1
+      - 🇨🇦 加拿大1
+      - 🇰🇷 韩国-1B
+      - 🇰🇷 韩国 专线NO1
       - 🇮🇪 爱尔兰-都柏林-1K
+      - 🇮🇪 爱尔兰-都柏林-1A
+      - 🇰🇷 韩国 专线NO2
+      - 🇭🇰 香港-线路1-1G
+      - 🇫🇷 法国2
+      - 🇭🇰 香港-线路1-1M
+      - 🇹🇭 泰国NO1
+      - 🇰🇷 韩国-1C
+      - 🇮🇪 爱尔兰-都柏林-1H
+      - 🇳🇱 荷兰-1B
+      - 🇨🇦 加拿大2
+      - 🇫🇷 法国1
+      - 🇭🇰 香港-线路1-1A
       - 🇭🇰 香港
+      - 🇮🇳 印度2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 香港-线路1-1F
-      - 🇸🇬 新加坡NO.1
-      - 🇹🇭 泰国NO1
-      - 🇰🇷 韩国-1B
+      - 🇳🇱 荷兰-1A
+      - 🇭🇰 香港-线路1-1K
       - 🇹🇷 土耳其-1A
-      - 🇹🇷 土耳其-1B
-      - 🇮🇪 爱尔兰-都柏林-1L
-      - 🇺🇸 美国-1B
-      - 🇯🇵 日本-1A
-      - 🇭🇰 香港-线路1-1C
-      - 🇭🇰 香港-线路1-1E
-      - 🇰🇷 韩国 专线NO2
-      - 🇹🇼 台湾2
+      - 🇮🇪 爱尔兰-都柏林-1F
+      - 🇭🇰 香港-线路1-1B
       - 🇮🇪 爱尔兰-都柏林-1N
-      - 🇺🇸 美国-1A
-      - 🇩🇪 德国-1A
-      - 🇭🇰 香港-线路1-1A
-      - 🇯🇵 日本NO.1
-      - 🇮🇪 爱尔兰-都柏林-1B
-      - 🇦🇺 澳大利亚原生1
-      - 🇯🇵 日本NO.2
-      - 🇯🇵 日本-1B
+      - 🇭🇰 香港-线路1-1N
+      - 🇮🇪 爱尔兰-都柏林-1P
       - 🇭🇰 香港-线路1-1H
-      - 🇩🇪 德国-1B
-      - 🇨🇦 加拿大1
-      - 🇹🇼 台湾1
-      - 🇲🇾 马来西亚专线NO1
+      - 🇯🇵 日本-1C
       - 🇭🇰 香港-线路1-1J
+      - 🇯🇵 日本-1A
+      - 🇬🇧 英国2
+      - 🇧🇷 巴西-1A
+      - 🇳🇱 荷兰-1C
+      - 🇹🇷 土耳其-1C
+      - 🇯🇵 日本NO.1
+      - 🇭🇰 香港-线路1-1C
+      - 🇸🇬 新加坡NO.2
+      - 🇩🇪 德国-1B
+      - 🇹🇭 泰国NO2
+      - 🇮🇪 爱尔兰-都柏林-1J
+      - 🇮🇪 爱尔兰-都柏林-1C
+      - 🇮🇪 爱尔兰-都柏林-1B
+      - 🇫🇷 法国-1B
+      - 🇭🇰 香港-线路1-1E
+      - 🇹🇷 土耳其-1B
+      - 🇭🇰 香港-线路1-1F
+      - 🇬🇧 英国
+      - 🇭🇰 香港NO.2
       - 🇭🇰 香港-线路1-1O
       - 🇮🇪 爱尔兰-都柏林-1I
-      - 🇨🇦 加拿大2
-      - 🇮🇪 爱尔兰-都柏林-1E
-      - 🇭🇰 香港-线路1-1N
-      - 🇹🇭 泰国NO2
-      - 🇮🇪 爱尔兰-都柏林-1G
-      - 🇫🇷 法国1
-      - 🇳🇱 荷兰-1A
-      - 🇭🇰 香港-线路1-1I
-      - 🇺🇸 美国NO.1
-      - 🇮🇳 印度2
-      - 🇸🇬 新加坡NO.2
       - 🇮🇪 爱尔兰-都柏林-1O
-      - 🇫🇷 法国
-      - 🇭🇰 香港-线路1-1B
-      - 🇮🇪 爱尔兰-都柏林-1H
-      - 🇭🇰 香港NO.2
-      - 🇫🇷 法国2
+      - 🇲🇾 马来西亚专线NO1
+      - 🇮🇪 爱尔兰-都柏林-1G
+      - 🇭🇰 香港-线路1-1L
       - 🇮🇳 印度1
-      - 🇮🇪 爱尔兰-都柏林-1C
+      - 🇯🇵 日本NO.2
+      - 🇮🇪 爱尔兰-都柏林-1E
       - 🇲🇾 马来西亚专线NO2
       - 🇮🇪 爱尔兰-都柏林-1M
-      - 🇧🇷 巴西-1B
-      - 🇭🇰 香港-线路1-1G
-      - 🇮🇪 爱尔兰-都柏林-1D
-      - 🇳🇱 荷兰-1B
-      - 🇭🇰 香港-线路1-1K
-      - 🇭🇰 香港-线路1-1D
       - 🇬🇧 英国1
-      - 🇭🇰 香港-线路1-1M
-      - 🇷🇺 俄罗斯
-      - 🇦🇺 澳大利亚原生2
-      - 🇰🇷 韩国 专线NO1
-      - 🇧🇷 巴西-1A
-      - 🇮🇪 爱尔兰-都柏林-1A
       - 🇺🇸 美国NO.2
-      - 🇭🇰 香港-线路1-1L
-      - 🇬🇧 英国2
-      - 🇮🇪 爱尔兰-都柏林-1J
-      - 🇮🇪 爱尔兰-都柏林-1F
+      - 🇧🇷 巴西-1B
+      - 🇮🇪 爱尔兰-都柏林-1L
+      - 🇧🇷 巴西-1C
+      - 🇭🇰 香港-线路1-1P
+      - 🇷🇺 俄罗斯
+      - 🇸🇬 新加坡NO.1
       - 🇰🇷 韩国-1A
-      - 🇬🇧 英国
+      - 🇺🇸 美国-1C
+      - 🇹🇼 台湾2
+      - 🇦🇺 澳大利亚原生2
+      - 🇭🇰 香港-线路1-1I
+      - 🇯🇵 日本-1B
+      - 🇦🇺 澳大利亚原生1
+      - 🇩🇪 德国-1A
+      - 🇮🇪 爱尔兰-都柏林-1D
+      - 🇩🇪 德国-1C
+      - 🇺🇸 美国NO.1
+      - 🇺🇸 美国-1A
+      - 🇫🇷 法国-1A
+      - 🇺🇸 美国-1B
+      - 🇭🇰 香港-线路1-1D
+      - 🇹🇼 台湾1
+      - 🇨🇦 加拿大1
+      - 🇰🇷 韩国-1B
+      - 🇰🇷 韩国 专线NO1
       - 🇮🇪 爱尔兰-都柏林-1K
+      - 🇮🇪 爱尔兰-都柏林-1A
+      - 🇰🇷 韩国 专线NO2
+      - 🇭🇰 香港-线路1-1G
+      - 🇫🇷 法国2
+      - 🇭🇰 香港-线路1-1M
+      - 🇹🇭 泰国NO1
+      - 🇰🇷 韩国-1C
+      - 🇮🇪 爱尔兰-都柏林-1H
+      - 🇳🇱 荷兰-1B
+      - 🇨🇦 加拿大2
+      - 🇫🇷 法国1
+      - 🇭🇰 香港-线路1-1A
       - 🇭🇰 香港
+      - 🇮🇳 印度2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -679,79 +760,89 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 香港-线路1-1F
-      - 🇸🇬 新加坡NO.1
-      - 🇹🇭 泰国NO1
-      - 🇰🇷 韩国-1B
+      - 🇳🇱 荷兰-1A
+      - 🇭🇰 香港-线路1-1K
       - 🇹🇷 土耳其-1A
-      - 🇹🇷 土耳其-1B
-      - 🇮🇪 爱尔兰-都柏林-1L
-      - 🇺🇸 美国-1B
-      - 🇯🇵 日本-1A
-      - 🇭🇰 香港-线路1-1C
-      - 🇭🇰 香港-线路1-1E
-      - 🇰🇷 韩国 专线NO2
-      - 🇹🇼 台湾2
+      - 🇮🇪 爱尔兰-都柏林-1F
+      - 🇭🇰 香港-线路1-1B
       - 🇮🇪 爱尔兰-都柏林-1N
-      - 🇺🇸 美国-1A
-      - 🇩🇪 德国-1A
-      - 🇭🇰 香港-线路1-1A
-      - 🇯🇵 日本NO.1
-      - 🇮🇪 爱尔兰-都柏林-1B
-      - 🇦🇺 澳大利亚原生1
-      - 🇯🇵 日本NO.2
-      - 🇯🇵 日本-1B
+      - 🇭🇰 香港-线路1-1N
+      - 🇮🇪 爱尔兰-都柏林-1P
       - 🇭🇰 香港-线路1-1H
-      - 🇩🇪 德国-1B
-      - 🇨🇦 加拿大1
-      - 🇹🇼 台湾1
-      - 🇲🇾 马来西亚专线NO1
+      - 🇯🇵 日本-1C
       - 🇭🇰 香港-线路1-1J
+      - 🇯🇵 日本-1A
+      - 🇬🇧 英国2
+      - 🇧🇷 巴西-1A
+      - 🇳🇱 荷兰-1C
+      - 🇹🇷 土耳其-1C
+      - 🇯🇵 日本NO.1
+      - 🇭🇰 香港-线路1-1C
+      - 🇸🇬 新加坡NO.2
+      - 🇩🇪 德国-1B
+      - 🇹🇭 泰国NO2
+      - 🇮🇪 爱尔兰-都柏林-1J
+      - 🇮🇪 爱尔兰-都柏林-1C
+      - 🇮🇪 爱尔兰-都柏林-1B
+      - 🇫🇷 法国-1B
+      - 🇭🇰 香港-线路1-1E
+      - 🇹🇷 土耳其-1B
+      - 🇭🇰 香港-线路1-1F
+      - 🇬🇧 英国
+      - 🇭🇰 香港NO.2
       - 🇭🇰 香港-线路1-1O
       - 🇮🇪 爱尔兰-都柏林-1I
-      - 🇨🇦 加拿大2
-      - 🇮🇪 爱尔兰-都柏林-1E
-      - 🇭🇰 香港-线路1-1N
-      - 🇹🇭 泰国NO2
-      - 🇮🇪 爱尔兰-都柏林-1G
-      - 🇫🇷 法国1
-      - 🇳🇱 荷兰-1A
-      - 🇭🇰 香港-线路1-1I
-      - 🇺🇸 美国NO.1
-      - 🇮🇳 印度2
-      - 🇸🇬 新加坡NO.2
       - 🇮🇪 爱尔兰-都柏林-1O
-      - 🇫🇷 法国
-      - 🇭🇰 香港-线路1-1B
-      - 🇮🇪 爱尔兰-都柏林-1H
-      - 🇭🇰 香港NO.2
-      - 🇫🇷 法国2
+      - 🇲🇾 马来西亚专线NO1
+      - 🇮🇪 爱尔兰-都柏林-1G
+      - 🇭🇰 香港-线路1-1L
       - 🇮🇳 印度1
-      - 🇮🇪 爱尔兰-都柏林-1C
+      - 🇯🇵 日本NO.2
+      - 🇮🇪 爱尔兰-都柏林-1E
       - 🇲🇾 马来西亚专线NO2
       - 🇮🇪 爱尔兰-都柏林-1M
-      - 🇧🇷 巴西-1B
-      - 🇭🇰 香港-线路1-1G
-      - 🇮🇪 爱尔兰-都柏林-1D
-      - 🇳🇱 荷兰-1B
-      - 🇭🇰 香港-线路1-1K
-      - 🇭🇰 香港-线路1-1D
       - 🇬🇧 英国1
-      - 🇭🇰 香港-线路1-1M
-      - 🇷🇺 俄罗斯
-      - 🇦🇺 澳大利亚原生2
-      - 🇰🇷 韩国 专线NO1
-      - 🇧🇷 巴西-1A
-      - 🇮🇪 爱尔兰-都柏林-1A
       - 🇺🇸 美国NO.2
-      - 🇭🇰 香港-线路1-1L
-      - 🇬🇧 英国2
-      - 🇮🇪 爱尔兰-都柏林-1J
-      - 🇮🇪 爱尔兰-都柏林-1F
+      - 🇧🇷 巴西-1B
+      - 🇮🇪 爱尔兰-都柏林-1L
+      - 🇧🇷 巴西-1C
+      - 🇭🇰 香港-线路1-1P
+      - 🇷🇺 俄罗斯
+      - 🇸🇬 新加坡NO.1
       - 🇰🇷 韩国-1A
-      - 🇬🇧 英国
+      - 🇺🇸 美国-1C
+      - 🇹🇼 台湾2
+      - 🇦🇺 澳大利亚原生2
+      - 🇭🇰 香港-线路1-1I
+      - 🇯🇵 日本-1B
+      - 🇦🇺 澳大利亚原生1
+      - 🇩🇪 德国-1A
+      - 🇮🇪 爱尔兰-都柏林-1D
+      - 🇩🇪 德国-1C
+      - 🇺🇸 美国NO.1
+      - 🇺🇸 美国-1A
+      - 🇫🇷 法国-1A
+      - 🇺🇸 美国-1B
+      - 🇭🇰 香港-线路1-1D
+      - 🇹🇼 台湾1
+      - 🇨🇦 加拿大1
+      - 🇰🇷 韩国-1B
+      - 🇰🇷 韩国 专线NO1
       - 🇮🇪 爱尔兰-都柏林-1K
+      - 🇮🇪 爱尔兰-都柏林-1A
+      - 🇰🇷 韩国 专线NO2
+      - 🇭🇰 香港-线路1-1G
+      - 🇫🇷 法国2
+      - 🇭🇰 香港-线路1-1M
+      - 🇹🇭 泰国NO1
+      - 🇰🇷 韩国-1C
+      - 🇮🇪 爱尔兰-都柏林-1H
+      - 🇳🇱 荷兰-1B
+      - 🇨🇦 加拿大2
+      - 🇫🇷 法国1
+      - 🇭🇰 香港-线路1-1A
       - 🇭🇰 香港
+      - 🇮🇳 印度2
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
