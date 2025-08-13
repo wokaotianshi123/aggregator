@@ -5,591 +5,671 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇨🇦 加拿大1, server: haa.dashuai.cyou, port: 45064, type: vmess, uuid: 073dc1a0-1b13-427c-8953-6f0a8d3cdd0b, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇭🇰 香港03-1D, server: wujrnbitcet.gym0boy.com, port: 57037, type: ss, cipher: aes-256-gcm, password: 88e18240-1ca8-4016-a36d-65c220250162, udp: true}
-  - {name: 🇺🇸 美国02-1C, server: i2plcwjnhrl6.gym0boy.com, port: 52448, type: ss, cipher: aes-256-gcm, password: 83191813-f503-4bf9-87b9-73af997c0991, udp: true}
-  - {name: 🇦🇺 澳大利亚原生2, server: xdd.dashuai.cyou, port: 45063, type: vmess, uuid: 073dc1a0-1b13-427c-8953-6f0a8d3cdd0b, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇹🇼 台湾04-1A, server: i2plcwjnhrl6.gym0boy.com, port: 30555, type: ss, cipher: aes-256-gcm, password: 7eb67689-43dd-4162-a258-a2fa0b3b8308, udp: true}
-  - {name: 🇫🇷 法国2, server: xdd.dashuai.cyou, port: 45071, type: vmess, uuid: 073dc1a0-1b13-427c-8953-6f0a8d3cdd0b, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇹🇼 台湾04-1C, server: i2plcwjnhrl6.gym0boy.com, port: 30555, type: ss, cipher: aes-256-gcm, password: 83191813-f503-4bf9-87b9-73af997c0991, udp: true}
-  - {name: 🇭🇰 香港02-1A, server: i2plcwjnhrl6.gym0boy.com, port: 52005, type: ss, cipher: aes-256-gcm, password: 7eb67689-43dd-4162-a258-a2fa0b3b8308, udp: true}
-  - {name: 🇯🇵 日本04-1B, server: i2plcwjnhrl6.gym0boy.com, port: 28799, type: ss, cipher: aes-256-gcm, password: 64b9b8e9-bf2f-48b2-b6f3-cb91cf52d452, udp: true}
-  - {name: 🇸🇬 新加坡04-1C, server: i2plcwjnhrl6.gym0boy.com, port: 12600, type: ss, cipher: aes-256-gcm, password: 83191813-f503-4bf9-87b9-73af997c0991, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1M, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 853a9557-788e-4187-9e91-7544b42e62f3, udp: true}
-  - {name: 🇹🇼 台湾04-1B, server: i2plcwjnhrl6.gym0boy.com, port: 30555, type: ss, cipher: aes-256-gcm, password: 64b9b8e9-bf2f-48b2-b6f3-cb91cf52d452, udp: true}
-  - {name: 🇺🇸 美国04-1A, server: i2plcwjnhrl6.gym0boy.com, port: 32656, type: ss, cipher: aes-256-gcm, password: 7eb67689-43dd-4162-a258-a2fa0b3b8308, udp: true}
-  - {name: 🇭🇰 香港04-1B, server: i2plcwjnhrl6.gym0boy.com, port: 15034, type: ss, cipher: aes-256-gcm, password: 64b9b8e9-bf2f-48b2-b6f3-cb91cf52d452, udp: true}
-  - {name: 🇯🇵 日本03-1C, server: wujrnbitcet.gym0boy.com, port: 49812, type: ss, cipher: aes-256-gcm, password: 83191813-f503-4bf9-87b9-73af997c0991, udp: true}
-  - {name: 🇺🇸 美国01-1D, server: wujrnbitcet.gym0boy.com, port: 59270, type: ss, cipher: aes-256-gcm, password: 88e18240-1ca8-4016-a36d-65c220250162, udp: true}
-  - {name: 🇭🇰 香港04-1D, server: i2plcwjnhrl6.gym0boy.com, port: 15034, type: ss, cipher: aes-256-gcm, password: 88e18240-1ca8-4016-a36d-65c220250162, udp: true}
-  - {name: 🇸🇬 新加坡04-1B, server: i2plcwjnhrl6.gym0boy.com, port: 12600, type: ss, cipher: aes-256-gcm, password: 64b9b8e9-bf2f-48b2-b6f3-cb91cf52d452, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1B, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: a6c9276e-60f9-4035-b7e8-b13f0d2c5bad, udp: true}
-  - {name: 🇸🇬 新加坡01-1C, server: wujrnbitcet.gym0boy.com, port: 21878, type: ss, cipher: aes-256-gcm, password: 83191813-f503-4bf9-87b9-73af997c0991, udp: true}
-  - {name: 🇭🇰 香港-线路1-1F, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 7a1dfcf0-0d07-4207-997f-4be950a41f4c, udp: true}
-  - {name: 🇺🇸 美国之一, server: 23.27.176.120, port: 7239, type: ss, cipher: chacha20-ietf-poly1305, password: 04f597a0-80c1-4586-8220-fc62782e6265, udp: true}
-  - {name: 🇭🇰 香港-线路1-1K, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 4f4002d5-4729-4857-84e8-c2bd3be3cef5, udp: true}
-  - {name: 🇬🇧 英国1, server: haa.dashuai.cyou, port: 45066, type: vmess, uuid: 073dc1a0-1b13-427c-8953-6f0a8d3cdd0b, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇸🇬 新加坡04-1A, server: i2plcwjnhrl6.gym0boy.com, port: 12600, type: ss, cipher: aes-256-gcm, password: 7eb67689-43dd-4162-a258-a2fa0b3b8308, udp: true}
-  - {name: 🇹🇼 台湾03-1C, server: wujrnbitcet.gym0boy.com, port: 40034, type: ss, cipher: aes-256-gcm, password: 83191813-f503-4bf9-87b9-73af997c0991, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1K, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 4f4002d5-4729-4857-84e8-c2bd3be3cef5, udp: true}
-  - {name: 🇯🇵 日本04-1D, server: i2plcwjnhrl6.gym0boy.com, port: 28799, type: ss, cipher: aes-256-gcm, password: 88e18240-1ca8-4016-a36d-65c220250162, udp: true}
-  - {name: 🇹🇼 台湾01-1D, server: wujrnbitcet.gym0boy.com, port: 30372, type: ss, cipher: aes-256-gcm, password: 88e18240-1ca8-4016-a36d-65c220250162, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1F, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 7a1dfcf0-0d07-4207-997f-4be950a41f4c, udp: true}
-  - {name: 🇭🇰 香港02-1B, server: i2plcwjnhrl6.gym0boy.com, port: 52005, type: ss, cipher: aes-256-gcm, password: 64b9b8e9-bf2f-48b2-b6f3-cb91cf52d452, udp: true}
-  - {name: 🇺🇸 美国NO.2, server: xdd.dashuai.cyou, port: 45053, type: vmess, uuid: 073dc1a0-1b13-427c-8953-6f0a8d3cdd0b, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇯🇵 日本NO.2, server: xdd.dashuai.cyou, port: 45057, type: vmess, uuid: 073dc1a0-1b13-427c-8953-6f0a8d3cdd0b, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇭🇰 香港-线路1-1A, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: a5fa48bd-74ae-4686-8312-bc3c75a3a029, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1C, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 93c33a31-fad8-49ab-9125-8d8a082dc338, udp: true}
-  - {name: 🇭🇰 香港02-1D, server: i2plcwjnhrl6.gym0boy.com, port: 52005, type: ss, cipher: aes-256-gcm, password: 88e18240-1ca8-4016-a36d-65c220250162, udp: true}
-  - {name: 🇺🇸 美国01-1A, server: wujrnbitcet.gym0boy.com, port: 59270, type: ss, cipher: aes-256-gcm, password: 7eb67689-43dd-4162-a258-a2fa0b3b8308, udp: true}
-  - {name: 🇸🇬 新加坡02-1A, server: i2plcwjnhrl6.gym0boy.com, port: 17377, type: ss, cipher: aes-256-gcm, password: 7eb67689-43dd-4162-a258-a2fa0b3b8308, udp: true}
-  - {name: 🇭🇰 香港NO.2, server: xdd.dashuai.cyou, port: 45051, type: vmess, uuid: 073dc1a0-1b13-427c-8953-6f0a8d3cdd0b, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇭🇰 香港03-1C, server: wujrnbitcet.gym0boy.com, port: 57037, type: ss, cipher: aes-256-gcm, password: 83191813-f503-4bf9-87b9-73af997c0991, udp: true}
-  - {name: 🇺🇸 美国, server: nexiamg.688997.xyz, port: 20157, type: hysteria2, password: a49a43f3-8689-40ee-8498-bce66deb1f46, auth: a49a43f3-8689-40ee-8498-bce66deb1f46, sni: nexiamg.688997.xyz, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
-  - {name: 🇰🇷 韩国 专线NO1, server: haa.dashuai.cyou, port: 45076, type: vmess, uuid: 073dc1a0-1b13-427c-8953-6f0a8d3cdd0b, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇩🇪 德国之一, server: 185.183.181.242, port: 8581, type: ss, cipher: chacha20-ietf-poly1305, password: 04f597a0-80c1-4586-8220-fc62782e6265, udp: true}
-  - {name: 🇹🇼 台湾01-1C, server: wujrnbitcet.gym0boy.com, port: 30372, type: ss, cipher: aes-256-gcm, password: 83191813-f503-4bf9-87b9-73af997c0991, udp: true}
-  - {name: 🇺🇸 美国01-1C, server: wujrnbitcet.gym0boy.com, port: 59270, type: ss, cipher: aes-256-gcm, password: 83191813-f503-4bf9-87b9-73af997c0991, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1I, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 35c9b27d-7116-4abb-822b-678fce0d92df, udp: true}
-  - {name: 🇭🇰 香港-线路1-1D, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: f29c3bb6-be3c-495f-8988-ae4d055a5cb3, udp: true}
-  - {name: 🇸🇬 新加坡03-1C, server: wujrnbitcet.gym0boy.com, port: 37908, type: ss, cipher: aes-256-gcm, password: 83191813-f503-4bf9-87b9-73af997c0991, udp: true}
-  - {name: 🇹🇼 台湾01-1A, server: wujrnbitcet.gym0boy.com, port: 30372, type: ss, cipher: aes-256-gcm, password: 7eb67689-43dd-4162-a258-a2fa0b3b8308, udp: true}
-  - {name: 🇭🇰 香港03-1B, server: wujrnbitcet.gym0boy.com, port: 57037, type: ss, cipher: aes-256-gcm, password: 64b9b8e9-bf2f-48b2-b6f3-cb91cf52d452, udp: true}
-  - {name: 🇸🇬 新加坡02-1D, server: i2plcwjnhrl6.gym0boy.com, port: 17377, type: ss, cipher: aes-256-gcm, password: 88e18240-1ca8-4016-a36d-65c220250162, udp: true}
-  - {name: 🇹🇼 台湾03-1B, server: wujrnbitcet.gym0boy.com, port: 40034, type: ss, cipher: aes-256-gcm, password: 64b9b8e9-bf2f-48b2-b6f3-cb91cf52d452, udp: true}
-  - {name: 🇺🇸 美国02-1D, server: i2plcwjnhrl6.gym0boy.com, port: 52448, type: ss, cipher: aes-256-gcm, password: 88e18240-1ca8-4016-a36d-65c220250162, udp: true}
-  - {name: 🇺🇸 美国之二, server: 45.132.74.212, port: 4574, type: ss, cipher: chacha20-ietf-poly1305, password: 04f597a0-80c1-4586-8220-fc62782e6265, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1O, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: fe93ab36-331d-49b7-b78e-0c054e9e7309, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1H, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 562e301a-52f4-46db-bef4-c564370f91bb, udp: true}
-  - {name: 🇭🇰 香港-线路1-1C, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 93c33a31-fad8-49ab-9125-8d8a082dc338, udp: true}
-  - {name: 🇭🇰 香港-线路1-1N, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: b5ab2cf4-b615-4a49-ab7e-0a5235c9702d, udp: true}
-  - {name: 🇳🇱 荷兰, server: nexiahl.688997.xyz, port: 20457, type: hysteria2, password: a49a43f3-8689-40ee-8498-bce66deb1f46, auth: a49a43f3-8689-40ee-8498-bce66deb1f46, sni: nexiahl.688997.xyz, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
-  - {name: 🇺🇸 美国04-1C, server: i2plcwjnhrl6.gym0boy.com, port: 32656, type: ss, cipher: aes-256-gcm, password: 83191813-f503-4bf9-87b9-73af997c0991, udp: true}
-  - {name: 🇰🇷 韩国, server: nexiahg.688997.xyz, port: 20357, type: hysteria2, password: a49a43f3-8689-40ee-8498-bce66deb1f46, auth: a49a43f3-8689-40ee-8498-bce66deb1f46, sni: nexiahg.688997.xyz, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1J, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: d39468bc-21f3-4672-8f31-2da19645cd7b, udp: true}
-  - {name: 🇯🇵 日本02-1A, server: i2plcwjnhrl6.gym0boy.com, port: 22609, type: ss, cipher: aes-256-gcm, password: 7eb67689-43dd-4162-a258-a2fa0b3b8308, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1D, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: f29c3bb6-be3c-495f-8988-ae4d055a5cb3, udp: true}
-  - {name: 🇺🇸 美国01-1B, server: wujrnbitcet.gym0boy.com, port: 59270, type: ss, cipher: aes-256-gcm, password: 64b9b8e9-bf2f-48b2-b6f3-cb91cf52d452, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1N, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: b5ab2cf4-b615-4a49-ab7e-0a5235c9702d, udp: true}
-  - {name: 🇭🇰 香港-线路1-1H, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 562e301a-52f4-46db-bef4-c564370f91bb, udp: true}
-  - {name: 🇷🇺 俄罗斯, server: nexiaels.688997.xyz, port: 20757, type: hysteria2, password: a49a43f3-8689-40ee-8498-bce66deb1f46, auth: a49a43f3-8689-40ee-8498-bce66deb1f46, sni: nexiaels.688997.xyz, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
-  - {name: 🇮🇳 印度1, server: haa.dashuai.cyou, port: 45074, type: vmess, uuid: 073dc1a0-1b13-427c-8953-6f0a8d3cdd0b, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇭🇰 香港03-1A, server: wujrnbitcet.gym0boy.com, port: 57037, type: ss, cipher: aes-256-gcm, password: 7eb67689-43dd-4162-a258-a2fa0b3b8308, udp: true}
-  - {name: 🇹🇼 台湾2, server: xdd.dashuai.cyou, port: 45077, type: vmess, uuid: 073dc1a0-1b13-427c-8953-6f0a8d3cdd0b, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇹🇼 台湾1, server: haa.dashuai.cyou, port: 45078, type: vmess, uuid: 073dc1a0-1b13-427c-8953-6f0a8d3cdd0b, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇸🇬 新加坡01-1D, server: wujrnbitcet.gym0boy.com, port: 21878, type: ss, cipher: aes-256-gcm, password: 88e18240-1ca8-4016-a36d-65c220250162, udp: true}
-  - {name: 🇹🇼 台湾03-1D, server: wujrnbitcet.gym0boy.com, port: 40034, type: ss, cipher: aes-256-gcm, password: 88e18240-1ca8-4016-a36d-65c220250162, udp: true}
-  - {name: 🇩🇪 德国, server: nexiadg.688997.xyz, port: 20557, type: hysteria2, password: a49a43f3-8689-40ee-8498-bce66deb1f46, auth: a49a43f3-8689-40ee-8498-bce66deb1f46, sni: nexiadg.688997.xyz, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
-  - {name: 🇺🇸 美国NO.1, server: haa.dashuai.cyou, port: 45052, type: vmess, uuid: 073dc1a0-1b13-427c-8953-6f0a8d3cdd0b, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇸🇬 新加坡02-1B, server: i2plcwjnhrl6.gym0boy.com, port: 17377, type: ss, cipher: aes-256-gcm, password: 64b9b8e9-bf2f-48b2-b6f3-cb91cf52d452, udp: true}
-  - {name: 🇰🇷 韩国 专线NO2, server: xdd.dashuai.cyou, port: 45075, type: vmess, uuid: 073dc1a0-1b13-427c-8953-6f0a8d3cdd0b, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇺🇸 美国04-1B, server: i2plcwjnhrl6.gym0boy.com, port: 32656, type: ss, cipher: aes-256-gcm, password: 64b9b8e9-bf2f-48b2-b6f3-cb91cf52d452, udp: true}
-  - {name: 🇭🇰 香港-线路1-1I, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 35c9b27d-7116-4abb-822b-678fce0d92df, udp: true}
-  - {name: 🇹🇼 台湾03-1A, server: wujrnbitcet.gym0boy.com, port: 40034, type: ss, cipher: aes-256-gcm, password: 7eb67689-43dd-4162-a258-a2fa0b3b8308, udp: true}
-  - {name: 🇸🇬 新加坡03-1A, server: wujrnbitcet.gym0boy.com, port: 37908, type: ss, cipher: aes-256-gcm, password: 7eb67689-43dd-4162-a258-a2fa0b3b8308, udp: true}
-  - {name: 🇩🇪 德国之二, server: 31.22.10.139, port: 3122, type: ss, cipher: chacha20-ietf-poly1305, password: 04f597a0-80c1-4586-8220-fc62782e6265, udp: true}
-  - {name: 🇺🇸 美国02-1A, server: i2plcwjnhrl6.gym0boy.com, port: 52448, type: ss, cipher: aes-256-gcm, password: 7eb67689-43dd-4162-a258-a2fa0b3b8308, udp: true}
-  - {name: 🇸🇬 新加坡03-1B, server: wujrnbitcet.gym0boy.com, port: 37908, type: ss, cipher: aes-256-gcm, password: 64b9b8e9-bf2f-48b2-b6f3-cb91cf52d452, udp: true}
-  - {name: 🇯🇵 日本之一, server: 23.27.201.149, port: 7281, type: ss, cipher: chacha20-ietf-poly1305, password: 04f597a0-80c1-4586-8220-fc62782e6265, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1G, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 9e5d494a-1dc1-4e9b-b272-62aa125ee60a, udp: true}
-  - {name: 🇹🇼 台湾02-1C, server: i2plcwjnhrl6.gym0boy.com, port: 50796, type: ss, cipher: aes-256-gcm, password: 83191813-f503-4bf9-87b9-73af997c0991, udp: true}
-  - {name: 🇯🇵 日本04-1A, server: i2plcwjnhrl6.gym0boy.com, port: 28799, type: ss, cipher: aes-256-gcm, password: 7eb67689-43dd-4162-a258-a2fa0b3b8308, udp: true}
-  - {name: 🇯🇵 日本01-1C, server: wujrnbitcet.gym0boy.com, port: 27663, type: ss, cipher: aes-256-gcm, password: 83191813-f503-4bf9-87b9-73af997c0991, udp: true}
-  - {name: 🇹🇼 台湾01-1B, server: wujrnbitcet.gym0boy.com, port: 30372, type: ss, cipher: aes-256-gcm, password: 64b9b8e9-bf2f-48b2-b6f3-cb91cf52d452, udp: true}
-  - {name: 🇧🇷 巴西, server: nexiabx.688997.xyz, port: 20857, type: hysteria2, password: a49a43f3-8689-40ee-8498-bce66deb1f46, auth: a49a43f3-8689-40ee-8498-bce66deb1f46, sni: nexiabx.688997.xyz, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
-  - {name: 🇨🇦 加拿大2, server: xdd.dashuai.cyou, port: 45065, type: vmess, uuid: 073dc1a0-1b13-427c-8953-6f0a8d3cdd0b, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇹🇼 台湾04-1D, server: i2plcwjnhrl6.gym0boy.com, port: 30555, type: ss, cipher: aes-256-gcm, password: 88e18240-1ca8-4016-a36d-65c220250162, udp: true}
-  - {name: 🇭🇰 香港02-1C, server: i2plcwjnhrl6.gym0boy.com, port: 52005, type: ss, cipher: aes-256-gcm, password: 83191813-f503-4bf9-87b9-73af997c0991, udp: true}
-  - {name: 🇹🇼 台湾02-1A, server: i2plcwjnhrl6.gym0boy.com, port: 50796, type: ss, cipher: aes-256-gcm, password: 7eb67689-43dd-4162-a258-a2fa0b3b8308, udp: true}
-  - {name: 🇯🇵 日本02-1B, server: i2plcwjnhrl6.gym0boy.com, port: 22609, type: ss, cipher: aes-256-gcm, password: 64b9b8e9-bf2f-48b2-b6f3-cb91cf52d452, udp: true}
-  - {name: 🇭🇰 香港-线路1-1J, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: d39468bc-21f3-4672-8f31-2da19645cd7b, udp: true}
-  - {name: 🇸🇬 新加坡01-1B, server: wujrnbitcet.gym0boy.com, port: 21878, type: ss, cipher: aes-256-gcm, password: 64b9b8e9-bf2f-48b2-b6f3-cb91cf52d452, udp: true}
-  - {name: 🇯🇵 日本04-1C, server: i2plcwjnhrl6.gym0boy.com, port: 28799, type: ss, cipher: aes-256-gcm, password: 83191813-f503-4bf9-87b9-73af997c0991, udp: true}
-  - {name: 🇭🇰 香港-线路1-1M, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 853a9557-788e-4187-9e91-7544b42e62f3, udp: true}
-  - {name: 🇯🇵 日本03-1B, server: wujrnbitcet.gym0boy.com, port: 49812, type: ss, cipher: aes-256-gcm, password: 64b9b8e9-bf2f-48b2-b6f3-cb91cf52d452, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1D, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 35c9b27d-7116-4abb-822b-678fce0d92df, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1I, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: f29c3bb6-be3c-495f-8988-ae4d055a5cb3, udp: true}
+  - {name: 🇭🇰 香港03-1B, server: wujrnbitcet.gym0boy.com, port: 57037, type: ss, cipher: aes-256-gcm, password: 7eb67689-43dd-4162-a258-a2fa0b3b8308, udp: true}
   - {name: 🇸🇬 新加坡02-1C, server: i2plcwjnhrl6.gym0boy.com, port: 17377, type: ss, cipher: aes-256-gcm, password: 83191813-f503-4bf9-87b9-73af997c0991, udp: true}
-  - {name: 🇭🇰 香港-线路1-1G, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 9e5d494a-1dc1-4e9b-b272-62aa125ee60a, udp: true}
-  - {name: 🇬🇧 英国2, server: xdd.dashuai.cyou, port: 45067, type: vmess, uuid: 073dc1a0-1b13-427c-8953-6f0a8d3cdd0b, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇯🇵 日本03-1D, server: wujrnbitcet.gym0boy.com, port: 49812, type: ss, cipher: aes-256-gcm, password: 88e18240-1ca8-4016-a36d-65c220250162, udp: true}
-  - {name: 🇺🇸 美国03-1D, server: wujrnbitcet.gym0boy.com, port: 29646, type: ss, cipher: aes-256-gcm, password: 88e18240-1ca8-4016-a36d-65c220250162, udp: true}
-  - {name: 🇸🇬 新加坡NO.2, server: xdd.dashuai.cyou, port: 45055, type: vmess, uuid: 073dc1a0-1b13-427c-8953-6f0a8d3cdd0b, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇺🇸 美国04-1D, server: i2plcwjnhrl6.gym0boy.com, port: 32656, type: ss, cipher: aes-256-gcm, password: 88e18240-1ca8-4016-a36d-65c220250162, udp: true}
-  - {name: 🇸🇬 新加坡04-1D, server: i2plcwjnhrl6.gym0boy.com, port: 12600, type: ss, cipher: aes-256-gcm, password: 88e18240-1ca8-4016-a36d-65c220250162, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1E, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 105a2a3b-7fc0-4539-8bb9-a5d84e7de2d0, udp: true}
-  - {name: 🇭🇰 香港-线路1-1E, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 105a2a3b-7fc0-4539-8bb9-a5d84e7de2d0, udp: true}
-  - {name: 🇺🇸 美国03-1C, server: wujrnbitcet.gym0boy.com, port: 29646, type: ss, cipher: aes-256-gcm, password: 83191813-f503-4bf9-87b9-73af997c0991, udp: true}
-  - {name: 🇯🇵 日本02-1D, server: i2plcwjnhrl6.gym0boy.com, port: 22609, type: ss, cipher: aes-256-gcm, password: 88e18240-1ca8-4016-a36d-65c220250162, udp: true}
-  - {name: 🇭🇰 香港-线路1-1B, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: a6c9276e-60f9-4035-b7e8-b13f0d2c5bad, udp: true}
-  - {name: 🇺🇸 美国03-1A, server: wujrnbitcet.gym0boy.com, port: 29646, type: ss, cipher: aes-256-gcm, password: 7eb67689-43dd-4162-a258-a2fa0b3b8308, udp: true}
-  - {name: 🇬🇧 英国, server: nexiayg.688997.xyz, port: 20657, type: hysteria2, password: a49a43f3-8689-40ee-8498-bce66deb1f46, auth: a49a43f3-8689-40ee-8498-bce66deb1f46, sni: nexiayg.688997.xyz, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
-  - {name: 🇺🇸 美国02-1B, server: i2plcwjnhrl6.gym0boy.com, port: 52448, type: ss, cipher: aes-256-gcm, password: 64b9b8e9-bf2f-48b2-b6f3-cb91cf52d452, udp: true}
-  - {name: 🇯🇵 日本02-1C, server: i2plcwjnhrl6.gym0boy.com, port: 22609, type: ss, cipher: aes-256-gcm, password: 83191813-f503-4bf9-87b9-73af997c0991, udp: true}
-  - {name: 🇯🇵 日本01-1A, server: wujrnbitcet.gym0boy.com, port: 27663, type: ss, cipher: aes-256-gcm, password: 7eb67689-43dd-4162-a258-a2fa0b3b8308, udp: true}
-  - {name: 🇯🇵 日本01-1D, server: wujrnbitcet.gym0boy.com, port: 27663, type: ss, cipher: aes-256-gcm, password: 88e18240-1ca8-4016-a36d-65c220250162, udp: true}
-  - {name: 🇯🇵 日本NO.1, server: haa.dashuai.cyou, port: 45056, type: vmess, uuid: 073dc1a0-1b13-427c-8953-6f0a8d3cdd0b, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1A, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: a5fa48bd-74ae-4686-8312-bc3c75a3a029, udp: true}
-  - {name: 🇸🇬 新加坡01-1A, server: wujrnbitcet.gym0boy.com, port: 21878, type: ss, cipher: aes-256-gcm, password: 7eb67689-43dd-4162-a258-a2fa0b3b8308, udp: true}
-  - {name: 🇭🇰 香港04-1C, server: i2plcwjnhrl6.gym0boy.com, port: 15034, type: ss, cipher: aes-256-gcm, password: 83191813-f503-4bf9-87b9-73af997c0991, udp: true}
-  - {name: 🇹🇷 土耳其, server: nexiateq.688997.xyz, port: 20957, type: hysteria2, password: a49a43f3-8689-40ee-8498-bce66deb1f46, auth: a49a43f3-8689-40ee-8498-bce66deb1f46, sni: nexiateq.688997.xyz, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
-  - {name: 保加之一, server: 193.9.47.81, port: 9478, type: ss, cipher: chacha20-ietf-poly1305, password: 04f597a0-80c1-4586-8220-fc62782e6265, udp: true}
+  - {name: 🇺🇸 美国04-1B, server: i2plcwjnhrl6.gym0boy.com, port: 32656, type: ss, cipher: aes-256-gcm, password: 7eb67689-43dd-4162-a258-a2fa0b3b8308, udp: true}
+  - {name: 🇮🇳 印度1, server: haa.dashuai.cyou, port: 45074, type: vmess, uuid: 4815f849-16a7-470c-b040-857d8eebfb4a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇹🇼 台湾01-1E, server: wujrnbitcet.gym0boy.com, port: 30372, type: ss, cipher: aes-256-gcm, password: 84a9993b-ce2d-4ec7-8f96-a5e814e7e8b1, udp: true}
+  - {name: 🇯🇵 日本04-1B, server: i2plcwjnhrl6.gym0boy.com, port: 28799, type: ss, cipher: aes-256-gcm, password: 7eb67689-43dd-4162-a258-a2fa0b3b8308, udp: true}
+  - {name: 🇸🇬 新加坡03-1C, server: wujrnbitcet.gym0boy.com, port: 37908, type: ss, cipher: aes-256-gcm, password: 83191813-f503-4bf9-87b9-73af997c0991, udp: true}
+  - {name: 🇯🇵 日本03-1A, server: wujrnbitcet.gym0boy.com, port: 49812, type: ss, cipher: aes-256-gcm, password: 64b9b8e9-bf2f-48b2-b6f3-cb91cf52d452, udp: true}
+  - {name: 🇹🇼 台湾04-1E, server: i2plcwjnhrl6.gym0boy.com, port: 30555, type: ss, cipher: aes-256-gcm, password: 84a9993b-ce2d-4ec7-8f96-a5e814e7e8b1, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1F, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 4f4002d5-4729-4857-84e8-c2bd3be3cef5, udp: true}
+  - {name: 🇰🇷 韩国, server: nexiahg.688997.xyz, port: 20357, type: hysteria2, password: a49a43f3-8689-40ee-8498-bce66deb1f46, auth: a49a43f3-8689-40ee-8498-bce66deb1f46, sni: nexiahg.688997.xyz, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
+  - {name: 🇹🇼 台湾02-1A, server: i2plcwjnhrl6.gym0boy.com, port: 50796, type: ss, cipher: aes-256-gcm, password: 64b9b8e9-bf2f-48b2-b6f3-cb91cf52d452, udp: true}
+  - {name: 🇹🇼 台湾03-1C, server: wujrnbitcet.gym0boy.com, port: 40034, type: ss, cipher: aes-256-gcm, password: 83191813-f503-4bf9-87b9-73af997c0991, udp: true}
+  - {name: 🇭🇰 香港03-1A, server: wujrnbitcet.gym0boy.com, port: 57037, type: ss, cipher: aes-256-gcm, password: 64b9b8e9-bf2f-48b2-b6f3-cb91cf52d452, udp: true}
+  - {name: 🇭🇰 香港-线路1-1H, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: a5fa48bd-74ae-4686-8312-bc3c75a3a029, udp: true}
+  - {name: 🇯🇵 日本之一, server: 23.27.201.149, port: 7281, type: ss, cipher: chacha20-ietf-poly1305, password: 2be06fcb-d44a-4adf-b91e-57ef0e046d84, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1N, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 93c33a31-fad8-49ab-9125-8d8a082dc338, udp: true}
+  - {name: 🇹🇼 台湾03-1D, server: wujrnbitcet.gym0boy.com, port: 40034, type: ss, cipher: aes-256-gcm, password: 88e18240-1ca8-4016-a36d-65c220250162, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1P, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 9bb6f31b-2ef2-475d-896a-b2a1441a47b6, udp: true}
+  - {name: 🇹🇼 台湾02-1E, server: i2plcwjnhrl6.gym0boy.com, port: 50796, type: ss, cipher: aes-256-gcm, password: 84a9993b-ce2d-4ec7-8f96-a5e814e7e8b1, udp: true}
   - {name: 🇸🇬 新加坡03-1D, server: wujrnbitcet.gym0boy.com, port: 37908, type: ss, cipher: aes-256-gcm, password: 88e18240-1ca8-4016-a36d-65c220250162, udp: true}
+  - {name: 🇦🇺 澳大利亚原生2, server: xdd.dashuai.cyou, port: 45063, type: vmess, uuid: 4815f849-16a7-470c-b040-857d8eebfb4a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇯🇵 日本NO.1, server: haa.dashuai.cyou, port: 45056, type: vmess, uuid: 4815f849-16a7-470c-b040-857d8eebfb4a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇭🇰 香港-线路1-1B, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 562e301a-52f4-46db-bef4-c564370f91bb, udp: true}
+  - {name: 🇭🇰 香港-线路1-1J, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: b5ab2cf4-b615-4a49-ab7e-0a5235c9702d, udp: true}
+  - {name: 🇸🇬 新加坡04-1D, server: i2plcwjnhrl6.gym0boy.com, port: 12600, type: ss, cipher: aes-256-gcm, password: 88e18240-1ca8-4016-a36d-65c220250162, udp: true}
+  - {name: 🇩🇪 德国之二, server: 31.22.10.139, port: 3122, type: ss, cipher: chacha20-ietf-poly1305, password: 2be06fcb-d44a-4adf-b91e-57ef0e046d84, udp: true}
+  - {name: 🇰🇷 韩国 专线NO1, server: haa.dashuai.cyou, port: 45076, type: vmess, uuid: 4815f849-16a7-470c-b040-857d8eebfb4a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇯🇵 日本NO.2, server: xdd.dashuai.cyou, port: 45057, type: vmess, uuid: 4815f849-16a7-470c-b040-857d8eebfb4a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国02-1E, server: i2plcwjnhrl6.gym0boy.com, port: 52448, type: ss, cipher: aes-256-gcm, password: 84a9993b-ce2d-4ec7-8f96-a5e814e7e8b1, udp: true}
+  - {name: 🇺🇸 美国03-1A, server: wujrnbitcet.gym0boy.com, port: 29646, type: ss, cipher: aes-256-gcm, password: 64b9b8e9-bf2f-48b2-b6f3-cb91cf52d452, udp: true}
+  - {name: 🇺🇸 美国04-1E, server: i2plcwjnhrl6.gym0boy.com, port: 32656, type: ss, cipher: aes-256-gcm, password: 84a9993b-ce2d-4ec7-8f96-a5e814e7e8b1, udp: true}
+  - {name: 🇨🇦 加拿大2, server: xdd.dashuai.cyou, port: 45065, type: vmess, uuid: 4815f849-16a7-470c-b040-857d8eebfb4a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1C, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 7a1dfcf0-0d07-4207-997f-4be950a41f4c, udp: true}
+  - {name: 🇯🇵 日本04-1A, server: i2plcwjnhrl6.gym0boy.com, port: 28799, type: ss, cipher: aes-256-gcm, password: 64b9b8e9-bf2f-48b2-b6f3-cb91cf52d452, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1O, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: fe93ab36-331d-49b7-b78e-0c054e9e7309, udp: true}
+  - {name: 保加之一, server: 193.9.47.81, port: 9478, type: ss, cipher: chacha20-ietf-poly1305, password: 2be06fcb-d44a-4adf-b91e-57ef0e046d84, udp: true}
+  - {name: 🇯🇵 日本02-1D, server: i2plcwjnhrl6.gym0boy.com, port: 22609, type: ss, cipher: aes-256-gcm, password: 88e18240-1ca8-4016-a36d-65c220250162, udp: true}
+  - {name: 🇦🇺 澳大利亚原生1, server: haa.dashuai.cyou, port: 45062, type: vmess, uuid: 4815f849-16a7-470c-b040-857d8eebfb4a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇭🇰 香港02-1E, server: i2plcwjnhrl6.gym0boy.com, port: 52005, type: ss, cipher: aes-256-gcm, password: 84a9993b-ce2d-4ec7-8f96-a5e814e7e8b1, udp: true}
+  - {name: 🇺🇸 美国01-1B, server: wujrnbitcet.gym0boy.com, port: 59270, type: ss, cipher: aes-256-gcm, password: 7eb67689-43dd-4162-a258-a2fa0b3b8308, udp: true}
+  - {name: 🇯🇵 日本04-1E, server: i2plcwjnhrl6.gym0boy.com, port: 28799, type: ss, cipher: aes-256-gcm, password: 84a9993b-ce2d-4ec7-8f96-a5e814e7e8b1, udp: true}
+  - {name: 🇸🇬 新加坡02-1B, server: i2plcwjnhrl6.gym0boy.com, port: 17377, type: ss, cipher: aes-256-gcm, password: 7eb67689-43dd-4162-a258-a2fa0b3b8308, udp: true}
+  - {name: 🇸🇬 新加坡03-1E, server: wujrnbitcet.gym0boy.com, port: 37908, type: ss, cipher: aes-256-gcm, password: 84a9993b-ce2d-4ec7-8f96-a5e814e7e8b1, udp: true}
+  - {name: 🇺🇸 美国02-1A, server: i2plcwjnhrl6.gym0boy.com, port: 52448, type: ss, cipher: aes-256-gcm, password: 64b9b8e9-bf2f-48b2-b6f3-cb91cf52d452, udp: true}
+  - {name: 🇯🇵 日本03-1B, server: wujrnbitcet.gym0boy.com, port: 49812, type: ss, cipher: aes-256-gcm, password: 7eb67689-43dd-4162-a258-a2fa0b3b8308, udp: true}
+  - {name: 🇭🇰 香港-线路1-1D, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 35c9b27d-7116-4abb-822b-678fce0d92df, udp: true}
+  - {name: 🇬🇧 英国, server: nexiayg.688997.xyz, port: 20657, type: hysteria2, password: a49a43f3-8689-40ee-8498-bce66deb1f46, auth: a49a43f3-8689-40ee-8498-bce66deb1f46, sni: nexiayg.688997.xyz, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
+  - {name: 🇸🇬 新加坡01-1A, server: wujrnbitcet.gym0boy.com, port: 21878, type: ss, cipher: aes-256-gcm, password: 64b9b8e9-bf2f-48b2-b6f3-cb91cf52d452, udp: true}
+  - {name: 🇹🇼 台湾02-1B, server: i2plcwjnhrl6.gym0boy.com, port: 50796, type: ss, cipher: aes-256-gcm, password: 7eb67689-43dd-4162-a258-a2fa0b3b8308, udp: true}
+  - {name: 🇭🇰 香港02-1A, server: i2plcwjnhrl6.gym0boy.com, port: 52005, type: ss, cipher: aes-256-gcm, password: 64b9b8e9-bf2f-48b2-b6f3-cb91cf52d452, udp: true}
+  - {name: 🇩🇪 德国, server: nexiadg.688997.xyz, port: 20557, type: hysteria2, password: a49a43f3-8689-40ee-8498-bce66deb1f46, auth: a49a43f3-8689-40ee-8498-bce66deb1f46, sni: nexiadg.688997.xyz, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
   - {name: 🇭🇰 香港-线路1-1O, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: fe93ab36-331d-49b7-b78e-0c054e9e7309, udp: true}
-  - {name: 🇯🇵 日本03-1A, server: wujrnbitcet.gym0boy.com, port: 49812, type: ss, cipher: aes-256-gcm, password: 7eb67689-43dd-4162-a258-a2fa0b3b8308, udp: true}
-  - {name: 🇺🇸 美国03-1B, server: wujrnbitcet.gym0boy.com, port: 29646, type: ss, cipher: aes-256-gcm, password: 64b9b8e9-bf2f-48b2-b6f3-cb91cf52d452, udp: true}
-  - {name: 🇭🇰 香港-线路1-1L, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: b4109835-45d2-4044-b1b4-d1dac07c7b8f, udp: true}
-  - {name: 🇹🇼 台湾02-1B, server: i2plcwjnhrl6.gym0boy.com, port: 50796, type: ss, cipher: aes-256-gcm, password: 64b9b8e9-bf2f-48b2-b6f3-cb91cf52d452, udp: true}
-  - {name: 🇦🇺 澳大利亚原生1, server: haa.dashuai.cyou, port: 45062, type: vmess, uuid: 073dc1a0-1b13-427c-8953-6f0a8d3cdd0b, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇯🇵 日本01-1B, server: wujrnbitcet.gym0boy.com, port: 27663, type: ss, cipher: aes-256-gcm, password: 64b9b8e9-bf2f-48b2-b6f3-cb91cf52d452, udp: true}
-  - {name: 🇸🇬 新加坡NO.1, server: haa.dashuai.cyou, port: 45054, type: vmess, uuid: 073dc1a0-1b13-427c-8953-6f0a8d3cdd0b, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇮🇳 印度2, server: xdd.dashuai.cyou, port: 45073, type: vmess, uuid: 4815f849-16a7-470c-b040-857d8eebfb4a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1G, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 853a9557-788e-4187-9e91-7544b42e62f3, udp: true}
+  - {name: 🇹🇼 台湾01-1A, server: wujrnbitcet.gym0boy.com, port: 30372, type: ss, cipher: aes-256-gcm, password: 64b9b8e9-bf2f-48b2-b6f3-cb91cf52d452, udp: true}
+  - {name: 🇯🇵 日本03-1E, server: wujrnbitcet.gym0boy.com, port: 49812, type: ss, cipher: aes-256-gcm, password: 84a9993b-ce2d-4ec7-8f96-a5e814e7e8b1, udp: true}
+  - {name: 🇸🇬 新加坡04-1E, server: i2plcwjnhrl6.gym0boy.com, port: 12600, type: ss, cipher: aes-256-gcm, password: 84a9993b-ce2d-4ec7-8f96-a5e814e7e8b1, udp: true}
   - {name: 🇹🇼 台湾02-1D, server: i2plcwjnhrl6.gym0boy.com, port: 50796, type: ss, cipher: aes-256-gcm, password: 88e18240-1ca8-4016-a36d-65c220250162, udp: true}
-  - {name: 🇫🇷 法国1, server: haa.dashuai.cyou, port: 45072, type: vmess, uuid: 073dc1a0-1b13-427c-8953-6f0a8d3cdd0b, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国04-1A, server: i2plcwjnhrl6.gym0boy.com, port: 32656, type: ss, cipher: aes-256-gcm, password: 64b9b8e9-bf2f-48b2-b6f3-cb91cf52d452, udp: true}
+  - {name: 🇹🇼 台湾02-1C, server: i2plcwjnhrl6.gym0boy.com, port: 50796, type: ss, cipher: aes-256-gcm, password: 83191813-f503-4bf9-87b9-73af997c0991, udp: true}
+  - {name: 🇸🇬 新加坡04-1B, server: i2plcwjnhrl6.gym0boy.com, port: 12600, type: ss, cipher: aes-256-gcm, password: 7eb67689-43dd-4162-a258-a2fa0b3b8308, udp: true}
+  - {name: 🇭🇰 香港-线路1-1N, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 93c33a31-fad8-49ab-9125-8d8a082dc338, udp: true}
+  - {name: 🇭🇰 香港03-1D, server: wujrnbitcet.gym0boy.com, port: 57037, type: ss, cipher: aes-256-gcm, password: 88e18240-1ca8-4016-a36d-65c220250162, udp: true}
+  - {name: 🇸🇬 新加坡04-1A, server: i2plcwjnhrl6.gym0boy.com, port: 12600, type: ss, cipher: aes-256-gcm, password: 64b9b8e9-bf2f-48b2-b6f3-cb91cf52d452, udp: true}
+  - {name: 🇹🇼 台湾04-1A, server: i2plcwjnhrl6.gym0boy.com, port: 30555, type: ss, cipher: aes-256-gcm, password: 64b9b8e9-bf2f-48b2-b6f3-cb91cf52d452, udp: true}
+  - {name: 🇯🇵 日本02-1C, server: i2plcwjnhrl6.gym0boy.com, port: 22609, type: ss, cipher: aes-256-gcm, password: 83191813-f503-4bf9-87b9-73af997c0991, udp: true}
+  - {name: 🇭🇰 香港-线路1-1G, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 853a9557-788e-4187-9e91-7544b42e62f3, udp: true}
+  - {name: 🇯🇵 日本02-1E, server: i2plcwjnhrl6.gym0boy.com, port: 22609, type: ss, cipher: aes-256-gcm, password: 84a9993b-ce2d-4ec7-8f96-a5e814e7e8b1, udp: true}
+  - {name: 🇺🇸 美国03-1E, server: wujrnbitcet.gym0boy.com, port: 29646, type: ss, cipher: aes-256-gcm, password: 84a9993b-ce2d-4ec7-8f96-a5e814e7e8b1, udp: true}
+  - {name: 🇭🇰 香港NO.2, server: xdd.dashuai.cyou, port: 45051, type: vmess, uuid: 4815f849-16a7-470c-b040-857d8eebfb4a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇸🇬 新加坡04-1C, server: i2plcwjnhrl6.gym0boy.com, port: 12600, type: ss, cipher: aes-256-gcm, password: 83191813-f503-4bf9-87b9-73af997c0991, udp: true}
+  - {name: 🇩🇪 德国之一, server: 185.183.181.242, port: 8581, type: ss, cipher: chacha20-ietf-poly1305, password: 2be06fcb-d44a-4adf-b91e-57ef0e046d84, udp: true}
+  - {name: 🇧🇷 巴西, server: nexiabx.688997.xyz, port: 20857, type: hysteria2, password: a49a43f3-8689-40ee-8498-bce66deb1f46, auth: a49a43f3-8689-40ee-8498-bce66deb1f46, sni: nexiabx.688997.xyz, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
+  - {name: 🇯🇵 日本02-1B, server: i2plcwjnhrl6.gym0boy.com, port: 22609, type: ss, cipher: aes-256-gcm, password: 7eb67689-43dd-4162-a258-a2fa0b3b8308, udp: true}
+  - {name: 🇹🇼 台湾04-1B, server: i2plcwjnhrl6.gym0boy.com, port: 30555, type: ss, cipher: aes-256-gcm, password: 7eb67689-43dd-4162-a258-a2fa0b3b8308, udp: true}
+  - {name: 🇸🇬 新加坡02-1A, server: i2plcwjnhrl6.gym0boy.com, port: 17377, type: ss, cipher: aes-256-gcm, password: 64b9b8e9-bf2f-48b2-b6f3-cb91cf52d452, udp: true}
+  - {name: 🇭🇰 香港03-1E, server: wujrnbitcet.gym0boy.com, port: 57037, type: ss, cipher: aes-256-gcm, password: 84a9993b-ce2d-4ec7-8f96-a5e814e7e8b1, udp: true}
+  - {name: 🇹🇼 台湾01-1D, server: wujrnbitcet.gym0boy.com, port: 30372, type: ss, cipher: aes-256-gcm, password: 88e18240-1ca8-4016-a36d-65c220250162, udp: true}
+  - {name: 🇹🇼 台湾04-1C, server: i2plcwjnhrl6.gym0boy.com, port: 30555, type: ss, cipher: aes-256-gcm, password: 83191813-f503-4bf9-87b9-73af997c0991, udp: true}
+  - {name: 🇸🇬 新加坡NO.1, server: haa.dashuai.cyou, port: 45054, type: vmess, uuid: 4815f849-16a7-470c-b040-857d8eebfb4a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国NO.1, server: haa.dashuai.cyou, port: 45052, type: vmess, uuid: 4815f849-16a7-470c-b040-857d8eebfb4a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇹🇷 土耳其, server: nexiateq.688997.xyz, port: 20957, type: hysteria2, password: a49a43f3-8689-40ee-8498-bce66deb1f46, auth: a49a43f3-8689-40ee-8498-bce66deb1f46, sni: nexiateq.688997.xyz, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
+  - {name: 🇫🇷 法国1, server: haa.dashuai.cyou, port: 45072, type: vmess, uuid: 4815f849-16a7-470c-b040-857d8eebfb4a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国NO.2, server: xdd.dashuai.cyou, port: 45053, type: vmess, uuid: 4815f849-16a7-470c-b040-857d8eebfb4a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇸🇬 新加坡NO.2, server: xdd.dashuai.cyou, port: 45055, type: vmess, uuid: 4815f849-16a7-470c-b040-857d8eebfb4a, alterId: 0, cipher: auto, tls: false, udp: true}
   - {name: 🇯🇵 日本, server: nexiarb.688997.xyz, port: 20257, type: hysteria2, password: a49a43f3-8689-40ee-8498-bce66deb1f46, auth: a49a43f3-8689-40ee-8498-bce66deb1f46, sni: nexiarb.688997.xyz, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1L, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: b4109835-45d2-4044-b1b4-d1dac07c7b8f, udp: true}
-  - {name: 🇮🇳 印度2, server: xdd.dashuai.cyou, port: 45073, type: vmess, uuid: 073dc1a0-1b13-427c-8953-6f0a8d3cdd0b, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇭🇰 香港04-1A, server: i2plcwjnhrl6.gym0boy.com, port: 15034, type: ss, cipher: aes-256-gcm, password: 7eb67689-43dd-4162-a258-a2fa0b3b8308, udp: true}
+  - {name: 🇭🇰 香港04-1C, server: i2plcwjnhrl6.gym0boy.com, port: 15034, type: ss, cipher: aes-256-gcm, password: 83191813-f503-4bf9-87b9-73af997c0991, udp: true}
+  - {name: 🇯🇵 日本01-1D, server: wujrnbitcet.gym0boy.com, port: 27663, type: ss, cipher: aes-256-gcm, password: 88e18240-1ca8-4016-a36d-65c220250162, udp: true}
+  - {name: 🇹🇼 台湾01-1B, server: wujrnbitcet.gym0boy.com, port: 30372, type: ss, cipher: aes-256-gcm, password: 7eb67689-43dd-4162-a258-a2fa0b3b8308, udp: true}
+  - {name: 🇺🇸 美国02-1B, server: i2plcwjnhrl6.gym0boy.com, port: 52448, type: ss, cipher: aes-256-gcm, password: 7eb67689-43dd-4162-a258-a2fa0b3b8308, udp: true}
+  - {name: 🇭🇰 香港-线路1-1K, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: a6c9276e-60f9-4035-b7e8-b13f0d2c5bad, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1H, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: a5fa48bd-74ae-4686-8312-bc3c75a3a029, udp: true}
+  - {name: 🇹🇼 台湾1, server: haa.dashuai.cyou, port: 45078, type: vmess, uuid: 4815f849-16a7-470c-b040-857d8eebfb4a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇸🇬 新加坡01-1C, server: wujrnbitcet.gym0boy.com, port: 21878, type: ss, cipher: aes-256-gcm, password: 83191813-f503-4bf9-87b9-73af997c0991, udp: true}
+  - {name: 🇯🇵 日本01-1E, server: wujrnbitcet.gym0boy.com, port: 27663, type: ss, cipher: aes-256-gcm, password: 84a9993b-ce2d-4ec7-8f96-a5e814e7e8b1, udp: true}
+  - {name: 🇭🇰 香港02-1B, server: i2plcwjnhrl6.gym0boy.com, port: 52005, type: ss, cipher: aes-256-gcm, password: 7eb67689-43dd-4162-a258-a2fa0b3b8308, udp: true}
+  - {name: 🇺🇸 美国01-1A, server: wujrnbitcet.gym0boy.com, port: 59270, type: ss, cipher: aes-256-gcm, password: 64b9b8e9-bf2f-48b2-b6f3-cb91cf52d452, udp: true}
+  - {name: 🇹🇼 台湾2, server: xdd.dashuai.cyou, port: 45077, type: vmess, uuid: 4815f849-16a7-470c-b040-857d8eebfb4a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国01-1C, server: wujrnbitcet.gym0boy.com, port: 59270, type: ss, cipher: aes-256-gcm, password: 83191813-f503-4bf9-87b9-73af997c0991, udp: true}
+  - {name: 🇹🇼 台湾04-1D, server: i2plcwjnhrl6.gym0boy.com, port: 30555, type: ss, cipher: aes-256-gcm, password: 88e18240-1ca8-4016-a36d-65c220250162, udp: true}
+  - {name: 🇹🇼 台湾03-1B, server: wujrnbitcet.gym0boy.com, port: 40034, type: ss, cipher: aes-256-gcm, password: 7eb67689-43dd-4162-a258-a2fa0b3b8308, udp: true}
+  - {name: 🇯🇵 日本03-1D, server: wujrnbitcet.gym0boy.com, port: 49812, type: ss, cipher: aes-256-gcm, password: 88e18240-1ca8-4016-a36d-65c220250162, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1B, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 562e301a-52f4-46db-bef4-c564370f91bb, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1E, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: b4109835-45d2-4044-b1b4-d1dac07c7b8f, udp: true}
+  - {name: 🇯🇵 日本01-1A, server: wujrnbitcet.gym0boy.com, port: 27663, type: ss, cipher: aes-256-gcm, password: 64b9b8e9-bf2f-48b2-b6f3-cb91cf52d452, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1M, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: d39468bc-21f3-4672-8f31-2da19645cd7b, udp: true}
+  - {name: 🇺🇸 美国03-1D, server: wujrnbitcet.gym0boy.com, port: 29646, type: ss, cipher: aes-256-gcm, password: 88e18240-1ca8-4016-a36d-65c220250162, udp: true}
+  - {name: 🇭🇰 香港-线路1-1C, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 7a1dfcf0-0d07-4207-997f-4be950a41f4c, udp: true}
+  - {name: 🇸🇬 新加坡02-1E, server: i2plcwjnhrl6.gym0boy.com, port: 17377, type: ss, cipher: aes-256-gcm, password: 84a9993b-ce2d-4ec7-8f96-a5e814e7e8b1, udp: true}
+  - {name: 🇭🇰 香港-线路1-1E, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: b4109835-45d2-4044-b1b4-d1dac07c7b8f, udp: true}
+  - {name: 🇭🇰 香港-线路1-1M, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: d39468bc-21f3-4672-8f31-2da19645cd7b, udp: true}
+  - {name: 🇭🇰 香港-线路1-1P, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 9bb6f31b-2ef2-475d-896a-b2a1441a47b6, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1A, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 105a2a3b-7fc0-4539-8bb9-a5d84e7de2d0, udp: true}
+  - {name: 🇬🇧 英国1, server: haa.dashuai.cyou, port: 45066, type: vmess, uuid: 4815f849-16a7-470c-b040-857d8eebfb4a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇸🇬 新加坡03-1B, server: wujrnbitcet.gym0boy.com, port: 37908, type: ss, cipher: aes-256-gcm, password: 7eb67689-43dd-4162-a258-a2fa0b3b8308, udp: true}
+  - {name: 🇭🇰 香港04-1D, server: i2plcwjnhrl6.gym0boy.com, port: 15034, type: ss, cipher: aes-256-gcm, password: 88e18240-1ca8-4016-a36d-65c220250162, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1K, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: a6c9276e-60f9-4035-b7e8-b13f0d2c5bad, udp: true}
+  - {name: 🇹🇼 台湾03-1A, server: wujrnbitcet.gym0boy.com, port: 40034, type: ss, cipher: aes-256-gcm, password: 64b9b8e9-bf2f-48b2-b6f3-cb91cf52d452, udp: true}
+  - {name: 🇸🇬 新加坡03-1A, server: wujrnbitcet.gym0boy.com, port: 37908, type: ss, cipher: aes-256-gcm, password: 64b9b8e9-bf2f-48b2-b6f3-cb91cf52d452, udp: true}
+  - {name: 🇭🇰 香港02-1D, server: i2plcwjnhrl6.gym0boy.com, port: 52005, type: ss, cipher: aes-256-gcm, password: 88e18240-1ca8-4016-a36d-65c220250162, udp: true}
+  - {name: 🇭🇰 香港-线路1-1I, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: f29c3bb6-be3c-495f-8988-ae4d055a5cb3, udp: true}
+  - {name: 🇰🇷 韩国 专线NO2, server: xdd.dashuai.cyou, port: 45075, type: vmess, uuid: 4815f849-16a7-470c-b040-857d8eebfb4a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇬🇧 英国2, server: xdd.dashuai.cyou, port: 45067, type: vmess, uuid: 4815f849-16a7-470c-b040-857d8eebfb4a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国03-1C, server: wujrnbitcet.gym0boy.com, port: 29646, type: ss, cipher: aes-256-gcm, password: 83191813-f503-4bf9-87b9-73af997c0991, udp: true}
+  - {name: 🇯🇵 日本01-1B, server: wujrnbitcet.gym0boy.com, port: 27663, type: ss, cipher: aes-256-gcm, password: 7eb67689-43dd-4162-a258-a2fa0b3b8308, udp: true}
+  - {name: 🇭🇰 香港-线路1-1F, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 4f4002d5-4729-4857-84e8-c2bd3be3cef5, udp: true}
+  - {name: 🇺🇸 美国02-1C, server: i2plcwjnhrl6.gym0boy.com, port: 52448, type: ss, cipher: aes-256-gcm, password: 83191813-f503-4bf9-87b9-73af997c0991, udp: true}
+  - {name: 🇨🇦 加拿大1, server: haa.dashuai.cyou, port: 45064, type: vmess, uuid: 4815f849-16a7-470c-b040-857d8eebfb4a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇭🇰 香港04-1A, server: i2plcwjnhrl6.gym0boy.com, port: 15034, type: ss, cipher: aes-256-gcm, password: 64b9b8e9-bf2f-48b2-b6f3-cb91cf52d452, udp: true}
+  - {name: 🇸🇬 新加坡01-1B, server: wujrnbitcet.gym0boy.com, port: 21878, type: ss, cipher: aes-256-gcm, password: 7eb67689-43dd-4162-a258-a2fa0b3b8308, udp: true}
+  - {name: 🇺🇸 美国04-1C, server: i2plcwjnhrl6.gym0boy.com, port: 32656, type: ss, cipher: aes-256-gcm, password: 83191813-f503-4bf9-87b9-73af997c0991, udp: true}
+  - {name: 🇭🇰 香港03-1C, server: wujrnbitcet.gym0boy.com, port: 57037, type: ss, cipher: aes-256-gcm, password: 83191813-f503-4bf9-87b9-73af997c0991, udp: true}
+  - {name: 🇭🇰 香港02-1C, server: i2plcwjnhrl6.gym0boy.com, port: 52005, type: ss, cipher: aes-256-gcm, password: 83191813-f503-4bf9-87b9-73af997c0991, udp: true}
+  - {name: 🇭🇰 香港04-1E, server: i2plcwjnhrl6.gym0boy.com, port: 15034, type: ss, cipher: aes-256-gcm, password: 84a9993b-ce2d-4ec7-8f96-a5e814e7e8b1, udp: true}
+  - {name: 🇯🇵 日本04-1D, server: i2plcwjnhrl6.gym0boy.com, port: 28799, type: ss, cipher: aes-256-gcm, password: 88e18240-1ca8-4016-a36d-65c220250162, udp: true}
+  - {name: 🇯🇵 日本04-1C, server: i2plcwjnhrl6.gym0boy.com, port: 28799, type: ss, cipher: aes-256-gcm, password: 83191813-f503-4bf9-87b9-73af997c0991, udp: true}
+  - {name: 🇺🇸 美国02-1D, server: i2plcwjnhrl6.gym0boy.com, port: 52448, type: ss, cipher: aes-256-gcm, password: 88e18240-1ca8-4016-a36d-65c220250162, udp: true}
+  - {name: 🇭🇰 香港-线路1-1A, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 105a2a3b-7fc0-4539-8bb9-a5d84e7de2d0, udp: true}
+  - {name: 🇯🇵 日本02-1A, server: i2plcwjnhrl6.gym0boy.com, port: 22609, type: ss, cipher: aes-256-gcm, password: 64b9b8e9-bf2f-48b2-b6f3-cb91cf52d452, udp: true}
+  - {name: 🇺🇸 美国04-1D, server: i2plcwjnhrl6.gym0boy.com, port: 32656, type: ss, cipher: aes-256-gcm, password: 88e18240-1ca8-4016-a36d-65c220250162, udp: true}
+  - {name: 🇯🇵 日本01-1C, server: wujrnbitcet.gym0boy.com, port: 27663, type: ss, cipher: aes-256-gcm, password: 83191813-f503-4bf9-87b9-73af997c0991, udp: true}
+  - {name: 🇳🇱 荷兰, server: nexiahl.688997.xyz, port: 20457, type: hysteria2, password: a49a43f3-8689-40ee-8498-bce66deb1f46, auth: a49a43f3-8689-40ee-8498-bce66deb1f46, sni: nexiahl.688997.xyz, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
+  - {name: 🇺🇸 美国03-1B, server: wujrnbitcet.gym0boy.com, port: 29646, type: ss, cipher: aes-256-gcm, password: 7eb67689-43dd-4162-a258-a2fa0b3b8308, udp: true}
+  - {name: 🇹🇼 台湾03-1E, server: wujrnbitcet.gym0boy.com, port: 40034, type: ss, cipher: aes-256-gcm, password: 84a9993b-ce2d-4ec7-8f96-a5e814e7e8b1, udp: true}
+  - {name: 🇭🇰 香港-线路1-1L, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 9e5d494a-1dc1-4e9b-b272-62aa125ee60a, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1L, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 9e5d494a-1dc1-4e9b-b272-62aa125ee60a, udp: true}
+  - {name: 🇷🇺 俄罗斯, server: nexiaels.688997.xyz, port: 20757, type: hysteria2, password: a49a43f3-8689-40ee-8498-bce66deb1f46, auth: a49a43f3-8689-40ee-8498-bce66deb1f46, sni: nexiaels.688997.xyz, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
+  - {name: 🇸🇬 新加坡02-1D, server: i2plcwjnhrl6.gym0boy.com, port: 17377, type: ss, cipher: aes-256-gcm, password: 88e18240-1ca8-4016-a36d-65c220250162, udp: true}
+  - {name: 🇹🇼 台湾01-1C, server: wujrnbitcet.gym0boy.com, port: 30372, type: ss, cipher: aes-256-gcm, password: 83191813-f503-4bf9-87b9-73af997c0991, udp: true}
+  - {name: 🇭🇰 香港04-1B, server: i2plcwjnhrl6.gym0boy.com, port: 15034, type: ss, cipher: aes-256-gcm, password: 7eb67689-43dd-4162-a258-a2fa0b3b8308, udp: true}
+  - {name: 🇺🇸 美国之一, server: 23.27.176.120, port: 7651, type: ss, cipher: chacha20-ietf-poly1305, password: 2be06fcb-d44a-4adf-b91e-57ef0e046d84, udp: true}
+  - {name: 🇫🇷 法国2, server: xdd.dashuai.cyou, port: 45071, type: vmess, uuid: 4815f849-16a7-470c-b040-857d8eebfb4a, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国, server: nexiamg.688997.xyz, port: 20157, type: hysteria2, password: a49a43f3-8689-40ee-8498-bce66deb1f46, auth: a49a43f3-8689-40ee-8498-bce66deb1f46, sni: nexiamg.688997.xyz, skip-cert-verify: true, obfs: salamander, obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==, udp: true}
+  - {name: 🇯🇵 日本03-1C, server: wujrnbitcet.gym0boy.com, port: 49812, type: ss, cipher: aes-256-gcm, password: 83191813-f503-4bf9-87b9-73af997c0991, udp: true}
+  - {name: 🇺🇸 美国01-1E, server: wujrnbitcet.gym0boy.com, port: 59270, type: ss, cipher: aes-256-gcm, password: 84a9993b-ce2d-4ec7-8f96-a5e814e7e8b1, udp: true}
+  - {name: 🇸🇬 新加坡01-1E, server: wujrnbitcet.gym0boy.com, port: 21878, type: ss, cipher: aes-256-gcm, password: 84a9993b-ce2d-4ec7-8f96-a5e814e7e8b1, udp: true}
+  - {name: 🇸🇬 新加坡01-1D, server: wujrnbitcet.gym0boy.com, port: 21878, type: ss, cipher: aes-256-gcm, password: 88e18240-1ca8-4016-a36d-65c220250162, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1J, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: b5ab2cf4-b615-4a49-ab7e-0a5235c9702d, udp: true}
+  - {name: 🇺🇸 美国01-1D, server: wujrnbitcet.gym0boy.com, port: 59270, type: ss, cipher: aes-256-gcm, password: 88e18240-1ca8-4016-a36d-65c220250162, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇦 加拿大1
-      - 🇭🇰 香港03-1D
-      - 🇺🇸 美国02-1C
-      - 🇦🇺 澳大利亚原生2
-      - 🇹🇼 台湾04-1A
-      - 🇫🇷 法国2
-      - 🇹🇼 台湾04-1C
-      - 🇭🇰 香港02-1A
-      - 🇯🇵 日本04-1B
-      - 🇸🇬 新加坡04-1C
-      - 🇮🇪 爱尔兰-都柏林-1M
-      - 🇹🇼 台湾04-1B
-      - 🇺🇸 美国04-1A
-      - 🇭🇰 香港04-1B
-      - 🇯🇵 日本03-1C
-      - 🇺🇸 美国01-1D
-      - 🇭🇰 香港04-1D
-      - 🇸🇬 新加坡04-1B
-      - 🇮🇪 爱尔兰-都柏林-1B
-      - 🇸🇬 新加坡01-1C
-      - 🇭🇰 香港-线路1-1F
-      - 🇺🇸 美国之一
-      - 🇭🇰 香港-线路1-1K
-      - 🇬🇧 英国1
-      - 🇸🇬 新加坡04-1A
-      - 🇹🇼 台湾03-1C
-      - 🇮🇪 爱尔兰-都柏林-1K
-      - 🇯🇵 日本04-1D
-      - 🇹🇼 台湾01-1D
-      - 🇮🇪 爱尔兰-都柏林-1F
-      - 🇭🇰 香港02-1B
-      - 🇺🇸 美国NO.2
-      - 🇯🇵 日本NO.2
-      - 🇭🇰 香港-线路1-1A
-      - 🇮🇪 爱尔兰-都柏林-1C
-      - 🇭🇰 香港02-1D
-      - 🇺🇸 美国01-1A
-      - 🇸🇬 新加坡02-1A
-      - 🇭🇰 香港NO.2
-      - 🇭🇰 香港03-1C
-      - 🇺🇸 美国
-      - 🇰🇷 韩国 专线NO1
-      - 🇩🇪 德国之一
-      - 🇹🇼 台湾01-1C
-      - 🇺🇸 美国01-1C
-      - 🇮🇪 爱尔兰-都柏林-1I
-      - 🇭🇰 香港-线路1-1D
-      - 🇸🇬 新加坡03-1C
-      - 🇹🇼 台湾01-1A
-      - 🇭🇰 香港03-1B
-      - 🇸🇬 新加坡02-1D
-      - 🇹🇼 台湾03-1B
-      - 🇺🇸 美国02-1D
-      - 🇺🇸 美国之二
-      - 🇮🇪 爱尔兰-都柏林-1O
-      - 🇮🇪 爱尔兰-都柏林-1H
-      - 🇭🇰 香港-线路1-1C
-      - 🇭🇰 香港-线路1-1N
-      - 🇳🇱 荷兰
-      - 🇺🇸 美国04-1C
-      - 🇰🇷 韩国
-      - 🇮🇪 爱尔兰-都柏林-1J
-      - 🇯🇵 日本02-1A
       - 🇮🇪 爱尔兰-都柏林-1D
-      - 🇺🇸 美国01-1B
-      - 🇮🇪 爱尔兰-都柏林-1N
-      - 🇭🇰 香港-线路1-1H
-      - 🇷🇺 俄罗斯
-      - 🇮🇳 印度1
-      - 🇭🇰 香港03-1A
-      - 🇹🇼 台湾2
-      - 🇹🇼 台湾1
-      - 🇸🇬 新加坡01-1D
-      - 🇹🇼 台湾03-1D
-      - 🇩🇪 德国
-      - 🇺🇸 美国NO.1
-      - 🇸🇬 新加坡02-1B
-      - 🇰🇷 韩国 专线NO2
+      - 🇮🇪 爱尔兰-都柏林-1I
+      - 🇭🇰 香港03-1B
+      - 🇸🇬 新加坡02-1C
       - 🇺🇸 美国04-1B
-      - 🇭🇰 香港-线路1-1I
+      - 🇮🇳 印度1
+      - 🇹🇼 台湾01-1E
+      - 🇯🇵 日本04-1B
+      - 🇸🇬 新加坡03-1C
+      - 🇯🇵 日本03-1A
+      - 🇹🇼 台湾04-1E
+      - 🇮🇪 爱尔兰-都柏林-1F
+      - 🇰🇷 韩国
+      - 🇹🇼 台湾02-1A
+      - 🇹🇼 台湾03-1C
+      - 🇭🇰 香港03-1A
+      - 🇭🇰 香港-线路1-1H
+      - 🇯🇵 日本之一
+      - 🇮🇪 爱尔兰-都柏林-1N
+      - 🇹🇼 台湾03-1D
+      - 🇮🇪 爱尔兰-都柏林-1P
+      - 🇹🇼 台湾02-1E
+      - 🇸🇬 新加坡03-1D
+      - 🇦🇺 澳大利亚原生2
+      - 🇯🇵 日本NO.1
+      - 🇭🇰 香港-线路1-1B
+      - 🇭🇰 香港-线路1-1J
+      - 🇸🇬 新加坡04-1D
+      - 🇩🇪 德国之二
+      - 🇰🇷 韩国 专线NO1
+      - 🇯🇵 日本NO.2
+      - 🇺🇸 美国02-1E
+      - 🇺🇸 美国03-1A
+      - 🇺🇸 美国04-1E
+      - 🇨🇦 加拿大2
+      - 🇮🇪 爱尔兰-都柏林-1C
+      - 🇯🇵 日本04-1A
+      - 🇮🇪 爱尔兰-都柏林-1O
+      - 保加之一
+      - 🇯🇵 日本02-1D
+      - 🇦🇺 澳大利亚原生1
+      - 🇭🇰 香港02-1E
+      - 🇺🇸 美国01-1B
+      - 🇯🇵 日本04-1E
+      - 🇸🇬 新加坡02-1B
+      - 🇸🇬 新加坡03-1E
+      - 🇺🇸 美国02-1A
+      - 🇯🇵 日本03-1B
+      - 🇭🇰 香港-线路1-1D
+      - 🇬🇧 英国
+      - 🇸🇬 新加坡01-1A
+      - 🇹🇼 台湾02-1B
+      - 🇭🇰 香港02-1A
+      - 🇩🇪 德国
+      - 🇭🇰 香港-线路1-1O
+      - 🇮🇳 印度2
+      - 🇮🇪 爱尔兰-都柏林-1G
+      - 🇹🇼 台湾01-1A
+      - 🇯🇵 日本03-1E
+      - 🇸🇬 新加坡04-1E
+      - 🇹🇼 台湾02-1D
+      - 🇺🇸 美国04-1A
+      - 🇹🇼 台湾02-1C
+      - 🇸🇬 新加坡04-1B
+      - 🇭🇰 香港-线路1-1N
+      - 🇭🇰 香港03-1D
+      - 🇸🇬 新加坡04-1A
+      - 🇹🇼 台湾04-1A
+      - 🇯🇵 日本02-1C
+      - 🇭🇰 香港-线路1-1G
+      - 🇯🇵 日本02-1E
+      - 🇺🇸 美国03-1E
+      - 🇭🇰 香港NO.2
+      - 🇸🇬 新加坡04-1C
+      - 🇩🇪 德国之一
+      - 🇧🇷 巴西
+      - 🇯🇵 日本02-1B
+      - 🇹🇼 台湾04-1B
+      - 🇸🇬 新加坡02-1A
+      - 🇭🇰 香港03-1E
+      - 🇹🇼 台湾01-1D
+      - 🇹🇼 台湾04-1C
+      - 🇸🇬 新加坡NO.1
+      - 🇺🇸 美国NO.1
+      - 🇹🇷 土耳其
+      - 🇫🇷 法国1
+      - 🇺🇸 美国NO.2
+      - 🇸🇬 新加坡NO.2
+      - 🇯🇵 日本
+      - 🇭🇰 香港04-1C
+      - 🇯🇵 日本01-1D
+      - 🇹🇼 台湾01-1B
+      - 🇺🇸 美国02-1B
+      - 🇭🇰 香港-线路1-1K
+      - 🇮🇪 爱尔兰-都柏林-1H
+      - 🇹🇼 台湾1
+      - 🇸🇬 新加坡01-1C
+      - 🇯🇵 日本01-1E
+      - 🇭🇰 香港02-1B
+      - 🇺🇸 美国01-1A
+      - 🇹🇼 台湾2
+      - 🇺🇸 美国01-1C
+      - 🇹🇼 台湾04-1D
+      - 🇹🇼 台湾03-1B
+      - 🇯🇵 日本03-1D
+      - 🇮🇪 爱尔兰-都柏林-1B
+      - 🇮🇪 爱尔兰-都柏林-1E
+      - 🇯🇵 日本01-1A
+      - 🇮🇪 爱尔兰-都柏林-1M
+      - 🇺🇸 美国03-1D
+      - 🇭🇰 香港-线路1-1C
+      - 🇸🇬 新加坡02-1E
+      - 🇭🇰 香港-线路1-1E
+      - 🇭🇰 香港-线路1-1M
+      - 🇭🇰 香港-线路1-1P
+      - 🇮🇪 爱尔兰-都柏林-1A
+      - 🇬🇧 英国1
+      - 🇸🇬 新加坡03-1B
+      - 🇭🇰 香港04-1D
+      - 🇮🇪 爱尔兰-都柏林-1K
       - 🇹🇼 台湾03-1A
       - 🇸🇬 新加坡03-1A
-      - 🇩🇪 德国之二
-      - 🇺🇸 美国02-1A
-      - 🇸🇬 新加坡03-1B
-      - 🇯🇵 日本之一
-      - 🇮🇪 爱尔兰-都柏林-1G
-      - 🇹🇼 台湾02-1C
-      - 🇯🇵 日本04-1A
-      - 🇯🇵 日本01-1C
-      - 🇹🇼 台湾01-1B
-      - 🇧🇷 巴西
-      - 🇨🇦 加拿大2
-      - 🇹🇼 台湾04-1D
-      - 🇭🇰 香港02-1C
-      - 🇹🇼 台湾02-1A
-      - 🇯🇵 日本02-1B
-      - 🇭🇰 香港-线路1-1J
-      - 🇸🇬 新加坡01-1B
-      - 🇯🇵 日本04-1C
-      - 🇭🇰 香港-线路1-1M
-      - 🇯🇵 日本03-1B
-      - 🇸🇬 新加坡02-1C
-      - 🇭🇰 香港-线路1-1G
+      - 🇭🇰 香港02-1D
+      - 🇭🇰 香港-线路1-1I
+      - 🇰🇷 韩国 专线NO2
       - 🇬🇧 英国2
-      - 🇯🇵 日本03-1D
-      - 🇺🇸 美国03-1D
-      - 🇸🇬 新加坡NO.2
-      - 🇺🇸 美国04-1D
-      - 🇸🇬 新加坡04-1D
-      - 🇮🇪 爱尔兰-都柏林-1E
-      - 🇭🇰 香港-线路1-1E
       - 🇺🇸 美国03-1C
-      - 🇯🇵 日本02-1D
-      - 🇭🇰 香港-线路1-1B
-      - 🇺🇸 美国03-1A
-      - 🇬🇧 英国
-      - 🇺🇸 美国02-1B
-      - 🇯🇵 日本02-1C
-      - 🇯🇵 日本01-1A
-      - 🇯🇵 日本01-1D
-      - 🇯🇵 日本NO.1
-      - 🇮🇪 爱尔兰-都柏林-1A
-      - 🇸🇬 新加坡01-1A
-      - 🇭🇰 香港04-1C
-      - 🇹🇷 土耳其
-      - 保加之一
-      - 🇸🇬 新加坡03-1D
-      - 🇭🇰 香港-线路1-1O
-      - 🇯🇵 日本03-1A
-      - 🇺🇸 美国03-1B
-      - 🇭🇰 香港-线路1-1L
-      - 🇹🇼 台湾02-1B
-      - 🇦🇺 澳大利亚原生1
       - 🇯🇵 日本01-1B
-      - 🇸🇬 新加坡NO.1
-      - 🇹🇼 台湾02-1D
-      - 🇫🇷 法国1
-      - 🇯🇵 日本
-      - 🇮🇪 爱尔兰-都柏林-1L
-      - 🇮🇳 印度2
+      - 🇭🇰 香港-线路1-1F
+      - 🇺🇸 美国02-1C
+      - 🇨🇦 加拿大1
       - 🇭🇰 香港04-1A
+      - 🇸🇬 新加坡01-1B
+      - 🇺🇸 美国04-1C
+      - 🇭🇰 香港03-1C
+      - 🇭🇰 香港02-1C
+      - 🇭🇰 香港04-1E
+      - 🇯🇵 日本04-1D
+      - 🇯🇵 日本04-1C
+      - 🇺🇸 美国02-1D
+      - 🇭🇰 香港-线路1-1A
+      - 🇯🇵 日本02-1A
+      - 🇺🇸 美国04-1D
+      - 🇯🇵 日本01-1C
+      - 🇳🇱 荷兰
+      - 🇺🇸 美国03-1B
+      - 🇹🇼 台湾03-1E
+      - 🇭🇰 香港-线路1-1L
+      - 🇮🇪 爱尔兰-都柏林-1L
+      - 🇷🇺 俄罗斯
+      - 🇸🇬 新加坡02-1D
+      - 🇹🇼 台湾01-1C
+      - 🇭🇰 香港04-1B
+      - 🇺🇸 美国之一
+      - 🇫🇷 法国2
+      - 🇺🇸 美国
+      - 🇯🇵 日本03-1C
+      - 🇺🇸 美国01-1E
+      - 🇸🇬 新加坡01-1E
+      - 🇸🇬 新加坡01-1D
+      - 🇮🇪 爱尔兰-都柏林-1J
+      - 🇺🇸 美国01-1D
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇨🇦 加拿大1
-      - 🇭🇰 香港03-1D
-      - 🇺🇸 美国02-1C
-      - 🇦🇺 澳大利亚原生2
-      - 🇹🇼 台湾04-1A
-      - 🇫🇷 法国2
-      - 🇹🇼 台湾04-1C
-      - 🇭🇰 香港02-1A
-      - 🇯🇵 日本04-1B
-      - 🇸🇬 新加坡04-1C
-      - 🇮🇪 爱尔兰-都柏林-1M
-      - 🇹🇼 台湾04-1B
-      - 🇺🇸 美国04-1A
-      - 🇭🇰 香港04-1B
-      - 🇯🇵 日本03-1C
-      - 🇺🇸 美国01-1D
-      - 🇭🇰 香港04-1D
-      - 🇸🇬 新加坡04-1B
-      - 🇮🇪 爱尔兰-都柏林-1B
-      - 🇸🇬 新加坡01-1C
-      - 🇭🇰 香港-线路1-1F
-      - 🇺🇸 美国之一
-      - 🇭🇰 香港-线路1-1K
-      - 🇬🇧 英国1
-      - 🇸🇬 新加坡04-1A
-      - 🇹🇼 台湾03-1C
-      - 🇮🇪 爱尔兰-都柏林-1K
-      - 🇯🇵 日本04-1D
-      - 🇹🇼 台湾01-1D
-      - 🇮🇪 爱尔兰-都柏林-1F
-      - 🇭🇰 香港02-1B
-      - 🇺🇸 美国NO.2
-      - 🇯🇵 日本NO.2
-      - 🇭🇰 香港-线路1-1A
-      - 🇮🇪 爱尔兰-都柏林-1C
-      - 🇭🇰 香港02-1D
-      - 🇺🇸 美国01-1A
-      - 🇸🇬 新加坡02-1A
-      - 🇭🇰 香港NO.2
-      - 🇭🇰 香港03-1C
-      - 🇺🇸 美国
-      - 🇰🇷 韩国 专线NO1
-      - 🇩🇪 德国之一
-      - 🇹🇼 台湾01-1C
-      - 🇺🇸 美国01-1C
-      - 🇮🇪 爱尔兰-都柏林-1I
-      - 🇭🇰 香港-线路1-1D
-      - 🇸🇬 新加坡03-1C
-      - 🇹🇼 台湾01-1A
-      - 🇭🇰 香港03-1B
-      - 🇸🇬 新加坡02-1D
-      - 🇹🇼 台湾03-1B
-      - 🇺🇸 美国02-1D
-      - 🇺🇸 美国之二
-      - 🇮🇪 爱尔兰-都柏林-1O
-      - 🇮🇪 爱尔兰-都柏林-1H
-      - 🇭🇰 香港-线路1-1C
-      - 🇭🇰 香港-线路1-1N
-      - 🇳🇱 荷兰
-      - 🇺🇸 美国04-1C
-      - 🇰🇷 韩国
-      - 🇮🇪 爱尔兰-都柏林-1J
-      - 🇯🇵 日本02-1A
       - 🇮🇪 爱尔兰-都柏林-1D
-      - 🇺🇸 美国01-1B
-      - 🇮🇪 爱尔兰-都柏林-1N
-      - 🇭🇰 香港-线路1-1H
-      - 🇷🇺 俄罗斯
-      - 🇮🇳 印度1
-      - 🇭🇰 香港03-1A
-      - 🇹🇼 台湾2
-      - 🇹🇼 台湾1
-      - 🇸🇬 新加坡01-1D
-      - 🇹🇼 台湾03-1D
-      - 🇩🇪 德国
-      - 🇺🇸 美国NO.1
-      - 🇸🇬 新加坡02-1B
-      - 🇰🇷 韩国 专线NO2
+      - 🇮🇪 爱尔兰-都柏林-1I
+      - 🇭🇰 香港03-1B
+      - 🇸🇬 新加坡02-1C
       - 🇺🇸 美国04-1B
-      - 🇭🇰 香港-线路1-1I
+      - 🇮🇳 印度1
+      - 🇹🇼 台湾01-1E
+      - 🇯🇵 日本04-1B
+      - 🇸🇬 新加坡03-1C
+      - 🇯🇵 日本03-1A
+      - 🇹🇼 台湾04-1E
+      - 🇮🇪 爱尔兰-都柏林-1F
+      - 🇰🇷 韩国
+      - 🇹🇼 台湾02-1A
+      - 🇹🇼 台湾03-1C
+      - 🇭🇰 香港03-1A
+      - 🇭🇰 香港-线路1-1H
+      - 🇯🇵 日本之一
+      - 🇮🇪 爱尔兰-都柏林-1N
+      - 🇹🇼 台湾03-1D
+      - 🇮🇪 爱尔兰-都柏林-1P
+      - 🇹🇼 台湾02-1E
+      - 🇸🇬 新加坡03-1D
+      - 🇦🇺 澳大利亚原生2
+      - 🇯🇵 日本NO.1
+      - 🇭🇰 香港-线路1-1B
+      - 🇭🇰 香港-线路1-1J
+      - 🇸🇬 新加坡04-1D
+      - 🇩🇪 德国之二
+      - 🇰🇷 韩国 专线NO1
+      - 🇯🇵 日本NO.2
+      - 🇺🇸 美国02-1E
+      - 🇺🇸 美国03-1A
+      - 🇺🇸 美国04-1E
+      - 🇨🇦 加拿大2
+      - 🇮🇪 爱尔兰-都柏林-1C
+      - 🇯🇵 日本04-1A
+      - 🇮🇪 爱尔兰-都柏林-1O
+      - 保加之一
+      - 🇯🇵 日本02-1D
+      - 🇦🇺 澳大利亚原生1
+      - 🇭🇰 香港02-1E
+      - 🇺🇸 美国01-1B
+      - 🇯🇵 日本04-1E
+      - 🇸🇬 新加坡02-1B
+      - 🇸🇬 新加坡03-1E
+      - 🇺🇸 美国02-1A
+      - 🇯🇵 日本03-1B
+      - 🇭🇰 香港-线路1-1D
+      - 🇬🇧 英国
+      - 🇸🇬 新加坡01-1A
+      - 🇹🇼 台湾02-1B
+      - 🇭🇰 香港02-1A
+      - 🇩🇪 德国
+      - 🇭🇰 香港-线路1-1O
+      - 🇮🇳 印度2
+      - 🇮🇪 爱尔兰-都柏林-1G
+      - 🇹🇼 台湾01-1A
+      - 🇯🇵 日本03-1E
+      - 🇸🇬 新加坡04-1E
+      - 🇹🇼 台湾02-1D
+      - 🇺🇸 美国04-1A
+      - 🇹🇼 台湾02-1C
+      - 🇸🇬 新加坡04-1B
+      - 🇭🇰 香港-线路1-1N
+      - 🇭🇰 香港03-1D
+      - 🇸🇬 新加坡04-1A
+      - 🇹🇼 台湾04-1A
+      - 🇯🇵 日本02-1C
+      - 🇭🇰 香港-线路1-1G
+      - 🇯🇵 日本02-1E
+      - 🇺🇸 美国03-1E
+      - 🇭🇰 香港NO.2
+      - 🇸🇬 新加坡04-1C
+      - 🇩🇪 德国之一
+      - 🇧🇷 巴西
+      - 🇯🇵 日本02-1B
+      - 🇹🇼 台湾04-1B
+      - 🇸🇬 新加坡02-1A
+      - 🇭🇰 香港03-1E
+      - 🇹🇼 台湾01-1D
+      - 🇹🇼 台湾04-1C
+      - 🇸🇬 新加坡NO.1
+      - 🇺🇸 美国NO.1
+      - 🇹🇷 土耳其
+      - 🇫🇷 法国1
+      - 🇺🇸 美国NO.2
+      - 🇸🇬 新加坡NO.2
+      - 🇯🇵 日本
+      - 🇭🇰 香港04-1C
+      - 🇯🇵 日本01-1D
+      - 🇹🇼 台湾01-1B
+      - 🇺🇸 美国02-1B
+      - 🇭🇰 香港-线路1-1K
+      - 🇮🇪 爱尔兰-都柏林-1H
+      - 🇹🇼 台湾1
+      - 🇸🇬 新加坡01-1C
+      - 🇯🇵 日本01-1E
+      - 🇭🇰 香港02-1B
+      - 🇺🇸 美国01-1A
+      - 🇹🇼 台湾2
+      - 🇺🇸 美国01-1C
+      - 🇹🇼 台湾04-1D
+      - 🇹🇼 台湾03-1B
+      - 🇯🇵 日本03-1D
+      - 🇮🇪 爱尔兰-都柏林-1B
+      - 🇮🇪 爱尔兰-都柏林-1E
+      - 🇯🇵 日本01-1A
+      - 🇮🇪 爱尔兰-都柏林-1M
+      - 🇺🇸 美国03-1D
+      - 🇭🇰 香港-线路1-1C
+      - 🇸🇬 新加坡02-1E
+      - 🇭🇰 香港-线路1-1E
+      - 🇭🇰 香港-线路1-1M
+      - 🇭🇰 香港-线路1-1P
+      - 🇮🇪 爱尔兰-都柏林-1A
+      - 🇬🇧 英国1
+      - 🇸🇬 新加坡03-1B
+      - 🇭🇰 香港04-1D
+      - 🇮🇪 爱尔兰-都柏林-1K
       - 🇹🇼 台湾03-1A
       - 🇸🇬 新加坡03-1A
-      - 🇩🇪 德国之二
-      - 🇺🇸 美国02-1A
-      - 🇸🇬 新加坡03-1B
-      - 🇯🇵 日本之一
-      - 🇮🇪 爱尔兰-都柏林-1G
-      - 🇹🇼 台湾02-1C
-      - 🇯🇵 日本04-1A
-      - 🇯🇵 日本01-1C
-      - 🇹🇼 台湾01-1B
-      - 🇧🇷 巴西
-      - 🇨🇦 加拿大2
-      - 🇹🇼 台湾04-1D
-      - 🇭🇰 香港02-1C
-      - 🇹🇼 台湾02-1A
-      - 🇯🇵 日本02-1B
-      - 🇭🇰 香港-线路1-1J
-      - 🇸🇬 新加坡01-1B
-      - 🇯🇵 日本04-1C
-      - 🇭🇰 香港-线路1-1M
-      - 🇯🇵 日本03-1B
-      - 🇸🇬 新加坡02-1C
-      - 🇭🇰 香港-线路1-1G
+      - 🇭🇰 香港02-1D
+      - 🇭🇰 香港-线路1-1I
+      - 🇰🇷 韩国 专线NO2
       - 🇬🇧 英国2
-      - 🇯🇵 日本03-1D
-      - 🇺🇸 美国03-1D
-      - 🇸🇬 新加坡NO.2
-      - 🇺🇸 美国04-1D
-      - 🇸🇬 新加坡04-1D
-      - 🇮🇪 爱尔兰-都柏林-1E
-      - 🇭🇰 香港-线路1-1E
       - 🇺🇸 美国03-1C
-      - 🇯🇵 日本02-1D
-      - 🇭🇰 香港-线路1-1B
-      - 🇺🇸 美国03-1A
-      - 🇬🇧 英国
-      - 🇺🇸 美国02-1B
-      - 🇯🇵 日本02-1C
-      - 🇯🇵 日本01-1A
-      - 🇯🇵 日本01-1D
-      - 🇯🇵 日本NO.1
-      - 🇮🇪 爱尔兰-都柏林-1A
-      - 🇸🇬 新加坡01-1A
-      - 🇭🇰 香港04-1C
-      - 🇹🇷 土耳其
-      - 保加之一
-      - 🇸🇬 新加坡03-1D
-      - 🇭🇰 香港-线路1-1O
-      - 🇯🇵 日本03-1A
-      - 🇺🇸 美国03-1B
-      - 🇭🇰 香港-线路1-1L
-      - 🇹🇼 台湾02-1B
-      - 🇦🇺 澳大利亚原生1
       - 🇯🇵 日本01-1B
-      - 🇸🇬 新加坡NO.1
-      - 🇹🇼 台湾02-1D
-      - 🇫🇷 法国1
-      - 🇯🇵 日本
-      - 🇮🇪 爱尔兰-都柏林-1L
-      - 🇮🇳 印度2
+      - 🇭🇰 香港-线路1-1F
+      - 🇺🇸 美国02-1C
+      - 🇨🇦 加拿大1
       - 🇭🇰 香港04-1A
+      - 🇸🇬 新加坡01-1B
+      - 🇺🇸 美国04-1C
+      - 🇭🇰 香港03-1C
+      - 🇭🇰 香港02-1C
+      - 🇭🇰 香港04-1E
+      - 🇯🇵 日本04-1D
+      - 🇯🇵 日本04-1C
+      - 🇺🇸 美国02-1D
+      - 🇭🇰 香港-线路1-1A
+      - 🇯🇵 日本02-1A
+      - 🇺🇸 美国04-1D
+      - 🇯🇵 日本01-1C
+      - 🇳🇱 荷兰
+      - 🇺🇸 美国03-1B
+      - 🇹🇼 台湾03-1E
+      - 🇭🇰 香港-线路1-1L
+      - 🇮🇪 爱尔兰-都柏林-1L
+      - 🇷🇺 俄罗斯
+      - 🇸🇬 新加坡02-1D
+      - 🇹🇼 台湾01-1C
+      - 🇭🇰 香港04-1B
+      - 🇺🇸 美国之一
+      - 🇫🇷 法国2
+      - 🇺🇸 美国
+      - 🇯🇵 日本03-1C
+      - 🇺🇸 美国01-1E
+      - 🇸🇬 新加坡01-1E
+      - 🇸🇬 新加坡01-1D
+      - 🇮🇪 爱尔兰-都柏林-1J
+      - 🇺🇸 美国01-1D
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇦 加拿大1
-      - 🇭🇰 香港03-1D
-      - 🇺🇸 美国02-1C
-      - 🇦🇺 澳大利亚原生2
-      - 🇹🇼 台湾04-1A
-      - 🇫🇷 法国2
-      - 🇹🇼 台湾04-1C
-      - 🇭🇰 香港02-1A
-      - 🇯🇵 日本04-1B
-      - 🇸🇬 新加坡04-1C
-      - 🇮🇪 爱尔兰-都柏林-1M
-      - 🇹🇼 台湾04-1B
-      - 🇺🇸 美国04-1A
-      - 🇭🇰 香港04-1B
-      - 🇯🇵 日本03-1C
-      - 🇺🇸 美国01-1D
-      - 🇭🇰 香港04-1D
-      - 🇸🇬 新加坡04-1B
-      - 🇮🇪 爱尔兰-都柏林-1B
-      - 🇸🇬 新加坡01-1C
-      - 🇭🇰 香港-线路1-1F
-      - 🇺🇸 美国之一
-      - 🇭🇰 香港-线路1-1K
-      - 🇬🇧 英国1
-      - 🇸🇬 新加坡04-1A
-      - 🇹🇼 台湾03-1C
-      - 🇮🇪 爱尔兰-都柏林-1K
-      - 🇯🇵 日本04-1D
-      - 🇹🇼 台湾01-1D
-      - 🇮🇪 爱尔兰-都柏林-1F
-      - 🇭🇰 香港02-1B
-      - 🇺🇸 美国NO.2
-      - 🇯🇵 日本NO.2
-      - 🇭🇰 香港-线路1-1A
-      - 🇮🇪 爱尔兰-都柏林-1C
-      - 🇭🇰 香港02-1D
-      - 🇺🇸 美国01-1A
-      - 🇸🇬 新加坡02-1A
-      - 🇭🇰 香港NO.2
-      - 🇭🇰 香港03-1C
-      - 🇺🇸 美国
-      - 🇰🇷 韩国 专线NO1
-      - 🇩🇪 德国之一
-      - 🇹🇼 台湾01-1C
-      - 🇺🇸 美国01-1C
-      - 🇮🇪 爱尔兰-都柏林-1I
-      - 🇭🇰 香港-线路1-1D
-      - 🇸🇬 新加坡03-1C
-      - 🇹🇼 台湾01-1A
-      - 🇭🇰 香港03-1B
-      - 🇸🇬 新加坡02-1D
-      - 🇹🇼 台湾03-1B
-      - 🇺🇸 美国02-1D
-      - 🇺🇸 美国之二
-      - 🇮🇪 爱尔兰-都柏林-1O
-      - 🇮🇪 爱尔兰-都柏林-1H
-      - 🇭🇰 香港-线路1-1C
-      - 🇭🇰 香港-线路1-1N
-      - 🇳🇱 荷兰
-      - 🇺🇸 美国04-1C
-      - 🇰🇷 韩国
-      - 🇮🇪 爱尔兰-都柏林-1J
-      - 🇯🇵 日本02-1A
       - 🇮🇪 爱尔兰-都柏林-1D
-      - 🇺🇸 美国01-1B
-      - 🇮🇪 爱尔兰-都柏林-1N
-      - 🇭🇰 香港-线路1-1H
-      - 🇷🇺 俄罗斯
-      - 🇮🇳 印度1
-      - 🇭🇰 香港03-1A
-      - 🇹🇼 台湾2
-      - 🇹🇼 台湾1
-      - 🇸🇬 新加坡01-1D
-      - 🇹🇼 台湾03-1D
-      - 🇩🇪 德国
-      - 🇺🇸 美国NO.1
-      - 🇸🇬 新加坡02-1B
-      - 🇰🇷 韩国 专线NO2
+      - 🇮🇪 爱尔兰-都柏林-1I
+      - 🇭🇰 香港03-1B
+      - 🇸🇬 新加坡02-1C
       - 🇺🇸 美国04-1B
-      - 🇭🇰 香港-线路1-1I
+      - 🇮🇳 印度1
+      - 🇹🇼 台湾01-1E
+      - 🇯🇵 日本04-1B
+      - 🇸🇬 新加坡03-1C
+      - 🇯🇵 日本03-1A
+      - 🇹🇼 台湾04-1E
+      - 🇮🇪 爱尔兰-都柏林-1F
+      - 🇰🇷 韩国
+      - 🇹🇼 台湾02-1A
+      - 🇹🇼 台湾03-1C
+      - 🇭🇰 香港03-1A
+      - 🇭🇰 香港-线路1-1H
+      - 🇯🇵 日本之一
+      - 🇮🇪 爱尔兰-都柏林-1N
+      - 🇹🇼 台湾03-1D
+      - 🇮🇪 爱尔兰-都柏林-1P
+      - 🇹🇼 台湾02-1E
+      - 🇸🇬 新加坡03-1D
+      - 🇦🇺 澳大利亚原生2
+      - 🇯🇵 日本NO.1
+      - 🇭🇰 香港-线路1-1B
+      - 🇭🇰 香港-线路1-1J
+      - 🇸🇬 新加坡04-1D
+      - 🇩🇪 德国之二
+      - 🇰🇷 韩国 专线NO1
+      - 🇯🇵 日本NO.2
+      - 🇺🇸 美国02-1E
+      - 🇺🇸 美国03-1A
+      - 🇺🇸 美国04-1E
+      - 🇨🇦 加拿大2
+      - 🇮🇪 爱尔兰-都柏林-1C
+      - 🇯🇵 日本04-1A
+      - 🇮🇪 爱尔兰-都柏林-1O
+      - 保加之一
+      - 🇯🇵 日本02-1D
+      - 🇦🇺 澳大利亚原生1
+      - 🇭🇰 香港02-1E
+      - 🇺🇸 美国01-1B
+      - 🇯🇵 日本04-1E
+      - 🇸🇬 新加坡02-1B
+      - 🇸🇬 新加坡03-1E
+      - 🇺🇸 美国02-1A
+      - 🇯🇵 日本03-1B
+      - 🇭🇰 香港-线路1-1D
+      - 🇬🇧 英国
+      - 🇸🇬 新加坡01-1A
+      - 🇹🇼 台湾02-1B
+      - 🇭🇰 香港02-1A
+      - 🇩🇪 德国
+      - 🇭🇰 香港-线路1-1O
+      - 🇮🇳 印度2
+      - 🇮🇪 爱尔兰-都柏林-1G
+      - 🇹🇼 台湾01-1A
+      - 🇯🇵 日本03-1E
+      - 🇸🇬 新加坡04-1E
+      - 🇹🇼 台湾02-1D
+      - 🇺🇸 美国04-1A
+      - 🇹🇼 台湾02-1C
+      - 🇸🇬 新加坡04-1B
+      - 🇭🇰 香港-线路1-1N
+      - 🇭🇰 香港03-1D
+      - 🇸🇬 新加坡04-1A
+      - 🇹🇼 台湾04-1A
+      - 🇯🇵 日本02-1C
+      - 🇭🇰 香港-线路1-1G
+      - 🇯🇵 日本02-1E
+      - 🇺🇸 美国03-1E
+      - 🇭🇰 香港NO.2
+      - 🇸🇬 新加坡04-1C
+      - 🇩🇪 德国之一
+      - 🇧🇷 巴西
+      - 🇯🇵 日本02-1B
+      - 🇹🇼 台湾04-1B
+      - 🇸🇬 新加坡02-1A
+      - 🇭🇰 香港03-1E
+      - 🇹🇼 台湾01-1D
+      - 🇹🇼 台湾04-1C
+      - 🇸🇬 新加坡NO.1
+      - 🇺🇸 美国NO.1
+      - 🇹🇷 土耳其
+      - 🇫🇷 法国1
+      - 🇺🇸 美国NO.2
+      - 🇸🇬 新加坡NO.2
+      - 🇯🇵 日本
+      - 🇭🇰 香港04-1C
+      - 🇯🇵 日本01-1D
+      - 🇹🇼 台湾01-1B
+      - 🇺🇸 美国02-1B
+      - 🇭🇰 香港-线路1-1K
+      - 🇮🇪 爱尔兰-都柏林-1H
+      - 🇹🇼 台湾1
+      - 🇸🇬 新加坡01-1C
+      - 🇯🇵 日本01-1E
+      - 🇭🇰 香港02-1B
+      - 🇺🇸 美国01-1A
+      - 🇹🇼 台湾2
+      - 🇺🇸 美国01-1C
+      - 🇹🇼 台湾04-1D
+      - 🇹🇼 台湾03-1B
+      - 🇯🇵 日本03-1D
+      - 🇮🇪 爱尔兰-都柏林-1B
+      - 🇮🇪 爱尔兰-都柏林-1E
+      - 🇯🇵 日本01-1A
+      - 🇮🇪 爱尔兰-都柏林-1M
+      - 🇺🇸 美国03-1D
+      - 🇭🇰 香港-线路1-1C
+      - 🇸🇬 新加坡02-1E
+      - 🇭🇰 香港-线路1-1E
+      - 🇭🇰 香港-线路1-1M
+      - 🇭🇰 香港-线路1-1P
+      - 🇮🇪 爱尔兰-都柏林-1A
+      - 🇬🇧 英国1
+      - 🇸🇬 新加坡03-1B
+      - 🇭🇰 香港04-1D
+      - 🇮🇪 爱尔兰-都柏林-1K
       - 🇹🇼 台湾03-1A
       - 🇸🇬 新加坡03-1A
-      - 🇩🇪 德国之二
-      - 🇺🇸 美国02-1A
-      - 🇸🇬 新加坡03-1B
-      - 🇯🇵 日本之一
-      - 🇮🇪 爱尔兰-都柏林-1G
-      - 🇹🇼 台湾02-1C
-      - 🇯🇵 日本04-1A
-      - 🇯🇵 日本01-1C
-      - 🇹🇼 台湾01-1B
-      - 🇧🇷 巴西
-      - 🇨🇦 加拿大2
-      - 🇹🇼 台湾04-1D
-      - 🇭🇰 香港02-1C
-      - 🇹🇼 台湾02-1A
-      - 🇯🇵 日本02-1B
-      - 🇭🇰 香港-线路1-1J
-      - 🇸🇬 新加坡01-1B
-      - 🇯🇵 日本04-1C
-      - 🇭🇰 香港-线路1-1M
-      - 🇯🇵 日本03-1B
-      - 🇸🇬 新加坡02-1C
-      - 🇭🇰 香港-线路1-1G
+      - 🇭🇰 香港02-1D
+      - 🇭🇰 香港-线路1-1I
+      - 🇰🇷 韩国 专线NO2
       - 🇬🇧 英国2
-      - 🇯🇵 日本03-1D
-      - 🇺🇸 美国03-1D
-      - 🇸🇬 新加坡NO.2
-      - 🇺🇸 美国04-1D
-      - 🇸🇬 新加坡04-1D
-      - 🇮🇪 爱尔兰-都柏林-1E
-      - 🇭🇰 香港-线路1-1E
       - 🇺🇸 美国03-1C
-      - 🇯🇵 日本02-1D
-      - 🇭🇰 香港-线路1-1B
-      - 🇺🇸 美国03-1A
-      - 🇬🇧 英国
-      - 🇺🇸 美国02-1B
-      - 🇯🇵 日本02-1C
-      - 🇯🇵 日本01-1A
-      - 🇯🇵 日本01-1D
-      - 🇯🇵 日本NO.1
-      - 🇮🇪 爱尔兰-都柏林-1A
-      - 🇸🇬 新加坡01-1A
-      - 🇭🇰 香港04-1C
-      - 🇹🇷 土耳其
-      - 保加之一
-      - 🇸🇬 新加坡03-1D
-      - 🇭🇰 香港-线路1-1O
-      - 🇯🇵 日本03-1A
-      - 🇺🇸 美国03-1B
-      - 🇭🇰 香港-线路1-1L
-      - 🇹🇼 台湾02-1B
-      - 🇦🇺 澳大利亚原生1
       - 🇯🇵 日本01-1B
-      - 🇸🇬 新加坡NO.1
-      - 🇹🇼 台湾02-1D
-      - 🇫🇷 法国1
-      - 🇯🇵 日本
-      - 🇮🇪 爱尔兰-都柏林-1L
-      - 🇮🇳 印度2
+      - 🇭🇰 香港-线路1-1F
+      - 🇺🇸 美国02-1C
+      - 🇨🇦 加拿大1
       - 🇭🇰 香港04-1A
+      - 🇸🇬 新加坡01-1B
+      - 🇺🇸 美国04-1C
+      - 🇭🇰 香港03-1C
+      - 🇭🇰 香港02-1C
+      - 🇭🇰 香港04-1E
+      - 🇯🇵 日本04-1D
+      - 🇯🇵 日本04-1C
+      - 🇺🇸 美国02-1D
+      - 🇭🇰 香港-线路1-1A
+      - 🇯🇵 日本02-1A
+      - 🇺🇸 美国04-1D
+      - 🇯🇵 日本01-1C
+      - 🇳🇱 荷兰
+      - 🇺🇸 美国03-1B
+      - 🇹🇼 台湾03-1E
+      - 🇭🇰 香港-线路1-1L
+      - 🇮🇪 爱尔兰-都柏林-1L
+      - 🇷🇺 俄罗斯
+      - 🇸🇬 新加坡02-1D
+      - 🇹🇼 台湾01-1C
+      - 🇭🇰 香港04-1B
+      - 🇺🇸 美国之一
+      - 🇫🇷 法国2
+      - 🇺🇸 美国
+      - 🇯🇵 日本03-1C
+      - 🇺🇸 美国01-1E
+      - 🇸🇬 新加坡01-1E
+      - 🇸🇬 新加坡01-1D
+      - 🇮🇪 爱尔兰-都柏林-1J
+      - 🇺🇸 美国01-1D
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -608,641 +688,729 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇦 加拿大1
-      - 🇭🇰 香港03-1D
-      - 🇺🇸 美国02-1C
-      - 🇦🇺 澳大利亚原生2
-      - 🇹🇼 台湾04-1A
-      - 🇫🇷 法国2
-      - 🇹🇼 台湾04-1C
-      - 🇭🇰 香港02-1A
-      - 🇯🇵 日本04-1B
-      - 🇸🇬 新加坡04-1C
-      - 🇮🇪 爱尔兰-都柏林-1M
-      - 🇹🇼 台湾04-1B
-      - 🇺🇸 美国04-1A
-      - 🇭🇰 香港04-1B
-      - 🇯🇵 日本03-1C
-      - 🇺🇸 美国01-1D
-      - 🇭🇰 香港04-1D
-      - 🇸🇬 新加坡04-1B
-      - 🇮🇪 爱尔兰-都柏林-1B
-      - 🇸🇬 新加坡01-1C
-      - 🇭🇰 香港-线路1-1F
-      - 🇺🇸 美国之一
-      - 🇭🇰 香港-线路1-1K
-      - 🇬🇧 英国1
-      - 🇸🇬 新加坡04-1A
-      - 🇹🇼 台湾03-1C
-      - 🇮🇪 爱尔兰-都柏林-1K
-      - 🇯🇵 日本04-1D
-      - 🇹🇼 台湾01-1D
-      - 🇮🇪 爱尔兰-都柏林-1F
-      - 🇭🇰 香港02-1B
-      - 🇺🇸 美国NO.2
-      - 🇯🇵 日本NO.2
-      - 🇭🇰 香港-线路1-1A
-      - 🇮🇪 爱尔兰-都柏林-1C
-      - 🇭🇰 香港02-1D
-      - 🇺🇸 美国01-1A
-      - 🇸🇬 新加坡02-1A
-      - 🇭🇰 香港NO.2
-      - 🇭🇰 香港03-1C
-      - 🇺🇸 美国
-      - 🇰🇷 韩国 专线NO1
-      - 🇩🇪 德国之一
-      - 🇹🇼 台湾01-1C
-      - 🇺🇸 美国01-1C
-      - 🇮🇪 爱尔兰-都柏林-1I
-      - 🇭🇰 香港-线路1-1D
-      - 🇸🇬 新加坡03-1C
-      - 🇹🇼 台湾01-1A
-      - 🇭🇰 香港03-1B
-      - 🇸🇬 新加坡02-1D
-      - 🇹🇼 台湾03-1B
-      - 🇺🇸 美国02-1D
-      - 🇺🇸 美国之二
-      - 🇮🇪 爱尔兰-都柏林-1O
-      - 🇮🇪 爱尔兰-都柏林-1H
-      - 🇭🇰 香港-线路1-1C
-      - 🇭🇰 香港-线路1-1N
-      - 🇳🇱 荷兰
-      - 🇺🇸 美国04-1C
-      - 🇰🇷 韩国
-      - 🇮🇪 爱尔兰-都柏林-1J
-      - 🇯🇵 日本02-1A
       - 🇮🇪 爱尔兰-都柏林-1D
-      - 🇺🇸 美国01-1B
-      - 🇮🇪 爱尔兰-都柏林-1N
-      - 🇭🇰 香港-线路1-1H
-      - 🇷🇺 俄罗斯
-      - 🇮🇳 印度1
-      - 🇭🇰 香港03-1A
-      - 🇹🇼 台湾2
-      - 🇹🇼 台湾1
-      - 🇸🇬 新加坡01-1D
-      - 🇹🇼 台湾03-1D
-      - 🇩🇪 德国
-      - 🇺🇸 美国NO.1
-      - 🇸🇬 新加坡02-1B
-      - 🇰🇷 韩国 专线NO2
+      - 🇮🇪 爱尔兰-都柏林-1I
+      - 🇭🇰 香港03-1B
+      - 🇸🇬 新加坡02-1C
       - 🇺🇸 美国04-1B
-      - 🇭🇰 香港-线路1-1I
+      - 🇮🇳 印度1
+      - 🇹🇼 台湾01-1E
+      - 🇯🇵 日本04-1B
+      - 🇸🇬 新加坡03-1C
+      - 🇯🇵 日本03-1A
+      - 🇹🇼 台湾04-1E
+      - 🇮🇪 爱尔兰-都柏林-1F
+      - 🇰🇷 韩国
+      - 🇹🇼 台湾02-1A
+      - 🇹🇼 台湾03-1C
+      - 🇭🇰 香港03-1A
+      - 🇭🇰 香港-线路1-1H
+      - 🇯🇵 日本之一
+      - 🇮🇪 爱尔兰-都柏林-1N
+      - 🇹🇼 台湾03-1D
+      - 🇮🇪 爱尔兰-都柏林-1P
+      - 🇹🇼 台湾02-1E
+      - 🇸🇬 新加坡03-1D
+      - 🇦🇺 澳大利亚原生2
+      - 🇯🇵 日本NO.1
+      - 🇭🇰 香港-线路1-1B
+      - 🇭🇰 香港-线路1-1J
+      - 🇸🇬 新加坡04-1D
+      - 🇩🇪 德国之二
+      - 🇰🇷 韩国 专线NO1
+      - 🇯🇵 日本NO.2
+      - 🇺🇸 美国02-1E
+      - 🇺🇸 美国03-1A
+      - 🇺🇸 美国04-1E
+      - 🇨🇦 加拿大2
+      - 🇮🇪 爱尔兰-都柏林-1C
+      - 🇯🇵 日本04-1A
+      - 🇮🇪 爱尔兰-都柏林-1O
+      - 保加之一
+      - 🇯🇵 日本02-1D
+      - 🇦🇺 澳大利亚原生1
+      - 🇭🇰 香港02-1E
+      - 🇺🇸 美国01-1B
+      - 🇯🇵 日本04-1E
+      - 🇸🇬 新加坡02-1B
+      - 🇸🇬 新加坡03-1E
+      - 🇺🇸 美国02-1A
+      - 🇯🇵 日本03-1B
+      - 🇭🇰 香港-线路1-1D
+      - 🇬🇧 英国
+      - 🇸🇬 新加坡01-1A
+      - 🇹🇼 台湾02-1B
+      - 🇭🇰 香港02-1A
+      - 🇩🇪 德国
+      - 🇭🇰 香港-线路1-1O
+      - 🇮🇳 印度2
+      - 🇮🇪 爱尔兰-都柏林-1G
+      - 🇹🇼 台湾01-1A
+      - 🇯🇵 日本03-1E
+      - 🇸🇬 新加坡04-1E
+      - 🇹🇼 台湾02-1D
+      - 🇺🇸 美国04-1A
+      - 🇹🇼 台湾02-1C
+      - 🇸🇬 新加坡04-1B
+      - 🇭🇰 香港-线路1-1N
+      - 🇭🇰 香港03-1D
+      - 🇸🇬 新加坡04-1A
+      - 🇹🇼 台湾04-1A
+      - 🇯🇵 日本02-1C
+      - 🇭🇰 香港-线路1-1G
+      - 🇯🇵 日本02-1E
+      - 🇺🇸 美国03-1E
+      - 🇭🇰 香港NO.2
+      - 🇸🇬 新加坡04-1C
+      - 🇩🇪 德国之一
+      - 🇧🇷 巴西
+      - 🇯🇵 日本02-1B
+      - 🇹🇼 台湾04-1B
+      - 🇸🇬 新加坡02-1A
+      - 🇭🇰 香港03-1E
+      - 🇹🇼 台湾01-1D
+      - 🇹🇼 台湾04-1C
+      - 🇸🇬 新加坡NO.1
+      - 🇺🇸 美国NO.1
+      - 🇹🇷 土耳其
+      - 🇫🇷 法国1
+      - 🇺🇸 美国NO.2
+      - 🇸🇬 新加坡NO.2
+      - 🇯🇵 日本
+      - 🇭🇰 香港04-1C
+      - 🇯🇵 日本01-1D
+      - 🇹🇼 台湾01-1B
+      - 🇺🇸 美国02-1B
+      - 🇭🇰 香港-线路1-1K
+      - 🇮🇪 爱尔兰-都柏林-1H
+      - 🇹🇼 台湾1
+      - 🇸🇬 新加坡01-1C
+      - 🇯🇵 日本01-1E
+      - 🇭🇰 香港02-1B
+      - 🇺🇸 美国01-1A
+      - 🇹🇼 台湾2
+      - 🇺🇸 美国01-1C
+      - 🇹🇼 台湾04-1D
+      - 🇹🇼 台湾03-1B
+      - 🇯🇵 日本03-1D
+      - 🇮🇪 爱尔兰-都柏林-1B
+      - 🇮🇪 爱尔兰-都柏林-1E
+      - 🇯🇵 日本01-1A
+      - 🇮🇪 爱尔兰-都柏林-1M
+      - 🇺🇸 美国03-1D
+      - 🇭🇰 香港-线路1-1C
+      - 🇸🇬 新加坡02-1E
+      - 🇭🇰 香港-线路1-1E
+      - 🇭🇰 香港-线路1-1M
+      - 🇭🇰 香港-线路1-1P
+      - 🇮🇪 爱尔兰-都柏林-1A
+      - 🇬🇧 英国1
+      - 🇸🇬 新加坡03-1B
+      - 🇭🇰 香港04-1D
+      - 🇮🇪 爱尔兰-都柏林-1K
       - 🇹🇼 台湾03-1A
       - 🇸🇬 新加坡03-1A
-      - 🇩🇪 德国之二
-      - 🇺🇸 美国02-1A
-      - 🇸🇬 新加坡03-1B
-      - 🇯🇵 日本之一
-      - 🇮🇪 爱尔兰-都柏林-1G
-      - 🇹🇼 台湾02-1C
-      - 🇯🇵 日本04-1A
-      - 🇯🇵 日本01-1C
-      - 🇹🇼 台湾01-1B
-      - 🇧🇷 巴西
-      - 🇨🇦 加拿大2
-      - 🇹🇼 台湾04-1D
-      - 🇭🇰 香港02-1C
-      - 🇹🇼 台湾02-1A
-      - 🇯🇵 日本02-1B
-      - 🇭🇰 香港-线路1-1J
-      - 🇸🇬 新加坡01-1B
-      - 🇯🇵 日本04-1C
-      - 🇭🇰 香港-线路1-1M
-      - 🇯🇵 日本03-1B
-      - 🇸🇬 新加坡02-1C
-      - 🇭🇰 香港-线路1-1G
+      - 🇭🇰 香港02-1D
+      - 🇭🇰 香港-线路1-1I
+      - 🇰🇷 韩国 专线NO2
       - 🇬🇧 英国2
-      - 🇯🇵 日本03-1D
-      - 🇺🇸 美国03-1D
-      - 🇸🇬 新加坡NO.2
-      - 🇺🇸 美国04-1D
-      - 🇸🇬 新加坡04-1D
-      - 🇮🇪 爱尔兰-都柏林-1E
-      - 🇭🇰 香港-线路1-1E
       - 🇺🇸 美国03-1C
-      - 🇯🇵 日本02-1D
-      - 🇭🇰 香港-线路1-1B
-      - 🇺🇸 美国03-1A
-      - 🇬🇧 英国
-      - 🇺🇸 美国02-1B
-      - 🇯🇵 日本02-1C
-      - 🇯🇵 日本01-1A
-      - 🇯🇵 日本01-1D
-      - 🇯🇵 日本NO.1
-      - 🇮🇪 爱尔兰-都柏林-1A
-      - 🇸🇬 新加坡01-1A
-      - 🇭🇰 香港04-1C
-      - 🇹🇷 土耳其
-      - 保加之一
-      - 🇸🇬 新加坡03-1D
-      - 🇭🇰 香港-线路1-1O
-      - 🇯🇵 日本03-1A
-      - 🇺🇸 美国03-1B
-      - 🇭🇰 香港-线路1-1L
-      - 🇹🇼 台湾02-1B
-      - 🇦🇺 澳大利亚原生1
       - 🇯🇵 日本01-1B
-      - 🇸🇬 新加坡NO.1
-      - 🇹🇼 台湾02-1D
-      - 🇫🇷 法国1
-      - 🇯🇵 日本
-      - 🇮🇪 爱尔兰-都柏林-1L
-      - 🇮🇳 印度2
+      - 🇭🇰 香港-线路1-1F
+      - 🇺🇸 美国02-1C
+      - 🇨🇦 加拿大1
       - 🇭🇰 香港04-1A
+      - 🇸🇬 新加坡01-1B
+      - 🇺🇸 美国04-1C
+      - 🇭🇰 香港03-1C
+      - 🇭🇰 香港02-1C
+      - 🇭🇰 香港04-1E
+      - 🇯🇵 日本04-1D
+      - 🇯🇵 日本04-1C
+      - 🇺🇸 美国02-1D
+      - 🇭🇰 香港-线路1-1A
+      - 🇯🇵 日本02-1A
+      - 🇺🇸 美国04-1D
+      - 🇯🇵 日本01-1C
+      - 🇳🇱 荷兰
+      - 🇺🇸 美国03-1B
+      - 🇹🇼 台湾03-1E
+      - 🇭🇰 香港-线路1-1L
+      - 🇮🇪 爱尔兰-都柏林-1L
+      - 🇷🇺 俄罗斯
+      - 🇸🇬 新加坡02-1D
+      - 🇹🇼 台湾01-1C
+      - 🇭🇰 香港04-1B
+      - 🇺🇸 美国之一
+      - 🇫🇷 法国2
+      - 🇺🇸 美国
+      - 🇯🇵 日本03-1C
+      - 🇺🇸 美国01-1E
+      - 🇸🇬 新加坡01-1E
+      - 🇸🇬 新加坡01-1D
+      - 🇮🇪 爱尔兰-都柏林-1J
+      - 🇺🇸 美国01-1D
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 🇭🇰 香港03-1B
+      - 🇹🇼 台湾01-1E
+      - 🇹🇼 台湾04-1E
+      - 🇹🇼 台湾02-1A
+      - 🇹🇼 台湾03-1C
+      - 🇭🇰 香港03-1A
+      - 🇭🇰 香港-线路1-1H
+      - 🇹🇼 台湾03-1D
+      - 🇹🇼 台湾02-1E
+      - 🇭🇰 香港-线路1-1B
+      - 🇭🇰 香港-线路1-1J
+      - 🇭🇰 香港02-1E
+      - 🇭🇰 香港-线路1-1D
+      - 🇹🇼 台湾02-1B
+      - 🇭🇰 香港02-1A
+      - 🇭🇰 香港-线路1-1O
+      - 🇹🇼 台湾01-1A
+      - 🇹🇼 台湾02-1D
+      - 🇹🇼 台湾02-1C
+      - 🇭🇰 香港-线路1-1N
       - 🇭🇰 香港03-1D
       - 🇹🇼 台湾04-1A
-      - 🇹🇼 台湾04-1C
-      - 🇭🇰 香港02-1A
-      - 🇹🇼 台湾04-1B
-      - 🇭🇰 香港04-1B
-      - 🇭🇰 香港04-1D
-      - 🇭🇰 香港-线路1-1F
-      - 🇭🇰 香港-线路1-1K
-      - 🇹🇼 台湾03-1C
-      - 🇹🇼 台湾01-1D
-      - 🇭🇰 香港02-1B
-      - 🇭🇰 香港-线路1-1A
-      - 🇭🇰 香港02-1D
+      - 🇭🇰 香港-线路1-1G
       - 🇭🇰 香港NO.2
-      - 🇭🇰 香港03-1C
-      - 🇹🇼 台湾01-1C
-      - 🇭🇰 香港-线路1-1D
-      - 🇹🇼 台湾01-1A
-      - 🇭🇰 香港03-1B
+      - 🇹🇼 台湾04-1B
+      - 🇭🇰 香港03-1E
+      - 🇹🇼 台湾01-1D
+      - 🇹🇼 台湾04-1C
+      - 🇭🇰 香港04-1C
+      - 🇹🇼 台湾01-1B
+      - 🇭🇰 香港-线路1-1K
+      - 🇹🇼 台湾1
+      - 🇭🇰 香港02-1B
+      - 🇹🇼 台湾2
+      - 🇹🇼 台湾04-1D
       - 🇹🇼 台湾03-1B
       - 🇭🇰 香港-线路1-1C
-      - 🇭🇰 香港-线路1-1N
-      - 🇭🇰 香港-线路1-1H
-      - 🇭🇰 香港03-1A
-      - 🇹🇼 台湾2
-      - 🇹🇼 台湾1
-      - 🇹🇼 台湾03-1D
-      - 🇭🇰 香港-线路1-1I
-      - 🇹🇼 台湾03-1A
-      - 🇹🇼 台湾02-1C
-      - 🇹🇼 台湾01-1B
-      - 🇹🇼 台湾04-1D
-      - 🇭🇰 香港02-1C
-      - 🇹🇼 台湾02-1A
-      - 🇭🇰 香港-线路1-1J
-      - 🇭🇰 香港-线路1-1M
-      - 🇭🇰 香港-线路1-1G
       - 🇭🇰 香港-线路1-1E
-      - 🇭🇰 香港-线路1-1B
-      - 🇭🇰 香港04-1C
-      - 🇭🇰 香港-线路1-1O
-      - 🇭🇰 香港-线路1-1L
-      - 🇹🇼 台湾02-1B
-      - 🇹🇼 台湾02-1D
+      - 🇭🇰 香港-线路1-1M
+      - 🇭🇰 香港-线路1-1P
+      - 🇭🇰 香港04-1D
+      - 🇹🇼 台湾03-1A
+      - 🇭🇰 香港02-1D
+      - 🇭🇰 香港-线路1-1I
+      - 🇭🇰 香港-线路1-1F
       - 🇭🇰 香港04-1A
+      - 🇭🇰 香港03-1C
+      - 🇭🇰 香港02-1C
+      - 🇭🇰 香港04-1E
+      - 🇭🇰 香港-线路1-1A
+      - 🇹🇼 台湾03-1E
+      - 🇭🇰 香港-线路1-1L
+      - 🇹🇼 台湾01-1C
+      - 🇭🇰 香港04-1B
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇨🇦 加拿大1
-      - 🇭🇰 香港03-1D
-      - 🇺🇸 美国02-1C
-      - 🇦🇺 澳大利亚原生2
-      - 🇹🇼 台湾04-1A
-      - 🇫🇷 法国2
-      - 🇹🇼 台湾04-1C
-      - 🇭🇰 香港02-1A
-      - 🇯🇵 日本04-1B
-      - 🇸🇬 新加坡04-1C
-      - 🇮🇪 爱尔兰-都柏林-1M
-      - 🇹🇼 台湾04-1B
-      - 🇺🇸 美国04-1A
-      - 🇭🇰 香港04-1B
-      - 🇯🇵 日本03-1C
-      - 🇺🇸 美国01-1D
-      - 🇭🇰 香港04-1D
-      - 🇸🇬 新加坡04-1B
-      - 🇮🇪 爱尔兰-都柏林-1B
-      - 🇸🇬 新加坡01-1C
-      - 🇭🇰 香港-线路1-1F
-      - 🇺🇸 美国之一
-      - 🇭🇰 香港-线路1-1K
-      - 🇬🇧 英国1
-      - 🇸🇬 新加坡04-1A
-      - 🇹🇼 台湾03-1C
-      - 🇮🇪 爱尔兰-都柏林-1K
-      - 🇯🇵 日本04-1D
-      - 🇹🇼 台湾01-1D
-      - 🇮🇪 爱尔兰-都柏林-1F
-      - 🇭🇰 香港02-1B
-      - 🇺🇸 美国NO.2
-      - 🇯🇵 日本NO.2
-      - 🇭🇰 香港-线路1-1A
-      - 🇮🇪 爱尔兰-都柏林-1C
-      - 🇭🇰 香港02-1D
-      - 🇺🇸 美国01-1A
-      - 🇸🇬 新加坡02-1A
-      - 🇭🇰 香港NO.2
-      - 🇭🇰 香港03-1C
-      - 🇺🇸 美国
-      - 🇰🇷 韩国 专线NO1
-      - 🇩🇪 德国之一
-      - 🇹🇼 台湾01-1C
-      - 🇺🇸 美国01-1C
-      - 🇮🇪 爱尔兰-都柏林-1I
-      - 🇭🇰 香港-线路1-1D
-      - 🇸🇬 新加坡03-1C
-      - 🇹🇼 台湾01-1A
-      - 🇭🇰 香港03-1B
-      - 🇸🇬 新加坡02-1D
-      - 🇹🇼 台湾03-1B
-      - 🇺🇸 美国02-1D
-      - 🇺🇸 美国之二
-      - 🇮🇪 爱尔兰-都柏林-1O
-      - 🇮🇪 爱尔兰-都柏林-1H
-      - 🇭🇰 香港-线路1-1C
-      - 🇭🇰 香港-线路1-1N
-      - 🇳🇱 荷兰
-      - 🇺🇸 美国04-1C
-      - 🇰🇷 韩国
-      - 🇮🇪 爱尔兰-都柏林-1J
-      - 🇯🇵 日本02-1A
       - 🇮🇪 爱尔兰-都柏林-1D
-      - 🇺🇸 美国01-1B
-      - 🇮🇪 爱尔兰-都柏林-1N
-      - 🇭🇰 香港-线路1-1H
-      - 🇷🇺 俄罗斯
-      - 🇮🇳 印度1
-      - 🇭🇰 香港03-1A
-      - 🇹🇼 台湾2
-      - 🇹🇼 台湾1
-      - 🇸🇬 新加坡01-1D
-      - 🇹🇼 台湾03-1D
-      - 🇩🇪 德国
-      - 🇺🇸 美国NO.1
-      - 🇸🇬 新加坡02-1B
-      - 🇰🇷 韩国 专线NO2
+      - 🇮🇪 爱尔兰-都柏林-1I
+      - 🇭🇰 香港03-1B
+      - 🇸🇬 新加坡02-1C
       - 🇺🇸 美国04-1B
-      - 🇭🇰 香港-线路1-1I
+      - 🇮🇳 印度1
+      - 🇹🇼 台湾01-1E
+      - 🇯🇵 日本04-1B
+      - 🇸🇬 新加坡03-1C
+      - 🇯🇵 日本03-1A
+      - 🇹🇼 台湾04-1E
+      - 🇮🇪 爱尔兰-都柏林-1F
+      - 🇰🇷 韩国
+      - 🇹🇼 台湾02-1A
+      - 🇹🇼 台湾03-1C
+      - 🇭🇰 香港03-1A
+      - 🇭🇰 香港-线路1-1H
+      - 🇯🇵 日本之一
+      - 🇮🇪 爱尔兰-都柏林-1N
+      - 🇹🇼 台湾03-1D
+      - 🇮🇪 爱尔兰-都柏林-1P
+      - 🇹🇼 台湾02-1E
+      - 🇸🇬 新加坡03-1D
+      - 🇦🇺 澳大利亚原生2
+      - 🇯🇵 日本NO.1
+      - 🇭🇰 香港-线路1-1B
+      - 🇭🇰 香港-线路1-1J
+      - 🇸🇬 新加坡04-1D
+      - 🇩🇪 德国之二
+      - 🇰🇷 韩国 专线NO1
+      - 🇯🇵 日本NO.2
+      - 🇺🇸 美国02-1E
+      - 🇺🇸 美国03-1A
+      - 🇺🇸 美国04-1E
+      - 🇨🇦 加拿大2
+      - 🇮🇪 爱尔兰-都柏林-1C
+      - 🇯🇵 日本04-1A
+      - 🇮🇪 爱尔兰-都柏林-1O
+      - 保加之一
+      - 🇯🇵 日本02-1D
+      - 🇦🇺 澳大利亚原生1
+      - 🇭🇰 香港02-1E
+      - 🇺🇸 美国01-1B
+      - 🇯🇵 日本04-1E
+      - 🇸🇬 新加坡02-1B
+      - 🇸🇬 新加坡03-1E
+      - 🇺🇸 美国02-1A
+      - 🇯🇵 日本03-1B
+      - 🇭🇰 香港-线路1-1D
+      - 🇬🇧 英国
+      - 🇸🇬 新加坡01-1A
+      - 🇹🇼 台湾02-1B
+      - 🇭🇰 香港02-1A
+      - 🇩🇪 德国
+      - 🇭🇰 香港-线路1-1O
+      - 🇮🇳 印度2
+      - 🇮🇪 爱尔兰-都柏林-1G
+      - 🇹🇼 台湾01-1A
+      - 🇯🇵 日本03-1E
+      - 🇸🇬 新加坡04-1E
+      - 🇹🇼 台湾02-1D
+      - 🇺🇸 美国04-1A
+      - 🇹🇼 台湾02-1C
+      - 🇸🇬 新加坡04-1B
+      - 🇭🇰 香港-线路1-1N
+      - 🇭🇰 香港03-1D
+      - 🇸🇬 新加坡04-1A
+      - 🇹🇼 台湾04-1A
+      - 🇯🇵 日本02-1C
+      - 🇭🇰 香港-线路1-1G
+      - 🇯🇵 日本02-1E
+      - 🇺🇸 美国03-1E
+      - 🇭🇰 香港NO.2
+      - 🇸🇬 新加坡04-1C
+      - 🇩🇪 德国之一
+      - 🇧🇷 巴西
+      - 🇯🇵 日本02-1B
+      - 🇹🇼 台湾04-1B
+      - 🇸🇬 新加坡02-1A
+      - 🇭🇰 香港03-1E
+      - 🇹🇼 台湾01-1D
+      - 🇹🇼 台湾04-1C
+      - 🇸🇬 新加坡NO.1
+      - 🇺🇸 美国NO.1
+      - 🇹🇷 土耳其
+      - 🇫🇷 法国1
+      - 🇺🇸 美国NO.2
+      - 🇸🇬 新加坡NO.2
+      - 🇯🇵 日本
+      - 🇭🇰 香港04-1C
+      - 🇯🇵 日本01-1D
+      - 🇹🇼 台湾01-1B
+      - 🇺🇸 美国02-1B
+      - 🇭🇰 香港-线路1-1K
+      - 🇮🇪 爱尔兰-都柏林-1H
+      - 🇹🇼 台湾1
+      - 🇸🇬 新加坡01-1C
+      - 🇯🇵 日本01-1E
+      - 🇭🇰 香港02-1B
+      - 🇺🇸 美国01-1A
+      - 🇹🇼 台湾2
+      - 🇺🇸 美国01-1C
+      - 🇹🇼 台湾04-1D
+      - 🇹🇼 台湾03-1B
+      - 🇯🇵 日本03-1D
+      - 🇮🇪 爱尔兰-都柏林-1B
+      - 🇮🇪 爱尔兰-都柏林-1E
+      - 🇯🇵 日本01-1A
+      - 🇮🇪 爱尔兰-都柏林-1M
+      - 🇺🇸 美国03-1D
+      - 🇭🇰 香港-线路1-1C
+      - 🇸🇬 新加坡02-1E
+      - 🇭🇰 香港-线路1-1E
+      - 🇭🇰 香港-线路1-1M
+      - 🇭🇰 香港-线路1-1P
+      - 🇮🇪 爱尔兰-都柏林-1A
+      - 🇬🇧 英国1
+      - 🇸🇬 新加坡03-1B
+      - 🇭🇰 香港04-1D
+      - 🇮🇪 爱尔兰-都柏林-1K
       - 🇹🇼 台湾03-1A
       - 🇸🇬 新加坡03-1A
-      - 🇩🇪 德国之二
-      - 🇺🇸 美国02-1A
-      - 🇸🇬 新加坡03-1B
-      - 🇯🇵 日本之一
-      - 🇮🇪 爱尔兰-都柏林-1G
-      - 🇹🇼 台湾02-1C
-      - 🇯🇵 日本04-1A
-      - 🇯🇵 日本01-1C
-      - 🇹🇼 台湾01-1B
-      - 🇧🇷 巴西
-      - 🇨🇦 加拿大2
-      - 🇹🇼 台湾04-1D
-      - 🇭🇰 香港02-1C
-      - 🇹🇼 台湾02-1A
-      - 🇯🇵 日本02-1B
-      - 🇭🇰 香港-线路1-1J
-      - 🇸🇬 新加坡01-1B
-      - 🇯🇵 日本04-1C
-      - 🇭🇰 香港-线路1-1M
-      - 🇯🇵 日本03-1B
-      - 🇸🇬 新加坡02-1C
-      - 🇭🇰 香港-线路1-1G
+      - 🇭🇰 香港02-1D
+      - 🇭🇰 香港-线路1-1I
+      - 🇰🇷 韩国 专线NO2
       - 🇬🇧 英国2
-      - 🇯🇵 日本03-1D
-      - 🇺🇸 美国03-1D
-      - 🇸🇬 新加坡NO.2
-      - 🇺🇸 美国04-1D
-      - 🇸🇬 新加坡04-1D
-      - 🇮🇪 爱尔兰-都柏林-1E
-      - 🇭🇰 香港-线路1-1E
       - 🇺🇸 美国03-1C
-      - 🇯🇵 日本02-1D
-      - 🇭🇰 香港-线路1-1B
-      - 🇺🇸 美国03-1A
-      - 🇬🇧 英国
-      - 🇺🇸 美国02-1B
-      - 🇯🇵 日本02-1C
-      - 🇯🇵 日本01-1A
-      - 🇯🇵 日本01-1D
-      - 🇯🇵 日本NO.1
-      - 🇮🇪 爱尔兰-都柏林-1A
-      - 🇸🇬 新加坡01-1A
-      - 🇭🇰 香港04-1C
-      - 🇹🇷 土耳其
-      - 保加之一
-      - 🇸🇬 新加坡03-1D
-      - 🇭🇰 香港-线路1-1O
-      - 🇯🇵 日本03-1A
-      - 🇺🇸 美国03-1B
-      - 🇭🇰 香港-线路1-1L
-      - 🇹🇼 台湾02-1B
-      - 🇦🇺 澳大利亚原生1
       - 🇯🇵 日本01-1B
-      - 🇸🇬 新加坡NO.1
-      - 🇹🇼 台湾02-1D
-      - 🇫🇷 法国1
-      - 🇯🇵 日本
-      - 🇮🇪 爱尔兰-都柏林-1L
-      - 🇮🇳 印度2
+      - 🇭🇰 香港-线路1-1F
+      - 🇺🇸 美国02-1C
+      - 🇨🇦 加拿大1
       - 🇭🇰 香港04-1A
+      - 🇸🇬 新加坡01-1B
+      - 🇺🇸 美国04-1C
+      - 🇭🇰 香港03-1C
+      - 🇭🇰 香港02-1C
+      - 🇭🇰 香港04-1E
+      - 🇯🇵 日本04-1D
+      - 🇯🇵 日本04-1C
+      - 🇺🇸 美国02-1D
+      - 🇭🇰 香港-线路1-1A
+      - 🇯🇵 日本02-1A
+      - 🇺🇸 美国04-1D
+      - 🇯🇵 日本01-1C
+      - 🇳🇱 荷兰
+      - 🇺🇸 美国03-1B
+      - 🇹🇼 台湾03-1E
+      - 🇭🇰 香港-线路1-1L
+      - 🇮🇪 爱尔兰-都柏林-1L
+      - 🇷🇺 俄罗斯
+      - 🇸🇬 新加坡02-1D
+      - 🇹🇼 台湾01-1C
+      - 🇭🇰 香港04-1B
+      - 🇺🇸 美国之一
+      - 🇫🇷 法国2
+      - 🇺🇸 美国
+      - 🇯🇵 日本03-1C
+      - 🇺🇸 美国01-1E
+      - 🇸🇬 新加坡01-1E
+      - 🇸🇬 新加坡01-1D
+      - 🇮🇪 爱尔兰-都柏林-1J
+      - 🇺🇸 美国01-1D
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇨🇦 加拿大1
-      - 🇭🇰 香港03-1D
-      - 🇺🇸 美国02-1C
-      - 🇦🇺 澳大利亚原生2
-      - 🇹🇼 台湾04-1A
-      - 🇫🇷 法国2
-      - 🇹🇼 台湾04-1C
-      - 🇭🇰 香港02-1A
-      - 🇯🇵 日本04-1B
-      - 🇸🇬 新加坡04-1C
-      - 🇮🇪 爱尔兰-都柏林-1M
-      - 🇹🇼 台湾04-1B
-      - 🇺🇸 美国04-1A
-      - 🇭🇰 香港04-1B
-      - 🇯🇵 日本03-1C
-      - 🇺🇸 美国01-1D
-      - 🇭🇰 香港04-1D
-      - 🇸🇬 新加坡04-1B
-      - 🇮🇪 爱尔兰-都柏林-1B
-      - 🇸🇬 新加坡01-1C
-      - 🇭🇰 香港-线路1-1F
-      - 🇺🇸 美国之一
-      - 🇭🇰 香港-线路1-1K
-      - 🇬🇧 英国1
-      - 🇸🇬 新加坡04-1A
-      - 🇹🇼 台湾03-1C
-      - 🇮🇪 爱尔兰-都柏林-1K
-      - 🇯🇵 日本04-1D
-      - 🇹🇼 台湾01-1D
-      - 🇮🇪 爱尔兰-都柏林-1F
-      - 🇭🇰 香港02-1B
-      - 🇺🇸 美国NO.2
-      - 🇯🇵 日本NO.2
-      - 🇭🇰 香港-线路1-1A
-      - 🇮🇪 爱尔兰-都柏林-1C
-      - 🇭🇰 香港02-1D
-      - 🇺🇸 美国01-1A
-      - 🇸🇬 新加坡02-1A
-      - 🇭🇰 香港NO.2
-      - 🇭🇰 香港03-1C
-      - 🇺🇸 美国
-      - 🇰🇷 韩国 专线NO1
-      - 🇩🇪 德国之一
-      - 🇹🇼 台湾01-1C
-      - 🇺🇸 美国01-1C
-      - 🇮🇪 爱尔兰-都柏林-1I
-      - 🇭🇰 香港-线路1-1D
-      - 🇸🇬 新加坡03-1C
-      - 🇹🇼 台湾01-1A
-      - 🇭🇰 香港03-1B
-      - 🇸🇬 新加坡02-1D
-      - 🇹🇼 台湾03-1B
-      - 🇺🇸 美国02-1D
-      - 🇺🇸 美国之二
-      - 🇮🇪 爱尔兰-都柏林-1O
-      - 🇮🇪 爱尔兰-都柏林-1H
-      - 🇭🇰 香港-线路1-1C
-      - 🇭🇰 香港-线路1-1N
-      - 🇳🇱 荷兰
-      - 🇺🇸 美国04-1C
-      - 🇰🇷 韩国
-      - 🇮🇪 爱尔兰-都柏林-1J
-      - 🇯🇵 日本02-1A
       - 🇮🇪 爱尔兰-都柏林-1D
-      - 🇺🇸 美国01-1B
-      - 🇮🇪 爱尔兰-都柏林-1N
-      - 🇭🇰 香港-线路1-1H
-      - 🇷🇺 俄罗斯
-      - 🇮🇳 印度1
-      - 🇭🇰 香港03-1A
-      - 🇹🇼 台湾2
-      - 🇹🇼 台湾1
-      - 🇸🇬 新加坡01-1D
-      - 🇹🇼 台湾03-1D
-      - 🇩🇪 德国
-      - 🇺🇸 美国NO.1
-      - 🇸🇬 新加坡02-1B
-      - 🇰🇷 韩国 专线NO2
+      - 🇮🇪 爱尔兰-都柏林-1I
+      - 🇭🇰 香港03-1B
+      - 🇸🇬 新加坡02-1C
       - 🇺🇸 美国04-1B
-      - 🇭🇰 香港-线路1-1I
+      - 🇮🇳 印度1
+      - 🇹🇼 台湾01-1E
+      - 🇯🇵 日本04-1B
+      - 🇸🇬 新加坡03-1C
+      - 🇯🇵 日本03-1A
+      - 🇹🇼 台湾04-1E
+      - 🇮🇪 爱尔兰-都柏林-1F
+      - 🇰🇷 韩国
+      - 🇹🇼 台湾02-1A
+      - 🇹🇼 台湾03-1C
+      - 🇭🇰 香港03-1A
+      - 🇭🇰 香港-线路1-1H
+      - 🇯🇵 日本之一
+      - 🇮🇪 爱尔兰-都柏林-1N
+      - 🇹🇼 台湾03-1D
+      - 🇮🇪 爱尔兰-都柏林-1P
+      - 🇹🇼 台湾02-1E
+      - 🇸🇬 新加坡03-1D
+      - 🇦🇺 澳大利亚原生2
+      - 🇯🇵 日本NO.1
+      - 🇭🇰 香港-线路1-1B
+      - 🇭🇰 香港-线路1-1J
+      - 🇸🇬 新加坡04-1D
+      - 🇩🇪 德国之二
+      - 🇰🇷 韩国 专线NO1
+      - 🇯🇵 日本NO.2
+      - 🇺🇸 美国02-1E
+      - 🇺🇸 美国03-1A
+      - 🇺🇸 美国04-1E
+      - 🇨🇦 加拿大2
+      - 🇮🇪 爱尔兰-都柏林-1C
+      - 🇯🇵 日本04-1A
+      - 🇮🇪 爱尔兰-都柏林-1O
+      - 保加之一
+      - 🇯🇵 日本02-1D
+      - 🇦🇺 澳大利亚原生1
+      - 🇭🇰 香港02-1E
+      - 🇺🇸 美国01-1B
+      - 🇯🇵 日本04-1E
+      - 🇸🇬 新加坡02-1B
+      - 🇸🇬 新加坡03-1E
+      - 🇺🇸 美国02-1A
+      - 🇯🇵 日本03-1B
+      - 🇭🇰 香港-线路1-1D
+      - 🇬🇧 英国
+      - 🇸🇬 新加坡01-1A
+      - 🇹🇼 台湾02-1B
+      - 🇭🇰 香港02-1A
+      - 🇩🇪 德国
+      - 🇭🇰 香港-线路1-1O
+      - 🇮🇳 印度2
+      - 🇮🇪 爱尔兰-都柏林-1G
+      - 🇹🇼 台湾01-1A
+      - 🇯🇵 日本03-1E
+      - 🇸🇬 新加坡04-1E
+      - 🇹🇼 台湾02-1D
+      - 🇺🇸 美国04-1A
+      - 🇹🇼 台湾02-1C
+      - 🇸🇬 新加坡04-1B
+      - 🇭🇰 香港-线路1-1N
+      - 🇭🇰 香港03-1D
+      - 🇸🇬 新加坡04-1A
+      - 🇹🇼 台湾04-1A
+      - 🇯🇵 日本02-1C
+      - 🇭🇰 香港-线路1-1G
+      - 🇯🇵 日本02-1E
+      - 🇺🇸 美国03-1E
+      - 🇭🇰 香港NO.2
+      - 🇸🇬 新加坡04-1C
+      - 🇩🇪 德国之一
+      - 🇧🇷 巴西
+      - 🇯🇵 日本02-1B
+      - 🇹🇼 台湾04-1B
+      - 🇸🇬 新加坡02-1A
+      - 🇭🇰 香港03-1E
+      - 🇹🇼 台湾01-1D
+      - 🇹🇼 台湾04-1C
+      - 🇸🇬 新加坡NO.1
+      - 🇺🇸 美国NO.1
+      - 🇹🇷 土耳其
+      - 🇫🇷 法国1
+      - 🇺🇸 美国NO.2
+      - 🇸🇬 新加坡NO.2
+      - 🇯🇵 日本
+      - 🇭🇰 香港04-1C
+      - 🇯🇵 日本01-1D
+      - 🇹🇼 台湾01-1B
+      - 🇺🇸 美国02-1B
+      - 🇭🇰 香港-线路1-1K
+      - 🇮🇪 爱尔兰-都柏林-1H
+      - 🇹🇼 台湾1
+      - 🇸🇬 新加坡01-1C
+      - 🇯🇵 日本01-1E
+      - 🇭🇰 香港02-1B
+      - 🇺🇸 美国01-1A
+      - 🇹🇼 台湾2
+      - 🇺🇸 美国01-1C
+      - 🇹🇼 台湾04-1D
+      - 🇹🇼 台湾03-1B
+      - 🇯🇵 日本03-1D
+      - 🇮🇪 爱尔兰-都柏林-1B
+      - 🇮🇪 爱尔兰-都柏林-1E
+      - 🇯🇵 日本01-1A
+      - 🇮🇪 爱尔兰-都柏林-1M
+      - 🇺🇸 美国03-1D
+      - 🇭🇰 香港-线路1-1C
+      - 🇸🇬 新加坡02-1E
+      - 🇭🇰 香港-线路1-1E
+      - 🇭🇰 香港-线路1-1M
+      - 🇭🇰 香港-线路1-1P
+      - 🇮🇪 爱尔兰-都柏林-1A
+      - 🇬🇧 英国1
+      - 🇸🇬 新加坡03-1B
+      - 🇭🇰 香港04-1D
+      - 🇮🇪 爱尔兰-都柏林-1K
       - 🇹🇼 台湾03-1A
       - 🇸🇬 新加坡03-1A
-      - 🇩🇪 德国之二
-      - 🇺🇸 美国02-1A
-      - 🇸🇬 新加坡03-1B
-      - 🇯🇵 日本之一
-      - 🇮🇪 爱尔兰-都柏林-1G
-      - 🇹🇼 台湾02-1C
-      - 🇯🇵 日本04-1A
-      - 🇯🇵 日本01-1C
-      - 🇹🇼 台湾01-1B
-      - 🇧🇷 巴西
-      - 🇨🇦 加拿大2
-      - 🇹🇼 台湾04-1D
-      - 🇭🇰 香港02-1C
-      - 🇹🇼 台湾02-1A
-      - 🇯🇵 日本02-1B
-      - 🇭🇰 香港-线路1-1J
-      - 🇸🇬 新加坡01-1B
-      - 🇯🇵 日本04-1C
-      - 🇭🇰 香港-线路1-1M
-      - 🇯🇵 日本03-1B
-      - 🇸🇬 新加坡02-1C
-      - 🇭🇰 香港-线路1-1G
+      - 🇭🇰 香港02-1D
+      - 🇭🇰 香港-线路1-1I
+      - 🇰🇷 韩国 专线NO2
       - 🇬🇧 英国2
-      - 🇯🇵 日本03-1D
-      - 🇺🇸 美国03-1D
-      - 🇸🇬 新加坡NO.2
-      - 🇺🇸 美国04-1D
-      - 🇸🇬 新加坡04-1D
-      - 🇮🇪 爱尔兰-都柏林-1E
-      - 🇭🇰 香港-线路1-1E
       - 🇺🇸 美国03-1C
-      - 🇯🇵 日本02-1D
-      - 🇭🇰 香港-线路1-1B
-      - 🇺🇸 美国03-1A
-      - 🇬🇧 英国
-      - 🇺🇸 美国02-1B
-      - 🇯🇵 日本02-1C
-      - 🇯🇵 日本01-1A
-      - 🇯🇵 日本01-1D
-      - 🇯🇵 日本NO.1
-      - 🇮🇪 爱尔兰-都柏林-1A
-      - 🇸🇬 新加坡01-1A
-      - 🇭🇰 香港04-1C
-      - 🇹🇷 土耳其
-      - 保加之一
-      - 🇸🇬 新加坡03-1D
-      - 🇭🇰 香港-线路1-1O
-      - 🇯🇵 日本03-1A
-      - 🇺🇸 美国03-1B
-      - 🇭🇰 香港-线路1-1L
-      - 🇹🇼 台湾02-1B
-      - 🇦🇺 澳大利亚原生1
       - 🇯🇵 日本01-1B
-      - 🇸🇬 新加坡NO.1
-      - 🇹🇼 台湾02-1D
-      - 🇫🇷 法国1
-      - 🇯🇵 日本
-      - 🇮🇪 爱尔兰-都柏林-1L
-      - 🇮🇳 印度2
+      - 🇭🇰 香港-线路1-1F
+      - 🇺🇸 美国02-1C
+      - 🇨🇦 加拿大1
       - 🇭🇰 香港04-1A
+      - 🇸🇬 新加坡01-1B
+      - 🇺🇸 美国04-1C
+      - 🇭🇰 香港03-1C
+      - 🇭🇰 香港02-1C
+      - 🇭🇰 香港04-1E
+      - 🇯🇵 日本04-1D
+      - 🇯🇵 日本04-1C
+      - 🇺🇸 美国02-1D
+      - 🇭🇰 香港-线路1-1A
+      - 🇯🇵 日本02-1A
+      - 🇺🇸 美国04-1D
+      - 🇯🇵 日本01-1C
+      - 🇳🇱 荷兰
+      - 🇺🇸 美国03-1B
+      - 🇹🇼 台湾03-1E
+      - 🇭🇰 香港-线路1-1L
+      - 🇮🇪 爱尔兰-都柏林-1L
+      - 🇷🇺 俄罗斯
+      - 🇸🇬 新加坡02-1D
+      - 🇹🇼 台湾01-1C
+      - 🇭🇰 香港04-1B
+      - 🇺🇸 美国之一
+      - 🇫🇷 法国2
+      - 🇺🇸 美国
+      - 🇯🇵 日本03-1C
+      - 🇺🇸 美国01-1E
+      - 🇸🇬 新加坡01-1E
+      - 🇸🇬 新加坡01-1D
+      - 🇮🇪 爱尔兰-都柏林-1J
+      - 🇺🇸 美国01-1D
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇦 加拿大1
-      - 🇭🇰 香港03-1D
-      - 🇺🇸 美国02-1C
-      - 🇦🇺 澳大利亚原生2
-      - 🇹🇼 台湾04-1A
-      - 🇫🇷 法国2
-      - 🇹🇼 台湾04-1C
-      - 🇭🇰 香港02-1A
-      - 🇯🇵 日本04-1B
-      - 🇸🇬 新加坡04-1C
-      - 🇮🇪 爱尔兰-都柏林-1M
-      - 🇹🇼 台湾04-1B
-      - 🇺🇸 美国04-1A
-      - 🇭🇰 香港04-1B
-      - 🇯🇵 日本03-1C
-      - 🇺🇸 美国01-1D
-      - 🇭🇰 香港04-1D
-      - 🇸🇬 新加坡04-1B
-      - 🇮🇪 爱尔兰-都柏林-1B
-      - 🇸🇬 新加坡01-1C
-      - 🇭🇰 香港-线路1-1F
-      - 🇺🇸 美国之一
-      - 🇭🇰 香港-线路1-1K
-      - 🇬🇧 英国1
-      - 🇸🇬 新加坡04-1A
-      - 🇹🇼 台湾03-1C
-      - 🇮🇪 爱尔兰-都柏林-1K
-      - 🇯🇵 日本04-1D
-      - 🇹🇼 台湾01-1D
-      - 🇮🇪 爱尔兰-都柏林-1F
-      - 🇭🇰 香港02-1B
-      - 🇺🇸 美国NO.2
-      - 🇯🇵 日本NO.2
-      - 🇭🇰 香港-线路1-1A
-      - 🇮🇪 爱尔兰-都柏林-1C
-      - 🇭🇰 香港02-1D
-      - 🇺🇸 美国01-1A
-      - 🇸🇬 新加坡02-1A
-      - 🇭🇰 香港NO.2
-      - 🇭🇰 香港03-1C
-      - 🇺🇸 美国
-      - 🇰🇷 韩国 专线NO1
-      - 🇩🇪 德国之一
-      - 🇹🇼 台湾01-1C
-      - 🇺🇸 美国01-1C
-      - 🇮🇪 爱尔兰-都柏林-1I
-      - 🇭🇰 香港-线路1-1D
-      - 🇸🇬 新加坡03-1C
-      - 🇹🇼 台湾01-1A
-      - 🇭🇰 香港03-1B
-      - 🇸🇬 新加坡02-1D
-      - 🇹🇼 台湾03-1B
-      - 🇺🇸 美国02-1D
-      - 🇺🇸 美国之二
-      - 🇮🇪 爱尔兰-都柏林-1O
-      - 🇮🇪 爱尔兰-都柏林-1H
-      - 🇭🇰 香港-线路1-1C
-      - 🇭🇰 香港-线路1-1N
-      - 🇳🇱 荷兰
-      - 🇺🇸 美国04-1C
-      - 🇰🇷 韩国
-      - 🇮🇪 爱尔兰-都柏林-1J
-      - 🇯🇵 日本02-1A
       - 🇮🇪 爱尔兰-都柏林-1D
-      - 🇺🇸 美国01-1B
-      - 🇮🇪 爱尔兰-都柏林-1N
-      - 🇭🇰 香港-线路1-1H
-      - 🇷🇺 俄罗斯
-      - 🇮🇳 印度1
-      - 🇭🇰 香港03-1A
-      - 🇹🇼 台湾2
-      - 🇹🇼 台湾1
-      - 🇸🇬 新加坡01-1D
-      - 🇹🇼 台湾03-1D
-      - 🇩🇪 德国
-      - 🇺🇸 美国NO.1
-      - 🇸🇬 新加坡02-1B
-      - 🇰🇷 韩国 专线NO2
+      - 🇮🇪 爱尔兰-都柏林-1I
+      - 🇭🇰 香港03-1B
+      - 🇸🇬 新加坡02-1C
       - 🇺🇸 美国04-1B
-      - 🇭🇰 香港-线路1-1I
+      - 🇮🇳 印度1
+      - 🇹🇼 台湾01-1E
+      - 🇯🇵 日本04-1B
+      - 🇸🇬 新加坡03-1C
+      - 🇯🇵 日本03-1A
+      - 🇹🇼 台湾04-1E
+      - 🇮🇪 爱尔兰-都柏林-1F
+      - 🇰🇷 韩国
+      - 🇹🇼 台湾02-1A
+      - 🇹🇼 台湾03-1C
+      - 🇭🇰 香港03-1A
+      - 🇭🇰 香港-线路1-1H
+      - 🇯🇵 日本之一
+      - 🇮🇪 爱尔兰-都柏林-1N
+      - 🇹🇼 台湾03-1D
+      - 🇮🇪 爱尔兰-都柏林-1P
+      - 🇹🇼 台湾02-1E
+      - 🇸🇬 新加坡03-1D
+      - 🇦🇺 澳大利亚原生2
+      - 🇯🇵 日本NO.1
+      - 🇭🇰 香港-线路1-1B
+      - 🇭🇰 香港-线路1-1J
+      - 🇸🇬 新加坡04-1D
+      - 🇩🇪 德国之二
+      - 🇰🇷 韩国 专线NO1
+      - 🇯🇵 日本NO.2
+      - 🇺🇸 美国02-1E
+      - 🇺🇸 美国03-1A
+      - 🇺🇸 美国04-1E
+      - 🇨🇦 加拿大2
+      - 🇮🇪 爱尔兰-都柏林-1C
+      - 🇯🇵 日本04-1A
+      - 🇮🇪 爱尔兰-都柏林-1O
+      - 保加之一
+      - 🇯🇵 日本02-1D
+      - 🇦🇺 澳大利亚原生1
+      - 🇭🇰 香港02-1E
+      - 🇺🇸 美国01-1B
+      - 🇯🇵 日本04-1E
+      - 🇸🇬 新加坡02-1B
+      - 🇸🇬 新加坡03-1E
+      - 🇺🇸 美国02-1A
+      - 🇯🇵 日本03-1B
+      - 🇭🇰 香港-线路1-1D
+      - 🇬🇧 英国
+      - 🇸🇬 新加坡01-1A
+      - 🇹🇼 台湾02-1B
+      - 🇭🇰 香港02-1A
+      - 🇩🇪 德国
+      - 🇭🇰 香港-线路1-1O
+      - 🇮🇳 印度2
+      - 🇮🇪 爱尔兰-都柏林-1G
+      - 🇹🇼 台湾01-1A
+      - 🇯🇵 日本03-1E
+      - 🇸🇬 新加坡04-1E
+      - 🇹🇼 台湾02-1D
+      - 🇺🇸 美国04-1A
+      - 🇹🇼 台湾02-1C
+      - 🇸🇬 新加坡04-1B
+      - 🇭🇰 香港-线路1-1N
+      - 🇭🇰 香港03-1D
+      - 🇸🇬 新加坡04-1A
+      - 🇹🇼 台湾04-1A
+      - 🇯🇵 日本02-1C
+      - 🇭🇰 香港-线路1-1G
+      - 🇯🇵 日本02-1E
+      - 🇺🇸 美国03-1E
+      - 🇭🇰 香港NO.2
+      - 🇸🇬 新加坡04-1C
+      - 🇩🇪 德国之一
+      - 🇧🇷 巴西
+      - 🇯🇵 日本02-1B
+      - 🇹🇼 台湾04-1B
+      - 🇸🇬 新加坡02-1A
+      - 🇭🇰 香港03-1E
+      - 🇹🇼 台湾01-1D
+      - 🇹🇼 台湾04-1C
+      - 🇸🇬 新加坡NO.1
+      - 🇺🇸 美国NO.1
+      - 🇹🇷 土耳其
+      - 🇫🇷 法国1
+      - 🇺🇸 美国NO.2
+      - 🇸🇬 新加坡NO.2
+      - 🇯🇵 日本
+      - 🇭🇰 香港04-1C
+      - 🇯🇵 日本01-1D
+      - 🇹🇼 台湾01-1B
+      - 🇺🇸 美国02-1B
+      - 🇭🇰 香港-线路1-1K
+      - 🇮🇪 爱尔兰-都柏林-1H
+      - 🇹🇼 台湾1
+      - 🇸🇬 新加坡01-1C
+      - 🇯🇵 日本01-1E
+      - 🇭🇰 香港02-1B
+      - 🇺🇸 美国01-1A
+      - 🇹🇼 台湾2
+      - 🇺🇸 美国01-1C
+      - 🇹🇼 台湾04-1D
+      - 🇹🇼 台湾03-1B
+      - 🇯🇵 日本03-1D
+      - 🇮🇪 爱尔兰-都柏林-1B
+      - 🇮🇪 爱尔兰-都柏林-1E
+      - 🇯🇵 日本01-1A
+      - 🇮🇪 爱尔兰-都柏林-1M
+      - 🇺🇸 美国03-1D
+      - 🇭🇰 香港-线路1-1C
+      - 🇸🇬 新加坡02-1E
+      - 🇭🇰 香港-线路1-1E
+      - 🇭🇰 香港-线路1-1M
+      - 🇭🇰 香港-线路1-1P
+      - 🇮🇪 爱尔兰-都柏林-1A
+      - 🇬🇧 英国1
+      - 🇸🇬 新加坡03-1B
+      - 🇭🇰 香港04-1D
+      - 🇮🇪 爱尔兰-都柏林-1K
       - 🇹🇼 台湾03-1A
       - 🇸🇬 新加坡03-1A
-      - 🇩🇪 德国之二
-      - 🇺🇸 美国02-1A
-      - 🇸🇬 新加坡03-1B
-      - 🇯🇵 日本之一
-      - 🇮🇪 爱尔兰-都柏林-1G
-      - 🇹🇼 台湾02-1C
-      - 🇯🇵 日本04-1A
-      - 🇯🇵 日本01-1C
-      - 🇹🇼 台湾01-1B
-      - 🇧🇷 巴西
-      - 🇨🇦 加拿大2
-      - 🇹🇼 台湾04-1D
-      - 🇭🇰 香港02-1C
-      - 🇹🇼 台湾02-1A
-      - 🇯🇵 日本02-1B
-      - 🇭🇰 香港-线路1-1J
-      - 🇸🇬 新加坡01-1B
-      - 🇯🇵 日本04-1C
-      - 🇭🇰 香港-线路1-1M
-      - 🇯🇵 日本03-1B
-      - 🇸🇬 新加坡02-1C
-      - 🇭🇰 香港-线路1-1G
+      - 🇭🇰 香港02-1D
+      - 🇭🇰 香港-线路1-1I
+      - 🇰🇷 韩国 专线NO2
       - 🇬🇧 英国2
-      - 🇯🇵 日本03-1D
-      - 🇺🇸 美国03-1D
-      - 🇸🇬 新加坡NO.2
-      - 🇺🇸 美国04-1D
-      - 🇸🇬 新加坡04-1D
-      - 🇮🇪 爱尔兰-都柏林-1E
-      - 🇭🇰 香港-线路1-1E
       - 🇺🇸 美国03-1C
-      - 🇯🇵 日本02-1D
-      - 🇭🇰 香港-线路1-1B
-      - 🇺🇸 美国03-1A
-      - 🇬🇧 英国
-      - 🇺🇸 美国02-1B
-      - 🇯🇵 日本02-1C
-      - 🇯🇵 日本01-1A
-      - 🇯🇵 日本01-1D
-      - 🇯🇵 日本NO.1
-      - 🇮🇪 爱尔兰-都柏林-1A
-      - 🇸🇬 新加坡01-1A
-      - 🇭🇰 香港04-1C
-      - 🇹🇷 土耳其
-      - 保加之一
-      - 🇸🇬 新加坡03-1D
-      - 🇭🇰 香港-线路1-1O
-      - 🇯🇵 日本03-1A
-      - 🇺🇸 美国03-1B
-      - 🇭🇰 香港-线路1-1L
-      - 🇹🇼 台湾02-1B
-      - 🇦🇺 澳大利亚原生1
       - 🇯🇵 日本01-1B
-      - 🇸🇬 新加坡NO.1
-      - 🇹🇼 台湾02-1D
-      - 🇫🇷 法国1
-      - 🇯🇵 日本
-      - 🇮🇪 爱尔兰-都柏林-1L
-      - 🇮🇳 印度2
+      - 🇭🇰 香港-线路1-1F
+      - 🇺🇸 美国02-1C
+      - 🇨🇦 加拿大1
       - 🇭🇰 香港04-1A
+      - 🇸🇬 新加坡01-1B
+      - 🇺🇸 美国04-1C
+      - 🇭🇰 香港03-1C
+      - 🇭🇰 香港02-1C
+      - 🇭🇰 香港04-1E
+      - 🇯🇵 日本04-1D
+      - 🇯🇵 日本04-1C
+      - 🇺🇸 美国02-1D
+      - 🇭🇰 香港-线路1-1A
+      - 🇯🇵 日本02-1A
+      - 🇺🇸 美国04-1D
+      - 🇯🇵 日本01-1C
+      - 🇳🇱 荷兰
+      - 🇺🇸 美国03-1B
+      - 🇹🇼 台湾03-1E
+      - 🇭🇰 香港-线路1-1L
+      - 🇮🇪 爱尔兰-都柏林-1L
+      - 🇷🇺 俄罗斯
+      - 🇸🇬 新加坡02-1D
+      - 🇹🇼 台湾01-1C
+      - 🇭🇰 香港04-1B
+      - 🇺🇸 美国之一
+      - 🇫🇷 法国2
+      - 🇺🇸 美国
+      - 🇯🇵 日本03-1C
+      - 🇺🇸 美国01-1E
+      - 🇸🇬 新加坡01-1E
+      - 🇸🇬 新加坡01-1D
+      - 🇮🇪 爱尔兰-都柏林-1J
+      - 🇺🇸 美国01-1D
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1258,148 +1426,168 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇦 加拿大1
-      - 🇭🇰 香港03-1D
-      - 🇺🇸 美国02-1C
-      - 🇦🇺 澳大利亚原生2
-      - 🇹🇼 台湾04-1A
-      - 🇫🇷 法国2
-      - 🇹🇼 台湾04-1C
-      - 🇭🇰 香港02-1A
-      - 🇯🇵 日本04-1B
-      - 🇸🇬 新加坡04-1C
-      - 🇮🇪 爱尔兰-都柏林-1M
-      - 🇹🇼 台湾04-1B
-      - 🇺🇸 美国04-1A
-      - 🇭🇰 香港04-1B
-      - 🇯🇵 日本03-1C
-      - 🇺🇸 美国01-1D
-      - 🇭🇰 香港04-1D
-      - 🇸🇬 新加坡04-1B
-      - 🇮🇪 爱尔兰-都柏林-1B
-      - 🇸🇬 新加坡01-1C
-      - 🇭🇰 香港-线路1-1F
-      - 🇺🇸 美国之一
-      - 🇭🇰 香港-线路1-1K
-      - 🇬🇧 英国1
-      - 🇸🇬 新加坡04-1A
-      - 🇹🇼 台湾03-1C
-      - 🇮🇪 爱尔兰-都柏林-1K
-      - 🇯🇵 日本04-1D
-      - 🇹🇼 台湾01-1D
-      - 🇮🇪 爱尔兰-都柏林-1F
-      - 🇭🇰 香港02-1B
-      - 🇺🇸 美国NO.2
-      - 🇯🇵 日本NO.2
-      - 🇭🇰 香港-线路1-1A
-      - 🇮🇪 爱尔兰-都柏林-1C
-      - 🇭🇰 香港02-1D
-      - 🇺🇸 美国01-1A
-      - 🇸🇬 新加坡02-1A
-      - 🇭🇰 香港NO.2
-      - 🇭🇰 香港03-1C
-      - 🇺🇸 美国
-      - 🇰🇷 韩国 专线NO1
-      - 🇩🇪 德国之一
-      - 🇹🇼 台湾01-1C
-      - 🇺🇸 美国01-1C
-      - 🇮🇪 爱尔兰-都柏林-1I
-      - 🇭🇰 香港-线路1-1D
-      - 🇸🇬 新加坡03-1C
-      - 🇹🇼 台湾01-1A
-      - 🇭🇰 香港03-1B
-      - 🇸🇬 新加坡02-1D
-      - 🇹🇼 台湾03-1B
-      - 🇺🇸 美国02-1D
-      - 🇺🇸 美国之二
-      - 🇮🇪 爱尔兰-都柏林-1O
-      - 🇮🇪 爱尔兰-都柏林-1H
-      - 🇭🇰 香港-线路1-1C
-      - 🇭🇰 香港-线路1-1N
-      - 🇳🇱 荷兰
-      - 🇺🇸 美国04-1C
-      - 🇰🇷 韩国
-      - 🇮🇪 爱尔兰-都柏林-1J
-      - 🇯🇵 日本02-1A
       - 🇮🇪 爱尔兰-都柏林-1D
-      - 🇺🇸 美国01-1B
-      - 🇮🇪 爱尔兰-都柏林-1N
-      - 🇭🇰 香港-线路1-1H
-      - 🇷🇺 俄罗斯
-      - 🇮🇳 印度1
-      - 🇭🇰 香港03-1A
-      - 🇹🇼 台湾2
-      - 🇹🇼 台湾1
-      - 🇸🇬 新加坡01-1D
-      - 🇹🇼 台湾03-1D
-      - 🇩🇪 德国
-      - 🇺🇸 美国NO.1
-      - 🇸🇬 新加坡02-1B
-      - 🇰🇷 韩国 专线NO2
+      - 🇮🇪 爱尔兰-都柏林-1I
+      - 🇭🇰 香港03-1B
+      - 🇸🇬 新加坡02-1C
       - 🇺🇸 美国04-1B
-      - 🇭🇰 香港-线路1-1I
+      - 🇮🇳 印度1
+      - 🇹🇼 台湾01-1E
+      - 🇯🇵 日本04-1B
+      - 🇸🇬 新加坡03-1C
+      - 🇯🇵 日本03-1A
+      - 🇹🇼 台湾04-1E
+      - 🇮🇪 爱尔兰-都柏林-1F
+      - 🇰🇷 韩国
+      - 🇹🇼 台湾02-1A
+      - 🇹🇼 台湾03-1C
+      - 🇭🇰 香港03-1A
+      - 🇭🇰 香港-线路1-1H
+      - 🇯🇵 日本之一
+      - 🇮🇪 爱尔兰-都柏林-1N
+      - 🇹🇼 台湾03-1D
+      - 🇮🇪 爱尔兰-都柏林-1P
+      - 🇹🇼 台湾02-1E
+      - 🇸🇬 新加坡03-1D
+      - 🇦🇺 澳大利亚原生2
+      - 🇯🇵 日本NO.1
+      - 🇭🇰 香港-线路1-1B
+      - 🇭🇰 香港-线路1-1J
+      - 🇸🇬 新加坡04-1D
+      - 🇩🇪 德国之二
+      - 🇰🇷 韩国 专线NO1
+      - 🇯🇵 日本NO.2
+      - 🇺🇸 美国02-1E
+      - 🇺🇸 美国03-1A
+      - 🇺🇸 美国04-1E
+      - 🇨🇦 加拿大2
+      - 🇮🇪 爱尔兰-都柏林-1C
+      - 🇯🇵 日本04-1A
+      - 🇮🇪 爱尔兰-都柏林-1O
+      - 保加之一
+      - 🇯🇵 日本02-1D
+      - 🇦🇺 澳大利亚原生1
+      - 🇭🇰 香港02-1E
+      - 🇺🇸 美国01-1B
+      - 🇯🇵 日本04-1E
+      - 🇸🇬 新加坡02-1B
+      - 🇸🇬 新加坡03-1E
+      - 🇺🇸 美国02-1A
+      - 🇯🇵 日本03-1B
+      - 🇭🇰 香港-线路1-1D
+      - 🇬🇧 英国
+      - 🇸🇬 新加坡01-1A
+      - 🇹🇼 台湾02-1B
+      - 🇭🇰 香港02-1A
+      - 🇩🇪 德国
+      - 🇭🇰 香港-线路1-1O
+      - 🇮🇳 印度2
+      - 🇮🇪 爱尔兰-都柏林-1G
+      - 🇹🇼 台湾01-1A
+      - 🇯🇵 日本03-1E
+      - 🇸🇬 新加坡04-1E
+      - 🇹🇼 台湾02-1D
+      - 🇺🇸 美国04-1A
+      - 🇹🇼 台湾02-1C
+      - 🇸🇬 新加坡04-1B
+      - 🇭🇰 香港-线路1-1N
+      - 🇭🇰 香港03-1D
+      - 🇸🇬 新加坡04-1A
+      - 🇹🇼 台湾04-1A
+      - 🇯🇵 日本02-1C
+      - 🇭🇰 香港-线路1-1G
+      - 🇯🇵 日本02-1E
+      - 🇺🇸 美国03-1E
+      - 🇭🇰 香港NO.2
+      - 🇸🇬 新加坡04-1C
+      - 🇩🇪 德国之一
+      - 🇧🇷 巴西
+      - 🇯🇵 日本02-1B
+      - 🇹🇼 台湾04-1B
+      - 🇸🇬 新加坡02-1A
+      - 🇭🇰 香港03-1E
+      - 🇹🇼 台湾01-1D
+      - 🇹🇼 台湾04-1C
+      - 🇸🇬 新加坡NO.1
+      - 🇺🇸 美国NO.1
+      - 🇹🇷 土耳其
+      - 🇫🇷 法国1
+      - 🇺🇸 美国NO.2
+      - 🇸🇬 新加坡NO.2
+      - 🇯🇵 日本
+      - 🇭🇰 香港04-1C
+      - 🇯🇵 日本01-1D
+      - 🇹🇼 台湾01-1B
+      - 🇺🇸 美国02-1B
+      - 🇭🇰 香港-线路1-1K
+      - 🇮🇪 爱尔兰-都柏林-1H
+      - 🇹🇼 台湾1
+      - 🇸🇬 新加坡01-1C
+      - 🇯🇵 日本01-1E
+      - 🇭🇰 香港02-1B
+      - 🇺🇸 美国01-1A
+      - 🇹🇼 台湾2
+      - 🇺🇸 美国01-1C
+      - 🇹🇼 台湾04-1D
+      - 🇹🇼 台湾03-1B
+      - 🇯🇵 日本03-1D
+      - 🇮🇪 爱尔兰-都柏林-1B
+      - 🇮🇪 爱尔兰-都柏林-1E
+      - 🇯🇵 日本01-1A
+      - 🇮🇪 爱尔兰-都柏林-1M
+      - 🇺🇸 美国03-1D
+      - 🇭🇰 香港-线路1-1C
+      - 🇸🇬 新加坡02-1E
+      - 🇭🇰 香港-线路1-1E
+      - 🇭🇰 香港-线路1-1M
+      - 🇭🇰 香港-线路1-1P
+      - 🇮🇪 爱尔兰-都柏林-1A
+      - 🇬🇧 英国1
+      - 🇸🇬 新加坡03-1B
+      - 🇭🇰 香港04-1D
+      - 🇮🇪 爱尔兰-都柏林-1K
       - 🇹🇼 台湾03-1A
       - 🇸🇬 新加坡03-1A
-      - 🇩🇪 德国之二
-      - 🇺🇸 美国02-1A
-      - 🇸🇬 新加坡03-1B
-      - 🇯🇵 日本之一
-      - 🇮🇪 爱尔兰-都柏林-1G
-      - 🇹🇼 台湾02-1C
-      - 🇯🇵 日本04-1A
-      - 🇯🇵 日本01-1C
-      - 🇹🇼 台湾01-1B
-      - 🇧🇷 巴西
-      - 🇨🇦 加拿大2
-      - 🇹🇼 台湾04-1D
-      - 🇭🇰 香港02-1C
-      - 🇹🇼 台湾02-1A
-      - 🇯🇵 日本02-1B
-      - 🇭🇰 香港-线路1-1J
-      - 🇸🇬 新加坡01-1B
-      - 🇯🇵 日本04-1C
-      - 🇭🇰 香港-线路1-1M
-      - 🇯🇵 日本03-1B
-      - 🇸🇬 新加坡02-1C
-      - 🇭🇰 香港-线路1-1G
+      - 🇭🇰 香港02-1D
+      - 🇭🇰 香港-线路1-1I
+      - 🇰🇷 韩国 专线NO2
       - 🇬🇧 英国2
-      - 🇯🇵 日本03-1D
-      - 🇺🇸 美国03-1D
-      - 🇸🇬 新加坡NO.2
-      - 🇺🇸 美国04-1D
-      - 🇸🇬 新加坡04-1D
-      - 🇮🇪 爱尔兰-都柏林-1E
-      - 🇭🇰 香港-线路1-1E
       - 🇺🇸 美国03-1C
-      - 🇯🇵 日本02-1D
-      - 🇭🇰 香港-线路1-1B
-      - 🇺🇸 美国03-1A
-      - 🇬🇧 英国
-      - 🇺🇸 美国02-1B
-      - 🇯🇵 日本02-1C
-      - 🇯🇵 日本01-1A
-      - 🇯🇵 日本01-1D
-      - 🇯🇵 日本NO.1
-      - 🇮🇪 爱尔兰-都柏林-1A
-      - 🇸🇬 新加坡01-1A
-      - 🇭🇰 香港04-1C
-      - 🇹🇷 土耳其
-      - 保加之一
-      - 🇸🇬 新加坡03-1D
-      - 🇭🇰 香港-线路1-1O
-      - 🇯🇵 日本03-1A
-      - 🇺🇸 美国03-1B
-      - 🇭🇰 香港-线路1-1L
-      - 🇹🇼 台湾02-1B
-      - 🇦🇺 澳大利亚原生1
       - 🇯🇵 日本01-1B
-      - 🇸🇬 新加坡NO.1
-      - 🇹🇼 台湾02-1D
-      - 🇫🇷 法国1
-      - 🇯🇵 日本
-      - 🇮🇪 爱尔兰-都柏林-1L
-      - 🇮🇳 印度2
+      - 🇭🇰 香港-线路1-1F
+      - 🇺🇸 美国02-1C
+      - 🇨🇦 加拿大1
       - 🇭🇰 香港04-1A
+      - 🇸🇬 新加坡01-1B
+      - 🇺🇸 美国04-1C
+      - 🇭🇰 香港03-1C
+      - 🇭🇰 香港02-1C
+      - 🇭🇰 香港04-1E
+      - 🇯🇵 日本04-1D
+      - 🇯🇵 日本04-1C
+      - 🇺🇸 美国02-1D
+      - 🇭🇰 香港-线路1-1A
+      - 🇯🇵 日本02-1A
+      - 🇺🇸 美国04-1D
+      - 🇯🇵 日本01-1C
+      - 🇳🇱 荷兰
+      - 🇺🇸 美国03-1B
+      - 🇹🇼 台湾03-1E
+      - 🇭🇰 香港-线路1-1L
+      - 🇮🇪 爱尔兰-都柏林-1L
+      - 🇷🇺 俄罗斯
+      - 🇸🇬 新加坡02-1D
+      - 🇹🇼 台湾01-1C
+      - 🇭🇰 香港04-1B
+      - 🇺🇸 美国之一
+      - 🇫🇷 法国2
+      - 🇺🇸 美国
+      - 🇯🇵 日本03-1C
+      - 🇺🇸 美国01-1E
+      - 🇸🇬 新加坡01-1E
+      - 🇸🇬 新加坡01-1D
+      - 🇮🇪 爱尔兰-都柏林-1J
+      - 🇺🇸 美国01-1D
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
