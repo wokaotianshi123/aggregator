@@ -5,851 +5,899 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇯🇵 1号专线 日本JP 103-1D, server: 120.233.44.206, port: 31923, type: ss, cipher: chacha20-ietf-poly1305, password: 866e6a29-c8e1-47e0-be30-1f9b0367a787, udp: true}
-  - {name: 🇺🇸 SS 美国2-1-1B, server: ldu.izenny.com, port: 12589, type: ss, cipher: chacha20-ietf-poly1305, password: 3709b263-ce2e-4007-835a-cf0c811d1918, udp: true}
-  - {name: 🇳🇱 荷兰, server: 154.19.242.140, port: 10006, type: ss, cipher: aes-256-gcm, password: 2b879641-0dac-4a5d-b04b-67273083cae1, udp: true}
-  - {name: 🇳🇱 荷兰-V6|03 0.5x, server: naran3.616626.xyz, port: 22308, type: vmess, uuid: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇮🇳 SS 印度1-1A, server: ldu.izenny.com, port: 34411, type: ss, cipher: chacha20-ietf-poly1305, password: 69dfe76f-532b-437d-bf3b-17a1744a7ff4, udp: true}
-  - {name: 🇹🇼 台湾2, server: xdd.dashuai.cyou, port: 45077, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇮🇱 SS 以色列1-1A, server: ldu.izenny.com, port: 18140, type: ss, cipher: chacha20-ietf-poly1305, password: 69dfe76f-532b-437d-bf3b-17a1744a7ff4, udp: true}
-  - {name: 🇨🇦 加拿大1, server: haa.dashuai.cyou, port: 45064, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1C, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: e7286458-bfce-405a-9fff-086809b7ef16, udp: true}
-  - {name: 0.5x-1A, server: nara.189.ovh, port: 10027, type: trojan, password: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, sni: nara.189.ovh, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 1号专线 美国US 205-1D, server: 120.233.44.206, port: 39312, type: ss, cipher: chacha20-ietf-poly1305, password: 866e6a29-c8e1-47e0-be30-1f9b0367a787, udp: true}
-  - {name: 🇯🇵 日本NO.1, server: haa.dashuai.cyou, port: 45056, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇯🇵 1号专线 日本JP 114-1D, server: 120.233.44.206, port: 36555, type: ss, cipher: chacha20-ietf-poly1305, password: 866e6a29-c8e1-47e0-be30-1f9b0367a787, udp: true}
-  - {name: 🇭🇰 2号专线 香港HK 53-1B, server: cdntwa.xiaomispeed.com, port: 39765, type: trojan, password: b884a95b-a02d-4092-9133-7fe47481f6ee, sni: cdntwa.xiaomispeed.com, skip-cert-verify: true, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1D, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: f1e55205-f088-4d7c-a59e-da7713d2a9a6, udp: true}
-  - {name: 🇩🇪 德国01|轻量, server: de01.kittycdn.pp.ua, port: 10000, type: vless, uuid: 92082816-4646-41a6-ae20-b4c61642e050, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: cchfkLrWzzi_wyG37aW2iy2mqknGk8m23Bp9LdbDbEI, short-id: "37ed9c1b" }, servername: www.icloud.com, client-fingerprint: ios, network: tcp, udp: true}
-  - {name: 🇳🇱 荷兰-V6|04 0.5x, server: naran4.616626.xyz, port: 22310, type: vmess, uuid: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇯🇵 日本01, server: greenjp2.yueyun.de, port: 11030, type: trojan, password: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, sni: greenjp2.yueyun.de, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 1号专线 新加坡SG 146-1D, server: 120.233.44.206, port: 39622, type: ss, cipher: chacha20-ietf-poly1305, password: 866e6a29-c8e1-47e0-be30-1f9b0367a787, udp: true}
-  - {name: 🇭🇰 香港, server: 154.19.242.140, port: 10001, type: ss, cipher: aes-256-gcm, password: 2b879641-0dac-4a5d-b04b-67273083cae1, udp: true}
-  - {name: 🇯🇵 1号专线 日本JP 103-1B, server: 120.233.44.206, port: 31923, type: ss, cipher: chacha20-ietf-poly1305, password: b884a95b-a02d-4092-9133-7fe47481f6ee, udp: true}
-  - {name: 🇭🇰 香港NO.2, server: xdd.dashuai.cyou, port: 45051, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇯🇵 1号专线 日本JP 103-1C, server: 120.233.44.206, port: 31923, type: ss, cipher: chacha20-ietf-poly1305, password: 940d3790-3a30-416b-bad9-e3fd42702ba0, udp: true}
-  - {name: 🇭🇰 SS 香港1-1C, server: ldu.izenny.com, port: 34061, type: ss, cipher: chacha20-ietf-poly1305, password: 1cb78d15-e421-4cc0-8670-24e6e2eaad39, udp: true}
-  - {name: 🇺🇸 2号专线 美国US 110-1C, server: cdntwa.xiaomispeed.com, port: 33889, type: trojan, password: 940d3790-3a30-416b-bad9-e3fd42702ba0, sni: cdntwa.xiaomispeed.com, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港-线路1-1L, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: efa83b13-dbd6-4e0c-a922-773f31ea4858, udp: true}
-  - {name: 🇰🇷 韩国 专线NO1, server: haa.dashuai.cyou, port: 45076, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇯🇵 2号专线 日本JP 75-1A, server: cdntwa.xiaomispeed.com, port: 39769, type: trojan, password: e95e815c-bf74-4564-9173-6de71814fa34, sni: cdntwa.xiaomispeed.com, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 1号专线 香港HK 113-1E, server: 120.233.44.206, port: 39524, type: ss, cipher: chacha20-ietf-poly1305, password: 1bfb2451-8bad-401f-a949-13379070ee18, udp: true}
-  - {name: 🇹🇼 SS 台湾1-1A, server: ldu.izenny.com, port: 18148, type: ss, cipher: chacha20-ietf-poly1305, password: 69dfe76f-532b-437d-bf3b-17a1744a7ff4, udp: true}
-  - {name: 🇺🇸 美国NO.2, server: xdd.dashuai.cyou, port: 45053, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇮🇳 SS 印度1-1C, server: ldu.izenny.com, port: 34411, type: ss, cipher: chacha20-ietf-poly1305, password: 1cb78d15-e421-4cc0-8670-24e6e2eaad39, udp: true}
-  - {name: 🇺🇸 美国01, server: vir732.189.ovh, port: 10026, type: trojan, password: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, sni: vir732.189.ovh, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 2号专线 香港HK 244-1E, server: cdntwa.xiaomispeed.com, port: 38522, type: trojan, password: 1bfb2451-8bad-401f-a949-13379070ee18, sni: cdntwa.xiaomispeed.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本NO.2, server: xdd.dashuai.cyou, port: 45057, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇮🇸 SS 冰岛1-1C, server: ldu.izenny.com, port: 18244, type: ss, cipher: chacha20-ietf-poly1305, password: 1cb78d15-e421-4cc0-8670-24e6e2eaad39, udp: true}
-  - {name: 🇮🇳 印度1, server: haa.dashuai.cyou, port: 45074, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇲🇾 SS 马来西亚1-1B, server: ldu.izenny.com, port: 13828, type: ss, cipher: chacha20-ietf-poly1305, password: 3709b263-ce2e-4007-835a-cf0c811d1918, udp: true}
-  - {name: 🇸🇬 SS 新加坡 1-1C, server: ldu.izenny.com, port: 28063, type: ss, cipher: chacha20-ietf-poly1305, password: 1cb78d15-e421-4cc0-8670-24e6e2eaad39, udp: true}
-  - {name: 🇯🇵 1号专线 日本JP 103-1E, server: 120.233.44.206, port: 31923, type: ss, cipher: chacha20-ietf-poly1305, password: 1bfb2451-8bad-401f-a949-13379070ee18, udp: true}
-  - {name: 🇮🇸 SS 冰岛1-1B, server: ldu.izenny.com, port: 18244, type: ss, cipher: chacha20-ietf-poly1305, password: 3709b263-ce2e-4007-835a-cf0c811d1918, udp: true}
-  - {name: 🇲🇾 SS 马来西亚1-1A, server: ldu.izenny.com, port: 13828, type: ss, cipher: chacha20-ietf-poly1305, password: 69dfe76f-532b-437d-bf3b-17a1744a7ff4, udp: true}
-  - {name: 🇰🇷 SS 韩国1-1C, server: ldu.izenny.com, port: 41431, type: ss, cipher: chacha20-ietf-poly1305, password: 1cb78d15-e421-4cc0-8670-24e6e2eaad39, udp: true}
-  - {name: 🇺🇸 2号专线 美国US 110-1E, server: cdntwa.xiaomispeed.com, port: 33889, type: trojan, password: 1bfb2451-8bad-401f-a949-13379070ee18, sni: cdntwa.xiaomispeed.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 SS 美国2-1-1A, server: ldu.izenny.com, port: 12589, type: ss, cipher: chacha20-ietf-poly1305, password: 69dfe76f-532b-437d-bf3b-17a1744a7ff4, udp: true}
-  - {name: 🇹🇭 SS 泰国1-1A, server: ldu.izenny.com, port: 39037, type: ss, cipher: chacha20-ietf-poly1305, password: 69dfe76f-532b-437d-bf3b-17a1744a7ff4, udp: true}
-  - {name: 🇹🇼 SS 台湾2-1-1B, server: ldu.izenny.com, port: 43076, type: ss, cipher: chacha20-ietf-poly1305, password: 3709b263-ce2e-4007-835a-cf0c811d1918, udp: true}
-  - {name: 🇯🇵 SS 日本1-1A, server: ldu.izenny.com, port: 10589, type: ss, cipher: chacha20-ietf-poly1305, password: 69dfe76f-532b-437d-bf3b-17a1744a7ff4, udp: true}
-  - {name: 🇹🇼 SS 台湾2-1-1A, server: ldu.izenny.com, port: 43076, type: ss, cipher: chacha20-ietf-poly1305, password: 69dfe76f-532b-437d-bf3b-17a1744a7ff4, udp: true}
-  - {name: 🇩🇪 德国-V6|03 0.5x, server: netcp3.616626.xyz, port: 22307, type: vmess, uuid: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇹🇼 台湾01|家宽, server: tencent-app.baipiao0721-dns78655.eu, port: 443, type: vless, uuid: 92082816-4646-41a6-ae20-b4c61642e050, tls: true, servername: xn--kprw13d.xn--9kq81ml53a.site, network: ws, ws-opts: {path: /, headers: {Host: xn--kprw13d.xn--9kq81ml53a.site}}, udp: true}
-  - {name: 🇯🇵 1号专线 日本JP 114-1B, server: 120.233.44.206, port: 36555, type: ss, cipher: chacha20-ietf-poly1305, password: b884a95b-a02d-4092-9133-7fe47481f6ee, udp: true}
-  - {name: 🇯🇵 日本-V6|07, server: vpsjp1.668918.xyz, port: 22306, type: vmess, uuid: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇯🇵 日本03, server: cloud.yueyun.de, port: 10389, type: trojan, password: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, sni: cloud.yueyun.de, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 SS 新加坡 1-1B, server: ldu.izenny.com, port: 28063, type: ss, cipher: chacha20-ietf-poly1305, password: 3709b263-ce2e-4007-835a-cf0c811d1918, udp: true}
-  - {name: 🇹🇼 台湾1, server: haa.dashuai.cyou, port: 45078, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇭🇰 香港-线路1-1D, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: f1e55205-f088-4d7c-a59e-da7713d2a9a6, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1N, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 4c99e1b7-bd49-4a68-8cf0-8dbc178dd584, udp: true}
-  - {name: TOR-试用, server: 154.19.242.140, port: 10009, type: ss, cipher: aes-256-gcm, password: 2b879641-0dac-4a5d-b04b-67273083cae1, udp: true}
-  - {name: 🇭🇰 2号专线 香港HK 74-1D, server: cdntwa.xiaomispeed.com, port: 33838, type: trojan, password: 866e6a29-c8e1-47e0-be30-1f9b0367a787, sni: cdntwa.xiaomispeed.com, skip-cert-verify: true, udp: true}
-  - {name: 🇹🇼 SS 台湾1-1C, server: ldu.izenny.com, port: 18148, type: ss, cipher: chacha20-ietf-poly1305, password: 1cb78d15-e421-4cc0-8670-24e6e2eaad39, udp: true}
-  - {name: 🇹🇷 SS 土耳其1-1C, server: ldu.izenny.com, port: 33744, type: ss, cipher: chacha20-ietf-poly1305, password: 1cb78d15-e421-4cc0-8670-24e6e2eaad39, udp: true}
-  - {name: 🇺🇸 美国高速节点1, server: 144.34.178.66, port: 1443, type: trojan, password: 907d9b37-e698-4b87-b41f-d697dcb69926, sni: node4.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: 🇹🇼 台湾高速节点, server: 103.137.63.77, port: 443, type: trojan, password: 907d9b37-e698-4b87-b41f-d697dcb69926, sni: node1.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 SS 日本3-1C, server: ldu.izenny.com, port: 57927, type: ss, cipher: chacha20-ietf-poly1305, password: 1cb78d15-e421-4cc0-8670-24e6e2eaad39, udp: true}
-  - {name: 🇭🇰 2号专线 香港HK 53-1D, server: cdntwa.xiaomispeed.com, port: 39765, type: trojan, password: 866e6a29-c8e1-47e0-be30-1f9b0367a787, sni: cdntwa.xiaomispeed.com, skip-cert-verify: true, udp: true}
-  - {name: 🇲🇽 SS 墨西哥1-1B, server: ldu.izenny.com, port: 20149, type: ss, cipher: chacha20-ietf-poly1305, password: 3709b263-ce2e-4007-835a-cf0c811d1918, udp: true}
-  - {name: 🇺🇸 1号专线 美国US 205-1A, server: 120.233.44.206, port: 39312, type: ss, cipher: chacha20-ietf-poly1305, password: e95e815c-bf74-4564-9173-6de71814fa34, udp: true}
-  - {name: 🇹🇼 台湾, server: 154.19.242.140, port: 10002, type: ss, cipher: aes-256-gcm, password: 2b879641-0dac-4a5d-b04b-67273083cae1, udp: true}
-  - {name: 🇺🇸 美国NO.1, server: haa.dashuai.cyou, port: 45052, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇸🇬 1号专线 新加坡SG 146-1E, server: 120.233.44.206, port: 39622, type: ss, cipher: chacha20-ietf-poly1305, password: 1bfb2451-8bad-401f-a949-13379070ee18, udp: true}
-  - {name: 🇭🇰 香港-线路1-1I, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 9031abbf-b5a7-416a-b741-424fb4ec7251, udp: true}
-  - {name: 🇨🇳 中国联通节点1, server: 115.231.220.33, port: 5443, type: trojan, password: 907d9b37-e698-4b87-b41f-d697dcb69926, sni: nodecn1.jiayinetwork.es, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本-V6|02, server: greenchais2.668918.xyz, port: 22307, type: vmess, uuid: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇭🇰 香港-V6|06, server: greenhk0.616626.xyz, port: 10505, type: vmess, uuid: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇭🇰 香港-线路1-1B, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 09bce9b6-bbc7-42a4-b3bd-308217672194, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1G, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 86d10db0-6479-48c4-8bb0-8e22fa17e07e, udp: true}
-  - {name: 🇯🇵 1号专线 日本JP 114-1C, server: 120.233.44.206, port: 36555, type: ss, cipher: chacha20-ietf-poly1305, password: 940d3790-3a30-416b-bad9-e3fd42702ba0, udp: true}
-  - {name: 🇺🇸 美国05, server: advin.189.ovh, port: 10027, type: trojan, password: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, sni: advin.189.ovh, skip-cert-verify: true, udp: true}
-  - {name: 🇹🇼 1号专线 台湾TW 89-1E, server: 120.233.44.206, port: 33922, type: ss, cipher: chacha20-ietf-poly1305, password: 1bfb2451-8bad-401f-a949-13379070ee18, udp: true}
-  - {name: 🇹🇼 SS 台湾2-1-1C, server: ldu.izenny.com, port: 43076, type: ss, cipher: chacha20-ietf-poly1305, password: 1cb78d15-e421-4cc0-8670-24e6e2eaad39, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1A, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 0844e3e8-cb29-46e6-a73a-def0040ab886, udp: true}
-  - {name: 🇭🇰 1号专线 香港HK 113-1D, server: 120.233.44.206, port: 39524, type: ss, cipher: chacha20-ietf-poly1305, password: 866e6a29-c8e1-47e0-be30-1f9b0367a787, udp: true}
-  - {name: 🇭🇰 2号专线 香港HK 74-1A, server: cdntwa.xiaomispeed.com, port: 33838, type: trojan, password: e95e815c-bf74-4564-9173-6de71814fa34, sni: cdntwa.xiaomispeed.com, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 2号专线 香港HK 74-1C, server: cdntwa.xiaomispeed.com, port: 33838, type: trojan, password: 940d3790-3a30-416b-bad9-e3fd42702ba0, sni: cdntwa.xiaomispeed.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 2号专线 日本JP 75-1C, server: cdntwa.xiaomispeed.com, port: 39769, type: trojan, password: 940d3790-3a30-416b-bad9-e3fd42702ba0, sni: cdntwa.xiaomispeed.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 2号专线 日本JP 75-1E, server: cdntwa.xiaomispeed.com, port: 39769, type: trojan, password: 1bfb2451-8bad-401f-a949-13379070ee18, sni: cdntwa.xiaomispeed.com, skip-cert-verify: true, udp: true}
-  - {name: 🇹🇼 台湾高速节点2, server: 118.232.199.29, port: 443, type: trojan, password: 907d9b37-e698-4b87-b41f-d697dcb69926, sni: node2.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 2号专线 美国US 110-1A, server: cdntwa.xiaomispeed.com, port: 33889, type: trojan, password: e95e815c-bf74-4564-9173-6de71814fa34, sni: cdntwa.xiaomispeed.com, skip-cert-verify: true, udp: true}
-  - {name: 🇹🇼 1号专线 台湾TW 89-1A, server: 120.233.44.206, port: 33922, type: ss, cipher: chacha20-ietf-poly1305, password: e95e815c-bf74-4564-9173-6de71814fa34, udp: true}
-  - {name: 🇭🇰 2号专线 香港HK 53-1C, server: cdntwa.xiaomispeed.com, port: 39765, type: trojan, password: 940d3790-3a30-416b-bad9-e3fd42702ba0, sni: cdntwa.xiaomispeed.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 1号专线 日本JP 114-1A, server: 120.233.44.206, port: 36555, type: ss, cipher: chacha20-ietf-poly1305, password: e95e815c-bf74-4564-9173-6de71814fa34, udp: true}
-  - {name: 🇳🇱 荷兰-V6|02 0.5x, server: naran2.616626.xyz, port: 22306, type: vmess, uuid: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇭🇰 香港-线路1-1P, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 598bd0af-0288-437c-a096-d34bd561c70e, udp: true}
-  - {name: 🇫🇷 法国2, server: xdd.dashuai.cyou, port: 45071, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1H, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 61f0ab5d-1fe6-47eb-b128-2abffaa86917, udp: true}
-  - {name: 🇬🇧 英国1, server: haa.dashuai.cyou, port: 45066, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇧🇷 SS 巴西1-1A, server: ldu.izenny.com, port: 55936, type: ss, cipher: chacha20-ietf-poly1305, password: 69dfe76f-532b-437d-bf3b-17a1744a7ff4, udp: true}
-  - {name: 🇰🇷 SS 韩国1-1B, server: ldu.izenny.com, port: 41431, type: ss, cipher: chacha20-ietf-poly1305, password: 3709b263-ce2e-4007-835a-cf0c811d1918, udp: true}
-  - {name: 🇹🇼 1号专线 台湾TW 89-1D, server: 120.233.44.206, port: 33922, type: ss, cipher: chacha20-ietf-poly1305, password: 866e6a29-c8e1-47e0-be30-1f9b0367a787, udp: true}
-  - {name: 🇧🇷 SS 巴西1-1B, server: ldu.izenny.com, port: 55936, type: ss, cipher: chacha20-ietf-poly1305, password: 3709b263-ce2e-4007-835a-cf0c811d1918, udp: true}
-  - {name: 🇹🇭 SS 泰国1-1B, server: ldu.izenny.com, port: 39037, type: ss, cipher: chacha20-ietf-poly1305, password: 3709b263-ce2e-4007-835a-cf0c811d1918, udp: true}
-  - {name: 🇯🇵 1号专线 日本JP 114-1E, server: 120.233.44.206, port: 36555, type: ss, cipher: chacha20-ietf-poly1305, password: 1bfb2451-8bad-401f-a949-13379070ee18, udp: true}
-  - {name: 🇰🇷 SS 韩国1-1A, server: ldu.izenny.com, port: 41431, type: ss, cipher: chacha20-ietf-poly1305, password: 69dfe76f-532b-437d-bf3b-17a1744a7ff4, udp: true}
-  - {name: 🇭🇰 SS 香港1-1A, server: ldu.izenny.com, port: 34061, type: ss, cipher: chacha20-ietf-poly1305, password: 69dfe76f-532b-437d-bf3b-17a1744a7ff4, udp: true}
-  - {name: 🇺🇸 SS 美国1-1A, server: ldu.izenny.com, port: 46197, type: ss, cipher: chacha20-ietf-poly1305, password: 69dfe76f-532b-437d-bf3b-17a1744a7ff4, udp: true}
-  - {name: 🇭🇰 1号专线 香港HK 113-1A, server: 120.233.44.206, port: 39524, type: ss, cipher: chacha20-ietf-poly1305, password: e95e815c-bf74-4564-9173-6de71814fa34, udp: true}
-  - {name: 🇮🇱 SS 以色列1-1B, server: ldu.izenny.com, port: 18140, type: ss, cipher: chacha20-ietf-poly1305, password: 3709b263-ce2e-4007-835a-cf0c811d1918, udp: true}
-  - {name: 🇯🇵 日本-V6|05, server: greenip2.668918.xyz, port: 22307, type: vmess, uuid: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇭🇰 香港-线路1-1O, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 54e32bfb-4934-4fe0-acf2-091a807dfe48, udp: true}
-  - {name: 🇺🇸 2号专线 美国US 110-1B, server: cdntwa.xiaomispeed.com, port: 33889, type: trojan, password: b884a95b-a02d-4092-9133-7fe47481f6ee, sni: cdntwa.xiaomispeed.com, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 2号专线 香港HK 244-1A, server: cdntwa.xiaomispeed.com, port: 38522, type: trojan, password: e95e815c-bf74-4564-9173-6de71814fa34, sni: cdntwa.xiaomispeed.com, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港-线路1-1F, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: d219f53a-21ef-4e54-84f0-a46ebc85e490, udp: true}
-  - {name: 🇹🇼 SS 台湾1-1B, server: ldu.izenny.com, port: 18148, type: ss, cipher: chacha20-ietf-poly1305, password: 3709b263-ce2e-4007-835a-cf0c811d1918, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1I, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 9031abbf-b5a7-416a-b741-424fb4ec7251, udp: true}
-  - {name: 🇸🇬 SS 新加坡 1-1A, server: ldu.izenny.com, port: 28063, type: ss, cipher: chacha20-ietf-poly1305, password: 69dfe76f-532b-437d-bf3b-17a1744a7ff4, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1K, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: f9df82d2-1d7d-43d7-b4bc-cb53e275dd7f, udp: true}
-  - {name: 🇭🇰 2号专线 香港HK 74-1E, server: cdntwa.xiaomispeed.com, port: 33838, type: trojan, password: 1bfb2451-8bad-401f-a949-13379070ee18, sni: cdntwa.xiaomispeed.com, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 新加坡NO.2, server: xdd.dashuai.cyou, port: 45055, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇭🇰 香港-线路1-1A, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 0844e3e8-cb29-46e6-a73a-def0040ab886, udp: true}
-  - {name: 🇹🇼 台湾高速节点3, server: 118.232.199.14, port: 443, type: trojan, password: 907d9b37-e698-4b87-b41f-d697dcb69926, sni: node3.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: 🇮🇳 SS 印度1-1B, server: ldu.izenny.com, port: 34411, type: ss, cipher: chacha20-ietf-poly1305, password: 3709b263-ce2e-4007-835a-cf0c811d1918, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1L, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: efa83b13-dbd6-4e0c-a922-773f31ea4858, udp: true}
-  - {name: 🇺🇸 2号专线 美国US 110-1D, server: cdntwa.xiaomispeed.com, port: 33889, type: trojan, password: 866e6a29-c8e1-47e0-be30-1f9b0367a787, sni: cdntwa.xiaomispeed.com, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港-线路1-1J, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 8f9ae82c-1838-4482-9538-519372f7222e, udp: true}
-  - {name: 🇭🇰 香港-V4|02, server: hkvm4.656888.xyz, port: 30026, type: trojan, password: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, sni: hkvm4.656888.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 2号专线 日本JP 75-1D, server: cdntwa.xiaomispeed.com, port: 39769, type: trojan, password: 866e6a29-c8e1-47e0-be30-1f9b0367a787, sni: cdntwa.xiaomispeed.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国-V6|01, server: crun6.668918.xyz, port: 22308, type: vmess, uuid: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇭🇰 香港-V6|05 0.5x, server: nathk.91ai.de, port: 18002, type: vmess, uuid: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇬🇧 英国2, server: xdd.dashuai.cyou, port: 45067, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇯🇵 SS 日本3-1A, server: ldu.izenny.com, port: 57927, type: ss, cipher: chacha20-ietf-poly1305, password: 69dfe76f-532b-437d-bf3b-17a1744a7ff4, udp: true}
-  - {name: 🇹🇭 SS 泰国1-1C, server: ldu.izenny.com, port: 39037, type: ss, cipher: chacha20-ietf-poly1305, password: 1cb78d15-e421-4cc0-8670-24e6e2eaad39, udp: true}
-  - {name: 🇯🇵 日本-V6|04, server: greenip1.668918.xyz, port: 22306, type: vmess, uuid: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇺🇸 SS 美国2-1-1C, server: ldu.izenny.com, port: 12589, type: ss, cipher: chacha20-ietf-poly1305, password: 1cb78d15-e421-4cc0-8670-24e6e2eaad39, udp: true}
-  - {name: 🇲🇽 SS 墨西哥1-1C, server: ldu.izenny.com, port: 20149, type: ss, cipher: chacha20-ietf-poly1305, password: 1cb78d15-e421-4cc0-8670-24e6e2eaad39, udp: true}
-  - {name: 🇹🇼 1号专线 台湾TW 89-1C, server: 120.233.44.206, port: 33922, type: ss, cipher: chacha20-ietf-poly1305, password: 940d3790-3a30-416b-bad9-e3fd42702ba0, udp: true}
-  - {name: 🇭🇰 香港-线路1-1H, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 61f0ab5d-1fe6-47eb-b128-2abffaa86917, udp: true}
-  - {name: 🇸🇬 新加坡NO.1, server: haa.dashuai.cyou, port: 45054, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇺🇸 SS 美国1-1C, server: ldu.izenny.com, port: 46197, type: ss, cipher: chacha20-ietf-poly1305, password: 1cb78d15-e421-4cc0-8670-24e6e2eaad39, udp: true}
-  - {name: 🇸🇬 1号专线 新加坡SG 146-1C, server: 120.233.44.206, port: 39622, type: ss, cipher: chacha20-ietf-poly1305, password: 940d3790-3a30-416b-bad9-e3fd42702ba0, udp: true}
-  - {name: 🇭🇰 香港-线路1-1M, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 44528430-32dd-44a0-a29c-3a0a5f99ad5f, udp: true}
-  - {name: 🇯🇵 SS 日本3-1B, server: ldu.izenny.com, port: 57927, type: ss, cipher: chacha20-ietf-poly1305, password: 3709b263-ce2e-4007-835a-cf0c811d1918, udp: true}
-  - {name: 🇭🇰 香港-V6|08, server: greenhk2.616626.xyz, port: 10507, type: vmess, uuid: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1F, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: d219f53a-21ef-4e54-84f0-a46ebc85e490, udp: true}
-  - {name: 🇭🇰 2号专线 香港HK 244-1D, server: cdntwa.xiaomispeed.com, port: 38522, type: trojan, password: 866e6a29-c8e1-47e0-be30-1f9b0367a787, sni: cdntwa.xiaomispeed.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 SS 日本1-1C, server: ldu.izenny.com, port: 10589, type: ss, cipher: chacha20-ietf-poly1305, password: 1cb78d15-e421-4cc0-8670-24e6e2eaad39, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1P, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 598bd0af-0288-437c-a096-d34bd561c70e, udp: true}
-  - {name: 🇭🇰 3x备用专线香港1, server: xh.dashuai.cyou, port: 50051, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇺🇸 1号专线 美国US 205-1C, server: 120.233.44.206, port: 39312, type: ss, cipher: chacha20-ietf-poly1305, password: 940d3790-3a30-416b-bad9-e3fd42702ba0, udp: true}
-  - {name: 🇦🇺 澳大利亚原生1, server: haa.dashuai.cyou, port: 45062, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇸🇬 1号专线 新加坡SG 146-1A, server: 120.233.44.206, port: 39622, type: ss, cipher: chacha20-ietf-poly1305, password: e95e815c-bf74-4564-9173-6de71814fa34, udp: true}
-  - {name: 🇭🇰 2号专线 香港HK 53-1E, server: cdntwa.xiaomispeed.com, port: 39765, type: trojan, password: 1bfb2451-8bad-401f-a949-13379070ee18, sni: cdntwa.xiaomispeed.com, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 韩国, server: 154.19.242.140, port: 10008, type: ss, cipher: aes-256-gcm, password: 2b879641-0dac-4a5d-b04b-67273083cae1, udp: true}
-  - {name: 🇭🇰 香港-线路1-1K, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: f9df82d2-1d7d-43d7-b4bc-cb53e275dd7f, udp: true}
-  - {name: 🇩🇪 德国-V6|01 0.5x, server: netcp1.616626.xyz, port: 22305, type: vmess, uuid: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇦🇺 澳大利亚原生2, server: xdd.dashuai.cyou, port: 45063, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇹🇷 SS 土耳其1-1B, server: ldu.izenny.com, port: 33744, type: ss, cipher: chacha20-ietf-poly1305, password: 3709b263-ce2e-4007-835a-cf0c811d1918, udp: true}
-  - {name: 🇯🇵 日本02, server: vpsjp.yueyun.de, port: 13036, type: trojan, password: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, sni: vpsjp.yueyun.de, skip-cert-verify: true, udp: true}
-  - {name: 🇮🇳 印度2, server: xdd.dashuai.cyou, port: 45073, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1J, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 8f9ae82c-1838-4482-9538-519372f7222e, udp: true}
-  - {name: 🇨🇦 加拿大2, server: xdd.dashuai.cyou, port: 45065, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇲🇽 SS 墨西哥1-1A, server: ldu.izenny.com, port: 20149, type: ss, cipher: chacha20-ietf-poly1305, password: 69dfe76f-532b-437d-bf3b-17a1744a7ff4, udp: true}
-  - {name: 🇩🇪 德国-V6|02 0.5x, server: netcp2.616626.xyz, port: 22306, type: vmess, uuid: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇹🇭 泰国, server: 154.19.242.140, port: 10007, type: ss, cipher: aes-256-gcm, password: 2b879641-0dac-4a5d-b04b-67273083cae1, udp: true}
-  - {name: 🇭🇰 香港-线路1-1G, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 86d10db0-6479-48c4-8bb0-8e22fa17e07e, udp: true}
-  - {name: 🇮🇱 SS 以色列1-1C, server: ldu.izenny.com, port: 18140, type: ss, cipher: chacha20-ietf-poly1305, password: 1cb78d15-e421-4cc0-8670-24e6e2eaad39, udp: true}
-  - {name: 🇭🇰 香港03, server: hytro.91ai.de, port: 10022, type: trojan, password: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, sni: hytro.91ai.de, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 2号专线 香港HK 244-1B, server: cdntwa.xiaomispeed.com, port: 38522, type: trojan, password: b884a95b-a02d-4092-9133-7fe47481f6ee, sni: cdntwa.xiaomispeed.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 1号专线 美国US 205-1E, server: 120.233.44.206, port: 39312, type: ss, cipher: chacha20-ietf-poly1305, password: 1bfb2451-8bad-401f-a949-13379070ee18, udp: true}
-  - {name: 🇭🇰 香港-线路1-1E, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: e3f0ecc8-26a5-40a0-a6b3-1264abd191e6, udp: true}
-  - {name: 🇺🇸 美国04, server: layercloud.189.ovh, port: 10021, type: trojan, password: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, sni: layercloud.189.ovh, skip-cert-verify: true, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1E, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: e3f0ecc8-26a5-40a0-a6b3-1264abd191e6, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1M, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 44528430-32dd-44a0-a29c-3a0a5f99ad5f, udp: true}
-  - {name: 🇭🇰 香港-线路1-1N, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 4c99e1b7-bd49-4a68-8cf0-8dbc178dd584, udp: true}
-  - {name: 🇲🇾 SS 马来西亚1-1C, server: ldu.izenny.com, port: 13828, type: ss, cipher: chacha20-ietf-poly1305, password: 1cb78d15-e421-4cc0-8670-24e6e2eaad39, udp: true}
-  - {name: 🇫🇷 法国, server: fg.dashuai.cyou, port: 19901, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇫🇷 法国1, server: haa.dashuai.cyou, port: 45072, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇭🇰 1号专线 香港HK 113-1C, server: 120.233.44.206, port: 39524, type: ss, cipher: chacha20-ietf-poly1305, password: 940d3790-3a30-416b-bad9-e3fd42702ba0, udp: true}
-  - {name: 🇯🇵 2号专线 日本JP 75-1B, server: cdntwa.xiaomispeed.com, port: 39769, type: trojan, password: b884a95b-a02d-4092-9133-7fe47481f6ee, sni: cdntwa.xiaomispeed.com, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 新加坡, server: 154.19.242.140, port: 10004, type: ss, cipher: aes-256-gcm, password: 2b879641-0dac-4a5d-b04b-67273083cae1, udp: true}
-  - {name: 🇭🇰 2号专线 香港HK 244-1C, server: cdntwa.xiaomispeed.com, port: 38522, type: trojan, password: 940d3790-3a30-416b-bad9-e3fd42702ba0, sni: cdntwa.xiaomispeed.com, skip-cert-verify: true, udp: true}
-  - {name: 🇹🇼 1号专线 台湾TW 89-1B, server: 120.233.44.206, port: 33922, type: ss, cipher: chacha20-ietf-poly1305, password: b884a95b-a02d-4092-9133-7fe47481f6ee, udp: true}
-  - {name: 🇮🇸 SS 冰岛1-1A, server: ldu.izenny.com, port: 18244, type: ss, cipher: chacha20-ietf-poly1305, password: 69dfe76f-532b-437d-bf3b-17a1744a7ff4, udp: true}
-  - {name: 🇰🇷 韩国 专线NO2, server: xdd.dashuai.cyou, port: 45075, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇺🇸 1号专线 美国US 205-1B, server: 120.233.44.206, port: 39312, type: ss, cipher: chacha20-ietf-poly1305, password: b884a95b-a02d-4092-9133-7fe47481f6ee, udp: true}
-  - {name: 🇭🇰 2号专线 香港HK 53-1A, server: cdntwa.xiaomispeed.com, port: 39765, type: trojan, password: e95e815c-bf74-4564-9173-6de71814fa34, sni: cdntwa.xiaomispeed.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本-V6|06, server: greenip3.668918.xyz, port: 22308, type: vmess, uuid: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇭🇰 香港-V6|07, server: greenhk1.616626.xyz, port: 10506, type: vmess, uuid: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇭🇰 2号专线 香港HK 74-1A, server: cdntwa.xiaomispeed.com, port: 33838, type: trojan, password: b884a95b-a02d-4092-9133-7fe47481f6ee, sni: cdntwa.xiaomispeed.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港-线路1-1D, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: e7286458-bfce-405a-9fff-086809b7ef16, udp: true}
+  - {name: 🇹🇼 SS 台湾2-1-1A, server: ldu.izenny.com, port: 43076, type: ss, cipher: chacha20-ietf-poly1305, password: 8ec8a576-6af5-43bf-8843-da366c23e2c8, udp: true}
+  - {name: 🇯🇵 SS 日本1-1C, server: ldu.izenny.com, port: 10589, type: ss, cipher: chacha20-ietf-poly1305, password: ffcbde73-7ac4-47b6-8e2e-1631e7252ecb, udp: true}
+  - {name: 🇺🇸 美国高速节点1, server: 144.34.178.66, port: 1443, type: trojan, password: 718e6067-8e1a-409c-bc57-ce69de9da23e, sni: node4.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: 🇹🇼 SS 台湾1-1A, server: ldu.izenny.com, port: 18148, type: ss, cipher: chacha20-ietf-poly1305, password: 8ec8a576-6af5-43bf-8843-da366c23e2c8, udp: true}
+  - {name: 🇧🇷 SS 巴西1-1C, server: ldu.izenny.com, port: 55936, type: ss, cipher: chacha20-ietf-poly1305, password: ffcbde73-7ac4-47b6-8e2e-1631e7252ecb, udp: true}
+  - {name: 🇯🇵 日本01-1B, server: greenjp2.yueyun.de, port: 11030, type: trojan, password: 58dd0dfe-6497-4cca-8663-12d6f29a33bb, sni: greenjp2.yueyun.de, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港-V6|06-1A, server: greenhk0.616626.xyz, port: 10505, type: vmess, uuid: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇯🇵 日本03-1B, server: cloud.yueyun.de, port: 10389, type: trojan, password: 58dd0dfe-6497-4cca-8663-12d6f29a33bb, sni: cloud.yueyun.de, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 2号专线 美国US 110-1B, server: cdntwa.xiaomispeed.com, port: 33889, type: trojan, password: 21e0cda6-d543-4f42-86ca-99ee85193205, sni: cdntwa.xiaomispeed.com, skip-cert-verify: true, udp: true}
   - {name: 0.5x-1B, server: netcp4.616626.xyz, port: 10027, type: trojan, password: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, sni: netcp4.616626.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 1号专线 日本JP 103-1A, server: 120.233.44.206, port: 31923, type: ss, cipher: chacha20-ietf-poly1305, password: e95e815c-bf74-4564-9173-6de71814fa34, udp: true}
-  - {name: 🇹🇷 SS 土耳其1-1A, server: ldu.izenny.com, port: 33744, type: ss, cipher: chacha20-ietf-poly1305, password: 69dfe76f-532b-437d-bf3b-17a1744a7ff4, udp: true}
-  - {name: 🇹🇼 3x备用专线台湾1, server: xh.dashuai.cyou, port: 50050, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇧🇷 SS 巴西1-1C, server: ldu.izenny.com, port: 55936, type: ss, cipher: chacha20-ietf-poly1305, password: 1cb78d15-e421-4cc0-8670-24e6e2eaad39, udp: true}
-  - {name: 🇳🇱 荷兰-V6|01 0.5x, server: naran1.616626.xyz, port: 22305, type: vmess, uuid: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇩🇪 德国, server: 154.19.242.140, port: 10005, type: ss, cipher: aes-256-gcm, password: 2b879641-0dac-4a5d-b04b-67273083cae1, udp: true}
-  - {name: 🇺🇸 SS 美国1-1B, server: ldu.izenny.com, port: 46197, type: ss, cipher: chacha20-ietf-poly1305, password: 3709b263-ce2e-4007-835a-cf0c811d1918, udp: true}
-  - {name: 🇯🇵 日本, server: 154.19.242.140, port: 10003, type: ss, cipher: aes-256-gcm, password: 2b879641-0dac-4a5d-b04b-67273083cae1, udp: true}
-  - {name: 🇺🇸 美国07, server: vir694.189.ovh, port: 10021, type: trojan, password: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, sni: vir694.189.ovh, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港-线路1-1C, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: e7286458-bfce-405a-9fff-086809b7ef16, udp: true}
-  - {name: 🇭🇰 SS 香港1-1B, server: ldu.izenny.com, port: 34061, type: ss, cipher: chacha20-ietf-poly1305, password: 3709b263-ce2e-4007-835a-cf0c811d1918, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1O, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 54e32bfb-4934-4fe0-acf2-091a807dfe48, udp: true}
-  - {name: 🇮🇪 爱尔兰-都柏林-1B, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 09bce9b6-bbc7-42a4-b3bd-308217672194, udp: true}
-  - {name: 🇭🇰 2号专线 香港HK 74-1B, server: cdntwa.xiaomispeed.com, port: 33838, type: trojan, password: b884a95b-a02d-4092-9133-7fe47481f6ee, sni: cdntwa.xiaomispeed.com, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 1号专线 香港HK 113-1B, server: 120.233.44.206, port: 39524, type: ss, cipher: chacha20-ietf-poly1305, password: b884a95b-a02d-4092-9133-7fe47481f6ee, udp: true}
-  - {name: 🇯🇵 SS 日本1-1B, server: ldu.izenny.com, port: 10589, type: ss, cipher: chacha20-ietf-poly1305, password: 3709b263-ce2e-4007-835a-cf0c811d1918, udp: true}
-  - {name: 🇺🇸 美国02, server: vir11.189.ovh, port: 10022, type: trojan, password: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, sni: vir11.189.ovh, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 1号专线 新加坡SG 146-1B, server: 120.233.44.206, port: 39622, type: ss, cipher: chacha20-ietf-poly1305, password: b884a95b-a02d-4092-9133-7fe47481f6ee, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1G, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 4c99e1b7-bd49-4a68-8cf0-8dbc178dd584, udp: true}
+  - {name: 🇳🇱 荷兰-V6|01 0.5x-1A, server: naran1.616626.xyz, port: 22305, type: vmess, uuid: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇩🇪 德国01|轻量, server: de01.kittycdn.pp.ua, port: 10000, type: vless, uuid: b427557b-9132-4ed4-a094-8314e10112d0, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: cchfkLrWzzi_wyG37aW2iy2mqknGk8m23Bp9LdbDbEI, short-id: "37ed9c1b" }, servername: www.icloud.com, client-fingerprint: qq, network: tcp, udp: true}
+  - {name: 🇲🇾 SS 马来西亚1-1A, server: ldu.izenny.com, port: 13828, type: ss, cipher: chacha20-ietf-poly1305, password: 8ec8a576-6af5-43bf-8843-da366c23e2c8, udp: true}
+  - {name: 🇯🇵 日本-V6|05-1A, server: greenip2.668918.xyz, port: 22307, type: vmess, uuid: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇭🇰 香港-V6|08-1A, server: greenhk2.616626.xyz, port: 10507, type: vmess, uuid: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 SS 美国2-1-1B, server: ldu.izenny.com, port: 12589, type: ss, cipher: chacha20-ietf-poly1305, password: 073c3ef2-8070-4cf5-ab87-ba140b296e55, udp: true}
+  - {name: 🇮🇱 SS 以色列1-1C, server: ldu.izenny.com, port: 18140, type: ss, cipher: chacha20-ietf-poly1305, password: ffcbde73-7ac4-47b6-8e2e-1631e7252ecb, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1E, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: f1e55205-f088-4d7c-a59e-da7713d2a9a6, udp: true}
+  - {name: 🇭🇰 香港-V6|05 0.5x-1A, server: nathk.91ai.de, port: 18002, type: vmess, uuid: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇧🇷 SS 巴西1-1B, server: ldu.izenny.com, port: 55936, type: ss, cipher: chacha20-ietf-poly1305, password: 073c3ef2-8070-4cf5-ab87-ba140b296e55, udp: true}
+  - {name: 🇮🇱 SS 以色列1-1A, server: ldu.izenny.com, port: 18140, type: ss, cipher: chacha20-ietf-poly1305, password: 8ec8a576-6af5-43bf-8843-da366c23e2c8, udp: true}
+  - {name: 🇺🇸 美国NO.2-1B, server: xdd.dashuai.cyou, port: 45053, type: vmess, uuid: f45b5644-9097-4ad6-943b-cd3f05bc34c5, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇹🇭 SS 泰国1-1B, server: ldu.izenny.com, port: 39037, type: ss, cipher: chacha20-ietf-poly1305, password: 073c3ef2-8070-4cf5-ab87-ba140b296e55, udp: true}
+  - {name: 🇲🇽 SS 墨西哥1-1A, server: ldu.izenny.com, port: 20149, type: ss, cipher: chacha20-ietf-poly1305, password: 8ec8a576-6af5-43bf-8843-da366c23e2c8, udp: true}
+  - {name: 🇺🇸 美国04-1B, server: layercloud.189.ovh, port: 10021, type: trojan, password: 58dd0dfe-6497-4cca-8663-12d6f29a33bb, sni: layercloud.189.ovh, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 3x备用专线香港1-1A, server: xh.dashuai.cyou, port: 50051, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇭🇰 香港03-1A, server: hytro.91ai.de, port: 10022, type: trojan, password: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, sni: hytro.91ai.de, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 2号专线 香港HK 53-1A, server: cdntwa.xiaomispeed.com, port: 39765, type: trojan, password: b884a95b-a02d-4092-9133-7fe47481f6ee, sni: cdntwa.xiaomispeed.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 SS 美国1-1C, server: ldu.izenny.com, port: 46197, type: ss, cipher: chacha20-ietf-poly1305, password: ffcbde73-7ac4-47b6-8e2e-1631e7252ecb, udp: true}
+  - {name: 🇺🇸 美国-V6|01-1A, server: crun6.668918.xyz, port: 22308, type: vmess, uuid: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇬🇧 英国2-1A, server: xdd.dashuai.cyou, port: 45067, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇸🇬 1号专线 新加坡SG 146-1A, server: 120.233.44.206, port: 39622, type: ss, cipher: chacha20-ietf-poly1305, password: b884a95b-a02d-4092-9133-7fe47481f6ee, udp: true}
+  - {name: 🇹🇼 台湾1-1A, server: haa.dashuai.cyou, port: 45078, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇬🇧 英国2-1B, server: xdd.dashuai.cyou, port: 45067, type: vmess, uuid: f45b5644-9097-4ad6-943b-cd3f05bc34c5, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇹🇼 SS 台湾1-1C, server: ldu.izenny.com, port: 18148, type: ss, cipher: chacha20-ietf-poly1305, password: ffcbde73-7ac4-47b6-8e2e-1631e7252ecb, udp: true}
+  - {name: 🇳🇱 荷兰-V6|01 0.5x-1B, server: naran1.616626.xyz, port: 22305, type: vmess, uuid: 58dd0dfe-6497-4cca-8663-12d6f29a33bb, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇭🇰 2号专线 香港HK 53-1B, server: cdntwa.xiaomispeed.com, port: 39765, type: trojan, password: 21e0cda6-d543-4f42-86ca-99ee85193205, sni: cdntwa.xiaomispeed.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港-线路1-1O, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 09bce9b6-bbc7-42a4-b3bd-308217672194, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1H, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 44528430-32dd-44a0-a29c-3a0a5f99ad5f, udp: true}
+  - {name: 🇯🇵 日本-V6|02-1B, server: greenchais2.668918.xyz, port: 22307, type: vmess, uuid: 58dd0dfe-6497-4cca-8663-12d6f29a33bb, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇨🇦 加拿大1-1A, server: haa.dashuai.cyou, port: 45064, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇦🇺 澳大利亚原生1-1A, server: haa.dashuai.cyou, port: 45062, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇯🇵 SS 日本3-1C, server: ldu.izenny.com, port: 57927, type: ss, cipher: chacha20-ietf-poly1305, password: ffcbde73-7ac4-47b6-8e2e-1631e7252ecb, udp: true}
+  - {name: 🇨🇳 中国联通节点1, server: 115.231.220.33, port: 5443, type: trojan, password: 718e6067-8e1a-409c-bc57-ce69de9da23e, sni: nodecn1.jiayinetwork.es, skip-cert-verify: true, udp: true}
+  - {name: 🇮🇳 SS 印度1-1C, server: ldu.izenny.com, port: 34411, type: ss, cipher: chacha20-ietf-poly1305, password: ffcbde73-7ac4-47b6-8e2e-1631e7252ecb, udp: true}
+  - {name: 🇺🇸 美国05-1A, server: advin.189.ovh, port: 10027, type: trojan, password: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, sni: advin.189.ovh, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港NO.2-1B, server: xdd.dashuai.cyou, port: 45051, type: vmess, uuid: f45b5644-9097-4ad6-943b-cd3f05bc34c5, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇹🇼 台湾2-1B, server: xdd.dashuai.cyou, port: 45077, type: vmess, uuid: f45b5644-9097-4ad6-943b-cd3f05bc34c5, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国02-1A, server: vir11.189.ovh, port: 10022, type: trojan, password: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, sni: vir11.189.ovh, skip-cert-verify: true, udp: true}
+  - {name: 🇹🇭 SS 泰国1-1A, server: ldu.izenny.com, port: 39037, type: ss, cipher: chacha20-ietf-poly1305, password: 8ec8a576-6af5-43bf-8843-da366c23e2c8, udp: true}
+  - {name: 🇮🇳 印度2-1A, server: xdd.dashuai.cyou, port: 45073, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇯🇵 SS 日本1-1B, server: ldu.izenny.com, port: 10589, type: ss, cipher: chacha20-ietf-poly1305, password: 073c3ef2-8070-4cf5-ab87-ba140b296e55, udp: true}
+  - {name: 🇯🇵 2号专线 日本JP 75-1B, server: cdntwa.xiaomispeed.com, port: 39769, type: trojan, password: 21e0cda6-d543-4f42-86ca-99ee85193205, sni: cdntwa.xiaomispeed.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 1号专线 新加坡SG 146-1B, server: 120.233.44.206, port: 39622, type: ss, cipher: chacha20-ietf-poly1305, password: 21e0cda6-d543-4f42-86ca-99ee85193205, udp: true}
+  - {name: 🇩🇪 德国-V6|03 0.5x-1B, server: netcp3.616626.xyz, port: 22307, type: vmess, uuid: 58dd0dfe-6497-4cca-8663-12d6f29a33bb, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇩🇪 德国-V6|03 0.5x-1A, server: netcp3.616626.xyz, port: 22307, type: vmess, uuid: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇹🇼 3x备用专线台湾1-1A, server: xh.dashuai.cyou, port: 50050, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇭🇰 香港-线路1-1J, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 0844e3e8-cb29-46e6-a73a-def0040ab886, udp: true}
+  - {name: 🇯🇵 日本-V6|04-1B, server: greenip1.668918.xyz, port: 22306, type: vmess, uuid: 58dd0dfe-6497-4cca-8663-12d6f29a33bb, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇭🇰 SS 香港1-1A, server: ldu.izenny.com, port: 34061, type: ss, cipher: chacha20-ietf-poly1305, password: 8ec8a576-6af5-43bf-8843-da366c23e2c8, udp: true}
+  - {name: 🇹🇭 SS 泰国1-1C, server: ldu.izenny.com, port: 39037, type: ss, cipher: chacha20-ietf-poly1305, password: ffcbde73-7ac4-47b6-8e2e-1631e7252ecb, udp: true}
+  - {name: 🇳🇱 荷兰-V6|04 0.5x-1B, server: naran4.616626.xyz, port: 22310, type: vmess, uuid: 58dd0dfe-6497-4cca-8663-12d6f29a33bb, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国07-1B, server: vir694.189.ovh, port: 10021, type: trojan, password: 58dd0dfe-6497-4cca-8663-12d6f29a33bb, sni: vir694.189.ovh, skip-cert-verify: true, udp: true}
+  - {name: 🇹🇼 台湾高速节点3, server: 118.232.199.14, port: 443, type: trojan, password: 718e6067-8e1a-409c-bc57-ce69de9da23e, sni: node3.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本-V6|07-1A, server: vpsjp1.668918.xyz, port: 22306, type: vmess, uuid: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇹🇼 SS 台湾1-1B, server: ldu.izenny.com, port: 18148, type: ss, cipher: chacha20-ietf-poly1305, password: 073c3ef2-8070-4cf5-ab87-ba140b296e55, udp: true}
+  - {name: 🇭🇰 3x备用专线香港1-1B, server: xh.dashuai.cyou, port: 50051, type: vmess, uuid: f45b5644-9097-4ad6-943b-cd3f05bc34c5, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇰🇷 韩国 专线NO2-1A, server: xdd.dashuai.cyou, port: 45075, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1J, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 0844e3e8-cb29-46e6-a73a-def0040ab886, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1L, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 598bd0af-0288-437c-a096-d34bd561c70e, udp: true}
+  - {name: 🇭🇰 香港-线路1-1H, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 44528430-32dd-44a0-a29c-3a0a5f99ad5f, udp: true}
+  - {name: 🇹🇼 台湾01|家宽, server: tencent-app.baipiao0721-dns78655.eu, port: 443, type: vless, uuid: b427557b-9132-4ed4-a094-8314e10112d0, tls: true, servername: xn--kprw13d.xn--9kq81ml53a.site, network: ws, ws-opts: {path: /, headers: {Host: xn--kprw13d.xn--9kq81ml53a.site}}, udp: true}
+  - {name: 🇭🇰 香港-线路1-1A, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 61f0ab5d-1fe6-47eb-b128-2abffaa86917, udp: true}
+  - {name: 🇺🇸 1号专线 美国US 205-1B, server: 120.233.44.206, port: 39312, type: ss, cipher: chacha20-ietf-poly1305, password: 21e0cda6-d543-4f42-86ca-99ee85193205, udp: true}
+  - {name: 🇸🇬 SS 新加坡 1-1B, server: ldu.izenny.com, port: 28063, type: ss, cipher: chacha20-ietf-poly1305, password: 073c3ef2-8070-4cf5-ab87-ba140b296e55, udp: true}
+  - {name: 🇬🇧 英国1-1A, server: haa.dashuai.cyou, port: 45066, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇸🇬 新加坡NO.2-1B, server: xdd.dashuai.cyou, port: 45055, type: vmess, uuid: f45b5644-9097-4ad6-943b-cd3f05bc34c5, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇭🇰 1号专线 香港HK 113-1A, server: 120.233.44.206, port: 39524, type: ss, cipher: chacha20-ietf-poly1305, password: b884a95b-a02d-4092-9133-7fe47481f6ee, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1P, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: e44e71dd-819e-4188-973b-08070af3329c, udp: true}
+  - {name: 🇮🇳 SS 印度1-1B, server: ldu.izenny.com, port: 34411, type: ss, cipher: chacha20-ietf-poly1305, password: 073c3ef2-8070-4cf5-ab87-ba140b296e55, udp: true}
+  - {name: 🇺🇸 美国NO.2-1A, server: xdd.dashuai.cyou, port: 45053, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇨🇦 加拿大1-1B, server: haa.dashuai.cyou, port: 45064, type: vmess, uuid: f45b5644-9097-4ad6-943b-cd3f05bc34c5, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇹🇼 台湾1-1B, server: haa.dashuai.cyou, port: 45078, type: vmess, uuid: f45b5644-9097-4ad6-943b-cd3f05bc34c5, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 0.5x-1A, server: nara.189.ovh, port: 10027, type: trojan, password: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, sni: nara.189.ovh, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 SS 美国1-1B, server: ldu.izenny.com, port: 46197, type: ss, cipher: chacha20-ietf-poly1305, password: 073c3ef2-8070-4cf5-ab87-ba140b296e55, udp: true}
+  - {name: 🇸🇬 SS 新加坡 1-1C, server: ldu.izenny.com, port: 28063, type: ss, cipher: chacha20-ietf-poly1305, password: ffcbde73-7ac4-47b6-8e2e-1631e7252ecb, udp: true}
+  - {name: 🇦🇺 澳大利亚原生1-1B, server: haa.dashuai.cyou, port: 45062, type: vmess, uuid: f45b5644-9097-4ad6-943b-cd3f05bc34c5, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇯🇵 1号专线 日本JP 103-1A, server: 120.233.44.206, port: 31923, type: ss, cipher: chacha20-ietf-poly1305, password: b884a95b-a02d-4092-9133-7fe47481f6ee, udp: true}
+  - {name: 🇯🇵 1号专线 日本JP 103-1B, server: 120.233.44.206, port: 31923, type: ss, cipher: chacha20-ietf-poly1305, password: 21e0cda6-d543-4f42-86ca-99ee85193205, udp: true}
+  - {name: 🇹🇼 台湾2-1A, server: xdd.dashuai.cyou, port: 45077, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇭🇰 香港-V6|07-1A, server: greenhk1.616626.xyz, port: 10506, type: vmess, uuid: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇩🇪 德国-V6|01 0.5x-1B, server: netcp1.616626.xyz, port: 22305, type: vmess, uuid: 58dd0dfe-6497-4cca-8663-12d6f29a33bb, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇳🇱 荷兰-V6|04 0.5x-1A, server: naran4.616626.xyz, port: 22310, type: vmess, uuid: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇹🇷 SS 土耳其1-1A, server: ldu.izenny.com, port: 33744, type: ss, cipher: chacha20-ietf-poly1305, password: 8ec8a576-6af5-43bf-8843-da366c23e2c8, udp: true}
+  - {name: 🇺🇸 美国01-1B, server: vir732.189.ovh, port: 10026, type: trojan, password: 58dd0dfe-6497-4cca-8663-12d6f29a33bb, sni: vir732.189.ovh, skip-cert-verify: true, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1K, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 8f9ae82c-1838-4482-9538-519372f7222e, udp: true}
+  - {name: 🇮🇸 SS 冰岛1-1C, server: ldu.izenny.com, port: 18244, type: ss, cipher: chacha20-ietf-poly1305, password: ffcbde73-7ac4-47b6-8e2e-1631e7252ecb, udp: true}
+  - {name: 🇹🇼 台湾高速节点, server: 103.137.63.77, port: 443, type: trojan, password: 718e6067-8e1a-409c-bc57-ce69de9da23e, sni: node1.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡NO.1-1B, server: haa.dashuai.cyou, port: 45054, type: vmess, uuid: f45b5644-9097-4ad6-943b-cd3f05bc34c5, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇭🇰 香港03-1B, server: hytro.91ai.de, port: 10022, type: trojan, password: 58dd0dfe-6497-4cca-8663-12d6f29a33bb, sni: hytro.91ai.de, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 韩国 专线NO2-1B, server: xdd.dashuai.cyou, port: 45075, type: vmess, uuid: f45b5644-9097-4ad6-943b-cd3f05bc34c5, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇮🇳 印度2-1B, server: xdd.dashuai.cyou, port: 45073, type: vmess, uuid: f45b5644-9097-4ad6-943b-cd3f05bc34c5, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇹🇼 SS 台湾2-1-1C, server: ldu.izenny.com, port: 43076, type: ss, cipher: chacha20-ietf-poly1305, password: ffcbde73-7ac4-47b6-8e2e-1631e7252ecb, udp: true}
+  - {name: 🇹🇼 3x备用专线台湾1-1B, server: xh.dashuai.cyou, port: 50050, type: vmess, uuid: f45b5644-9097-4ad6-943b-cd3f05bc34c5, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国NO.1-1B, server: haa.dashuai.cyou, port: 45052, type: vmess, uuid: f45b5644-9097-4ad6-943b-cd3f05bc34c5, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇭🇰 2号专线 香港HK 74-1B, server: cdntwa.xiaomispeed.com, port: 33838, type: trojan, password: 21e0cda6-d543-4f42-86ca-99ee85193205, sni: cdntwa.xiaomispeed.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港-V6|07-1B, server: greenhk1.616626.xyz, port: 10506, type: vmess, uuid: 58dd0dfe-6497-4cca-8663-12d6f29a33bb, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇰🇷 韩国 专线NO1-1A, server: haa.dashuai.cyou, port: 45076, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇯🇵 日本01-1A, server: greenjp2.yueyun.de, port: 11030, type: trojan, password: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, sni: greenjp2.yueyun.de, skip-cert-verify: true, udp: true}
+  - {name: 🇫🇷 法国1-1B, server: haa.dashuai.cyou, port: 45072, type: vmess, uuid: f45b5644-9097-4ad6-943b-cd3f05bc34c5, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇯🇵 SS 日本3-1A, server: ldu.izenny.com, port: 57927, type: ss, cipher: chacha20-ietf-poly1305, password: 8ec8a576-6af5-43bf-8843-da366c23e2c8, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1I, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: d219f53a-21ef-4e54-84f0-a46ebc85e490, udp: true}
+  - {name: 🇯🇵 日本-V6|02-1A, server: greenchais2.668918.xyz, port: 22307, type: vmess, uuid: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇯🇵 日本-V6|06-1B, server: greenip3.668918.xyz, port: 22308, type: vmess, uuid: 58dd0dfe-6497-4cca-8663-12d6f29a33bb, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇫🇷 法国-1B, server: fg.dashuai.cyou, port: 19901, type: vmess, uuid: f45b5644-9097-4ad6-943b-cd3f05bc34c5, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇯🇵 SS 日本3-1B, server: ldu.izenny.com, port: 57927, type: ss, cipher: chacha20-ietf-poly1305, password: 073c3ef2-8070-4cf5-ab87-ba140b296e55, udp: true}
+  - {name: 🇹🇷 SS 土耳其1-1B, server: ldu.izenny.com, port: 33744, type: ss, cipher: chacha20-ietf-poly1305, password: 073c3ef2-8070-4cf5-ab87-ba140b296e55, udp: true}
+  - {name: 🇯🇵 日本-V6|07-1B, server: vpsjp1.668918.xyz, port: 22306, type: vmess, uuid: 58dd0dfe-6497-4cca-8663-12d6f29a33bb, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1B, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 86d10db0-6479-48c4-8bb0-8e22fa17e07e, udp: true}
+  - {name: 🇰🇷 SS 韩国1-1A, server: ldu.izenny.com, port: 41431, type: ss, cipher: chacha20-ietf-poly1305, password: 8ec8a576-6af5-43bf-8843-da366c23e2c8, udp: true}
+  - {name: 🇯🇵 日本NO.2-1A, server: xdd.dashuai.cyou, port: 45057, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇫🇷 法国2-1B, server: xdd.dashuai.cyou, port: 45071, type: vmess, uuid: f45b5644-9097-4ad6-943b-cd3f05bc34c5, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇭🇰 香港-线路1-1M, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 9031abbf-b5a7-416a-b741-424fb4ec7251, udp: true}
+  - {name: 🇬🇧 英国1-1B, server: haa.dashuai.cyou, port: 45066, type: vmess, uuid: f45b5644-9097-4ad6-943b-cd3f05bc34c5, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇮🇳 SS 印度1-1A, server: ldu.izenny.com, port: 34411, type: ss, cipher: chacha20-ietf-poly1305, password: 8ec8a576-6af5-43bf-8843-da366c23e2c8, udp: true}
+  - {name: 🇯🇵 日本02-1A, server: vpsjp.yueyun.de, port: 13036, type: trojan, password: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, sni: vpsjp.yueyun.de, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港-线路1-1L, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 598bd0af-0288-437c-a096-d34bd561c70e, udp: true}
+  - {name: 🇯🇵 2号专线 日本JP 75-1A, server: cdntwa.xiaomispeed.com, port: 39769, type: trojan, password: b884a95b-a02d-4092-9133-7fe47481f6ee, sni: cdntwa.xiaomispeed.com, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 德国-V6|02 0.5x-1A, server: netcp2.616626.xyz, port: 22306, type: vmess, uuid: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇦🇺 澳大利亚原生2-1A, server: xdd.dashuai.cyou, port: 45063, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇰🇷 韩国 专线NO1-1B, server: haa.dashuai.cyou, port: 45076, type: vmess, uuid: f45b5644-9097-4ad6-943b-cd3f05bc34c5, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇮🇱 SS 以色列1-1B, server: ldu.izenny.com, port: 18140, type: ss, cipher: chacha20-ietf-poly1305, password: 073c3ef2-8070-4cf5-ab87-ba140b296e55, udp: true}
+  - {name: 🇳🇱 荷兰-V6|02 0.5x-1B, server: naran2.616626.xyz, port: 22306, type: vmess, uuid: 58dd0dfe-6497-4cca-8663-12d6f29a33bb, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1M, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 9031abbf-b5a7-416a-b741-424fb4ec7251, udp: true}
+  - {name: 🇭🇰 香港-线路1-1I, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: d219f53a-21ef-4e54-84f0-a46ebc85e490, udp: true}
+  - {name: 🇭🇰 香港-线路1-1P, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: e44e71dd-819e-4188-973b-08070af3329c, udp: true}
+  - {name: 🇺🇸 美国-V6|01-1B, server: crun6.668918.xyz, port: 22308, type: vmess, uuid: 58dd0dfe-6497-4cca-8663-12d6f29a33bb, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇦🇺 澳大利亚原生2-1B, server: xdd.dashuai.cyou, port: 45063, type: vmess, uuid: f45b5644-9097-4ad6-943b-cd3f05bc34c5, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇹🇼 1号专线 台湾TW 89-1B, server: 120.233.44.206, port: 33922, type: ss, cipher: chacha20-ietf-poly1305, password: 21e0cda6-d543-4f42-86ca-99ee85193205, udp: true}
+  - {name: 🇭🇰 香港-线路1-1N, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: efa83b13-dbd6-4e0c-a922-773f31ea4858, udp: true}
+  - {name: 🇲🇽 SS 墨西哥1-1C, server: ldu.izenny.com, port: 20149, type: ss, cipher: chacha20-ietf-poly1305, password: ffcbde73-7ac4-47b6-8e2e-1631e7252ecb, udp: true}
+  - {name: 🇺🇸 美国01-1A, server: vir732.189.ovh, port: 10026, type: trojan, password: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, sni: vir732.189.ovh, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港-线路1-1G, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 4c99e1b7-bd49-4a68-8cf0-8dbc178dd584, udp: true}
+  - {name: 🇹🇼 SS 台湾2-1-1B, server: ldu.izenny.com, port: 43076, type: ss, cipher: chacha20-ietf-poly1305, password: 073c3ef2-8070-4cf5-ab87-ba140b296e55, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1C, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 54e32bfb-4934-4fe0-acf2-091a807dfe48, udp: true}
+  - {name: 🇨🇦 加拿大2-1B, server: xdd.dashuai.cyou, port: 45065, type: vmess, uuid: f45b5644-9097-4ad6-943b-cd3f05bc34c5, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇳🇱 荷兰-V6|03 0.5x-1A, server: naran3.616626.xyz, port: 22308, type: vmess, uuid: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇧🇷 SS 巴西1-1A, server: ldu.izenny.com, port: 55936, type: ss, cipher: chacha20-ietf-poly1305, password: 8ec8a576-6af5-43bf-8843-da366c23e2c8, udp: true}
+  - {name: 🇺🇸 美国02-1B, server: vir11.189.ovh, port: 10022, type: trojan, password: 58dd0dfe-6497-4cca-8663-12d6f29a33bb, sni: vir11.189.ovh, skip-cert-verify: true, udp: true}
+  - {name: 🇲🇾 SS 马来西亚1-1C, server: ldu.izenny.com, port: 13828, type: ss, cipher: chacha20-ietf-poly1305, password: ffcbde73-7ac4-47b6-8e2e-1631e7252ecb, udp: true}
+  - {name: 🇹🇼 台湾高速节点2, server: 118.232.199.29, port: 443, type: trojan, password: 718e6067-8e1a-409c-bc57-ce69de9da23e, sni: node2.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 德国-V6|02 0.5x-1B, server: netcp2.616626.xyz, port: 22306, type: vmess, uuid: 58dd0dfe-6497-4cca-8663-12d6f29a33bb, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇫🇷 法国1-1A, server: haa.dashuai.cyou, port: 45072, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇮🇳 印度1-1B, server: haa.dashuai.cyou, port: 45074, type: vmess, uuid: f45b5644-9097-4ad6-943b-cd3f05bc34c5, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇯🇵 日本02-1B, server: vpsjp.yueyun.de, port: 13036, type: trojan, password: 58dd0dfe-6497-4cca-8663-12d6f29a33bb, sni: vpsjp.yueyun.de, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 SS 香港1-1B, server: ldu.izenny.com, port: 34061, type: ss, cipher: chacha20-ietf-poly1305, password: 073c3ef2-8070-4cf5-ab87-ba140b296e55, udp: true}
+  - {name: 🇮🇸 SS 冰岛1-1A, server: ldu.izenny.com, port: 18244, type: ss, cipher: chacha20-ietf-poly1305, password: 8ec8a576-6af5-43bf-8843-da366c23e2c8, udp: true}
+  - {name: 🇺🇸 美国07-1A, server: vir694.189.ovh, port: 10021, type: trojan, password: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, sni: vir694.189.ovh, skip-cert-verify: true, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1D, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: e7286458-bfce-405a-9fff-086809b7ef16, udp: true}
+  - {name: 🇭🇰 香港-V6|08-1B, server: greenhk2.616626.xyz, port: 10507, type: vmess, uuid: 58dd0dfe-6497-4cca-8663-12d6f29a33bb, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国NO.1-1A, server: haa.dashuai.cyou, port: 45052, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇭🇰 香港-线路1-1C, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 54e32bfb-4934-4fe0-acf2-091a807dfe48, udp: true}
+  - {name: 🇭🇰 2号专线 香港HK 244-1A, server: cdntwa.xiaomispeed.com, port: 38522, type: trojan, password: b884a95b-a02d-4092-9133-7fe47481f6ee, sni: cdntwa.xiaomispeed.com, skip-cert-verify: true, udp: true}
+  - {name: 🇮🇳 印度1-1A, server: haa.dashuai.cyou, port: 45074, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1A, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 61f0ab5d-1fe6-47eb-b128-2abffaa86917, udp: true}
+  - {name: 🇯🇵 日本-V6|04-1A, server: greenip1.668918.xyz, port: 22306, type: vmess, uuid: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇯🇵 日本NO.1-1B, server: haa.dashuai.cyou, port: 45056, type: vmess, uuid: f45b5644-9097-4ad6-943b-cd3f05bc34c5, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇸🇬 SS 新加坡 1-1A, server: ldu.izenny.com, port: 28063, type: ss, cipher: chacha20-ietf-poly1305, password: 8ec8a576-6af5-43bf-8843-da366c23e2c8, udp: true}
+  - {name: 🇺🇸 SS 美国2-1-1C, server: ldu.izenny.com, port: 12589, type: ss, cipher: chacha20-ietf-poly1305, password: ffcbde73-7ac4-47b6-8e2e-1631e7252ecb, udp: true}
+  - {name: 🇯🇵 日本03-1A, server: cloud.yueyun.de, port: 10389, type: trojan, password: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, sni: cloud.yueyun.de, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡NO.2-1A, server: xdd.dashuai.cyou, port: 45055, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇯🇵 日本-V6|05-1B, server: greenip2.668918.xyz, port: 22307, type: vmess, uuid: 58dd0dfe-6497-4cca-8663-12d6f29a33bb, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇯🇵 日本-V6|06-1A, server: greenip3.668918.xyz, port: 22308, type: vmess, uuid: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇲🇾 SS 马来西亚1-1B, server: ldu.izenny.com, port: 13828, type: ss, cipher: chacha20-ietf-poly1305, password: 073c3ef2-8070-4cf5-ab87-ba140b296e55, udp: true}
+  - {name: 🇯🇵 1号专线 日本JP 114-1A, server: 120.233.44.206, port: 36555, type: ss, cipher: chacha20-ietf-poly1305, password: b884a95b-a02d-4092-9133-7fe47481f6ee, udp: true}
+  - {name: 🇸🇬 新加坡NO.1-1A, server: haa.dashuai.cyou, port: 45054, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇭🇰 香港-V6|05 0.5x-1B, server: nathk.91ai.de, port: 18002, type: vmess, uuid: 58dd0dfe-6497-4cca-8663-12d6f29a33bb, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇩🇪 德国-V6|01 0.5x-1A, server: netcp1.616626.xyz, port: 22305, type: vmess, uuid: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇭🇰 香港-线路1-1E, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: f1e55205-f088-4d7c-a59e-da7713d2a9a6, udp: true}
+  - {name: 🇫🇷 法国2-1A, server: xdd.dashuai.cyou, port: 45071, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇯🇵 日本NO.1-1A, server: haa.dashuai.cyou, port: 45056, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇭🇰 香港-线路1-1K, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 8f9ae82c-1838-4482-9538-519372f7222e, udp: true}
+  - {name: 🇫🇷 法国-1A, server: fg.dashuai.cyou, port: 19901, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 1号专线 美国US 205-1A, server: 120.233.44.206, port: 39312, type: ss, cipher: chacha20-ietf-poly1305, password: b884a95b-a02d-4092-9133-7fe47481f6ee, udp: true}
+  - {name: 🇺🇸 2号专线 美国US 110-1A, server: cdntwa.xiaomispeed.com, port: 33889, type: trojan, password: b884a95b-a02d-4092-9133-7fe47481f6ee, sni: cdntwa.xiaomispeed.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国05-1B, server: advin.189.ovh, port: 10027, type: trojan, password: 58dd0dfe-6497-4cca-8663-12d6f29a33bb, sni: advin.189.ovh, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港-V4|02-1B, server: hkvm4.656888.xyz, port: 30026, type: trojan, password: 58dd0dfe-6497-4cca-8663-12d6f29a33bb, sni: hkvm4.656888.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 1号专线 香港HK 113-1B, server: 120.233.44.206, port: 39524, type: ss, cipher: chacha20-ietf-poly1305, password: 21e0cda6-d543-4f42-86ca-99ee85193205, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1O, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 09bce9b6-bbc7-42a4-b3bd-308217672194, udp: true}
+  - {name: 🇭🇰 SS 香港1-1C, server: ldu.izenny.com, port: 34061, type: ss, cipher: chacha20-ietf-poly1305, password: ffcbde73-7ac4-47b6-8e2e-1631e7252ecb, udp: true}
+  - {name: 🇳🇱 荷兰-V6|02 0.5x-1A, server: naran2.616626.xyz, port: 22306, type: vmess, uuid: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 0.5x-1C, server: nara.189.ovh, port: 10027, type: trojan, password: 58dd0dfe-6497-4cca-8663-12d6f29a33bb, sni: nara.189.ovh, skip-cert-verify: true, udp: true}
+  - {name: 🇮🇸 SS 冰岛1-1B, server: ldu.izenny.com, port: 18244, type: ss, cipher: chacha20-ietf-poly1305, password: 073c3ef2-8070-4cf5-ab87-ba140b296e55, udp: true}
+  - {name: 🇭🇰 香港-线路1-1B, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: 86d10db0-6479-48c4-8bb0-8e22fa17e07e, udp: true}
+  - {name: 0.5x-1D, server: netcp4.616626.xyz, port: 10027, type: trojan, password: 58dd0dfe-6497-4cca-8663-12d6f29a33bb, sni: netcp4.616626.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本NO.2-1B, server: xdd.dashuai.cyou, port: 45057, type: vmess, uuid: f45b5644-9097-4ad6-943b-cd3f05bc34c5, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇭🇰 香港-V4|02-1A, server: hkvm4.656888.xyz, port: 30026, type: trojan, password: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, sni: hkvm4.656888.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇳🇱 荷兰-V6|03 0.5x-1B, server: naran3.616626.xyz, port: 22308, type: vmess, uuid: 58dd0dfe-6497-4cca-8663-12d6f29a33bb, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇭🇰 香港-线路1-1F, server: 156.224.77.215, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: f9df82d2-1d7d-43d7-b4bc-cb53e275dd7f, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1N, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: efa83b13-dbd6-4e0c-a922-773f31ea4858, udp: true}
+  - {name: 🇯🇵 SS 日本1-1A, server: ldu.izenny.com, port: 10589, type: ss, cipher: chacha20-ietf-poly1305, password: 8ec8a576-6af5-43bf-8843-da366c23e2c8, udp: true}
+  - {name: 🇭🇰 香港-V6|06-1B, server: greenhk0.616626.xyz, port: 10505, type: vmess, uuid: 58dd0dfe-6497-4cca-8663-12d6f29a33bb, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇰🇷 韩国1, server: 27.102.132.195, port: 30001, type: ss, cipher: aes-128-gcm, password: d0aeeff5-b880-438a-a649-67941685416f, udp: true}
+  - {name: 🇺🇸 美国04-1A, server: layercloud.189.ovh, port: 10021, type: trojan, password: dc4a4d3e-fd9a-4541-9a82-b372ab11f02b, sni: layercloud.189.ovh, skip-cert-verify: true, udp: true}
+  - {name: 🇲🇽 SS 墨西哥1-1B, server: ldu.izenny.com, port: 20149, type: ss, cipher: chacha20-ietf-poly1305, password: 073c3ef2-8070-4cf5-ab87-ba140b296e55, udp: true}
+  - {name: 🇨🇦 加拿大2-1A, server: xdd.dashuai.cyou, port: 45065, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇰🇷 SS 韩国1-1C, server: ldu.izenny.com, port: 41431, type: ss, cipher: chacha20-ietf-poly1305, password: ffcbde73-7ac4-47b6-8e2e-1631e7252ecb, udp: true}
+  - {name: 🇺🇸 SS 美国1-1A, server: ldu.izenny.com, port: 46197, type: ss, cipher: chacha20-ietf-poly1305, password: 8ec8a576-6af5-43bf-8843-da366c23e2c8, udp: true}
+  - {name: 🇰🇷 SS 韩国1-1B, server: ldu.izenny.com, port: 41431, type: ss, cipher: chacha20-ietf-poly1305, password: 073c3ef2-8070-4cf5-ab87-ba140b296e55, udp: true}
+  - {name: 🇯🇵 1号专线 日本JP 114-1B, server: 120.233.44.206, port: 36555, type: ss, cipher: chacha20-ietf-poly1305, password: 21e0cda6-d543-4f42-86ca-99ee85193205, udp: true}
+  - {name: 🇹🇷 SS 土耳其1-1C, server: ldu.izenny.com, port: 33744, type: ss, cipher: chacha20-ietf-poly1305, password: ffcbde73-7ac4-47b6-8e2e-1631e7252ecb, udp: true}
+  - {name: 🇭🇰 2号专线 香港HK 244-1B, server: cdntwa.xiaomispeed.com, port: 38522, type: trojan, password: 21e0cda6-d543-4f42-86ca-99ee85193205, sni: cdntwa.xiaomispeed.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港NO.2-1A, server: xdd.dashuai.cyou, port: 45051, type: vmess, uuid: 5bec4ed4-f946-4618-b13a-17e4f41ad939, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇮🇪 爱尔兰-都柏林-1F, server: 107.175.187.181, port: 22800, type: ss, cipher: chacha20-ietf-poly1305, password: f9df82d2-1d7d-43d7-b4bc-cb53e275dd7f, udp: true}
+  - {name: 🇹🇼 1号专线 台湾TW 89-1A, server: 120.233.44.206, port: 33922, type: ss, cipher: chacha20-ietf-poly1305, password: b884a95b-a02d-4092-9133-7fe47481f6ee, udp: true}
+  - {name: 🇺🇸 SS 美国2-1-1A, server: ldu.izenny.com, port: 12589, type: ss, cipher: chacha20-ietf-poly1305, password: 8ec8a576-6af5-43bf-8843-da366c23e2c8, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇯🇵 1号专线 日本JP 103-1D
-      - 🇺🇸 SS 美国2-1-1B
-      - 🇳🇱 荷兰
-      - 🇳🇱 荷兰-V6|03 0.5x
-      - 🇮🇳 SS 印度1-1A
-      - 🇹🇼 台湾2
-      - 🇮🇱 SS 以色列1-1A
-      - 🇨🇦 加拿大1
-      - 🇮🇪 爱尔兰-都柏林-1C
-      - 0.5x-1A
-      - 🇺🇸 1号专线 美国US 205-1D
-      - 🇯🇵 日本NO.1
-      - 🇯🇵 1号专线 日本JP 114-1D
-      - 🇭🇰 2号专线 香港HK 53-1B
-      - 🇮🇪 爱尔兰-都柏林-1D
-      - 🇩🇪 德国01|轻量
-      - 🇳🇱 荷兰-V6|04 0.5x
-      - 🇯🇵 日本01
-      - 🇸🇬 1号专线 新加坡SG 146-1D
-      - 🇭🇰 香港
-      - 🇯🇵 1号专线 日本JP 103-1B
-      - 🇭🇰 香港NO.2
-      - 🇯🇵 1号专线 日本JP 103-1C
-      - 🇭🇰 SS 香港1-1C
-      - 🇺🇸 2号专线 美国US 110-1C
-      - 🇭🇰 香港-线路1-1L
-      - 🇰🇷 韩国 专线NO1
-      - 🇯🇵 2号专线 日本JP 75-1A
-      - 🇭🇰 1号专线 香港HK 113-1E
-      - 🇹🇼 SS 台湾1-1A
-      - 🇺🇸 美国NO.2
-      - 🇮🇳 SS 印度1-1C
-      - 🇺🇸 美国01
-      - 🇭🇰 2号专线 香港HK 244-1E
-      - 🇯🇵 日本NO.2
-      - 🇮🇸 SS 冰岛1-1C
-      - 🇮🇳 印度1
-      - 🇲🇾 SS 马来西亚1-1B
-      - 🇸🇬 SS 新加坡 1-1C
-      - 🇯🇵 1号专线 日本JP 103-1E
-      - 🇮🇸 SS 冰岛1-1B
-      - 🇲🇾 SS 马来西亚1-1A
-      - 🇰🇷 SS 韩国1-1C
-      - 🇺🇸 2号专线 美国US 110-1E
-      - 🇺🇸 SS 美国2-1-1A
-      - 🇹🇭 SS 泰国1-1A
-      - 🇹🇼 SS 台湾2-1-1B
-      - 🇯🇵 SS 日本1-1A
-      - 🇹🇼 SS 台湾2-1-1A
-      - 🇩🇪 德国-V6|03 0.5x
-      - 🇹🇼 台湾01|家宽
-      - 🇯🇵 1号专线 日本JP 114-1B
-      - 🇯🇵 日本-V6|07
-      - 🇯🇵 日本03
-      - 🇸🇬 SS 新加坡 1-1B
-      - 🇹🇼 台湾1
-      - 🇭🇰 香港-线路1-1D
-      - 🇮🇪 爱尔兰-都柏林-1N
-      - TOR-试用
-      - 🇭🇰 2号专线 香港HK 74-1D
-      - 🇹🇼 SS 台湾1-1C
-      - 🇹🇷 SS 土耳其1-1C
-      - 🇺🇸 美国高速节点1
-      - 🇹🇼 台湾高速节点
-      - 🇯🇵 SS 日本3-1C
-      - 🇭🇰 2号专线 香港HK 53-1D
-      - 🇲🇽 SS 墨西哥1-1B
-      - 🇺🇸 1号专线 美国US 205-1A
-      - 🇹🇼 台湾
-      - 🇺🇸 美国NO.1
-      - 🇸🇬 1号专线 新加坡SG 146-1E
-      - 🇭🇰 香港-线路1-1I
-      - 🇨🇳 中国联通节点1
-      - 🇯🇵 日本-V6|02
-      - 🇭🇰 香港-V6|06
-      - 🇭🇰 香港-线路1-1B
-      - 🇮🇪 爱尔兰-都柏林-1G
-      - 🇯🇵 1号专线 日本JP 114-1C
-      - 🇺🇸 美国05
-      - 🇹🇼 1号专线 台湾TW 89-1E
-      - 🇹🇼 SS 台湾2-1-1C
-      - 🇮🇪 爱尔兰-都柏林-1A
-      - 🇭🇰 1号专线 香港HK 113-1D
       - 🇭🇰 2号专线 香港HK 74-1A
-      - 🇭🇰 2号专线 香港HK 74-1C
-      - 🇯🇵 2号专线 日本JP 75-1C
-      - 🇯🇵 2号专线 日本JP 75-1E
-      - 🇹🇼 台湾高速节点2
-      - 🇺🇸 2号专线 美国US 110-1A
-      - 🇹🇼 1号专线 台湾TW 89-1A
-      - 🇭🇰 2号专线 香港HK 53-1C
-      - 🇯🇵 1号专线 日本JP 114-1A
-      - 🇳🇱 荷兰-V6|02 0.5x
-      - 🇭🇰 香港-线路1-1P
-      - 🇫🇷 法国2
-      - 🇮🇪 爱尔兰-都柏林-1H
-      - 🇬🇧 英国1
-      - 🇧🇷 SS 巴西1-1A
-      - 🇰🇷 SS 韩国1-1B
-      - 🇹🇼 1号专线 台湾TW 89-1D
-      - 🇧🇷 SS 巴西1-1B
-      - 🇹🇭 SS 泰国1-1B
-      - 🇯🇵 1号专线 日本JP 114-1E
-      - 🇰🇷 SS 韩国1-1A
-      - 🇭🇰 SS 香港1-1A
-      - 🇺🇸 SS 美国1-1A
-      - 🇭🇰 1号专线 香港HK 113-1A
-      - 🇮🇱 SS 以色列1-1B
-      - 🇯🇵 日本-V6|05
-      - 🇭🇰 香港-线路1-1O
-      - 🇺🇸 2号专线 美国US 110-1B
-      - 🇭🇰 2号专线 香港HK 244-1A
-      - 🇭🇰 香港-线路1-1F
-      - 🇹🇼 SS 台湾1-1B
-      - 🇮🇪 爱尔兰-都柏林-1I
-      - 🇸🇬 SS 新加坡 1-1A
-      - 🇮🇪 爱尔兰-都柏林-1K
-      - 🇭🇰 2号专线 香港HK 74-1E
-      - 🇸🇬 新加坡NO.2
-      - 🇭🇰 香港-线路1-1A
-      - 🇹🇼 台湾高速节点3
-      - 🇮🇳 SS 印度1-1B
-      - 🇮🇪 爱尔兰-都柏林-1L
-      - 🇺🇸 2号专线 美国US 110-1D
-      - 🇭🇰 香港-线路1-1J
-      - 🇭🇰 香港-V4|02
-      - 🇯🇵 2号专线 日本JP 75-1D
-      - 🇺🇸 美国-V6|01
-      - 🇭🇰 香港-V6|05 0.5x
-      - 🇬🇧 英国2
-      - 🇯🇵 SS 日本3-1A
-      - 🇹🇭 SS 泰国1-1C
-      - 🇯🇵 日本-V6|04
-      - 🇺🇸 SS 美国2-1-1C
-      - 🇲🇽 SS 墨西哥1-1C
-      - 🇹🇼 1号专线 台湾TW 89-1C
-      - 🇭🇰 香港-线路1-1H
-      - 🇸🇬 新加坡NO.1
-      - 🇺🇸 SS 美国1-1C
-      - 🇸🇬 1号专线 新加坡SG 146-1C
-      - 🇭🇰 香港-线路1-1M
-      - 🇯🇵 SS 日本3-1B
-      - 🇭🇰 香港-V6|08
-      - 🇮🇪 爱尔兰-都柏林-1F
-      - 🇭🇰 2号专线 香港HK 244-1D
+      - 🇭🇰 香港-线路1-1D
+      - 🇹🇼 SS 台湾2-1-1A
       - 🇯🇵 SS 日本1-1C
-      - 🇮🇪 爱尔兰-都柏林-1P
-      - 🇭🇰 3x备用专线香港1
-      - 🇺🇸 1号专线 美国US 205-1C
-      - 🇦🇺 澳大利亚原生1
-      - 🇸🇬 1号专线 新加坡SG 146-1A
-      - 🇭🇰 2号专线 香港HK 53-1E
-      - 🇰🇷 韩国
-      - 🇭🇰 香港-线路1-1K
-      - 🇩🇪 德国-V6|01 0.5x
-      - 🇦🇺 澳大利亚原生2
-      - 🇹🇷 SS 土耳其1-1B
-      - 🇯🇵 日本02
-      - 🇮🇳 印度2
-      - 🇮🇪 爱尔兰-都柏林-1J
-      - 🇨🇦 加拿大2
-      - 🇲🇽 SS 墨西哥1-1A
-      - 🇩🇪 德国-V6|02 0.5x
-      - 🇹🇭 泰国
-      - 🇭🇰 香港-线路1-1G
-      - 🇮🇱 SS 以色列1-1C
-      - 🇭🇰 香港03
-      - 🇭🇰 2号专线 香港HK 244-1B
-      - 🇺🇸 1号专线 美国US 205-1E
-      - 🇭🇰 香港-线路1-1E
-      - 🇺🇸 美国04
-      - 🇮🇪 爱尔兰-都柏林-1E
-      - 🇮🇪 爱尔兰-都柏林-1M
-      - 🇭🇰 香港-线路1-1N
-      - 🇲🇾 SS 马来西亚1-1C
-      - 🇫🇷 法国
-      - 🇫🇷 法国1
-      - 🇭🇰 1号专线 香港HK 113-1C
-      - 🇯🇵 2号专线 日本JP 75-1B
-      - 🇸🇬 新加坡
-      - 🇭🇰 2号专线 香港HK 244-1C
-      - 🇹🇼 1号专线 台湾TW 89-1B
-      - 🇮🇸 SS 冰岛1-1A
-      - 🇰🇷 韩国 专线NO2
-      - 🇺🇸 1号专线 美国US 205-1B
-      - 🇭🇰 2号专线 香港HK 53-1A
-      - 🇯🇵 日本-V6|06
-      - 🇭🇰 香港-V6|07
-      - 0.5x-1B
-      - 🇯🇵 1号专线 日本JP 103-1A
-      - 🇹🇷 SS 土耳其1-1A
-      - 🇹🇼 3x备用专线台湾1
+      - 🇺🇸 美国高速节点1
+      - 🇹🇼 SS 台湾1-1A
       - 🇧🇷 SS 巴西1-1C
-      - 🇳🇱 荷兰-V6|01 0.5x
-      - 🇩🇪 德国
-      - 🇺🇸 SS 美国1-1B
-      - 🇯🇵 日本
-      - 🇺🇸 美国07
-      - 🇭🇰 香港-线路1-1C
-      - 🇭🇰 SS 香港1-1B
-      - 🇮🇪 爱尔兰-都柏林-1O
-      - 🇮🇪 爱尔兰-都柏林-1B
-      - 🇭🇰 2号专线 香港HK 74-1B
-      - 🇭🇰 1号专线 香港HK 113-1B
+      - 🇯🇵 日本01-1B
+      - 🇭🇰 香港-V6|06-1A
+      - 🇯🇵 日本03-1B
+      - 🇺🇸 2号专线 美国US 110-1B
+      - 0.5x-1B
+      - 🇮🇪 爱尔兰-都柏林-1G
+      - 🇳🇱 荷兰-V6|01 0.5x-1A
+      - 🇩🇪 德国01|轻量
+      - 🇲🇾 SS 马来西亚1-1A
+      - 🇯🇵 日本-V6|05-1A
+      - 🇭🇰 香港-V6|08-1A
+      - 🇺🇸 SS 美国2-1-1B
+      - 🇮🇱 SS 以色列1-1C
+      - 🇮🇪 爱尔兰-都柏林-1E
+      - 🇭🇰 香港-V6|05 0.5x-1A
+      - 🇧🇷 SS 巴西1-1B
+      - 🇮🇱 SS 以色列1-1A
+      - 🇺🇸 美国NO.2-1B
+      - 🇹🇭 SS 泰国1-1B
+      - 🇲🇽 SS 墨西哥1-1A
+      - 🇺🇸 美国04-1B
+      - 🇭🇰 3x备用专线香港1-1A
+      - 🇭🇰 香港03-1A
+      - 🇭🇰 2号专线 香港HK 53-1A
+      - 🇺🇸 SS 美国1-1C
+      - 🇺🇸 美国-V6|01-1A
+      - 🇬🇧 英国2-1A
+      - 🇸🇬 1号专线 新加坡SG 146-1A
+      - 🇹🇼 台湾1-1A
+      - 🇬🇧 英国2-1B
+      - 🇹🇼 SS 台湾1-1C
+      - 🇳🇱 荷兰-V6|01 0.5x-1B
+      - 🇭🇰 2号专线 香港HK 53-1B
+      - 🇭🇰 香港-线路1-1O
+      - 🇮🇪 爱尔兰-都柏林-1H
+      - 🇯🇵 日本-V6|02-1B
+      - 🇨🇦 加拿大1-1A
+      - 🇦🇺 澳大利亚原生1-1A
+      - 🇯🇵 SS 日本3-1C
+      - 🇨🇳 中国联通节点1
+      - 🇮🇳 SS 印度1-1C
+      - 🇺🇸 美国05-1A
+      - 🇭🇰 香港NO.2-1B
+      - 🇹🇼 台湾2-1B
+      - 🇺🇸 美国02-1A
+      - 🇹🇭 SS 泰国1-1A
+      - 🇮🇳 印度2-1A
       - 🇯🇵 SS 日本1-1B
-      - 🇺🇸 美国02
+      - 🇯🇵 2号专线 日本JP 75-1B
       - 🇸🇬 1号专线 新加坡SG 146-1B
+      - 🇩🇪 德国-V6|03 0.5x-1B
+      - 🇩🇪 德国-V6|03 0.5x-1A
+      - 🇹🇼 3x备用专线台湾1-1A
+      - 🇭🇰 香港-线路1-1J
+      - 🇯🇵 日本-V6|04-1B
+      - 🇭🇰 SS 香港1-1A
+      - 🇹🇭 SS 泰国1-1C
+      - 🇳🇱 荷兰-V6|04 0.5x-1B
+      - 🇺🇸 美国07-1B
+      - 🇹🇼 台湾高速节点3
+      - 🇯🇵 日本-V6|07-1A
+      - 🇹🇼 SS 台湾1-1B
+      - 🇭🇰 3x备用专线香港1-1B
+      - 🇰🇷 韩国 专线NO2-1A
+      - 🇮🇪 爱尔兰-都柏林-1J
+      - 🇮🇪 爱尔兰-都柏林-1L
+      - 🇭🇰 香港-线路1-1H
+      - 🇹🇼 台湾01|家宽
+      - 🇭🇰 香港-线路1-1A
+      - 🇺🇸 1号专线 美国US 205-1B
+      - 🇸🇬 SS 新加坡 1-1B
+      - 🇬🇧 英国1-1A
+      - 🇸🇬 新加坡NO.2-1B
+      - 🇭🇰 1号专线 香港HK 113-1A
+      - 🇮🇪 爱尔兰-都柏林-1P
+      - 🇮🇳 SS 印度1-1B
+      - 🇺🇸 美国NO.2-1A
+      - 🇨🇦 加拿大1-1B
+      - 🇹🇼 台湾1-1B
+      - 0.5x-1A
+      - 🇺🇸 SS 美国1-1B
+      - 🇸🇬 SS 新加坡 1-1C
+      - 🇦🇺 澳大利亚原生1-1B
+      - 🇯🇵 1号专线 日本JP 103-1A
+      - 🇯🇵 1号专线 日本JP 103-1B
+      - 🇹🇼 台湾2-1A
+      - 🇭🇰 香港-V6|07-1A
+      - 🇩🇪 德国-V6|01 0.5x-1B
+      - 🇳🇱 荷兰-V6|04 0.5x-1A
+      - 🇹🇷 SS 土耳其1-1A
+      - 🇺🇸 美国01-1B
+      - 🇮🇪 爱尔兰-都柏林-1K
+      - 🇮🇸 SS 冰岛1-1C
+      - 🇹🇼 台湾高速节点
+      - 🇸🇬 新加坡NO.1-1B
+      - 🇭🇰 香港03-1B
+      - 🇰🇷 韩国 专线NO2-1B
+      - 🇮🇳 印度2-1B
+      - 🇹🇼 SS 台湾2-1-1C
+      - 🇹🇼 3x备用专线台湾1-1B
+      - 🇺🇸 美国NO.1-1B
+      - 🇭🇰 2号专线 香港HK 74-1B
+      - 🇭🇰 香港-V6|07-1B
+      - 🇰🇷 韩国 专线NO1-1A
+      - 🇯🇵 日本01-1A
+      - 🇫🇷 法国1-1B
+      - 🇯🇵 SS 日本3-1A
+      - 🇮🇪 爱尔兰-都柏林-1I
+      - 🇯🇵 日本-V6|02-1A
+      - 🇯🇵 日本-V6|06-1B
+      - 🇫🇷 法国-1B
+      - 🇯🇵 SS 日本3-1B
+      - 🇹🇷 SS 土耳其1-1B
+      - 🇯🇵 日本-V6|07-1B
+      - 🇮🇪 爱尔兰-都柏林-1B
+      - 🇰🇷 SS 韩国1-1A
+      - 🇯🇵 日本NO.2-1A
+      - 🇫🇷 法国2-1B
+      - 🇭🇰 香港-线路1-1M
+      - 🇬🇧 英国1-1B
+      - 🇮🇳 SS 印度1-1A
+      - 🇯🇵 日本02-1A
+      - 🇭🇰 香港-线路1-1L
+      - 🇯🇵 2号专线 日本JP 75-1A
+      - 🇩🇪 德国-V6|02 0.5x-1A
+      - 🇦🇺 澳大利亚原生2-1A
+      - 🇰🇷 韩国 专线NO1-1B
+      - 🇮🇱 SS 以色列1-1B
+      - 🇳🇱 荷兰-V6|02 0.5x-1B
+      - 🇮🇪 爱尔兰-都柏林-1M
+      - 🇭🇰 香港-线路1-1I
+      - 🇭🇰 香港-线路1-1P
+      - 🇺🇸 美国-V6|01-1B
+      - 🇦🇺 澳大利亚原生2-1B
+      - 🇹🇼 1号专线 台湾TW 89-1B
+      - 🇭🇰 香港-线路1-1N
+      - 🇲🇽 SS 墨西哥1-1C
+      - 🇺🇸 美国01-1A
+      - 🇭🇰 香港-线路1-1G
+      - 🇹🇼 SS 台湾2-1-1B
+      - 🇮🇪 爱尔兰-都柏林-1C
+      - 🇨🇦 加拿大2-1B
+      - 🇳🇱 荷兰-V6|03 0.5x-1A
+      - 🇧🇷 SS 巴西1-1A
+      - 🇺🇸 美国02-1B
+      - 🇲🇾 SS 马来西亚1-1C
+      - 🇹🇼 台湾高速节点2
+      - 🇩🇪 德国-V6|02 0.5x-1B
+      - 🇫🇷 法国1-1A
+      - 🇮🇳 印度1-1B
+      - 🇯🇵 日本02-1B
+      - 🇭🇰 SS 香港1-1B
+      - 🇮🇸 SS 冰岛1-1A
+      - 🇺🇸 美国07-1A
+      - 🇮🇪 爱尔兰-都柏林-1D
+      - 🇭🇰 香港-V6|08-1B
+      - 🇺🇸 美国NO.1-1A
+      - 🇭🇰 香港-线路1-1C
+      - 🇭🇰 2号专线 香港HK 244-1A
+      - 🇮🇳 印度1-1A
+      - 🇮🇪 爱尔兰-都柏林-1A
+      - 🇯🇵 日本-V6|04-1A
+      - 🇯🇵 日本NO.1-1B
+      - 🇸🇬 SS 新加坡 1-1A
+      - 🇺🇸 SS 美国2-1-1C
+      - 🇯🇵 日本03-1A
+      - 🇸🇬 新加坡NO.2-1A
+      - 🇯🇵 日本-V6|05-1B
+      - 🇯🇵 日本-V6|06-1A
+      - 🇲🇾 SS 马来西亚1-1B
+      - 🇯🇵 1号专线 日本JP 114-1A
+      - 🇸🇬 新加坡NO.1-1A
+      - 🇭🇰 香港-V6|05 0.5x-1B
+      - 🇩🇪 德国-V6|01 0.5x-1A
+      - 🇭🇰 香港-线路1-1E
+      - 🇫🇷 法国2-1A
+      - 🇯🇵 日本NO.1-1A
+      - 🇭🇰 香港-线路1-1K
+      - 🇫🇷 法国-1A
+      - 🇺🇸 1号专线 美国US 205-1A
+      - 🇺🇸 2号专线 美国US 110-1A
+      - 🇺🇸 美国05-1B
+      - 🇭🇰 香港-V4|02-1B
+      - 🇭🇰 1号专线 香港HK 113-1B
+      - 🇮🇪 爱尔兰-都柏林-1O
+      - 🇭🇰 SS 香港1-1C
+      - 🇳🇱 荷兰-V6|02 0.5x-1A
+      - 0.5x-1C
+      - 🇮🇸 SS 冰岛1-1B
+      - 🇭🇰 香港-线路1-1B
+      - 0.5x-1D
+      - 🇯🇵 日本NO.2-1B
+      - 🇭🇰 香港-V4|02-1A
+      - 🇳🇱 荷兰-V6|03 0.5x-1B
+      - 🇭🇰 香港-线路1-1F
+      - 🇮🇪 爱尔兰-都柏林-1N
+      - 🇯🇵 SS 日本1-1A
+      - 🇭🇰 香港-V6|06-1B
+      - 🇰🇷 韩国1
+      - 🇺🇸 美国04-1A
+      - 🇲🇽 SS 墨西哥1-1B
+      - 🇨🇦 加拿大2-1A
+      - 🇰🇷 SS 韩国1-1C
+      - 🇺🇸 SS 美国1-1A
+      - 🇰🇷 SS 韩国1-1B
+      - 🇯🇵 1号专线 日本JP 114-1B
+      - 🇹🇷 SS 土耳其1-1C
+      - 🇭🇰 2号专线 香港HK 244-1B
+      - 🇭🇰 香港NO.2-1A
+      - 🇮🇪 爱尔兰-都柏林-1F
+      - 🇹🇼 1号专线 台湾TW 89-1A
+      - 🇺🇸 SS 美国2-1-1A
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇯🇵 1号专线 日本JP 103-1D
-      - 🇺🇸 SS 美国2-1-1B
-      - 🇳🇱 荷兰
-      - 🇳🇱 荷兰-V6|03 0.5x
-      - 🇮🇳 SS 印度1-1A
-      - 🇹🇼 台湾2
-      - 🇮🇱 SS 以色列1-1A
-      - 🇨🇦 加拿大1
-      - 🇮🇪 爱尔兰-都柏林-1C
-      - 0.5x-1A
-      - 🇺🇸 1号专线 美国US 205-1D
-      - 🇯🇵 日本NO.1
-      - 🇯🇵 1号专线 日本JP 114-1D
-      - 🇭🇰 2号专线 香港HK 53-1B
-      - 🇮🇪 爱尔兰-都柏林-1D
-      - 🇩🇪 德国01|轻量
-      - 🇳🇱 荷兰-V6|04 0.5x
-      - 🇯🇵 日本01
-      - 🇸🇬 1号专线 新加坡SG 146-1D
-      - 🇭🇰 香港
-      - 🇯🇵 1号专线 日本JP 103-1B
-      - 🇭🇰 香港NO.2
-      - 🇯🇵 1号专线 日本JP 103-1C
-      - 🇭🇰 SS 香港1-1C
-      - 🇺🇸 2号专线 美国US 110-1C
-      - 🇭🇰 香港-线路1-1L
-      - 🇰🇷 韩国 专线NO1
-      - 🇯🇵 2号专线 日本JP 75-1A
-      - 🇭🇰 1号专线 香港HK 113-1E
-      - 🇹🇼 SS 台湾1-1A
-      - 🇺🇸 美国NO.2
-      - 🇮🇳 SS 印度1-1C
-      - 🇺🇸 美国01
-      - 🇭🇰 2号专线 香港HK 244-1E
-      - 🇯🇵 日本NO.2
-      - 🇮🇸 SS 冰岛1-1C
-      - 🇮🇳 印度1
-      - 🇲🇾 SS 马来西亚1-1B
-      - 🇸🇬 SS 新加坡 1-1C
-      - 🇯🇵 1号专线 日本JP 103-1E
-      - 🇮🇸 SS 冰岛1-1B
-      - 🇲🇾 SS 马来西亚1-1A
-      - 🇰🇷 SS 韩国1-1C
-      - 🇺🇸 2号专线 美国US 110-1E
-      - 🇺🇸 SS 美国2-1-1A
-      - 🇹🇭 SS 泰国1-1A
-      - 🇹🇼 SS 台湾2-1-1B
-      - 🇯🇵 SS 日本1-1A
-      - 🇹🇼 SS 台湾2-1-1A
-      - 🇩🇪 德国-V6|03 0.5x
-      - 🇹🇼 台湾01|家宽
-      - 🇯🇵 1号专线 日本JP 114-1B
-      - 🇯🇵 日本-V6|07
-      - 🇯🇵 日本03
-      - 🇸🇬 SS 新加坡 1-1B
-      - 🇹🇼 台湾1
-      - 🇭🇰 香港-线路1-1D
-      - 🇮🇪 爱尔兰-都柏林-1N
-      - TOR-试用
-      - 🇭🇰 2号专线 香港HK 74-1D
-      - 🇹🇼 SS 台湾1-1C
-      - 🇹🇷 SS 土耳其1-1C
-      - 🇺🇸 美国高速节点1
-      - 🇹🇼 台湾高速节点
-      - 🇯🇵 SS 日本3-1C
-      - 🇭🇰 2号专线 香港HK 53-1D
-      - 🇲🇽 SS 墨西哥1-1B
-      - 🇺🇸 1号专线 美国US 205-1A
-      - 🇹🇼 台湾
-      - 🇺🇸 美国NO.1
-      - 🇸🇬 1号专线 新加坡SG 146-1E
-      - 🇭🇰 香港-线路1-1I
-      - 🇨🇳 中国联通节点1
-      - 🇯🇵 日本-V6|02
-      - 🇭🇰 香港-V6|06
-      - 🇭🇰 香港-线路1-1B
-      - 🇮🇪 爱尔兰-都柏林-1G
-      - 🇯🇵 1号专线 日本JP 114-1C
-      - 🇺🇸 美国05
-      - 🇹🇼 1号专线 台湾TW 89-1E
-      - 🇹🇼 SS 台湾2-1-1C
-      - 🇮🇪 爱尔兰-都柏林-1A
-      - 🇭🇰 1号专线 香港HK 113-1D
       - 🇭🇰 2号专线 香港HK 74-1A
-      - 🇭🇰 2号专线 香港HK 74-1C
-      - 🇯🇵 2号专线 日本JP 75-1C
-      - 🇯🇵 2号专线 日本JP 75-1E
-      - 🇹🇼 台湾高速节点2
-      - 🇺🇸 2号专线 美国US 110-1A
-      - 🇹🇼 1号专线 台湾TW 89-1A
-      - 🇭🇰 2号专线 香港HK 53-1C
-      - 🇯🇵 1号专线 日本JP 114-1A
-      - 🇳🇱 荷兰-V6|02 0.5x
-      - 🇭🇰 香港-线路1-1P
-      - 🇫🇷 法国2
-      - 🇮🇪 爱尔兰-都柏林-1H
-      - 🇬🇧 英国1
-      - 🇧🇷 SS 巴西1-1A
-      - 🇰🇷 SS 韩国1-1B
-      - 🇹🇼 1号专线 台湾TW 89-1D
-      - 🇧🇷 SS 巴西1-1B
-      - 🇹🇭 SS 泰国1-1B
-      - 🇯🇵 1号专线 日本JP 114-1E
-      - 🇰🇷 SS 韩国1-1A
-      - 🇭🇰 SS 香港1-1A
-      - 🇺🇸 SS 美国1-1A
-      - 🇭🇰 1号专线 香港HK 113-1A
-      - 🇮🇱 SS 以色列1-1B
-      - 🇯🇵 日本-V6|05
-      - 🇭🇰 香港-线路1-1O
-      - 🇺🇸 2号专线 美国US 110-1B
-      - 🇭🇰 2号专线 香港HK 244-1A
-      - 🇭🇰 香港-线路1-1F
-      - 🇹🇼 SS 台湾1-1B
-      - 🇮🇪 爱尔兰-都柏林-1I
-      - 🇸🇬 SS 新加坡 1-1A
-      - 🇮🇪 爱尔兰-都柏林-1K
-      - 🇭🇰 2号专线 香港HK 74-1E
-      - 🇸🇬 新加坡NO.2
-      - 🇭🇰 香港-线路1-1A
-      - 🇹🇼 台湾高速节点3
-      - 🇮🇳 SS 印度1-1B
-      - 🇮🇪 爱尔兰-都柏林-1L
-      - 🇺🇸 2号专线 美国US 110-1D
-      - 🇭🇰 香港-线路1-1J
-      - 🇭🇰 香港-V4|02
-      - 🇯🇵 2号专线 日本JP 75-1D
-      - 🇺🇸 美国-V6|01
-      - 🇭🇰 香港-V6|05 0.5x
-      - 🇬🇧 英国2
-      - 🇯🇵 SS 日本3-1A
-      - 🇹🇭 SS 泰国1-1C
-      - 🇯🇵 日本-V6|04
-      - 🇺🇸 SS 美国2-1-1C
-      - 🇲🇽 SS 墨西哥1-1C
-      - 🇹🇼 1号专线 台湾TW 89-1C
-      - 🇭🇰 香港-线路1-1H
-      - 🇸🇬 新加坡NO.1
-      - 🇺🇸 SS 美国1-1C
-      - 🇸🇬 1号专线 新加坡SG 146-1C
-      - 🇭🇰 香港-线路1-1M
-      - 🇯🇵 SS 日本3-1B
-      - 🇭🇰 香港-V6|08
-      - 🇮🇪 爱尔兰-都柏林-1F
-      - 🇭🇰 2号专线 香港HK 244-1D
+      - 🇭🇰 香港-线路1-1D
+      - 🇹🇼 SS 台湾2-1-1A
       - 🇯🇵 SS 日本1-1C
-      - 🇮🇪 爱尔兰-都柏林-1P
-      - 🇭🇰 3x备用专线香港1
-      - 🇺🇸 1号专线 美国US 205-1C
-      - 🇦🇺 澳大利亚原生1
-      - 🇸🇬 1号专线 新加坡SG 146-1A
-      - 🇭🇰 2号专线 香港HK 53-1E
-      - 🇰🇷 韩国
-      - 🇭🇰 香港-线路1-1K
-      - 🇩🇪 德国-V6|01 0.5x
-      - 🇦🇺 澳大利亚原生2
-      - 🇹🇷 SS 土耳其1-1B
-      - 🇯🇵 日本02
-      - 🇮🇳 印度2
-      - 🇮🇪 爱尔兰-都柏林-1J
-      - 🇨🇦 加拿大2
-      - 🇲🇽 SS 墨西哥1-1A
-      - 🇩🇪 德国-V6|02 0.5x
-      - 🇹🇭 泰国
-      - 🇭🇰 香港-线路1-1G
-      - 🇮🇱 SS 以色列1-1C
-      - 🇭🇰 香港03
-      - 🇭🇰 2号专线 香港HK 244-1B
-      - 🇺🇸 1号专线 美国US 205-1E
-      - 🇭🇰 香港-线路1-1E
-      - 🇺🇸 美国04
-      - 🇮🇪 爱尔兰-都柏林-1E
-      - 🇮🇪 爱尔兰-都柏林-1M
-      - 🇭🇰 香港-线路1-1N
-      - 🇲🇾 SS 马来西亚1-1C
-      - 🇫🇷 法国
-      - 🇫🇷 法国1
-      - 🇭🇰 1号专线 香港HK 113-1C
-      - 🇯🇵 2号专线 日本JP 75-1B
-      - 🇸🇬 新加坡
-      - 🇭🇰 2号专线 香港HK 244-1C
-      - 🇹🇼 1号专线 台湾TW 89-1B
-      - 🇮🇸 SS 冰岛1-1A
-      - 🇰🇷 韩国 专线NO2
-      - 🇺🇸 1号专线 美国US 205-1B
-      - 🇭🇰 2号专线 香港HK 53-1A
-      - 🇯🇵 日本-V6|06
-      - 🇭🇰 香港-V6|07
-      - 0.5x-1B
-      - 🇯🇵 1号专线 日本JP 103-1A
-      - 🇹🇷 SS 土耳其1-1A
-      - 🇹🇼 3x备用专线台湾1
+      - 🇺🇸 美国高速节点1
+      - 🇹🇼 SS 台湾1-1A
       - 🇧🇷 SS 巴西1-1C
-      - 🇳🇱 荷兰-V6|01 0.5x
-      - 🇩🇪 德国
-      - 🇺🇸 SS 美国1-1B
-      - 🇯🇵 日本
-      - 🇺🇸 美国07
-      - 🇭🇰 香港-线路1-1C
-      - 🇭🇰 SS 香港1-1B
-      - 🇮🇪 爱尔兰-都柏林-1O
-      - 🇮🇪 爱尔兰-都柏林-1B
-      - 🇭🇰 2号专线 香港HK 74-1B
-      - 🇭🇰 1号专线 香港HK 113-1B
+      - 🇯🇵 日本01-1B
+      - 🇭🇰 香港-V6|06-1A
+      - 🇯🇵 日本03-1B
+      - 🇺🇸 2号专线 美国US 110-1B
+      - 0.5x-1B
+      - 🇮🇪 爱尔兰-都柏林-1G
+      - 🇳🇱 荷兰-V6|01 0.5x-1A
+      - 🇩🇪 德国01|轻量
+      - 🇲🇾 SS 马来西亚1-1A
+      - 🇯🇵 日本-V6|05-1A
+      - 🇭🇰 香港-V6|08-1A
+      - 🇺🇸 SS 美国2-1-1B
+      - 🇮🇱 SS 以色列1-1C
+      - 🇮🇪 爱尔兰-都柏林-1E
+      - 🇭🇰 香港-V6|05 0.5x-1A
+      - 🇧🇷 SS 巴西1-1B
+      - 🇮🇱 SS 以色列1-1A
+      - 🇺🇸 美国NO.2-1B
+      - 🇹🇭 SS 泰国1-1B
+      - 🇲🇽 SS 墨西哥1-1A
+      - 🇺🇸 美国04-1B
+      - 🇭🇰 3x备用专线香港1-1A
+      - 🇭🇰 香港03-1A
+      - 🇭🇰 2号专线 香港HK 53-1A
+      - 🇺🇸 SS 美国1-1C
+      - 🇺🇸 美国-V6|01-1A
+      - 🇬🇧 英国2-1A
+      - 🇸🇬 1号专线 新加坡SG 146-1A
+      - 🇹🇼 台湾1-1A
+      - 🇬🇧 英国2-1B
+      - 🇹🇼 SS 台湾1-1C
+      - 🇳🇱 荷兰-V6|01 0.5x-1B
+      - 🇭🇰 2号专线 香港HK 53-1B
+      - 🇭🇰 香港-线路1-1O
+      - 🇮🇪 爱尔兰-都柏林-1H
+      - 🇯🇵 日本-V6|02-1B
+      - 🇨🇦 加拿大1-1A
+      - 🇦🇺 澳大利亚原生1-1A
+      - 🇯🇵 SS 日本3-1C
+      - 🇨🇳 中国联通节点1
+      - 🇮🇳 SS 印度1-1C
+      - 🇺🇸 美国05-1A
+      - 🇭🇰 香港NO.2-1B
+      - 🇹🇼 台湾2-1B
+      - 🇺🇸 美国02-1A
+      - 🇹🇭 SS 泰国1-1A
+      - 🇮🇳 印度2-1A
       - 🇯🇵 SS 日本1-1B
-      - 🇺🇸 美国02
+      - 🇯🇵 2号专线 日本JP 75-1B
       - 🇸🇬 1号专线 新加坡SG 146-1B
+      - 🇩🇪 德国-V6|03 0.5x-1B
+      - 🇩🇪 德国-V6|03 0.5x-1A
+      - 🇹🇼 3x备用专线台湾1-1A
+      - 🇭🇰 香港-线路1-1J
+      - 🇯🇵 日本-V6|04-1B
+      - 🇭🇰 SS 香港1-1A
+      - 🇹🇭 SS 泰国1-1C
+      - 🇳🇱 荷兰-V6|04 0.5x-1B
+      - 🇺🇸 美国07-1B
+      - 🇹🇼 台湾高速节点3
+      - 🇯🇵 日本-V6|07-1A
+      - 🇹🇼 SS 台湾1-1B
+      - 🇭🇰 3x备用专线香港1-1B
+      - 🇰🇷 韩国 专线NO2-1A
+      - 🇮🇪 爱尔兰-都柏林-1J
+      - 🇮🇪 爱尔兰-都柏林-1L
+      - 🇭🇰 香港-线路1-1H
+      - 🇹🇼 台湾01|家宽
+      - 🇭🇰 香港-线路1-1A
+      - 🇺🇸 1号专线 美国US 205-1B
+      - 🇸🇬 SS 新加坡 1-1B
+      - 🇬🇧 英国1-1A
+      - 🇸🇬 新加坡NO.2-1B
+      - 🇭🇰 1号专线 香港HK 113-1A
+      - 🇮🇪 爱尔兰-都柏林-1P
+      - 🇮🇳 SS 印度1-1B
+      - 🇺🇸 美国NO.2-1A
+      - 🇨🇦 加拿大1-1B
+      - 🇹🇼 台湾1-1B
+      - 0.5x-1A
+      - 🇺🇸 SS 美国1-1B
+      - 🇸🇬 SS 新加坡 1-1C
+      - 🇦🇺 澳大利亚原生1-1B
+      - 🇯🇵 1号专线 日本JP 103-1A
+      - 🇯🇵 1号专线 日本JP 103-1B
+      - 🇹🇼 台湾2-1A
+      - 🇭🇰 香港-V6|07-1A
+      - 🇩🇪 德国-V6|01 0.5x-1B
+      - 🇳🇱 荷兰-V6|04 0.5x-1A
+      - 🇹🇷 SS 土耳其1-1A
+      - 🇺🇸 美国01-1B
+      - 🇮🇪 爱尔兰-都柏林-1K
+      - 🇮🇸 SS 冰岛1-1C
+      - 🇹🇼 台湾高速节点
+      - 🇸🇬 新加坡NO.1-1B
+      - 🇭🇰 香港03-1B
+      - 🇰🇷 韩国 专线NO2-1B
+      - 🇮🇳 印度2-1B
+      - 🇹🇼 SS 台湾2-1-1C
+      - 🇹🇼 3x备用专线台湾1-1B
+      - 🇺🇸 美国NO.1-1B
+      - 🇭🇰 2号专线 香港HK 74-1B
+      - 🇭🇰 香港-V6|07-1B
+      - 🇰🇷 韩国 专线NO1-1A
+      - 🇯🇵 日本01-1A
+      - 🇫🇷 法国1-1B
+      - 🇯🇵 SS 日本3-1A
+      - 🇮🇪 爱尔兰-都柏林-1I
+      - 🇯🇵 日本-V6|02-1A
+      - 🇯🇵 日本-V6|06-1B
+      - 🇫🇷 法国-1B
+      - 🇯🇵 SS 日本3-1B
+      - 🇹🇷 SS 土耳其1-1B
+      - 🇯🇵 日本-V6|07-1B
+      - 🇮🇪 爱尔兰-都柏林-1B
+      - 🇰🇷 SS 韩国1-1A
+      - 🇯🇵 日本NO.2-1A
+      - 🇫🇷 法国2-1B
+      - 🇭🇰 香港-线路1-1M
+      - 🇬🇧 英国1-1B
+      - 🇮🇳 SS 印度1-1A
+      - 🇯🇵 日本02-1A
+      - 🇭🇰 香港-线路1-1L
+      - 🇯🇵 2号专线 日本JP 75-1A
+      - 🇩🇪 德国-V6|02 0.5x-1A
+      - 🇦🇺 澳大利亚原生2-1A
+      - 🇰🇷 韩国 专线NO1-1B
+      - 🇮🇱 SS 以色列1-1B
+      - 🇳🇱 荷兰-V6|02 0.5x-1B
+      - 🇮🇪 爱尔兰-都柏林-1M
+      - 🇭🇰 香港-线路1-1I
+      - 🇭🇰 香港-线路1-1P
+      - 🇺🇸 美国-V6|01-1B
+      - 🇦🇺 澳大利亚原生2-1B
+      - 🇹🇼 1号专线 台湾TW 89-1B
+      - 🇭🇰 香港-线路1-1N
+      - 🇲🇽 SS 墨西哥1-1C
+      - 🇺🇸 美国01-1A
+      - 🇭🇰 香港-线路1-1G
+      - 🇹🇼 SS 台湾2-1-1B
+      - 🇮🇪 爱尔兰-都柏林-1C
+      - 🇨🇦 加拿大2-1B
+      - 🇳🇱 荷兰-V6|03 0.5x-1A
+      - 🇧🇷 SS 巴西1-1A
+      - 🇺🇸 美国02-1B
+      - 🇲🇾 SS 马来西亚1-1C
+      - 🇹🇼 台湾高速节点2
+      - 🇩🇪 德国-V6|02 0.5x-1B
+      - 🇫🇷 法国1-1A
+      - 🇮🇳 印度1-1B
+      - 🇯🇵 日本02-1B
+      - 🇭🇰 SS 香港1-1B
+      - 🇮🇸 SS 冰岛1-1A
+      - 🇺🇸 美国07-1A
+      - 🇮🇪 爱尔兰-都柏林-1D
+      - 🇭🇰 香港-V6|08-1B
+      - 🇺🇸 美国NO.1-1A
+      - 🇭🇰 香港-线路1-1C
+      - 🇭🇰 2号专线 香港HK 244-1A
+      - 🇮🇳 印度1-1A
+      - 🇮🇪 爱尔兰-都柏林-1A
+      - 🇯🇵 日本-V6|04-1A
+      - 🇯🇵 日本NO.1-1B
+      - 🇸🇬 SS 新加坡 1-1A
+      - 🇺🇸 SS 美国2-1-1C
+      - 🇯🇵 日本03-1A
+      - 🇸🇬 新加坡NO.2-1A
+      - 🇯🇵 日本-V6|05-1B
+      - 🇯🇵 日本-V6|06-1A
+      - 🇲🇾 SS 马来西亚1-1B
+      - 🇯🇵 1号专线 日本JP 114-1A
+      - 🇸🇬 新加坡NO.1-1A
+      - 🇭🇰 香港-V6|05 0.5x-1B
+      - 🇩🇪 德国-V6|01 0.5x-1A
+      - 🇭🇰 香港-线路1-1E
+      - 🇫🇷 法国2-1A
+      - 🇯🇵 日本NO.1-1A
+      - 🇭🇰 香港-线路1-1K
+      - 🇫🇷 法国-1A
+      - 🇺🇸 1号专线 美国US 205-1A
+      - 🇺🇸 2号专线 美国US 110-1A
+      - 🇺🇸 美国05-1B
+      - 🇭🇰 香港-V4|02-1B
+      - 🇭🇰 1号专线 香港HK 113-1B
+      - 🇮🇪 爱尔兰-都柏林-1O
+      - 🇭🇰 SS 香港1-1C
+      - 🇳🇱 荷兰-V6|02 0.5x-1A
+      - 0.5x-1C
+      - 🇮🇸 SS 冰岛1-1B
+      - 🇭🇰 香港-线路1-1B
+      - 0.5x-1D
+      - 🇯🇵 日本NO.2-1B
+      - 🇭🇰 香港-V4|02-1A
+      - 🇳🇱 荷兰-V6|03 0.5x-1B
+      - 🇭🇰 香港-线路1-1F
+      - 🇮🇪 爱尔兰-都柏林-1N
+      - 🇯🇵 SS 日本1-1A
+      - 🇭🇰 香港-V6|06-1B
+      - 🇰🇷 韩国1
+      - 🇺🇸 美国04-1A
+      - 🇲🇽 SS 墨西哥1-1B
+      - 🇨🇦 加拿大2-1A
+      - 🇰🇷 SS 韩国1-1C
+      - 🇺🇸 SS 美国1-1A
+      - 🇰🇷 SS 韩国1-1B
+      - 🇯🇵 1号专线 日本JP 114-1B
+      - 🇹🇷 SS 土耳其1-1C
+      - 🇭🇰 2号专线 香港HK 244-1B
+      - 🇭🇰 香港NO.2-1A
+      - 🇮🇪 爱尔兰-都柏林-1F
+      - 🇹🇼 1号专线 台湾TW 89-1A
+      - 🇺🇸 SS 美国2-1-1A
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇯🇵 1号专线 日本JP 103-1D
-      - 🇺🇸 SS 美国2-1-1B
-      - 🇳🇱 荷兰
-      - 🇳🇱 荷兰-V6|03 0.5x
-      - 🇮🇳 SS 印度1-1A
-      - 🇹🇼 台湾2
-      - 🇮🇱 SS 以色列1-1A
-      - 🇨🇦 加拿大1
-      - 🇮🇪 爱尔兰-都柏林-1C
-      - 0.5x-1A
-      - 🇺🇸 1号专线 美国US 205-1D
-      - 🇯🇵 日本NO.1
-      - 🇯🇵 1号专线 日本JP 114-1D
-      - 🇭🇰 2号专线 香港HK 53-1B
-      - 🇮🇪 爱尔兰-都柏林-1D
-      - 🇩🇪 德国01|轻量
-      - 🇳🇱 荷兰-V6|04 0.5x
-      - 🇯🇵 日本01
-      - 🇸🇬 1号专线 新加坡SG 146-1D
-      - 🇭🇰 香港
-      - 🇯🇵 1号专线 日本JP 103-1B
-      - 🇭🇰 香港NO.2
-      - 🇯🇵 1号专线 日本JP 103-1C
-      - 🇭🇰 SS 香港1-1C
-      - 🇺🇸 2号专线 美国US 110-1C
-      - 🇭🇰 香港-线路1-1L
-      - 🇰🇷 韩国 专线NO1
-      - 🇯🇵 2号专线 日本JP 75-1A
-      - 🇭🇰 1号专线 香港HK 113-1E
-      - 🇹🇼 SS 台湾1-1A
-      - 🇺🇸 美国NO.2
-      - 🇮🇳 SS 印度1-1C
-      - 🇺🇸 美国01
-      - 🇭🇰 2号专线 香港HK 244-1E
-      - 🇯🇵 日本NO.2
-      - 🇮🇸 SS 冰岛1-1C
-      - 🇮🇳 印度1
-      - 🇲🇾 SS 马来西亚1-1B
-      - 🇸🇬 SS 新加坡 1-1C
-      - 🇯🇵 1号专线 日本JP 103-1E
-      - 🇮🇸 SS 冰岛1-1B
-      - 🇲🇾 SS 马来西亚1-1A
-      - 🇰🇷 SS 韩国1-1C
-      - 🇺🇸 2号专线 美国US 110-1E
-      - 🇺🇸 SS 美国2-1-1A
-      - 🇹🇭 SS 泰国1-1A
-      - 🇹🇼 SS 台湾2-1-1B
-      - 🇯🇵 SS 日本1-1A
-      - 🇹🇼 SS 台湾2-1-1A
-      - 🇩🇪 德国-V6|03 0.5x
-      - 🇹🇼 台湾01|家宽
-      - 🇯🇵 1号专线 日本JP 114-1B
-      - 🇯🇵 日本-V6|07
-      - 🇯🇵 日本03
-      - 🇸🇬 SS 新加坡 1-1B
-      - 🇹🇼 台湾1
-      - 🇭🇰 香港-线路1-1D
-      - 🇮🇪 爱尔兰-都柏林-1N
-      - TOR-试用
-      - 🇭🇰 2号专线 香港HK 74-1D
-      - 🇹🇼 SS 台湾1-1C
-      - 🇹🇷 SS 土耳其1-1C
-      - 🇺🇸 美国高速节点1
-      - 🇹🇼 台湾高速节点
-      - 🇯🇵 SS 日本3-1C
-      - 🇭🇰 2号专线 香港HK 53-1D
-      - 🇲🇽 SS 墨西哥1-1B
-      - 🇺🇸 1号专线 美国US 205-1A
-      - 🇹🇼 台湾
-      - 🇺🇸 美国NO.1
-      - 🇸🇬 1号专线 新加坡SG 146-1E
-      - 🇭🇰 香港-线路1-1I
-      - 🇨🇳 中国联通节点1
-      - 🇯🇵 日本-V6|02
-      - 🇭🇰 香港-V6|06
-      - 🇭🇰 香港-线路1-1B
-      - 🇮🇪 爱尔兰-都柏林-1G
-      - 🇯🇵 1号专线 日本JP 114-1C
-      - 🇺🇸 美国05
-      - 🇹🇼 1号专线 台湾TW 89-1E
-      - 🇹🇼 SS 台湾2-1-1C
-      - 🇮🇪 爱尔兰-都柏林-1A
-      - 🇭🇰 1号专线 香港HK 113-1D
       - 🇭🇰 2号专线 香港HK 74-1A
-      - 🇭🇰 2号专线 香港HK 74-1C
-      - 🇯🇵 2号专线 日本JP 75-1C
-      - 🇯🇵 2号专线 日本JP 75-1E
-      - 🇹🇼 台湾高速节点2
-      - 🇺🇸 2号专线 美国US 110-1A
-      - 🇹🇼 1号专线 台湾TW 89-1A
-      - 🇭🇰 2号专线 香港HK 53-1C
-      - 🇯🇵 1号专线 日本JP 114-1A
-      - 🇳🇱 荷兰-V6|02 0.5x
-      - 🇭🇰 香港-线路1-1P
-      - 🇫🇷 法国2
-      - 🇮🇪 爱尔兰-都柏林-1H
-      - 🇬🇧 英国1
-      - 🇧🇷 SS 巴西1-1A
-      - 🇰🇷 SS 韩国1-1B
-      - 🇹🇼 1号专线 台湾TW 89-1D
-      - 🇧🇷 SS 巴西1-1B
-      - 🇹🇭 SS 泰国1-1B
-      - 🇯🇵 1号专线 日本JP 114-1E
-      - 🇰🇷 SS 韩国1-1A
-      - 🇭🇰 SS 香港1-1A
-      - 🇺🇸 SS 美国1-1A
-      - 🇭🇰 1号专线 香港HK 113-1A
-      - 🇮🇱 SS 以色列1-1B
-      - 🇯🇵 日本-V6|05
-      - 🇭🇰 香港-线路1-1O
-      - 🇺🇸 2号专线 美国US 110-1B
-      - 🇭🇰 2号专线 香港HK 244-1A
-      - 🇭🇰 香港-线路1-1F
-      - 🇹🇼 SS 台湾1-1B
-      - 🇮🇪 爱尔兰-都柏林-1I
-      - 🇸🇬 SS 新加坡 1-1A
-      - 🇮🇪 爱尔兰-都柏林-1K
-      - 🇭🇰 2号专线 香港HK 74-1E
-      - 🇸🇬 新加坡NO.2
-      - 🇭🇰 香港-线路1-1A
-      - 🇹🇼 台湾高速节点3
-      - 🇮🇳 SS 印度1-1B
-      - 🇮🇪 爱尔兰-都柏林-1L
-      - 🇺🇸 2号专线 美国US 110-1D
-      - 🇭🇰 香港-线路1-1J
-      - 🇭🇰 香港-V4|02
-      - 🇯🇵 2号专线 日本JP 75-1D
-      - 🇺🇸 美国-V6|01
-      - 🇭🇰 香港-V6|05 0.5x
-      - 🇬🇧 英国2
-      - 🇯🇵 SS 日本3-1A
-      - 🇹🇭 SS 泰国1-1C
-      - 🇯🇵 日本-V6|04
-      - 🇺🇸 SS 美国2-1-1C
-      - 🇲🇽 SS 墨西哥1-1C
-      - 🇹🇼 1号专线 台湾TW 89-1C
-      - 🇭🇰 香港-线路1-1H
-      - 🇸🇬 新加坡NO.1
-      - 🇺🇸 SS 美国1-1C
-      - 🇸🇬 1号专线 新加坡SG 146-1C
-      - 🇭🇰 香港-线路1-1M
-      - 🇯🇵 SS 日本3-1B
-      - 🇭🇰 香港-V6|08
-      - 🇮🇪 爱尔兰-都柏林-1F
-      - 🇭🇰 2号专线 香港HK 244-1D
+      - 🇭🇰 香港-线路1-1D
+      - 🇹🇼 SS 台湾2-1-1A
       - 🇯🇵 SS 日本1-1C
-      - 🇮🇪 爱尔兰-都柏林-1P
-      - 🇭🇰 3x备用专线香港1
-      - 🇺🇸 1号专线 美国US 205-1C
-      - 🇦🇺 澳大利亚原生1
-      - 🇸🇬 1号专线 新加坡SG 146-1A
-      - 🇭🇰 2号专线 香港HK 53-1E
-      - 🇰🇷 韩国
-      - 🇭🇰 香港-线路1-1K
-      - 🇩🇪 德国-V6|01 0.5x
-      - 🇦🇺 澳大利亚原生2
-      - 🇹🇷 SS 土耳其1-1B
-      - 🇯🇵 日本02
-      - 🇮🇳 印度2
-      - 🇮🇪 爱尔兰-都柏林-1J
-      - 🇨🇦 加拿大2
-      - 🇲🇽 SS 墨西哥1-1A
-      - 🇩🇪 德国-V6|02 0.5x
-      - 🇹🇭 泰国
-      - 🇭🇰 香港-线路1-1G
-      - 🇮🇱 SS 以色列1-1C
-      - 🇭🇰 香港03
-      - 🇭🇰 2号专线 香港HK 244-1B
-      - 🇺🇸 1号专线 美国US 205-1E
-      - 🇭🇰 香港-线路1-1E
-      - 🇺🇸 美国04
-      - 🇮🇪 爱尔兰-都柏林-1E
-      - 🇮🇪 爱尔兰-都柏林-1M
-      - 🇭🇰 香港-线路1-1N
-      - 🇲🇾 SS 马来西亚1-1C
-      - 🇫🇷 法国
-      - 🇫🇷 法国1
-      - 🇭🇰 1号专线 香港HK 113-1C
-      - 🇯🇵 2号专线 日本JP 75-1B
-      - 🇸🇬 新加坡
-      - 🇭🇰 2号专线 香港HK 244-1C
-      - 🇹🇼 1号专线 台湾TW 89-1B
-      - 🇮🇸 SS 冰岛1-1A
-      - 🇰🇷 韩国 专线NO2
-      - 🇺🇸 1号专线 美国US 205-1B
-      - 🇭🇰 2号专线 香港HK 53-1A
-      - 🇯🇵 日本-V6|06
-      - 🇭🇰 香港-V6|07
-      - 0.5x-1B
-      - 🇯🇵 1号专线 日本JP 103-1A
-      - 🇹🇷 SS 土耳其1-1A
-      - 🇹🇼 3x备用专线台湾1
+      - 🇺🇸 美国高速节点1
+      - 🇹🇼 SS 台湾1-1A
       - 🇧🇷 SS 巴西1-1C
-      - 🇳🇱 荷兰-V6|01 0.5x
-      - 🇩🇪 德国
-      - 🇺🇸 SS 美国1-1B
-      - 🇯🇵 日本
-      - 🇺🇸 美国07
-      - 🇭🇰 香港-线路1-1C
-      - 🇭🇰 SS 香港1-1B
-      - 🇮🇪 爱尔兰-都柏林-1O
-      - 🇮🇪 爱尔兰-都柏林-1B
-      - 🇭🇰 2号专线 香港HK 74-1B
-      - 🇭🇰 1号专线 香港HK 113-1B
+      - 🇯🇵 日本01-1B
+      - 🇭🇰 香港-V6|06-1A
+      - 🇯🇵 日本03-1B
+      - 🇺🇸 2号专线 美国US 110-1B
+      - 0.5x-1B
+      - 🇮🇪 爱尔兰-都柏林-1G
+      - 🇳🇱 荷兰-V6|01 0.5x-1A
+      - 🇩🇪 德国01|轻量
+      - 🇲🇾 SS 马来西亚1-1A
+      - 🇯🇵 日本-V6|05-1A
+      - 🇭🇰 香港-V6|08-1A
+      - 🇺🇸 SS 美国2-1-1B
+      - 🇮🇱 SS 以色列1-1C
+      - 🇮🇪 爱尔兰-都柏林-1E
+      - 🇭🇰 香港-V6|05 0.5x-1A
+      - 🇧🇷 SS 巴西1-1B
+      - 🇮🇱 SS 以色列1-1A
+      - 🇺🇸 美国NO.2-1B
+      - 🇹🇭 SS 泰国1-1B
+      - 🇲🇽 SS 墨西哥1-1A
+      - 🇺🇸 美国04-1B
+      - 🇭🇰 3x备用专线香港1-1A
+      - 🇭🇰 香港03-1A
+      - 🇭🇰 2号专线 香港HK 53-1A
+      - 🇺🇸 SS 美国1-1C
+      - 🇺🇸 美国-V6|01-1A
+      - 🇬🇧 英国2-1A
+      - 🇸🇬 1号专线 新加坡SG 146-1A
+      - 🇹🇼 台湾1-1A
+      - 🇬🇧 英国2-1B
+      - 🇹🇼 SS 台湾1-1C
+      - 🇳🇱 荷兰-V6|01 0.5x-1B
+      - 🇭🇰 2号专线 香港HK 53-1B
+      - 🇭🇰 香港-线路1-1O
+      - 🇮🇪 爱尔兰-都柏林-1H
+      - 🇯🇵 日本-V6|02-1B
+      - 🇨🇦 加拿大1-1A
+      - 🇦🇺 澳大利亚原生1-1A
+      - 🇯🇵 SS 日本3-1C
+      - 🇨🇳 中国联通节点1
+      - 🇮🇳 SS 印度1-1C
+      - 🇺🇸 美国05-1A
+      - 🇭🇰 香港NO.2-1B
+      - 🇹🇼 台湾2-1B
+      - 🇺🇸 美国02-1A
+      - 🇹🇭 SS 泰国1-1A
+      - 🇮🇳 印度2-1A
       - 🇯🇵 SS 日本1-1B
-      - 🇺🇸 美国02
+      - 🇯🇵 2号专线 日本JP 75-1B
       - 🇸🇬 1号专线 新加坡SG 146-1B
+      - 🇩🇪 德国-V6|03 0.5x-1B
+      - 🇩🇪 德国-V6|03 0.5x-1A
+      - 🇹🇼 3x备用专线台湾1-1A
+      - 🇭🇰 香港-线路1-1J
+      - 🇯🇵 日本-V6|04-1B
+      - 🇭🇰 SS 香港1-1A
+      - 🇹🇭 SS 泰国1-1C
+      - 🇳🇱 荷兰-V6|04 0.5x-1B
+      - 🇺🇸 美国07-1B
+      - 🇹🇼 台湾高速节点3
+      - 🇯🇵 日本-V6|07-1A
+      - 🇹🇼 SS 台湾1-1B
+      - 🇭🇰 3x备用专线香港1-1B
+      - 🇰🇷 韩国 专线NO2-1A
+      - 🇮🇪 爱尔兰-都柏林-1J
+      - 🇮🇪 爱尔兰-都柏林-1L
+      - 🇭🇰 香港-线路1-1H
+      - 🇹🇼 台湾01|家宽
+      - 🇭🇰 香港-线路1-1A
+      - 🇺🇸 1号专线 美国US 205-1B
+      - 🇸🇬 SS 新加坡 1-1B
+      - 🇬🇧 英国1-1A
+      - 🇸🇬 新加坡NO.2-1B
+      - 🇭🇰 1号专线 香港HK 113-1A
+      - 🇮🇪 爱尔兰-都柏林-1P
+      - 🇮🇳 SS 印度1-1B
+      - 🇺🇸 美国NO.2-1A
+      - 🇨🇦 加拿大1-1B
+      - 🇹🇼 台湾1-1B
+      - 0.5x-1A
+      - 🇺🇸 SS 美国1-1B
+      - 🇸🇬 SS 新加坡 1-1C
+      - 🇦🇺 澳大利亚原生1-1B
+      - 🇯🇵 1号专线 日本JP 103-1A
+      - 🇯🇵 1号专线 日本JP 103-1B
+      - 🇹🇼 台湾2-1A
+      - 🇭🇰 香港-V6|07-1A
+      - 🇩🇪 德国-V6|01 0.5x-1B
+      - 🇳🇱 荷兰-V6|04 0.5x-1A
+      - 🇹🇷 SS 土耳其1-1A
+      - 🇺🇸 美国01-1B
+      - 🇮🇪 爱尔兰-都柏林-1K
+      - 🇮🇸 SS 冰岛1-1C
+      - 🇹🇼 台湾高速节点
+      - 🇸🇬 新加坡NO.1-1B
+      - 🇭🇰 香港03-1B
+      - 🇰🇷 韩国 专线NO2-1B
+      - 🇮🇳 印度2-1B
+      - 🇹🇼 SS 台湾2-1-1C
+      - 🇹🇼 3x备用专线台湾1-1B
+      - 🇺🇸 美国NO.1-1B
+      - 🇭🇰 2号专线 香港HK 74-1B
+      - 🇭🇰 香港-V6|07-1B
+      - 🇰🇷 韩国 专线NO1-1A
+      - 🇯🇵 日本01-1A
+      - 🇫🇷 法国1-1B
+      - 🇯🇵 SS 日本3-1A
+      - 🇮🇪 爱尔兰-都柏林-1I
+      - 🇯🇵 日本-V6|02-1A
+      - 🇯🇵 日本-V6|06-1B
+      - 🇫🇷 法国-1B
+      - 🇯🇵 SS 日本3-1B
+      - 🇹🇷 SS 土耳其1-1B
+      - 🇯🇵 日本-V6|07-1B
+      - 🇮🇪 爱尔兰-都柏林-1B
+      - 🇰🇷 SS 韩国1-1A
+      - 🇯🇵 日本NO.2-1A
+      - 🇫🇷 法国2-1B
+      - 🇭🇰 香港-线路1-1M
+      - 🇬🇧 英国1-1B
+      - 🇮🇳 SS 印度1-1A
+      - 🇯🇵 日本02-1A
+      - 🇭🇰 香港-线路1-1L
+      - 🇯🇵 2号专线 日本JP 75-1A
+      - 🇩🇪 德国-V6|02 0.5x-1A
+      - 🇦🇺 澳大利亚原生2-1A
+      - 🇰🇷 韩国 专线NO1-1B
+      - 🇮🇱 SS 以色列1-1B
+      - 🇳🇱 荷兰-V6|02 0.5x-1B
+      - 🇮🇪 爱尔兰-都柏林-1M
+      - 🇭🇰 香港-线路1-1I
+      - 🇭🇰 香港-线路1-1P
+      - 🇺🇸 美国-V6|01-1B
+      - 🇦🇺 澳大利亚原生2-1B
+      - 🇹🇼 1号专线 台湾TW 89-1B
+      - 🇭🇰 香港-线路1-1N
+      - 🇲🇽 SS 墨西哥1-1C
+      - 🇺🇸 美国01-1A
+      - 🇭🇰 香港-线路1-1G
+      - 🇹🇼 SS 台湾2-1-1B
+      - 🇮🇪 爱尔兰-都柏林-1C
+      - 🇨🇦 加拿大2-1B
+      - 🇳🇱 荷兰-V6|03 0.5x-1A
+      - 🇧🇷 SS 巴西1-1A
+      - 🇺🇸 美国02-1B
+      - 🇲🇾 SS 马来西亚1-1C
+      - 🇹🇼 台湾高速节点2
+      - 🇩🇪 德国-V6|02 0.5x-1B
+      - 🇫🇷 法国1-1A
+      - 🇮🇳 印度1-1B
+      - 🇯🇵 日本02-1B
+      - 🇭🇰 SS 香港1-1B
+      - 🇮🇸 SS 冰岛1-1A
+      - 🇺🇸 美国07-1A
+      - 🇮🇪 爱尔兰-都柏林-1D
+      - 🇭🇰 香港-V6|08-1B
+      - 🇺🇸 美国NO.1-1A
+      - 🇭🇰 香港-线路1-1C
+      - 🇭🇰 2号专线 香港HK 244-1A
+      - 🇮🇳 印度1-1A
+      - 🇮🇪 爱尔兰-都柏林-1A
+      - 🇯🇵 日本-V6|04-1A
+      - 🇯🇵 日本NO.1-1B
+      - 🇸🇬 SS 新加坡 1-1A
+      - 🇺🇸 SS 美国2-1-1C
+      - 🇯🇵 日本03-1A
+      - 🇸🇬 新加坡NO.2-1A
+      - 🇯🇵 日本-V6|05-1B
+      - 🇯🇵 日本-V6|06-1A
+      - 🇲🇾 SS 马来西亚1-1B
+      - 🇯🇵 1号专线 日本JP 114-1A
+      - 🇸🇬 新加坡NO.1-1A
+      - 🇭🇰 香港-V6|05 0.5x-1B
+      - 🇩🇪 德国-V6|01 0.5x-1A
+      - 🇭🇰 香港-线路1-1E
+      - 🇫🇷 法国2-1A
+      - 🇯🇵 日本NO.1-1A
+      - 🇭🇰 香港-线路1-1K
+      - 🇫🇷 法国-1A
+      - 🇺🇸 1号专线 美国US 205-1A
+      - 🇺🇸 2号专线 美国US 110-1A
+      - 🇺🇸 美国05-1B
+      - 🇭🇰 香港-V4|02-1B
+      - 🇭🇰 1号专线 香港HK 113-1B
+      - 🇮🇪 爱尔兰-都柏林-1O
+      - 🇭🇰 SS 香港1-1C
+      - 🇳🇱 荷兰-V6|02 0.5x-1A
+      - 0.5x-1C
+      - 🇮🇸 SS 冰岛1-1B
+      - 🇭🇰 香港-线路1-1B
+      - 0.5x-1D
+      - 🇯🇵 日本NO.2-1B
+      - 🇭🇰 香港-V4|02-1A
+      - 🇳🇱 荷兰-V6|03 0.5x-1B
+      - 🇭🇰 香港-线路1-1F
+      - 🇮🇪 爱尔兰-都柏林-1N
+      - 🇯🇵 SS 日本1-1A
+      - 🇭🇰 香港-V6|06-1B
+      - 🇰🇷 韩国1
+      - 🇺🇸 美国04-1A
+      - 🇲🇽 SS 墨西哥1-1B
+      - 🇨🇦 加拿大2-1A
+      - 🇰🇷 SS 韩国1-1C
+      - 🇺🇸 SS 美国1-1A
+      - 🇰🇷 SS 韩国1-1B
+      - 🇯🇵 1号专线 日本JP 114-1B
+      - 🇹🇷 SS 土耳其1-1C
+      - 🇭🇰 2号专线 香港HK 244-1B
+      - 🇭🇰 香港NO.2-1A
+      - 🇮🇪 爱尔兰-都柏林-1F
+      - 🇹🇼 1号专线 台湾TW 89-1A
+      - 🇺🇸 SS 美国2-1-1A
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -868,922 +916,964 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇯🇵 1号专线 日本JP 103-1D
-      - 🇺🇸 SS 美国2-1-1B
-      - 🇳🇱 荷兰
-      - 🇳🇱 荷兰-V6|03 0.5x
-      - 🇮🇳 SS 印度1-1A
-      - 🇹🇼 台湾2
-      - 🇮🇱 SS 以色列1-1A
-      - 🇨🇦 加拿大1
-      - 🇮🇪 爱尔兰-都柏林-1C
-      - 0.5x-1A
-      - 🇺🇸 1号专线 美国US 205-1D
-      - 🇯🇵 日本NO.1
-      - 🇯🇵 1号专线 日本JP 114-1D
-      - 🇭🇰 2号专线 香港HK 53-1B
-      - 🇮🇪 爱尔兰-都柏林-1D
-      - 🇩🇪 德国01|轻量
-      - 🇳🇱 荷兰-V6|04 0.5x
-      - 🇯🇵 日本01
-      - 🇸🇬 1号专线 新加坡SG 146-1D
-      - 🇭🇰 香港
-      - 🇯🇵 1号专线 日本JP 103-1B
-      - 🇭🇰 香港NO.2
-      - 🇯🇵 1号专线 日本JP 103-1C
-      - 🇭🇰 SS 香港1-1C
-      - 🇺🇸 2号专线 美国US 110-1C
-      - 🇭🇰 香港-线路1-1L
-      - 🇰🇷 韩国 专线NO1
-      - 🇯🇵 2号专线 日本JP 75-1A
-      - 🇭🇰 1号专线 香港HK 113-1E
-      - 🇹🇼 SS 台湾1-1A
-      - 🇺🇸 美国NO.2
-      - 🇮🇳 SS 印度1-1C
-      - 🇺🇸 美国01
-      - 🇭🇰 2号专线 香港HK 244-1E
-      - 🇯🇵 日本NO.2
-      - 🇮🇸 SS 冰岛1-1C
-      - 🇮🇳 印度1
-      - 🇲🇾 SS 马来西亚1-1B
-      - 🇸🇬 SS 新加坡 1-1C
-      - 🇯🇵 1号专线 日本JP 103-1E
-      - 🇮🇸 SS 冰岛1-1B
-      - 🇲🇾 SS 马来西亚1-1A
-      - 🇰🇷 SS 韩国1-1C
-      - 🇺🇸 2号专线 美国US 110-1E
-      - 🇺🇸 SS 美国2-1-1A
-      - 🇹🇭 SS 泰国1-1A
-      - 🇹🇼 SS 台湾2-1-1B
-      - 🇯🇵 SS 日本1-1A
-      - 🇹🇼 SS 台湾2-1-1A
-      - 🇩🇪 德国-V6|03 0.5x
-      - 🇹🇼 台湾01|家宽
-      - 🇯🇵 1号专线 日本JP 114-1B
-      - 🇯🇵 日本-V6|07
-      - 🇯🇵 日本03
-      - 🇸🇬 SS 新加坡 1-1B
-      - 🇹🇼 台湾1
-      - 🇭🇰 香港-线路1-1D
-      - 🇮🇪 爱尔兰-都柏林-1N
-      - TOR-试用
-      - 🇭🇰 2号专线 香港HK 74-1D
-      - 🇹🇼 SS 台湾1-1C
-      - 🇹🇷 SS 土耳其1-1C
-      - 🇺🇸 美国高速节点1
-      - 🇹🇼 台湾高速节点
-      - 🇯🇵 SS 日本3-1C
-      - 🇭🇰 2号专线 香港HK 53-1D
-      - 🇲🇽 SS 墨西哥1-1B
-      - 🇺🇸 1号专线 美国US 205-1A
-      - 🇹🇼 台湾
-      - 🇺🇸 美国NO.1
-      - 🇸🇬 1号专线 新加坡SG 146-1E
-      - 🇭🇰 香港-线路1-1I
-      - 🇨🇳 中国联通节点1
-      - 🇯🇵 日本-V6|02
-      - 🇭🇰 香港-V6|06
-      - 🇭🇰 香港-线路1-1B
-      - 🇮🇪 爱尔兰-都柏林-1G
-      - 🇯🇵 1号专线 日本JP 114-1C
-      - 🇺🇸 美国05
-      - 🇹🇼 1号专线 台湾TW 89-1E
-      - 🇹🇼 SS 台湾2-1-1C
-      - 🇮🇪 爱尔兰-都柏林-1A
-      - 🇭🇰 1号专线 香港HK 113-1D
       - 🇭🇰 2号专线 香港HK 74-1A
-      - 🇭🇰 2号专线 香港HK 74-1C
-      - 🇯🇵 2号专线 日本JP 75-1C
-      - 🇯🇵 2号专线 日本JP 75-1E
-      - 🇹🇼 台湾高速节点2
-      - 🇺🇸 2号专线 美国US 110-1A
-      - 🇹🇼 1号专线 台湾TW 89-1A
-      - 🇭🇰 2号专线 香港HK 53-1C
-      - 🇯🇵 1号专线 日本JP 114-1A
-      - 🇳🇱 荷兰-V6|02 0.5x
-      - 🇭🇰 香港-线路1-1P
-      - 🇫🇷 法国2
-      - 🇮🇪 爱尔兰-都柏林-1H
-      - 🇬🇧 英国1
-      - 🇧🇷 SS 巴西1-1A
-      - 🇰🇷 SS 韩国1-1B
-      - 🇹🇼 1号专线 台湾TW 89-1D
-      - 🇧🇷 SS 巴西1-1B
-      - 🇹🇭 SS 泰国1-1B
-      - 🇯🇵 1号专线 日本JP 114-1E
-      - 🇰🇷 SS 韩国1-1A
-      - 🇭🇰 SS 香港1-1A
-      - 🇺🇸 SS 美国1-1A
-      - 🇭🇰 1号专线 香港HK 113-1A
-      - 🇮🇱 SS 以色列1-1B
-      - 🇯🇵 日本-V6|05
-      - 🇭🇰 香港-线路1-1O
-      - 🇺🇸 2号专线 美国US 110-1B
-      - 🇭🇰 2号专线 香港HK 244-1A
-      - 🇭🇰 香港-线路1-1F
-      - 🇹🇼 SS 台湾1-1B
-      - 🇮🇪 爱尔兰-都柏林-1I
-      - 🇸🇬 SS 新加坡 1-1A
-      - 🇮🇪 爱尔兰-都柏林-1K
-      - 🇭🇰 2号专线 香港HK 74-1E
-      - 🇸🇬 新加坡NO.2
-      - 🇭🇰 香港-线路1-1A
-      - 🇹🇼 台湾高速节点3
-      - 🇮🇳 SS 印度1-1B
-      - 🇮🇪 爱尔兰-都柏林-1L
-      - 🇺🇸 2号专线 美国US 110-1D
-      - 🇭🇰 香港-线路1-1J
-      - 🇭🇰 香港-V4|02
-      - 🇯🇵 2号专线 日本JP 75-1D
-      - 🇺🇸 美国-V6|01
-      - 🇭🇰 香港-V6|05 0.5x
-      - 🇬🇧 英国2
-      - 🇯🇵 SS 日本3-1A
-      - 🇹🇭 SS 泰国1-1C
-      - 🇯🇵 日本-V6|04
-      - 🇺🇸 SS 美国2-1-1C
-      - 🇲🇽 SS 墨西哥1-1C
-      - 🇹🇼 1号专线 台湾TW 89-1C
-      - 🇭🇰 香港-线路1-1H
-      - 🇸🇬 新加坡NO.1
-      - 🇺🇸 SS 美国1-1C
-      - 🇸🇬 1号专线 新加坡SG 146-1C
-      - 🇭🇰 香港-线路1-1M
-      - 🇯🇵 SS 日本3-1B
-      - 🇭🇰 香港-V6|08
-      - 🇮🇪 爱尔兰-都柏林-1F
-      - 🇭🇰 2号专线 香港HK 244-1D
+      - 🇭🇰 香港-线路1-1D
+      - 🇹🇼 SS 台湾2-1-1A
       - 🇯🇵 SS 日本1-1C
-      - 🇮🇪 爱尔兰-都柏林-1P
-      - 🇭🇰 3x备用专线香港1
-      - 🇺🇸 1号专线 美国US 205-1C
-      - 🇦🇺 澳大利亚原生1
-      - 🇸🇬 1号专线 新加坡SG 146-1A
-      - 🇭🇰 2号专线 香港HK 53-1E
-      - 🇰🇷 韩国
-      - 🇭🇰 香港-线路1-1K
-      - 🇩🇪 德国-V6|01 0.5x
-      - 🇦🇺 澳大利亚原生2
-      - 🇹🇷 SS 土耳其1-1B
-      - 🇯🇵 日本02
-      - 🇮🇳 印度2
-      - 🇮🇪 爱尔兰-都柏林-1J
-      - 🇨🇦 加拿大2
-      - 🇲🇽 SS 墨西哥1-1A
-      - 🇩🇪 德国-V6|02 0.5x
-      - 🇹🇭 泰国
-      - 🇭🇰 香港-线路1-1G
-      - 🇮🇱 SS 以色列1-1C
-      - 🇭🇰 香港03
-      - 🇭🇰 2号专线 香港HK 244-1B
-      - 🇺🇸 1号专线 美国US 205-1E
-      - 🇭🇰 香港-线路1-1E
-      - 🇺🇸 美国04
-      - 🇮🇪 爱尔兰-都柏林-1E
-      - 🇮🇪 爱尔兰-都柏林-1M
-      - 🇭🇰 香港-线路1-1N
-      - 🇲🇾 SS 马来西亚1-1C
-      - 🇫🇷 法国
-      - 🇫🇷 法国1
-      - 🇭🇰 1号专线 香港HK 113-1C
-      - 🇯🇵 2号专线 日本JP 75-1B
-      - 🇸🇬 新加坡
-      - 🇭🇰 2号专线 香港HK 244-1C
-      - 🇹🇼 1号专线 台湾TW 89-1B
-      - 🇮🇸 SS 冰岛1-1A
-      - 🇰🇷 韩国 专线NO2
-      - 🇺🇸 1号专线 美国US 205-1B
-      - 🇭🇰 2号专线 香港HK 53-1A
-      - 🇯🇵 日本-V6|06
-      - 🇭🇰 香港-V6|07
-      - 0.5x-1B
-      - 🇯🇵 1号专线 日本JP 103-1A
-      - 🇹🇷 SS 土耳其1-1A
-      - 🇹🇼 3x备用专线台湾1
+      - 🇺🇸 美国高速节点1
+      - 🇹🇼 SS 台湾1-1A
       - 🇧🇷 SS 巴西1-1C
-      - 🇳🇱 荷兰-V6|01 0.5x
-      - 🇩🇪 德国
-      - 🇺🇸 SS 美国1-1B
-      - 🇯🇵 日本
-      - 🇺🇸 美国07
-      - 🇭🇰 香港-线路1-1C
-      - 🇭🇰 SS 香港1-1B
-      - 🇮🇪 爱尔兰-都柏林-1O
-      - 🇮🇪 爱尔兰-都柏林-1B
-      - 🇭🇰 2号专线 香港HK 74-1B
-      - 🇭🇰 1号专线 香港HK 113-1B
+      - 🇯🇵 日本01-1B
+      - 🇭🇰 香港-V6|06-1A
+      - 🇯🇵 日本03-1B
+      - 🇺🇸 2号专线 美国US 110-1B
+      - 0.5x-1B
+      - 🇮🇪 爱尔兰-都柏林-1G
+      - 🇳🇱 荷兰-V6|01 0.5x-1A
+      - 🇩🇪 德国01|轻量
+      - 🇲🇾 SS 马来西亚1-1A
+      - 🇯🇵 日本-V6|05-1A
+      - 🇭🇰 香港-V6|08-1A
+      - 🇺🇸 SS 美国2-1-1B
+      - 🇮🇱 SS 以色列1-1C
+      - 🇮🇪 爱尔兰-都柏林-1E
+      - 🇭🇰 香港-V6|05 0.5x-1A
+      - 🇧🇷 SS 巴西1-1B
+      - 🇮🇱 SS 以色列1-1A
+      - 🇺🇸 美国NO.2-1B
+      - 🇹🇭 SS 泰国1-1B
+      - 🇲🇽 SS 墨西哥1-1A
+      - 🇺🇸 美国04-1B
+      - 🇭🇰 3x备用专线香港1-1A
+      - 🇭🇰 香港03-1A
+      - 🇭🇰 2号专线 香港HK 53-1A
+      - 🇺🇸 SS 美国1-1C
+      - 🇺🇸 美国-V6|01-1A
+      - 🇬🇧 英国2-1A
+      - 🇸🇬 1号专线 新加坡SG 146-1A
+      - 🇹🇼 台湾1-1A
+      - 🇬🇧 英国2-1B
+      - 🇹🇼 SS 台湾1-1C
+      - 🇳🇱 荷兰-V6|01 0.5x-1B
+      - 🇭🇰 2号专线 香港HK 53-1B
+      - 🇭🇰 香港-线路1-1O
+      - 🇮🇪 爱尔兰-都柏林-1H
+      - 🇯🇵 日本-V6|02-1B
+      - 🇨🇦 加拿大1-1A
+      - 🇦🇺 澳大利亚原生1-1A
+      - 🇯🇵 SS 日本3-1C
+      - 🇨🇳 中国联通节点1
+      - 🇮🇳 SS 印度1-1C
+      - 🇺🇸 美国05-1A
+      - 🇭🇰 香港NO.2-1B
+      - 🇹🇼 台湾2-1B
+      - 🇺🇸 美国02-1A
+      - 🇹🇭 SS 泰国1-1A
+      - 🇮🇳 印度2-1A
       - 🇯🇵 SS 日本1-1B
-      - 🇺🇸 美国02
+      - 🇯🇵 2号专线 日本JP 75-1B
       - 🇸🇬 1号专线 新加坡SG 146-1B
+      - 🇩🇪 德国-V6|03 0.5x-1B
+      - 🇩🇪 德国-V6|03 0.5x-1A
+      - 🇹🇼 3x备用专线台湾1-1A
+      - 🇭🇰 香港-线路1-1J
+      - 🇯🇵 日本-V6|04-1B
+      - 🇭🇰 SS 香港1-1A
+      - 🇹🇭 SS 泰国1-1C
+      - 🇳🇱 荷兰-V6|04 0.5x-1B
+      - 🇺🇸 美国07-1B
+      - 🇹🇼 台湾高速节点3
+      - 🇯🇵 日本-V6|07-1A
+      - 🇹🇼 SS 台湾1-1B
+      - 🇭🇰 3x备用专线香港1-1B
+      - 🇰🇷 韩国 专线NO2-1A
+      - 🇮🇪 爱尔兰-都柏林-1J
+      - 🇮🇪 爱尔兰-都柏林-1L
+      - 🇭🇰 香港-线路1-1H
+      - 🇹🇼 台湾01|家宽
+      - 🇭🇰 香港-线路1-1A
+      - 🇺🇸 1号专线 美国US 205-1B
+      - 🇸🇬 SS 新加坡 1-1B
+      - 🇬🇧 英国1-1A
+      - 🇸🇬 新加坡NO.2-1B
+      - 🇭🇰 1号专线 香港HK 113-1A
+      - 🇮🇪 爱尔兰-都柏林-1P
+      - 🇮🇳 SS 印度1-1B
+      - 🇺🇸 美国NO.2-1A
+      - 🇨🇦 加拿大1-1B
+      - 🇹🇼 台湾1-1B
+      - 0.5x-1A
+      - 🇺🇸 SS 美国1-1B
+      - 🇸🇬 SS 新加坡 1-1C
+      - 🇦🇺 澳大利亚原生1-1B
+      - 🇯🇵 1号专线 日本JP 103-1A
+      - 🇯🇵 1号专线 日本JP 103-1B
+      - 🇹🇼 台湾2-1A
+      - 🇭🇰 香港-V6|07-1A
+      - 🇩🇪 德国-V6|01 0.5x-1B
+      - 🇳🇱 荷兰-V6|04 0.5x-1A
+      - 🇹🇷 SS 土耳其1-1A
+      - 🇺🇸 美国01-1B
+      - 🇮🇪 爱尔兰-都柏林-1K
+      - 🇮🇸 SS 冰岛1-1C
+      - 🇹🇼 台湾高速节点
+      - 🇸🇬 新加坡NO.1-1B
+      - 🇭🇰 香港03-1B
+      - 🇰🇷 韩国 专线NO2-1B
+      - 🇮🇳 印度2-1B
+      - 🇹🇼 SS 台湾2-1-1C
+      - 🇹🇼 3x备用专线台湾1-1B
+      - 🇺🇸 美国NO.1-1B
+      - 🇭🇰 2号专线 香港HK 74-1B
+      - 🇭🇰 香港-V6|07-1B
+      - 🇰🇷 韩国 专线NO1-1A
+      - 🇯🇵 日本01-1A
+      - 🇫🇷 法国1-1B
+      - 🇯🇵 SS 日本3-1A
+      - 🇮🇪 爱尔兰-都柏林-1I
+      - 🇯🇵 日本-V6|02-1A
+      - 🇯🇵 日本-V6|06-1B
+      - 🇫🇷 法国-1B
+      - 🇯🇵 SS 日本3-1B
+      - 🇹🇷 SS 土耳其1-1B
+      - 🇯🇵 日本-V6|07-1B
+      - 🇮🇪 爱尔兰-都柏林-1B
+      - 🇰🇷 SS 韩国1-1A
+      - 🇯🇵 日本NO.2-1A
+      - 🇫🇷 法国2-1B
+      - 🇭🇰 香港-线路1-1M
+      - 🇬🇧 英国1-1B
+      - 🇮🇳 SS 印度1-1A
+      - 🇯🇵 日本02-1A
+      - 🇭🇰 香港-线路1-1L
+      - 🇯🇵 2号专线 日本JP 75-1A
+      - 🇩🇪 德国-V6|02 0.5x-1A
+      - 🇦🇺 澳大利亚原生2-1A
+      - 🇰🇷 韩国 专线NO1-1B
+      - 🇮🇱 SS 以色列1-1B
+      - 🇳🇱 荷兰-V6|02 0.5x-1B
+      - 🇮🇪 爱尔兰-都柏林-1M
+      - 🇭🇰 香港-线路1-1I
+      - 🇭🇰 香港-线路1-1P
+      - 🇺🇸 美国-V6|01-1B
+      - 🇦🇺 澳大利亚原生2-1B
+      - 🇹🇼 1号专线 台湾TW 89-1B
+      - 🇭🇰 香港-线路1-1N
+      - 🇲🇽 SS 墨西哥1-1C
+      - 🇺🇸 美国01-1A
+      - 🇭🇰 香港-线路1-1G
+      - 🇹🇼 SS 台湾2-1-1B
+      - 🇮🇪 爱尔兰-都柏林-1C
+      - 🇨🇦 加拿大2-1B
+      - 🇳🇱 荷兰-V6|03 0.5x-1A
+      - 🇧🇷 SS 巴西1-1A
+      - 🇺🇸 美国02-1B
+      - 🇲🇾 SS 马来西亚1-1C
+      - 🇹🇼 台湾高速节点2
+      - 🇩🇪 德国-V6|02 0.5x-1B
+      - 🇫🇷 法国1-1A
+      - 🇮🇳 印度1-1B
+      - 🇯🇵 日本02-1B
+      - 🇭🇰 SS 香港1-1B
+      - 🇮🇸 SS 冰岛1-1A
+      - 🇺🇸 美国07-1A
+      - 🇮🇪 爱尔兰-都柏林-1D
+      - 🇭🇰 香港-V6|08-1B
+      - 🇺🇸 美国NO.1-1A
+      - 🇭🇰 香港-线路1-1C
+      - 🇭🇰 2号专线 香港HK 244-1A
+      - 🇮🇳 印度1-1A
+      - 🇮🇪 爱尔兰-都柏林-1A
+      - 🇯🇵 日本-V6|04-1A
+      - 🇯🇵 日本NO.1-1B
+      - 🇸🇬 SS 新加坡 1-1A
+      - 🇺🇸 SS 美国2-1-1C
+      - 🇯🇵 日本03-1A
+      - 🇸🇬 新加坡NO.2-1A
+      - 🇯🇵 日本-V6|05-1B
+      - 🇯🇵 日本-V6|06-1A
+      - 🇲🇾 SS 马来西亚1-1B
+      - 🇯🇵 1号专线 日本JP 114-1A
+      - 🇸🇬 新加坡NO.1-1A
+      - 🇭🇰 香港-V6|05 0.5x-1B
+      - 🇩🇪 德国-V6|01 0.5x-1A
+      - 🇭🇰 香港-线路1-1E
+      - 🇫🇷 法国2-1A
+      - 🇯🇵 日本NO.1-1A
+      - 🇭🇰 香港-线路1-1K
+      - 🇫🇷 法国-1A
+      - 🇺🇸 1号专线 美国US 205-1A
+      - 🇺🇸 2号专线 美国US 110-1A
+      - 🇺🇸 美国05-1B
+      - 🇭🇰 香港-V4|02-1B
+      - 🇭🇰 1号专线 香港HK 113-1B
+      - 🇮🇪 爱尔兰-都柏林-1O
+      - 🇭🇰 SS 香港1-1C
+      - 🇳🇱 荷兰-V6|02 0.5x-1A
+      - 0.5x-1C
+      - 🇮🇸 SS 冰岛1-1B
+      - 🇭🇰 香港-线路1-1B
+      - 0.5x-1D
+      - 🇯🇵 日本NO.2-1B
+      - 🇭🇰 香港-V4|02-1A
+      - 🇳🇱 荷兰-V6|03 0.5x-1B
+      - 🇭🇰 香港-线路1-1F
+      - 🇮🇪 爱尔兰-都柏林-1N
+      - 🇯🇵 SS 日本1-1A
+      - 🇭🇰 香港-V6|06-1B
+      - 🇰🇷 韩国1
+      - 🇺🇸 美国04-1A
+      - 🇲🇽 SS 墨西哥1-1B
+      - 🇨🇦 加拿大2-1A
+      - 🇰🇷 SS 韩国1-1C
+      - 🇺🇸 SS 美国1-1A
+      - 🇰🇷 SS 韩国1-1B
+      - 🇯🇵 1号专线 日本JP 114-1B
+      - 🇹🇷 SS 土耳其1-1C
+      - 🇭🇰 2号专线 香港HK 244-1B
+      - 🇭🇰 香港NO.2-1A
+      - 🇮🇪 爱尔兰-都柏林-1F
+      - 🇹🇼 1号专线 台湾TW 89-1A
+      - 🇺🇸 SS 美国2-1-1A
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇹🇼 台湾2
-      - 🇭🇰 2号专线 香港HK 53-1B
-      - 🇭🇰 香港
-      - 🇭🇰 香港NO.2
-      - 🇭🇰 SS 香港1-1C
-      - 🇭🇰 香港-线路1-1L
-      - 🇭🇰 1号专线 香港HK 113-1E
-      - 🇹🇼 SS 台湾1-1A
-      - 🇭🇰 2号专线 香港HK 244-1E
-      - 🇹🇼 SS 台湾2-1-1B
-      - 🇹🇼 SS 台湾2-1-1A
-      - 🇹🇼 台湾01|家宽
-      - 🇹🇼 台湾1
-      - 🇭🇰 香港-线路1-1D
-      - 🇭🇰 2号专线 香港HK 74-1D
-      - 🇹🇼 SS 台湾1-1C
-      - 🇹🇼 台湾高速节点
-      - 🇭🇰 2号专线 香港HK 53-1D
-      - 🇹🇼 台湾
-      - 🇭🇰 香港-线路1-1I
-      - 🇭🇰 香港-V6|06
-      - 🇭🇰 香港-线路1-1B
-      - 🇹🇼 1号专线 台湾TW 89-1E
-      - 🇹🇼 SS 台湾2-1-1C
-      - 🇭🇰 1号专线 香港HK 113-1D
       - 🇭🇰 2号专线 香港HK 74-1A
-      - 🇭🇰 2号专线 香港HK 74-1C
-      - 🇹🇼 台湾高速节点2
-      - 🇹🇼 1号专线 台湾TW 89-1A
-      - 🇭🇰 2号专线 香港HK 53-1C
-      - 🇭🇰 香港-线路1-1P
-      - 🇹🇼 1号专线 台湾TW 89-1D
-      - 🇭🇰 SS 香港1-1A
-      - 🇭🇰 1号专线 香港HK 113-1A
-      - 🇭🇰 香港-线路1-1O
-      - 🇭🇰 2号专线 香港HK 244-1A
-      - 🇭🇰 香港-线路1-1F
-      - 🇹🇼 SS 台湾1-1B
-      - 🇭🇰 2号专线 香港HK 74-1E
-      - 🇭🇰 香港-线路1-1A
-      - 🇹🇼 台湾高速节点3
-      - 🇭🇰 香港-线路1-1J
-      - 🇭🇰 香港-V4|02
-      - 🇭🇰 香港-V6|05 0.5x
-      - 🇹🇼 1号专线 台湾TW 89-1C
-      - 🇭🇰 香港-线路1-1H
-      - 🇭🇰 香港-线路1-1M
-      - 🇭🇰 香港-V6|08
-      - 🇭🇰 2号专线 香港HK 244-1D
-      - 🇭🇰 3x备用专线香港1
-      - 🇭🇰 2号专线 香港HK 53-1E
-      - 🇭🇰 香港-线路1-1K
-      - 🇭🇰 香港-线路1-1G
-      - 🇭🇰 香港03
-      - 🇭🇰 2号专线 香港HK 244-1B
-      - 🇭🇰 香港-线路1-1E
-      - 🇭🇰 香港-线路1-1N
-      - 🇭🇰 1号专线 香港HK 113-1C
-      - 🇭🇰 2号专线 香港HK 244-1C
-      - 🇹🇼 1号专线 台湾TW 89-1B
+      - 🇭🇰 香港-线路1-1D
+      - 🇹🇼 SS 台湾2-1-1A
+      - 🇹🇼 SS 台湾1-1A
+      - 🇭🇰 香港-V6|06-1A
+      - 🇭🇰 香港-V6|08-1A
+      - 🇭🇰 香港-V6|05 0.5x-1A
+      - 🇭🇰 3x备用专线香港1-1A
+      - 🇭🇰 香港03-1A
       - 🇭🇰 2号专线 香港HK 53-1A
-      - 🇭🇰 香港-V6|07
-      - 🇹🇼 3x备用专线台湾1
-      - 🇭🇰 香港-线路1-1C
-      - 🇭🇰 SS 香港1-1B
+      - 🇹🇼 台湾1-1A
+      - 🇹🇼 SS 台湾1-1C
+      - 🇭🇰 2号专线 香港HK 53-1B
+      - 🇭🇰 香港-线路1-1O
+      - 🇭🇰 香港NO.2-1B
+      - 🇹🇼 台湾2-1B
+      - 🇹🇼 3x备用专线台湾1-1A
+      - 🇭🇰 香港-线路1-1J
+      - 🇭🇰 SS 香港1-1A
+      - 🇹🇼 台湾高速节点3
+      - 🇹🇼 SS 台湾1-1B
+      - 🇭🇰 3x备用专线香港1-1B
+      - 🇭🇰 香港-线路1-1H
+      - 🇹🇼 台湾01|家宽
+      - 🇭🇰 香港-线路1-1A
+      - 🇭🇰 1号专线 香港HK 113-1A
+      - 🇹🇼 台湾1-1B
+      - 🇹🇼 台湾2-1A
+      - 🇭🇰 香港-V6|07-1A
+      - 🇹🇼 台湾高速节点
+      - 🇭🇰 香港03-1B
+      - 🇹🇼 SS 台湾2-1-1C
+      - 🇹🇼 3x备用专线台湾1-1B
       - 🇭🇰 2号专线 香港HK 74-1B
+      - 🇭🇰 香港-V6|07-1B
+      - 🇭🇰 香港-线路1-1M
+      - 🇭🇰 香港-线路1-1L
+      - 🇭🇰 香港-线路1-1I
+      - 🇭🇰 香港-线路1-1P
+      - 🇹🇼 1号专线 台湾TW 89-1B
+      - 🇭🇰 香港-线路1-1N
+      - 🇭🇰 香港-线路1-1G
+      - 🇹🇼 SS 台湾2-1-1B
+      - 🇹🇼 台湾高速节点2
+      - 🇭🇰 SS 香港1-1B
+      - 🇭🇰 香港-V6|08-1B
+      - 🇭🇰 香港-线路1-1C
+      - 🇭🇰 2号专线 香港HK 244-1A
+      - 🇭🇰 香港-V6|05 0.5x-1B
+      - 🇭🇰 香港-线路1-1E
+      - 🇭🇰 香港-线路1-1K
+      - 🇭🇰 香港-V4|02-1B
       - 🇭🇰 1号专线 香港HK 113-1B
+      - 🇭🇰 SS 香港1-1C
+      - 🇭🇰 香港-线路1-1B
+      - 🇭🇰 香港-V4|02-1A
+      - 🇭🇰 香港-线路1-1F
+      - 🇭🇰 香港-V6|06-1B
+      - 🇭🇰 2号专线 香港HK 244-1B
+      - 🇭🇰 香港NO.2-1A
+      - 🇹🇼 1号专线 台湾TW 89-1A
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇯🇵 1号专线 日本JP 103-1D
-      - 🇺🇸 SS 美国2-1-1B
-      - 🇳🇱 荷兰
-      - 🇳🇱 荷兰-V6|03 0.5x
-      - 🇮🇳 SS 印度1-1A
-      - 🇹🇼 台湾2
-      - 🇮🇱 SS 以色列1-1A
-      - 🇨🇦 加拿大1
-      - 🇮🇪 爱尔兰-都柏林-1C
-      - 0.5x-1A
-      - 🇺🇸 1号专线 美国US 205-1D
-      - 🇯🇵 日本NO.1
-      - 🇯🇵 1号专线 日本JP 114-1D
-      - 🇭🇰 2号专线 香港HK 53-1B
-      - 🇮🇪 爱尔兰-都柏林-1D
-      - 🇩🇪 德国01|轻量
-      - 🇳🇱 荷兰-V6|04 0.5x
-      - 🇯🇵 日本01
-      - 🇸🇬 1号专线 新加坡SG 146-1D
-      - 🇭🇰 香港
-      - 🇯🇵 1号专线 日本JP 103-1B
-      - 🇭🇰 香港NO.2
-      - 🇯🇵 1号专线 日本JP 103-1C
-      - 🇭🇰 SS 香港1-1C
-      - 🇺🇸 2号专线 美国US 110-1C
-      - 🇭🇰 香港-线路1-1L
-      - 🇰🇷 韩国 专线NO1
-      - 🇯🇵 2号专线 日本JP 75-1A
-      - 🇭🇰 1号专线 香港HK 113-1E
-      - 🇹🇼 SS 台湾1-1A
-      - 🇺🇸 美国NO.2
-      - 🇮🇳 SS 印度1-1C
-      - 🇺🇸 美国01
-      - 🇭🇰 2号专线 香港HK 244-1E
-      - 🇯🇵 日本NO.2
-      - 🇮🇸 SS 冰岛1-1C
-      - 🇮🇳 印度1
-      - 🇲🇾 SS 马来西亚1-1B
-      - 🇸🇬 SS 新加坡 1-1C
-      - 🇯🇵 1号专线 日本JP 103-1E
-      - 🇮🇸 SS 冰岛1-1B
-      - 🇲🇾 SS 马来西亚1-1A
-      - 🇰🇷 SS 韩国1-1C
-      - 🇺🇸 2号专线 美国US 110-1E
-      - 🇺🇸 SS 美国2-1-1A
-      - 🇹🇭 SS 泰国1-1A
-      - 🇹🇼 SS 台湾2-1-1B
-      - 🇯🇵 SS 日本1-1A
-      - 🇹🇼 SS 台湾2-1-1A
-      - 🇩🇪 德国-V6|03 0.5x
-      - 🇹🇼 台湾01|家宽
-      - 🇯🇵 1号专线 日本JP 114-1B
-      - 🇯🇵 日本-V6|07
-      - 🇯🇵 日本03
-      - 🇸🇬 SS 新加坡 1-1B
-      - 🇹🇼 台湾1
-      - 🇭🇰 香港-线路1-1D
-      - 🇮🇪 爱尔兰-都柏林-1N
-      - TOR-试用
-      - 🇭🇰 2号专线 香港HK 74-1D
-      - 🇹🇼 SS 台湾1-1C
-      - 🇹🇷 SS 土耳其1-1C
-      - 🇺🇸 美国高速节点1
-      - 🇹🇼 台湾高速节点
-      - 🇯🇵 SS 日本3-1C
-      - 🇭🇰 2号专线 香港HK 53-1D
-      - 🇲🇽 SS 墨西哥1-1B
-      - 🇺🇸 1号专线 美国US 205-1A
-      - 🇹🇼 台湾
-      - 🇺🇸 美国NO.1
-      - 🇸🇬 1号专线 新加坡SG 146-1E
-      - 🇭🇰 香港-线路1-1I
-      - 🇨🇳 中国联通节点1
-      - 🇯🇵 日本-V6|02
-      - 🇭🇰 香港-V6|06
-      - 🇭🇰 香港-线路1-1B
-      - 🇮🇪 爱尔兰-都柏林-1G
-      - 🇯🇵 1号专线 日本JP 114-1C
-      - 🇺🇸 美国05
-      - 🇹🇼 1号专线 台湾TW 89-1E
-      - 🇹🇼 SS 台湾2-1-1C
-      - 🇮🇪 爱尔兰-都柏林-1A
-      - 🇭🇰 1号专线 香港HK 113-1D
       - 🇭🇰 2号专线 香港HK 74-1A
-      - 🇭🇰 2号专线 香港HK 74-1C
-      - 🇯🇵 2号专线 日本JP 75-1C
-      - 🇯🇵 2号专线 日本JP 75-1E
-      - 🇹🇼 台湾高速节点2
-      - 🇺🇸 2号专线 美国US 110-1A
-      - 🇹🇼 1号专线 台湾TW 89-1A
-      - 🇭🇰 2号专线 香港HK 53-1C
-      - 🇯🇵 1号专线 日本JP 114-1A
-      - 🇳🇱 荷兰-V6|02 0.5x
-      - 🇭🇰 香港-线路1-1P
-      - 🇫🇷 法国2
-      - 🇮🇪 爱尔兰-都柏林-1H
-      - 🇬🇧 英国1
-      - 🇧🇷 SS 巴西1-1A
-      - 🇰🇷 SS 韩国1-1B
-      - 🇹🇼 1号专线 台湾TW 89-1D
-      - 🇧🇷 SS 巴西1-1B
-      - 🇹🇭 SS 泰国1-1B
-      - 🇯🇵 1号专线 日本JP 114-1E
-      - 🇰🇷 SS 韩国1-1A
-      - 🇭🇰 SS 香港1-1A
-      - 🇺🇸 SS 美国1-1A
-      - 🇭🇰 1号专线 香港HK 113-1A
-      - 🇮🇱 SS 以色列1-1B
-      - 🇯🇵 日本-V6|05
-      - 🇭🇰 香港-线路1-1O
-      - 🇺🇸 2号专线 美国US 110-1B
-      - 🇭🇰 2号专线 香港HK 244-1A
-      - 🇭🇰 香港-线路1-1F
-      - 🇹🇼 SS 台湾1-1B
-      - 🇮🇪 爱尔兰-都柏林-1I
-      - 🇸🇬 SS 新加坡 1-1A
-      - 🇮🇪 爱尔兰-都柏林-1K
-      - 🇭🇰 2号专线 香港HK 74-1E
-      - 🇸🇬 新加坡NO.2
-      - 🇭🇰 香港-线路1-1A
-      - 🇹🇼 台湾高速节点3
-      - 🇮🇳 SS 印度1-1B
-      - 🇮🇪 爱尔兰-都柏林-1L
-      - 🇺🇸 2号专线 美国US 110-1D
-      - 🇭🇰 香港-线路1-1J
-      - 🇭🇰 香港-V4|02
-      - 🇯🇵 2号专线 日本JP 75-1D
-      - 🇺🇸 美国-V6|01
-      - 🇭🇰 香港-V6|05 0.5x
-      - 🇬🇧 英国2
-      - 🇯🇵 SS 日本3-1A
-      - 🇹🇭 SS 泰国1-1C
-      - 🇯🇵 日本-V6|04
-      - 🇺🇸 SS 美国2-1-1C
-      - 🇲🇽 SS 墨西哥1-1C
-      - 🇹🇼 1号专线 台湾TW 89-1C
-      - 🇭🇰 香港-线路1-1H
-      - 🇸🇬 新加坡NO.1
-      - 🇺🇸 SS 美国1-1C
-      - 🇸🇬 1号专线 新加坡SG 146-1C
-      - 🇭🇰 香港-线路1-1M
-      - 🇯🇵 SS 日本3-1B
-      - 🇭🇰 香港-V6|08
-      - 🇮🇪 爱尔兰-都柏林-1F
-      - 🇭🇰 2号专线 香港HK 244-1D
+      - 🇭🇰 香港-线路1-1D
+      - 🇹🇼 SS 台湾2-1-1A
       - 🇯🇵 SS 日本1-1C
-      - 🇮🇪 爱尔兰-都柏林-1P
-      - 🇭🇰 3x备用专线香港1
-      - 🇺🇸 1号专线 美国US 205-1C
-      - 🇦🇺 澳大利亚原生1
-      - 🇸🇬 1号专线 新加坡SG 146-1A
-      - 🇭🇰 2号专线 香港HK 53-1E
-      - 🇰🇷 韩国
-      - 🇭🇰 香港-线路1-1K
-      - 🇩🇪 德国-V6|01 0.5x
-      - 🇦🇺 澳大利亚原生2
-      - 🇹🇷 SS 土耳其1-1B
-      - 🇯🇵 日本02
-      - 🇮🇳 印度2
-      - 🇮🇪 爱尔兰-都柏林-1J
-      - 🇨🇦 加拿大2
-      - 🇲🇽 SS 墨西哥1-1A
-      - 🇩🇪 德国-V6|02 0.5x
-      - 🇹🇭 泰国
-      - 🇭🇰 香港-线路1-1G
-      - 🇮🇱 SS 以色列1-1C
-      - 🇭🇰 香港03
-      - 🇭🇰 2号专线 香港HK 244-1B
-      - 🇺🇸 1号专线 美国US 205-1E
-      - 🇭🇰 香港-线路1-1E
-      - 🇺🇸 美国04
-      - 🇮🇪 爱尔兰-都柏林-1E
-      - 🇮🇪 爱尔兰-都柏林-1M
-      - 🇭🇰 香港-线路1-1N
-      - 🇲🇾 SS 马来西亚1-1C
-      - 🇫🇷 法国
-      - 🇫🇷 法国1
-      - 🇭🇰 1号专线 香港HK 113-1C
-      - 🇯🇵 2号专线 日本JP 75-1B
-      - 🇸🇬 新加坡
-      - 🇭🇰 2号专线 香港HK 244-1C
-      - 🇹🇼 1号专线 台湾TW 89-1B
-      - 🇮🇸 SS 冰岛1-1A
-      - 🇰🇷 韩国 专线NO2
-      - 🇺🇸 1号专线 美国US 205-1B
-      - 🇭🇰 2号专线 香港HK 53-1A
-      - 🇯🇵 日本-V6|06
-      - 🇭🇰 香港-V6|07
-      - 0.5x-1B
-      - 🇯🇵 1号专线 日本JP 103-1A
-      - 🇹🇷 SS 土耳其1-1A
-      - 🇹🇼 3x备用专线台湾1
+      - 🇺🇸 美国高速节点1
+      - 🇹🇼 SS 台湾1-1A
       - 🇧🇷 SS 巴西1-1C
-      - 🇳🇱 荷兰-V6|01 0.5x
-      - 🇩🇪 德国
-      - 🇺🇸 SS 美国1-1B
-      - 🇯🇵 日本
-      - 🇺🇸 美国07
-      - 🇭🇰 香港-线路1-1C
-      - 🇭🇰 SS 香港1-1B
-      - 🇮🇪 爱尔兰-都柏林-1O
-      - 🇮🇪 爱尔兰-都柏林-1B
-      - 🇭🇰 2号专线 香港HK 74-1B
-      - 🇭🇰 1号专线 香港HK 113-1B
+      - 🇯🇵 日本01-1B
+      - 🇭🇰 香港-V6|06-1A
+      - 🇯🇵 日本03-1B
+      - 🇺🇸 2号专线 美国US 110-1B
+      - 0.5x-1B
+      - 🇮🇪 爱尔兰-都柏林-1G
+      - 🇳🇱 荷兰-V6|01 0.5x-1A
+      - 🇩🇪 德国01|轻量
+      - 🇲🇾 SS 马来西亚1-1A
+      - 🇯🇵 日本-V6|05-1A
+      - 🇭🇰 香港-V6|08-1A
+      - 🇺🇸 SS 美国2-1-1B
+      - 🇮🇱 SS 以色列1-1C
+      - 🇮🇪 爱尔兰-都柏林-1E
+      - 🇭🇰 香港-V6|05 0.5x-1A
+      - 🇧🇷 SS 巴西1-1B
+      - 🇮🇱 SS 以色列1-1A
+      - 🇺🇸 美国NO.2-1B
+      - 🇹🇭 SS 泰国1-1B
+      - 🇲🇽 SS 墨西哥1-1A
+      - 🇺🇸 美国04-1B
+      - 🇭🇰 3x备用专线香港1-1A
+      - 🇭🇰 香港03-1A
+      - 🇭🇰 2号专线 香港HK 53-1A
+      - 🇺🇸 SS 美国1-1C
+      - 🇺🇸 美国-V6|01-1A
+      - 🇬🇧 英国2-1A
+      - 🇸🇬 1号专线 新加坡SG 146-1A
+      - 🇹🇼 台湾1-1A
+      - 🇬🇧 英国2-1B
+      - 🇹🇼 SS 台湾1-1C
+      - 🇳🇱 荷兰-V6|01 0.5x-1B
+      - 🇭🇰 2号专线 香港HK 53-1B
+      - 🇭🇰 香港-线路1-1O
+      - 🇮🇪 爱尔兰-都柏林-1H
+      - 🇯🇵 日本-V6|02-1B
+      - 🇨🇦 加拿大1-1A
+      - 🇦🇺 澳大利亚原生1-1A
+      - 🇯🇵 SS 日本3-1C
+      - 🇨🇳 中国联通节点1
+      - 🇮🇳 SS 印度1-1C
+      - 🇺🇸 美国05-1A
+      - 🇭🇰 香港NO.2-1B
+      - 🇹🇼 台湾2-1B
+      - 🇺🇸 美国02-1A
+      - 🇹🇭 SS 泰国1-1A
+      - 🇮🇳 印度2-1A
       - 🇯🇵 SS 日本1-1B
-      - 🇺🇸 美国02
+      - 🇯🇵 2号专线 日本JP 75-1B
       - 🇸🇬 1号专线 新加坡SG 146-1B
+      - 🇩🇪 德国-V6|03 0.5x-1B
+      - 🇩🇪 德国-V6|03 0.5x-1A
+      - 🇹🇼 3x备用专线台湾1-1A
+      - 🇭🇰 香港-线路1-1J
+      - 🇯🇵 日本-V6|04-1B
+      - 🇭🇰 SS 香港1-1A
+      - 🇹🇭 SS 泰国1-1C
+      - 🇳🇱 荷兰-V6|04 0.5x-1B
+      - 🇺🇸 美国07-1B
+      - 🇹🇼 台湾高速节点3
+      - 🇯🇵 日本-V6|07-1A
+      - 🇹🇼 SS 台湾1-1B
+      - 🇭🇰 3x备用专线香港1-1B
+      - 🇰🇷 韩国 专线NO2-1A
+      - 🇮🇪 爱尔兰-都柏林-1J
+      - 🇮🇪 爱尔兰-都柏林-1L
+      - 🇭🇰 香港-线路1-1H
+      - 🇹🇼 台湾01|家宽
+      - 🇭🇰 香港-线路1-1A
+      - 🇺🇸 1号专线 美国US 205-1B
+      - 🇸🇬 SS 新加坡 1-1B
+      - 🇬🇧 英国1-1A
+      - 🇸🇬 新加坡NO.2-1B
+      - 🇭🇰 1号专线 香港HK 113-1A
+      - 🇮🇪 爱尔兰-都柏林-1P
+      - 🇮🇳 SS 印度1-1B
+      - 🇺🇸 美国NO.2-1A
+      - 🇨🇦 加拿大1-1B
+      - 🇹🇼 台湾1-1B
+      - 0.5x-1A
+      - 🇺🇸 SS 美国1-1B
+      - 🇸🇬 SS 新加坡 1-1C
+      - 🇦🇺 澳大利亚原生1-1B
+      - 🇯🇵 1号专线 日本JP 103-1A
+      - 🇯🇵 1号专线 日本JP 103-1B
+      - 🇹🇼 台湾2-1A
+      - 🇭🇰 香港-V6|07-1A
+      - 🇩🇪 德国-V6|01 0.5x-1B
+      - 🇳🇱 荷兰-V6|04 0.5x-1A
+      - 🇹🇷 SS 土耳其1-1A
+      - 🇺🇸 美国01-1B
+      - 🇮🇪 爱尔兰-都柏林-1K
+      - 🇮🇸 SS 冰岛1-1C
+      - 🇹🇼 台湾高速节点
+      - 🇸🇬 新加坡NO.1-1B
+      - 🇭🇰 香港03-1B
+      - 🇰🇷 韩国 专线NO2-1B
+      - 🇮🇳 印度2-1B
+      - 🇹🇼 SS 台湾2-1-1C
+      - 🇹🇼 3x备用专线台湾1-1B
+      - 🇺🇸 美国NO.1-1B
+      - 🇭🇰 2号专线 香港HK 74-1B
+      - 🇭🇰 香港-V6|07-1B
+      - 🇰🇷 韩国 专线NO1-1A
+      - 🇯🇵 日本01-1A
+      - 🇫🇷 法国1-1B
+      - 🇯🇵 SS 日本3-1A
+      - 🇮🇪 爱尔兰-都柏林-1I
+      - 🇯🇵 日本-V6|02-1A
+      - 🇯🇵 日本-V6|06-1B
+      - 🇫🇷 法国-1B
+      - 🇯🇵 SS 日本3-1B
+      - 🇹🇷 SS 土耳其1-1B
+      - 🇯🇵 日本-V6|07-1B
+      - 🇮🇪 爱尔兰-都柏林-1B
+      - 🇰🇷 SS 韩国1-1A
+      - 🇯🇵 日本NO.2-1A
+      - 🇫🇷 法国2-1B
+      - 🇭🇰 香港-线路1-1M
+      - 🇬🇧 英国1-1B
+      - 🇮🇳 SS 印度1-1A
+      - 🇯🇵 日本02-1A
+      - 🇭🇰 香港-线路1-1L
+      - 🇯🇵 2号专线 日本JP 75-1A
+      - 🇩🇪 德国-V6|02 0.5x-1A
+      - 🇦🇺 澳大利亚原生2-1A
+      - 🇰🇷 韩国 专线NO1-1B
+      - 🇮🇱 SS 以色列1-1B
+      - 🇳🇱 荷兰-V6|02 0.5x-1B
+      - 🇮🇪 爱尔兰-都柏林-1M
+      - 🇭🇰 香港-线路1-1I
+      - 🇭🇰 香港-线路1-1P
+      - 🇺🇸 美国-V6|01-1B
+      - 🇦🇺 澳大利亚原生2-1B
+      - 🇹🇼 1号专线 台湾TW 89-1B
+      - 🇭🇰 香港-线路1-1N
+      - 🇲🇽 SS 墨西哥1-1C
+      - 🇺🇸 美国01-1A
+      - 🇭🇰 香港-线路1-1G
+      - 🇹🇼 SS 台湾2-1-1B
+      - 🇮🇪 爱尔兰-都柏林-1C
+      - 🇨🇦 加拿大2-1B
+      - 🇳🇱 荷兰-V6|03 0.5x-1A
+      - 🇧🇷 SS 巴西1-1A
+      - 🇺🇸 美国02-1B
+      - 🇲🇾 SS 马来西亚1-1C
+      - 🇹🇼 台湾高速节点2
+      - 🇩🇪 德国-V6|02 0.5x-1B
+      - 🇫🇷 法国1-1A
+      - 🇮🇳 印度1-1B
+      - 🇯🇵 日本02-1B
+      - 🇭🇰 SS 香港1-1B
+      - 🇮🇸 SS 冰岛1-1A
+      - 🇺🇸 美国07-1A
+      - 🇮🇪 爱尔兰-都柏林-1D
+      - 🇭🇰 香港-V6|08-1B
+      - 🇺🇸 美国NO.1-1A
+      - 🇭🇰 香港-线路1-1C
+      - 🇭🇰 2号专线 香港HK 244-1A
+      - 🇮🇳 印度1-1A
+      - 🇮🇪 爱尔兰-都柏林-1A
+      - 🇯🇵 日本-V6|04-1A
+      - 🇯🇵 日本NO.1-1B
+      - 🇸🇬 SS 新加坡 1-1A
+      - 🇺🇸 SS 美国2-1-1C
+      - 🇯🇵 日本03-1A
+      - 🇸🇬 新加坡NO.2-1A
+      - 🇯🇵 日本-V6|05-1B
+      - 🇯🇵 日本-V6|06-1A
+      - 🇲🇾 SS 马来西亚1-1B
+      - 🇯🇵 1号专线 日本JP 114-1A
+      - 🇸🇬 新加坡NO.1-1A
+      - 🇭🇰 香港-V6|05 0.5x-1B
+      - 🇩🇪 德国-V6|01 0.5x-1A
+      - 🇭🇰 香港-线路1-1E
+      - 🇫🇷 法国2-1A
+      - 🇯🇵 日本NO.1-1A
+      - 🇭🇰 香港-线路1-1K
+      - 🇫🇷 法国-1A
+      - 🇺🇸 1号专线 美国US 205-1A
+      - 🇺🇸 2号专线 美国US 110-1A
+      - 🇺🇸 美国05-1B
+      - 🇭🇰 香港-V4|02-1B
+      - 🇭🇰 1号专线 香港HK 113-1B
+      - 🇮🇪 爱尔兰-都柏林-1O
+      - 🇭🇰 SS 香港1-1C
+      - 🇳🇱 荷兰-V6|02 0.5x-1A
+      - 0.5x-1C
+      - 🇮🇸 SS 冰岛1-1B
+      - 🇭🇰 香港-线路1-1B
+      - 0.5x-1D
+      - 🇯🇵 日本NO.2-1B
+      - 🇭🇰 香港-V4|02-1A
+      - 🇳🇱 荷兰-V6|03 0.5x-1B
+      - 🇭🇰 香港-线路1-1F
+      - 🇮🇪 爱尔兰-都柏林-1N
+      - 🇯🇵 SS 日本1-1A
+      - 🇭🇰 香港-V6|06-1B
+      - 🇰🇷 韩国1
+      - 🇺🇸 美国04-1A
+      - 🇲🇽 SS 墨西哥1-1B
+      - 🇨🇦 加拿大2-1A
+      - 🇰🇷 SS 韩国1-1C
+      - 🇺🇸 SS 美国1-1A
+      - 🇰🇷 SS 韩国1-1B
+      - 🇯🇵 1号专线 日本JP 114-1B
+      - 🇹🇷 SS 土耳其1-1C
+      - 🇭🇰 2号专线 香港HK 244-1B
+      - 🇭🇰 香港NO.2-1A
+      - 🇮🇪 爱尔兰-都柏林-1F
+      - 🇹🇼 1号专线 台湾TW 89-1A
+      - 🇺🇸 SS 美国2-1-1A
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇯🇵 1号专线 日本JP 103-1D
-      - 🇺🇸 SS 美国2-1-1B
-      - 🇳🇱 荷兰
-      - 🇳🇱 荷兰-V6|03 0.5x
-      - 🇮🇳 SS 印度1-1A
-      - 🇹🇼 台湾2
-      - 🇮🇱 SS 以色列1-1A
-      - 🇨🇦 加拿大1
-      - 🇮🇪 爱尔兰-都柏林-1C
-      - 0.5x-1A
-      - 🇺🇸 1号专线 美国US 205-1D
-      - 🇯🇵 日本NO.1
-      - 🇯🇵 1号专线 日本JP 114-1D
-      - 🇭🇰 2号专线 香港HK 53-1B
-      - 🇮🇪 爱尔兰-都柏林-1D
-      - 🇩🇪 德国01|轻量
-      - 🇳🇱 荷兰-V6|04 0.5x
-      - 🇯🇵 日本01
-      - 🇸🇬 1号专线 新加坡SG 146-1D
-      - 🇭🇰 香港
-      - 🇯🇵 1号专线 日本JP 103-1B
-      - 🇭🇰 香港NO.2
-      - 🇯🇵 1号专线 日本JP 103-1C
-      - 🇭🇰 SS 香港1-1C
-      - 🇺🇸 2号专线 美国US 110-1C
-      - 🇭🇰 香港-线路1-1L
-      - 🇰🇷 韩国 专线NO1
-      - 🇯🇵 2号专线 日本JP 75-1A
-      - 🇭🇰 1号专线 香港HK 113-1E
-      - 🇹🇼 SS 台湾1-1A
-      - 🇺🇸 美国NO.2
-      - 🇮🇳 SS 印度1-1C
-      - 🇺🇸 美国01
-      - 🇭🇰 2号专线 香港HK 244-1E
-      - 🇯🇵 日本NO.2
-      - 🇮🇸 SS 冰岛1-1C
-      - 🇮🇳 印度1
-      - 🇲🇾 SS 马来西亚1-1B
-      - 🇸🇬 SS 新加坡 1-1C
-      - 🇯🇵 1号专线 日本JP 103-1E
-      - 🇮🇸 SS 冰岛1-1B
-      - 🇲🇾 SS 马来西亚1-1A
-      - 🇰🇷 SS 韩国1-1C
-      - 🇺🇸 2号专线 美国US 110-1E
-      - 🇺🇸 SS 美国2-1-1A
-      - 🇹🇭 SS 泰国1-1A
-      - 🇹🇼 SS 台湾2-1-1B
-      - 🇯🇵 SS 日本1-1A
-      - 🇹🇼 SS 台湾2-1-1A
-      - 🇩🇪 德国-V6|03 0.5x
-      - 🇹🇼 台湾01|家宽
-      - 🇯🇵 1号专线 日本JP 114-1B
-      - 🇯🇵 日本-V6|07
-      - 🇯🇵 日本03
-      - 🇸🇬 SS 新加坡 1-1B
-      - 🇹🇼 台湾1
-      - 🇭🇰 香港-线路1-1D
-      - 🇮🇪 爱尔兰-都柏林-1N
-      - TOR-试用
-      - 🇭🇰 2号专线 香港HK 74-1D
-      - 🇹🇼 SS 台湾1-1C
-      - 🇹🇷 SS 土耳其1-1C
-      - 🇺🇸 美国高速节点1
-      - 🇹🇼 台湾高速节点
-      - 🇯🇵 SS 日本3-1C
-      - 🇭🇰 2号专线 香港HK 53-1D
-      - 🇲🇽 SS 墨西哥1-1B
-      - 🇺🇸 1号专线 美国US 205-1A
-      - 🇹🇼 台湾
-      - 🇺🇸 美国NO.1
-      - 🇸🇬 1号专线 新加坡SG 146-1E
-      - 🇭🇰 香港-线路1-1I
-      - 🇨🇳 中国联通节点1
-      - 🇯🇵 日本-V6|02
-      - 🇭🇰 香港-V6|06
-      - 🇭🇰 香港-线路1-1B
-      - 🇮🇪 爱尔兰-都柏林-1G
-      - 🇯🇵 1号专线 日本JP 114-1C
-      - 🇺🇸 美国05
-      - 🇹🇼 1号专线 台湾TW 89-1E
-      - 🇹🇼 SS 台湾2-1-1C
-      - 🇮🇪 爱尔兰-都柏林-1A
-      - 🇭🇰 1号专线 香港HK 113-1D
       - 🇭🇰 2号专线 香港HK 74-1A
-      - 🇭🇰 2号专线 香港HK 74-1C
-      - 🇯🇵 2号专线 日本JP 75-1C
-      - 🇯🇵 2号专线 日本JP 75-1E
-      - 🇹🇼 台湾高速节点2
-      - 🇺🇸 2号专线 美国US 110-1A
-      - 🇹🇼 1号专线 台湾TW 89-1A
-      - 🇭🇰 2号专线 香港HK 53-1C
-      - 🇯🇵 1号专线 日本JP 114-1A
-      - 🇳🇱 荷兰-V6|02 0.5x
-      - 🇭🇰 香港-线路1-1P
-      - 🇫🇷 法国2
-      - 🇮🇪 爱尔兰-都柏林-1H
-      - 🇬🇧 英国1
-      - 🇧🇷 SS 巴西1-1A
-      - 🇰🇷 SS 韩国1-1B
-      - 🇹🇼 1号专线 台湾TW 89-1D
-      - 🇧🇷 SS 巴西1-1B
-      - 🇹🇭 SS 泰国1-1B
-      - 🇯🇵 1号专线 日本JP 114-1E
-      - 🇰🇷 SS 韩国1-1A
-      - 🇭🇰 SS 香港1-1A
-      - 🇺🇸 SS 美国1-1A
-      - 🇭🇰 1号专线 香港HK 113-1A
-      - 🇮🇱 SS 以色列1-1B
-      - 🇯🇵 日本-V6|05
-      - 🇭🇰 香港-线路1-1O
-      - 🇺🇸 2号专线 美国US 110-1B
-      - 🇭🇰 2号专线 香港HK 244-1A
-      - 🇭🇰 香港-线路1-1F
-      - 🇹🇼 SS 台湾1-1B
-      - 🇮🇪 爱尔兰-都柏林-1I
-      - 🇸🇬 SS 新加坡 1-1A
-      - 🇮🇪 爱尔兰-都柏林-1K
-      - 🇭🇰 2号专线 香港HK 74-1E
-      - 🇸🇬 新加坡NO.2
-      - 🇭🇰 香港-线路1-1A
-      - 🇹🇼 台湾高速节点3
-      - 🇮🇳 SS 印度1-1B
-      - 🇮🇪 爱尔兰-都柏林-1L
-      - 🇺🇸 2号专线 美国US 110-1D
-      - 🇭🇰 香港-线路1-1J
-      - 🇭🇰 香港-V4|02
-      - 🇯🇵 2号专线 日本JP 75-1D
-      - 🇺🇸 美国-V6|01
-      - 🇭🇰 香港-V6|05 0.5x
-      - 🇬🇧 英国2
-      - 🇯🇵 SS 日本3-1A
-      - 🇹🇭 SS 泰国1-1C
-      - 🇯🇵 日本-V6|04
-      - 🇺🇸 SS 美国2-1-1C
-      - 🇲🇽 SS 墨西哥1-1C
-      - 🇹🇼 1号专线 台湾TW 89-1C
-      - 🇭🇰 香港-线路1-1H
-      - 🇸🇬 新加坡NO.1
-      - 🇺🇸 SS 美国1-1C
-      - 🇸🇬 1号专线 新加坡SG 146-1C
-      - 🇭🇰 香港-线路1-1M
-      - 🇯🇵 SS 日本3-1B
-      - 🇭🇰 香港-V6|08
-      - 🇮🇪 爱尔兰-都柏林-1F
-      - 🇭🇰 2号专线 香港HK 244-1D
+      - 🇭🇰 香港-线路1-1D
+      - 🇹🇼 SS 台湾2-1-1A
       - 🇯🇵 SS 日本1-1C
-      - 🇮🇪 爱尔兰-都柏林-1P
-      - 🇭🇰 3x备用专线香港1
-      - 🇺🇸 1号专线 美国US 205-1C
-      - 🇦🇺 澳大利亚原生1
-      - 🇸🇬 1号专线 新加坡SG 146-1A
-      - 🇭🇰 2号专线 香港HK 53-1E
-      - 🇰🇷 韩国
-      - 🇭🇰 香港-线路1-1K
-      - 🇩🇪 德国-V6|01 0.5x
-      - 🇦🇺 澳大利亚原生2
-      - 🇹🇷 SS 土耳其1-1B
-      - 🇯🇵 日本02
-      - 🇮🇳 印度2
-      - 🇮🇪 爱尔兰-都柏林-1J
-      - 🇨🇦 加拿大2
-      - 🇲🇽 SS 墨西哥1-1A
-      - 🇩🇪 德国-V6|02 0.5x
-      - 🇹🇭 泰国
-      - 🇭🇰 香港-线路1-1G
-      - 🇮🇱 SS 以色列1-1C
-      - 🇭🇰 香港03
-      - 🇭🇰 2号专线 香港HK 244-1B
-      - 🇺🇸 1号专线 美国US 205-1E
-      - 🇭🇰 香港-线路1-1E
-      - 🇺🇸 美国04
-      - 🇮🇪 爱尔兰-都柏林-1E
-      - 🇮🇪 爱尔兰-都柏林-1M
-      - 🇭🇰 香港-线路1-1N
-      - 🇲🇾 SS 马来西亚1-1C
-      - 🇫🇷 法国
-      - 🇫🇷 法国1
-      - 🇭🇰 1号专线 香港HK 113-1C
-      - 🇯🇵 2号专线 日本JP 75-1B
-      - 🇸🇬 新加坡
-      - 🇭🇰 2号专线 香港HK 244-1C
-      - 🇹🇼 1号专线 台湾TW 89-1B
-      - 🇮🇸 SS 冰岛1-1A
-      - 🇰🇷 韩国 专线NO2
-      - 🇺🇸 1号专线 美国US 205-1B
-      - 🇭🇰 2号专线 香港HK 53-1A
-      - 🇯🇵 日本-V6|06
-      - 🇭🇰 香港-V6|07
-      - 0.5x-1B
-      - 🇯🇵 1号专线 日本JP 103-1A
-      - 🇹🇷 SS 土耳其1-1A
-      - 🇹🇼 3x备用专线台湾1
+      - 🇺🇸 美国高速节点1
+      - 🇹🇼 SS 台湾1-1A
       - 🇧🇷 SS 巴西1-1C
-      - 🇳🇱 荷兰-V6|01 0.5x
-      - 🇩🇪 德国
-      - 🇺🇸 SS 美国1-1B
-      - 🇯🇵 日本
-      - 🇺🇸 美国07
-      - 🇭🇰 香港-线路1-1C
-      - 🇭🇰 SS 香港1-1B
-      - 🇮🇪 爱尔兰-都柏林-1O
-      - 🇮🇪 爱尔兰-都柏林-1B
-      - 🇭🇰 2号专线 香港HK 74-1B
-      - 🇭🇰 1号专线 香港HK 113-1B
+      - 🇯🇵 日本01-1B
+      - 🇭🇰 香港-V6|06-1A
+      - 🇯🇵 日本03-1B
+      - 🇺🇸 2号专线 美国US 110-1B
+      - 0.5x-1B
+      - 🇮🇪 爱尔兰-都柏林-1G
+      - 🇳🇱 荷兰-V6|01 0.5x-1A
+      - 🇩🇪 德国01|轻量
+      - 🇲🇾 SS 马来西亚1-1A
+      - 🇯🇵 日本-V6|05-1A
+      - 🇭🇰 香港-V6|08-1A
+      - 🇺🇸 SS 美国2-1-1B
+      - 🇮🇱 SS 以色列1-1C
+      - 🇮🇪 爱尔兰-都柏林-1E
+      - 🇭🇰 香港-V6|05 0.5x-1A
+      - 🇧🇷 SS 巴西1-1B
+      - 🇮🇱 SS 以色列1-1A
+      - 🇺🇸 美国NO.2-1B
+      - 🇹🇭 SS 泰国1-1B
+      - 🇲🇽 SS 墨西哥1-1A
+      - 🇺🇸 美国04-1B
+      - 🇭🇰 3x备用专线香港1-1A
+      - 🇭🇰 香港03-1A
+      - 🇭🇰 2号专线 香港HK 53-1A
+      - 🇺🇸 SS 美国1-1C
+      - 🇺🇸 美国-V6|01-1A
+      - 🇬🇧 英国2-1A
+      - 🇸🇬 1号专线 新加坡SG 146-1A
+      - 🇹🇼 台湾1-1A
+      - 🇬🇧 英国2-1B
+      - 🇹🇼 SS 台湾1-1C
+      - 🇳🇱 荷兰-V6|01 0.5x-1B
+      - 🇭🇰 2号专线 香港HK 53-1B
+      - 🇭🇰 香港-线路1-1O
+      - 🇮🇪 爱尔兰-都柏林-1H
+      - 🇯🇵 日本-V6|02-1B
+      - 🇨🇦 加拿大1-1A
+      - 🇦🇺 澳大利亚原生1-1A
+      - 🇯🇵 SS 日本3-1C
+      - 🇨🇳 中国联通节点1
+      - 🇮🇳 SS 印度1-1C
+      - 🇺🇸 美国05-1A
+      - 🇭🇰 香港NO.2-1B
+      - 🇹🇼 台湾2-1B
+      - 🇺🇸 美国02-1A
+      - 🇹🇭 SS 泰国1-1A
+      - 🇮🇳 印度2-1A
       - 🇯🇵 SS 日本1-1B
-      - 🇺🇸 美国02
+      - 🇯🇵 2号专线 日本JP 75-1B
       - 🇸🇬 1号专线 新加坡SG 146-1B
+      - 🇩🇪 德国-V6|03 0.5x-1B
+      - 🇩🇪 德国-V6|03 0.5x-1A
+      - 🇹🇼 3x备用专线台湾1-1A
+      - 🇭🇰 香港-线路1-1J
+      - 🇯🇵 日本-V6|04-1B
+      - 🇭🇰 SS 香港1-1A
+      - 🇹🇭 SS 泰国1-1C
+      - 🇳🇱 荷兰-V6|04 0.5x-1B
+      - 🇺🇸 美国07-1B
+      - 🇹🇼 台湾高速节点3
+      - 🇯🇵 日本-V6|07-1A
+      - 🇹🇼 SS 台湾1-1B
+      - 🇭🇰 3x备用专线香港1-1B
+      - 🇰🇷 韩国 专线NO2-1A
+      - 🇮🇪 爱尔兰-都柏林-1J
+      - 🇮🇪 爱尔兰-都柏林-1L
+      - 🇭🇰 香港-线路1-1H
+      - 🇹🇼 台湾01|家宽
+      - 🇭🇰 香港-线路1-1A
+      - 🇺🇸 1号专线 美国US 205-1B
+      - 🇸🇬 SS 新加坡 1-1B
+      - 🇬🇧 英国1-1A
+      - 🇸🇬 新加坡NO.2-1B
+      - 🇭🇰 1号专线 香港HK 113-1A
+      - 🇮🇪 爱尔兰-都柏林-1P
+      - 🇮🇳 SS 印度1-1B
+      - 🇺🇸 美国NO.2-1A
+      - 🇨🇦 加拿大1-1B
+      - 🇹🇼 台湾1-1B
+      - 0.5x-1A
+      - 🇺🇸 SS 美国1-1B
+      - 🇸🇬 SS 新加坡 1-1C
+      - 🇦🇺 澳大利亚原生1-1B
+      - 🇯🇵 1号专线 日本JP 103-1A
+      - 🇯🇵 1号专线 日本JP 103-1B
+      - 🇹🇼 台湾2-1A
+      - 🇭🇰 香港-V6|07-1A
+      - 🇩🇪 德国-V6|01 0.5x-1B
+      - 🇳🇱 荷兰-V6|04 0.5x-1A
+      - 🇹🇷 SS 土耳其1-1A
+      - 🇺🇸 美国01-1B
+      - 🇮🇪 爱尔兰-都柏林-1K
+      - 🇮🇸 SS 冰岛1-1C
+      - 🇹🇼 台湾高速节点
+      - 🇸🇬 新加坡NO.1-1B
+      - 🇭🇰 香港03-1B
+      - 🇰🇷 韩国 专线NO2-1B
+      - 🇮🇳 印度2-1B
+      - 🇹🇼 SS 台湾2-1-1C
+      - 🇹🇼 3x备用专线台湾1-1B
+      - 🇺🇸 美国NO.1-1B
+      - 🇭🇰 2号专线 香港HK 74-1B
+      - 🇭🇰 香港-V6|07-1B
+      - 🇰🇷 韩国 专线NO1-1A
+      - 🇯🇵 日本01-1A
+      - 🇫🇷 法国1-1B
+      - 🇯🇵 SS 日本3-1A
+      - 🇮🇪 爱尔兰-都柏林-1I
+      - 🇯🇵 日本-V6|02-1A
+      - 🇯🇵 日本-V6|06-1B
+      - 🇫🇷 法国-1B
+      - 🇯🇵 SS 日本3-1B
+      - 🇹🇷 SS 土耳其1-1B
+      - 🇯🇵 日本-V6|07-1B
+      - 🇮🇪 爱尔兰-都柏林-1B
+      - 🇰🇷 SS 韩国1-1A
+      - 🇯🇵 日本NO.2-1A
+      - 🇫🇷 法国2-1B
+      - 🇭🇰 香港-线路1-1M
+      - 🇬🇧 英国1-1B
+      - 🇮🇳 SS 印度1-1A
+      - 🇯🇵 日本02-1A
+      - 🇭🇰 香港-线路1-1L
+      - 🇯🇵 2号专线 日本JP 75-1A
+      - 🇩🇪 德国-V6|02 0.5x-1A
+      - 🇦🇺 澳大利亚原生2-1A
+      - 🇰🇷 韩国 专线NO1-1B
+      - 🇮🇱 SS 以色列1-1B
+      - 🇳🇱 荷兰-V6|02 0.5x-1B
+      - 🇮🇪 爱尔兰-都柏林-1M
+      - 🇭🇰 香港-线路1-1I
+      - 🇭🇰 香港-线路1-1P
+      - 🇺🇸 美国-V6|01-1B
+      - 🇦🇺 澳大利亚原生2-1B
+      - 🇹🇼 1号专线 台湾TW 89-1B
+      - 🇭🇰 香港-线路1-1N
+      - 🇲🇽 SS 墨西哥1-1C
+      - 🇺🇸 美国01-1A
+      - 🇭🇰 香港-线路1-1G
+      - 🇹🇼 SS 台湾2-1-1B
+      - 🇮🇪 爱尔兰-都柏林-1C
+      - 🇨🇦 加拿大2-1B
+      - 🇳🇱 荷兰-V6|03 0.5x-1A
+      - 🇧🇷 SS 巴西1-1A
+      - 🇺🇸 美国02-1B
+      - 🇲🇾 SS 马来西亚1-1C
+      - 🇹🇼 台湾高速节点2
+      - 🇩🇪 德国-V6|02 0.5x-1B
+      - 🇫🇷 法国1-1A
+      - 🇮🇳 印度1-1B
+      - 🇯🇵 日本02-1B
+      - 🇭🇰 SS 香港1-1B
+      - 🇮🇸 SS 冰岛1-1A
+      - 🇺🇸 美国07-1A
+      - 🇮🇪 爱尔兰-都柏林-1D
+      - 🇭🇰 香港-V6|08-1B
+      - 🇺🇸 美国NO.1-1A
+      - 🇭🇰 香港-线路1-1C
+      - 🇭🇰 2号专线 香港HK 244-1A
+      - 🇮🇳 印度1-1A
+      - 🇮🇪 爱尔兰-都柏林-1A
+      - 🇯🇵 日本-V6|04-1A
+      - 🇯🇵 日本NO.1-1B
+      - 🇸🇬 SS 新加坡 1-1A
+      - 🇺🇸 SS 美国2-1-1C
+      - 🇯🇵 日本03-1A
+      - 🇸🇬 新加坡NO.2-1A
+      - 🇯🇵 日本-V6|05-1B
+      - 🇯🇵 日本-V6|06-1A
+      - 🇲🇾 SS 马来西亚1-1B
+      - 🇯🇵 1号专线 日本JP 114-1A
+      - 🇸🇬 新加坡NO.1-1A
+      - 🇭🇰 香港-V6|05 0.5x-1B
+      - 🇩🇪 德国-V6|01 0.5x-1A
+      - 🇭🇰 香港-线路1-1E
+      - 🇫🇷 法国2-1A
+      - 🇯🇵 日本NO.1-1A
+      - 🇭🇰 香港-线路1-1K
+      - 🇫🇷 法国-1A
+      - 🇺🇸 1号专线 美国US 205-1A
+      - 🇺🇸 2号专线 美国US 110-1A
+      - 🇺🇸 美国05-1B
+      - 🇭🇰 香港-V4|02-1B
+      - 🇭🇰 1号专线 香港HK 113-1B
+      - 🇮🇪 爱尔兰-都柏林-1O
+      - 🇭🇰 SS 香港1-1C
+      - 🇳🇱 荷兰-V6|02 0.5x-1A
+      - 0.5x-1C
+      - 🇮🇸 SS 冰岛1-1B
+      - 🇭🇰 香港-线路1-1B
+      - 0.5x-1D
+      - 🇯🇵 日本NO.2-1B
+      - 🇭🇰 香港-V4|02-1A
+      - 🇳🇱 荷兰-V6|03 0.5x-1B
+      - 🇭🇰 香港-线路1-1F
+      - 🇮🇪 爱尔兰-都柏林-1N
+      - 🇯🇵 SS 日本1-1A
+      - 🇭🇰 香港-V6|06-1B
+      - 🇰🇷 韩国1
+      - 🇺🇸 美国04-1A
+      - 🇲🇽 SS 墨西哥1-1B
+      - 🇨🇦 加拿大2-1A
+      - 🇰🇷 SS 韩国1-1C
+      - 🇺🇸 SS 美国1-1A
+      - 🇰🇷 SS 韩国1-1B
+      - 🇯🇵 1号专线 日本JP 114-1B
+      - 🇹🇷 SS 土耳其1-1C
+      - 🇭🇰 2号专线 香港HK 244-1B
+      - 🇭🇰 香港NO.2-1A
+      - 🇮🇪 爱尔兰-都柏林-1F
+      - 🇹🇼 1号专线 台湾TW 89-1A
+      - 🇺🇸 SS 美国2-1-1A
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 1号专线 日本JP 103-1D
-      - 🇺🇸 SS 美国2-1-1B
-      - 🇳🇱 荷兰
-      - 🇳🇱 荷兰-V6|03 0.5x
-      - 🇮🇳 SS 印度1-1A
-      - 🇹🇼 台湾2
-      - 🇮🇱 SS 以色列1-1A
-      - 🇨🇦 加拿大1
-      - 🇮🇪 爱尔兰-都柏林-1C
-      - 0.5x-1A
-      - 🇺🇸 1号专线 美国US 205-1D
-      - 🇯🇵 日本NO.1
-      - 🇯🇵 1号专线 日本JP 114-1D
-      - 🇭🇰 2号专线 香港HK 53-1B
-      - 🇮🇪 爱尔兰-都柏林-1D
-      - 🇩🇪 德国01|轻量
-      - 🇳🇱 荷兰-V6|04 0.5x
-      - 🇯🇵 日本01
-      - 🇸🇬 1号专线 新加坡SG 146-1D
-      - 🇭🇰 香港
-      - 🇯🇵 1号专线 日本JP 103-1B
-      - 🇭🇰 香港NO.2
-      - 🇯🇵 1号专线 日本JP 103-1C
-      - 🇭🇰 SS 香港1-1C
-      - 🇺🇸 2号专线 美国US 110-1C
-      - 🇭🇰 香港-线路1-1L
-      - 🇰🇷 韩国 专线NO1
-      - 🇯🇵 2号专线 日本JP 75-1A
-      - 🇭🇰 1号专线 香港HK 113-1E
-      - 🇹🇼 SS 台湾1-1A
-      - 🇺🇸 美国NO.2
-      - 🇮🇳 SS 印度1-1C
-      - 🇺🇸 美国01
-      - 🇭🇰 2号专线 香港HK 244-1E
-      - 🇯🇵 日本NO.2
-      - 🇮🇸 SS 冰岛1-1C
-      - 🇮🇳 印度1
-      - 🇲🇾 SS 马来西亚1-1B
-      - 🇸🇬 SS 新加坡 1-1C
-      - 🇯🇵 1号专线 日本JP 103-1E
-      - 🇮🇸 SS 冰岛1-1B
-      - 🇲🇾 SS 马来西亚1-1A
-      - 🇰🇷 SS 韩国1-1C
-      - 🇺🇸 2号专线 美国US 110-1E
-      - 🇺🇸 SS 美国2-1-1A
-      - 🇹🇭 SS 泰国1-1A
-      - 🇹🇼 SS 台湾2-1-1B
-      - 🇯🇵 SS 日本1-1A
-      - 🇹🇼 SS 台湾2-1-1A
-      - 🇩🇪 德国-V6|03 0.5x
-      - 🇹🇼 台湾01|家宽
-      - 🇯🇵 1号专线 日本JP 114-1B
-      - 🇯🇵 日本-V6|07
-      - 🇯🇵 日本03
-      - 🇸🇬 SS 新加坡 1-1B
-      - 🇹🇼 台湾1
-      - 🇭🇰 香港-线路1-1D
-      - 🇮🇪 爱尔兰-都柏林-1N
-      - TOR-试用
-      - 🇭🇰 2号专线 香港HK 74-1D
-      - 🇹🇼 SS 台湾1-1C
-      - 🇹🇷 SS 土耳其1-1C
-      - 🇺🇸 美国高速节点1
-      - 🇹🇼 台湾高速节点
-      - 🇯🇵 SS 日本3-1C
-      - 🇭🇰 2号专线 香港HK 53-1D
-      - 🇲🇽 SS 墨西哥1-1B
-      - 🇺🇸 1号专线 美国US 205-1A
-      - 🇹🇼 台湾
-      - 🇺🇸 美国NO.1
-      - 🇸🇬 1号专线 新加坡SG 146-1E
-      - 🇭🇰 香港-线路1-1I
-      - 🇨🇳 中国联通节点1
-      - 🇯🇵 日本-V6|02
-      - 🇭🇰 香港-V6|06
-      - 🇭🇰 香港-线路1-1B
-      - 🇮🇪 爱尔兰-都柏林-1G
-      - 🇯🇵 1号专线 日本JP 114-1C
-      - 🇺🇸 美国05
-      - 🇹🇼 1号专线 台湾TW 89-1E
-      - 🇹🇼 SS 台湾2-1-1C
-      - 🇮🇪 爱尔兰-都柏林-1A
-      - 🇭🇰 1号专线 香港HK 113-1D
       - 🇭🇰 2号专线 香港HK 74-1A
-      - 🇭🇰 2号专线 香港HK 74-1C
-      - 🇯🇵 2号专线 日本JP 75-1C
-      - 🇯🇵 2号专线 日本JP 75-1E
-      - 🇹🇼 台湾高速节点2
-      - 🇺🇸 2号专线 美国US 110-1A
-      - 🇹🇼 1号专线 台湾TW 89-1A
-      - 🇭🇰 2号专线 香港HK 53-1C
-      - 🇯🇵 1号专线 日本JP 114-1A
-      - 🇳🇱 荷兰-V6|02 0.5x
-      - 🇭🇰 香港-线路1-1P
-      - 🇫🇷 法国2
-      - 🇮🇪 爱尔兰-都柏林-1H
-      - 🇬🇧 英国1
-      - 🇧🇷 SS 巴西1-1A
-      - 🇰🇷 SS 韩国1-1B
-      - 🇹🇼 1号专线 台湾TW 89-1D
-      - 🇧🇷 SS 巴西1-1B
-      - 🇹🇭 SS 泰国1-1B
-      - 🇯🇵 1号专线 日本JP 114-1E
-      - 🇰🇷 SS 韩国1-1A
-      - 🇭🇰 SS 香港1-1A
-      - 🇺🇸 SS 美国1-1A
-      - 🇭🇰 1号专线 香港HK 113-1A
-      - 🇮🇱 SS 以色列1-1B
-      - 🇯🇵 日本-V6|05
-      - 🇭🇰 香港-线路1-1O
-      - 🇺🇸 2号专线 美国US 110-1B
-      - 🇭🇰 2号专线 香港HK 244-1A
-      - 🇭🇰 香港-线路1-1F
-      - 🇹🇼 SS 台湾1-1B
-      - 🇮🇪 爱尔兰-都柏林-1I
-      - 🇸🇬 SS 新加坡 1-1A
-      - 🇮🇪 爱尔兰-都柏林-1K
-      - 🇭🇰 2号专线 香港HK 74-1E
-      - 🇸🇬 新加坡NO.2
-      - 🇭🇰 香港-线路1-1A
-      - 🇹🇼 台湾高速节点3
-      - 🇮🇳 SS 印度1-1B
-      - 🇮🇪 爱尔兰-都柏林-1L
-      - 🇺🇸 2号专线 美国US 110-1D
-      - 🇭🇰 香港-线路1-1J
-      - 🇭🇰 香港-V4|02
-      - 🇯🇵 2号专线 日本JP 75-1D
-      - 🇺🇸 美国-V6|01
-      - 🇭🇰 香港-V6|05 0.5x
-      - 🇬🇧 英国2
-      - 🇯🇵 SS 日本3-1A
-      - 🇹🇭 SS 泰国1-1C
-      - 🇯🇵 日本-V6|04
-      - 🇺🇸 SS 美国2-1-1C
-      - 🇲🇽 SS 墨西哥1-1C
-      - 🇹🇼 1号专线 台湾TW 89-1C
-      - 🇭🇰 香港-线路1-1H
-      - 🇸🇬 新加坡NO.1
-      - 🇺🇸 SS 美国1-1C
-      - 🇸🇬 1号专线 新加坡SG 146-1C
-      - 🇭🇰 香港-线路1-1M
-      - 🇯🇵 SS 日本3-1B
-      - 🇭🇰 香港-V6|08
-      - 🇮🇪 爱尔兰-都柏林-1F
-      - 🇭🇰 2号专线 香港HK 244-1D
+      - 🇭🇰 香港-线路1-1D
+      - 🇹🇼 SS 台湾2-1-1A
       - 🇯🇵 SS 日本1-1C
-      - 🇮🇪 爱尔兰-都柏林-1P
-      - 🇭🇰 3x备用专线香港1
-      - 🇺🇸 1号专线 美国US 205-1C
-      - 🇦🇺 澳大利亚原生1
-      - 🇸🇬 1号专线 新加坡SG 146-1A
-      - 🇭🇰 2号专线 香港HK 53-1E
-      - 🇰🇷 韩国
-      - 🇭🇰 香港-线路1-1K
-      - 🇩🇪 德国-V6|01 0.5x
-      - 🇦🇺 澳大利亚原生2
-      - 🇹🇷 SS 土耳其1-1B
-      - 🇯🇵 日本02
-      - 🇮🇳 印度2
-      - 🇮🇪 爱尔兰-都柏林-1J
-      - 🇨🇦 加拿大2
-      - 🇲🇽 SS 墨西哥1-1A
-      - 🇩🇪 德国-V6|02 0.5x
-      - 🇹🇭 泰国
-      - 🇭🇰 香港-线路1-1G
-      - 🇮🇱 SS 以色列1-1C
-      - 🇭🇰 香港03
-      - 🇭🇰 2号专线 香港HK 244-1B
-      - 🇺🇸 1号专线 美国US 205-1E
-      - 🇭🇰 香港-线路1-1E
-      - 🇺🇸 美国04
-      - 🇮🇪 爱尔兰-都柏林-1E
-      - 🇮🇪 爱尔兰-都柏林-1M
-      - 🇭🇰 香港-线路1-1N
-      - 🇲🇾 SS 马来西亚1-1C
-      - 🇫🇷 法国
-      - 🇫🇷 法国1
-      - 🇭🇰 1号专线 香港HK 113-1C
-      - 🇯🇵 2号专线 日本JP 75-1B
-      - 🇸🇬 新加坡
-      - 🇭🇰 2号专线 香港HK 244-1C
-      - 🇹🇼 1号专线 台湾TW 89-1B
-      - 🇮🇸 SS 冰岛1-1A
-      - 🇰🇷 韩国 专线NO2
-      - 🇺🇸 1号专线 美国US 205-1B
-      - 🇭🇰 2号专线 香港HK 53-1A
-      - 🇯🇵 日本-V6|06
-      - 🇭🇰 香港-V6|07
-      - 0.5x-1B
-      - 🇯🇵 1号专线 日本JP 103-1A
-      - 🇹🇷 SS 土耳其1-1A
-      - 🇹🇼 3x备用专线台湾1
+      - 🇺🇸 美国高速节点1
+      - 🇹🇼 SS 台湾1-1A
       - 🇧🇷 SS 巴西1-1C
-      - 🇳🇱 荷兰-V6|01 0.5x
-      - 🇩🇪 德国
-      - 🇺🇸 SS 美国1-1B
-      - 🇯🇵 日本
-      - 🇺🇸 美国07
-      - 🇭🇰 香港-线路1-1C
-      - 🇭🇰 SS 香港1-1B
-      - 🇮🇪 爱尔兰-都柏林-1O
-      - 🇮🇪 爱尔兰-都柏林-1B
-      - 🇭🇰 2号专线 香港HK 74-1B
-      - 🇭🇰 1号专线 香港HK 113-1B
+      - 🇯🇵 日本01-1B
+      - 🇭🇰 香港-V6|06-1A
+      - 🇯🇵 日本03-1B
+      - 🇺🇸 2号专线 美国US 110-1B
+      - 0.5x-1B
+      - 🇮🇪 爱尔兰-都柏林-1G
+      - 🇳🇱 荷兰-V6|01 0.5x-1A
+      - 🇩🇪 德国01|轻量
+      - 🇲🇾 SS 马来西亚1-1A
+      - 🇯🇵 日本-V6|05-1A
+      - 🇭🇰 香港-V6|08-1A
+      - 🇺🇸 SS 美国2-1-1B
+      - 🇮🇱 SS 以色列1-1C
+      - 🇮🇪 爱尔兰-都柏林-1E
+      - 🇭🇰 香港-V6|05 0.5x-1A
+      - 🇧🇷 SS 巴西1-1B
+      - 🇮🇱 SS 以色列1-1A
+      - 🇺🇸 美国NO.2-1B
+      - 🇹🇭 SS 泰国1-1B
+      - 🇲🇽 SS 墨西哥1-1A
+      - 🇺🇸 美国04-1B
+      - 🇭🇰 3x备用专线香港1-1A
+      - 🇭🇰 香港03-1A
+      - 🇭🇰 2号专线 香港HK 53-1A
+      - 🇺🇸 SS 美国1-1C
+      - 🇺🇸 美国-V6|01-1A
+      - 🇬🇧 英国2-1A
+      - 🇸🇬 1号专线 新加坡SG 146-1A
+      - 🇹🇼 台湾1-1A
+      - 🇬🇧 英国2-1B
+      - 🇹🇼 SS 台湾1-1C
+      - 🇳🇱 荷兰-V6|01 0.5x-1B
+      - 🇭🇰 2号专线 香港HK 53-1B
+      - 🇭🇰 香港-线路1-1O
+      - 🇮🇪 爱尔兰-都柏林-1H
+      - 🇯🇵 日本-V6|02-1B
+      - 🇨🇦 加拿大1-1A
+      - 🇦🇺 澳大利亚原生1-1A
+      - 🇯🇵 SS 日本3-1C
+      - 🇨🇳 中国联通节点1
+      - 🇮🇳 SS 印度1-1C
+      - 🇺🇸 美国05-1A
+      - 🇭🇰 香港NO.2-1B
+      - 🇹🇼 台湾2-1B
+      - 🇺🇸 美国02-1A
+      - 🇹🇭 SS 泰国1-1A
+      - 🇮🇳 印度2-1A
       - 🇯🇵 SS 日本1-1B
-      - 🇺🇸 美国02
+      - 🇯🇵 2号专线 日本JP 75-1B
       - 🇸🇬 1号专线 新加坡SG 146-1B
+      - 🇩🇪 德国-V6|03 0.5x-1B
+      - 🇩🇪 德国-V6|03 0.5x-1A
+      - 🇹🇼 3x备用专线台湾1-1A
+      - 🇭🇰 香港-线路1-1J
+      - 🇯🇵 日本-V6|04-1B
+      - 🇭🇰 SS 香港1-1A
+      - 🇹🇭 SS 泰国1-1C
+      - 🇳🇱 荷兰-V6|04 0.5x-1B
+      - 🇺🇸 美国07-1B
+      - 🇹🇼 台湾高速节点3
+      - 🇯🇵 日本-V6|07-1A
+      - 🇹🇼 SS 台湾1-1B
+      - 🇭🇰 3x备用专线香港1-1B
+      - 🇰🇷 韩国 专线NO2-1A
+      - 🇮🇪 爱尔兰-都柏林-1J
+      - 🇮🇪 爱尔兰-都柏林-1L
+      - 🇭🇰 香港-线路1-1H
+      - 🇹🇼 台湾01|家宽
+      - 🇭🇰 香港-线路1-1A
+      - 🇺🇸 1号专线 美国US 205-1B
+      - 🇸🇬 SS 新加坡 1-1B
+      - 🇬🇧 英国1-1A
+      - 🇸🇬 新加坡NO.2-1B
+      - 🇭🇰 1号专线 香港HK 113-1A
+      - 🇮🇪 爱尔兰-都柏林-1P
+      - 🇮🇳 SS 印度1-1B
+      - 🇺🇸 美国NO.2-1A
+      - 🇨🇦 加拿大1-1B
+      - 🇹🇼 台湾1-1B
+      - 0.5x-1A
+      - 🇺🇸 SS 美国1-1B
+      - 🇸🇬 SS 新加坡 1-1C
+      - 🇦🇺 澳大利亚原生1-1B
+      - 🇯🇵 1号专线 日本JP 103-1A
+      - 🇯🇵 1号专线 日本JP 103-1B
+      - 🇹🇼 台湾2-1A
+      - 🇭🇰 香港-V6|07-1A
+      - 🇩🇪 德国-V6|01 0.5x-1B
+      - 🇳🇱 荷兰-V6|04 0.5x-1A
+      - 🇹🇷 SS 土耳其1-1A
+      - 🇺🇸 美国01-1B
+      - 🇮🇪 爱尔兰-都柏林-1K
+      - 🇮🇸 SS 冰岛1-1C
+      - 🇹🇼 台湾高速节点
+      - 🇸🇬 新加坡NO.1-1B
+      - 🇭🇰 香港03-1B
+      - 🇰🇷 韩国 专线NO2-1B
+      - 🇮🇳 印度2-1B
+      - 🇹🇼 SS 台湾2-1-1C
+      - 🇹🇼 3x备用专线台湾1-1B
+      - 🇺🇸 美国NO.1-1B
+      - 🇭🇰 2号专线 香港HK 74-1B
+      - 🇭🇰 香港-V6|07-1B
+      - 🇰🇷 韩国 专线NO1-1A
+      - 🇯🇵 日本01-1A
+      - 🇫🇷 法国1-1B
+      - 🇯🇵 SS 日本3-1A
+      - 🇮🇪 爱尔兰-都柏林-1I
+      - 🇯🇵 日本-V6|02-1A
+      - 🇯🇵 日本-V6|06-1B
+      - 🇫🇷 法国-1B
+      - 🇯🇵 SS 日本3-1B
+      - 🇹🇷 SS 土耳其1-1B
+      - 🇯🇵 日本-V6|07-1B
+      - 🇮🇪 爱尔兰-都柏林-1B
+      - 🇰🇷 SS 韩国1-1A
+      - 🇯🇵 日本NO.2-1A
+      - 🇫🇷 法国2-1B
+      - 🇭🇰 香港-线路1-1M
+      - 🇬🇧 英国1-1B
+      - 🇮🇳 SS 印度1-1A
+      - 🇯🇵 日本02-1A
+      - 🇭🇰 香港-线路1-1L
+      - 🇯🇵 2号专线 日本JP 75-1A
+      - 🇩🇪 德国-V6|02 0.5x-1A
+      - 🇦🇺 澳大利亚原生2-1A
+      - 🇰🇷 韩国 专线NO1-1B
+      - 🇮🇱 SS 以色列1-1B
+      - 🇳🇱 荷兰-V6|02 0.5x-1B
+      - 🇮🇪 爱尔兰-都柏林-1M
+      - 🇭🇰 香港-线路1-1I
+      - 🇭🇰 香港-线路1-1P
+      - 🇺🇸 美国-V6|01-1B
+      - 🇦🇺 澳大利亚原生2-1B
+      - 🇹🇼 1号专线 台湾TW 89-1B
+      - 🇭🇰 香港-线路1-1N
+      - 🇲🇽 SS 墨西哥1-1C
+      - 🇺🇸 美国01-1A
+      - 🇭🇰 香港-线路1-1G
+      - 🇹🇼 SS 台湾2-1-1B
+      - 🇮🇪 爱尔兰-都柏林-1C
+      - 🇨🇦 加拿大2-1B
+      - 🇳🇱 荷兰-V6|03 0.5x-1A
+      - 🇧🇷 SS 巴西1-1A
+      - 🇺🇸 美国02-1B
+      - 🇲🇾 SS 马来西亚1-1C
+      - 🇹🇼 台湾高速节点2
+      - 🇩🇪 德国-V6|02 0.5x-1B
+      - 🇫🇷 法国1-1A
+      - 🇮🇳 印度1-1B
+      - 🇯🇵 日本02-1B
+      - 🇭🇰 SS 香港1-1B
+      - 🇮🇸 SS 冰岛1-1A
+      - 🇺🇸 美国07-1A
+      - 🇮🇪 爱尔兰-都柏林-1D
+      - 🇭🇰 香港-V6|08-1B
+      - 🇺🇸 美国NO.1-1A
+      - 🇭🇰 香港-线路1-1C
+      - 🇭🇰 2号专线 香港HK 244-1A
+      - 🇮🇳 印度1-1A
+      - 🇮🇪 爱尔兰-都柏林-1A
+      - 🇯🇵 日本-V6|04-1A
+      - 🇯🇵 日本NO.1-1B
+      - 🇸🇬 SS 新加坡 1-1A
+      - 🇺🇸 SS 美国2-1-1C
+      - 🇯🇵 日本03-1A
+      - 🇸🇬 新加坡NO.2-1A
+      - 🇯🇵 日本-V6|05-1B
+      - 🇯🇵 日本-V6|06-1A
+      - 🇲🇾 SS 马来西亚1-1B
+      - 🇯🇵 1号专线 日本JP 114-1A
+      - 🇸🇬 新加坡NO.1-1A
+      - 🇭🇰 香港-V6|05 0.5x-1B
+      - 🇩🇪 德国-V6|01 0.5x-1A
+      - 🇭🇰 香港-线路1-1E
+      - 🇫🇷 法国2-1A
+      - 🇯🇵 日本NO.1-1A
+      - 🇭🇰 香港-线路1-1K
+      - 🇫🇷 法国-1A
+      - 🇺🇸 1号专线 美国US 205-1A
+      - 🇺🇸 2号专线 美国US 110-1A
+      - 🇺🇸 美国05-1B
+      - 🇭🇰 香港-V4|02-1B
+      - 🇭🇰 1号专线 香港HK 113-1B
+      - 🇮🇪 爱尔兰-都柏林-1O
+      - 🇭🇰 SS 香港1-1C
+      - 🇳🇱 荷兰-V6|02 0.5x-1A
+      - 0.5x-1C
+      - 🇮🇸 SS 冰岛1-1B
+      - 🇭🇰 香港-线路1-1B
+      - 0.5x-1D
+      - 🇯🇵 日本NO.2-1B
+      - 🇭🇰 香港-V4|02-1A
+      - 🇳🇱 荷兰-V6|03 0.5x-1B
+      - 🇭🇰 香港-线路1-1F
+      - 🇮🇪 爱尔兰-都柏林-1N
+      - 🇯🇵 SS 日本1-1A
+      - 🇭🇰 香港-V6|06-1B
+      - 🇰🇷 韩国1
+      - 🇺🇸 美国04-1A
+      - 🇲🇽 SS 墨西哥1-1B
+      - 🇨🇦 加拿大2-1A
+      - 🇰🇷 SS 韩国1-1C
+      - 🇺🇸 SS 美国1-1A
+      - 🇰🇷 SS 韩国1-1B
+      - 🇯🇵 1号专线 日本JP 114-1B
+      - 🇹🇷 SS 土耳其1-1C
+      - 🇭🇰 2号专线 香港HK 244-1B
+      - 🇭🇰 香港NO.2-1A
+      - 🇮🇪 爱尔兰-都柏林-1F
+      - 🇹🇼 1号专线 台湾TW 89-1A
+      - 🇺🇸 SS 美国2-1-1A
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1799,213 +1889,225 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 1号专线 日本JP 103-1D
-      - 🇺🇸 SS 美国2-1-1B
-      - 🇳🇱 荷兰
-      - 🇳🇱 荷兰-V6|03 0.5x
-      - 🇮🇳 SS 印度1-1A
-      - 🇹🇼 台湾2
-      - 🇮🇱 SS 以色列1-1A
-      - 🇨🇦 加拿大1
-      - 🇮🇪 爱尔兰-都柏林-1C
-      - 0.5x-1A
-      - 🇺🇸 1号专线 美国US 205-1D
-      - 🇯🇵 日本NO.1
-      - 🇯🇵 1号专线 日本JP 114-1D
-      - 🇭🇰 2号专线 香港HK 53-1B
-      - 🇮🇪 爱尔兰-都柏林-1D
-      - 🇩🇪 德国01|轻量
-      - 🇳🇱 荷兰-V6|04 0.5x
-      - 🇯🇵 日本01
-      - 🇸🇬 1号专线 新加坡SG 146-1D
-      - 🇭🇰 香港
-      - 🇯🇵 1号专线 日本JP 103-1B
-      - 🇭🇰 香港NO.2
-      - 🇯🇵 1号专线 日本JP 103-1C
-      - 🇭🇰 SS 香港1-1C
-      - 🇺🇸 2号专线 美国US 110-1C
-      - 🇭🇰 香港-线路1-1L
-      - 🇰🇷 韩国 专线NO1
-      - 🇯🇵 2号专线 日本JP 75-1A
-      - 🇭🇰 1号专线 香港HK 113-1E
-      - 🇹🇼 SS 台湾1-1A
-      - 🇺🇸 美国NO.2
-      - 🇮🇳 SS 印度1-1C
-      - 🇺🇸 美国01
-      - 🇭🇰 2号专线 香港HK 244-1E
-      - 🇯🇵 日本NO.2
-      - 🇮🇸 SS 冰岛1-1C
-      - 🇮🇳 印度1
-      - 🇲🇾 SS 马来西亚1-1B
-      - 🇸🇬 SS 新加坡 1-1C
-      - 🇯🇵 1号专线 日本JP 103-1E
-      - 🇮🇸 SS 冰岛1-1B
-      - 🇲🇾 SS 马来西亚1-1A
-      - 🇰🇷 SS 韩国1-1C
-      - 🇺🇸 2号专线 美国US 110-1E
-      - 🇺🇸 SS 美国2-1-1A
-      - 🇹🇭 SS 泰国1-1A
-      - 🇹🇼 SS 台湾2-1-1B
-      - 🇯🇵 SS 日本1-1A
-      - 🇹🇼 SS 台湾2-1-1A
-      - 🇩🇪 德国-V6|03 0.5x
-      - 🇹🇼 台湾01|家宽
-      - 🇯🇵 1号专线 日本JP 114-1B
-      - 🇯🇵 日本-V6|07
-      - 🇯🇵 日本03
-      - 🇸🇬 SS 新加坡 1-1B
-      - 🇹🇼 台湾1
-      - 🇭🇰 香港-线路1-1D
-      - 🇮🇪 爱尔兰-都柏林-1N
-      - TOR-试用
-      - 🇭🇰 2号专线 香港HK 74-1D
-      - 🇹🇼 SS 台湾1-1C
-      - 🇹🇷 SS 土耳其1-1C
-      - 🇺🇸 美国高速节点1
-      - 🇹🇼 台湾高速节点
-      - 🇯🇵 SS 日本3-1C
-      - 🇭🇰 2号专线 香港HK 53-1D
-      - 🇲🇽 SS 墨西哥1-1B
-      - 🇺🇸 1号专线 美国US 205-1A
-      - 🇹🇼 台湾
-      - 🇺🇸 美国NO.1
-      - 🇸🇬 1号专线 新加坡SG 146-1E
-      - 🇭🇰 香港-线路1-1I
-      - 🇨🇳 中国联通节点1
-      - 🇯🇵 日本-V6|02
-      - 🇭🇰 香港-V6|06
-      - 🇭🇰 香港-线路1-1B
-      - 🇮🇪 爱尔兰-都柏林-1G
-      - 🇯🇵 1号专线 日本JP 114-1C
-      - 🇺🇸 美国05
-      - 🇹🇼 1号专线 台湾TW 89-1E
-      - 🇹🇼 SS 台湾2-1-1C
-      - 🇮🇪 爱尔兰-都柏林-1A
-      - 🇭🇰 1号专线 香港HK 113-1D
       - 🇭🇰 2号专线 香港HK 74-1A
-      - 🇭🇰 2号专线 香港HK 74-1C
-      - 🇯🇵 2号专线 日本JP 75-1C
-      - 🇯🇵 2号专线 日本JP 75-1E
-      - 🇹🇼 台湾高速节点2
-      - 🇺🇸 2号专线 美国US 110-1A
-      - 🇹🇼 1号专线 台湾TW 89-1A
-      - 🇭🇰 2号专线 香港HK 53-1C
-      - 🇯🇵 1号专线 日本JP 114-1A
-      - 🇳🇱 荷兰-V6|02 0.5x
-      - 🇭🇰 香港-线路1-1P
-      - 🇫🇷 法国2
-      - 🇮🇪 爱尔兰-都柏林-1H
-      - 🇬🇧 英国1
-      - 🇧🇷 SS 巴西1-1A
-      - 🇰🇷 SS 韩国1-1B
-      - 🇹🇼 1号专线 台湾TW 89-1D
-      - 🇧🇷 SS 巴西1-1B
-      - 🇹🇭 SS 泰国1-1B
-      - 🇯🇵 1号专线 日本JP 114-1E
-      - 🇰🇷 SS 韩国1-1A
-      - 🇭🇰 SS 香港1-1A
-      - 🇺🇸 SS 美国1-1A
-      - 🇭🇰 1号专线 香港HK 113-1A
-      - 🇮🇱 SS 以色列1-1B
-      - 🇯🇵 日本-V6|05
-      - 🇭🇰 香港-线路1-1O
-      - 🇺🇸 2号专线 美国US 110-1B
-      - 🇭🇰 2号专线 香港HK 244-1A
-      - 🇭🇰 香港-线路1-1F
-      - 🇹🇼 SS 台湾1-1B
-      - 🇮🇪 爱尔兰-都柏林-1I
-      - 🇸🇬 SS 新加坡 1-1A
-      - 🇮🇪 爱尔兰-都柏林-1K
-      - 🇭🇰 2号专线 香港HK 74-1E
-      - 🇸🇬 新加坡NO.2
-      - 🇭🇰 香港-线路1-1A
-      - 🇹🇼 台湾高速节点3
-      - 🇮🇳 SS 印度1-1B
-      - 🇮🇪 爱尔兰-都柏林-1L
-      - 🇺🇸 2号专线 美国US 110-1D
-      - 🇭🇰 香港-线路1-1J
-      - 🇭🇰 香港-V4|02
-      - 🇯🇵 2号专线 日本JP 75-1D
-      - 🇺🇸 美国-V6|01
-      - 🇭🇰 香港-V6|05 0.5x
-      - 🇬🇧 英国2
-      - 🇯🇵 SS 日本3-1A
-      - 🇹🇭 SS 泰国1-1C
-      - 🇯🇵 日本-V6|04
-      - 🇺🇸 SS 美国2-1-1C
-      - 🇲🇽 SS 墨西哥1-1C
-      - 🇹🇼 1号专线 台湾TW 89-1C
-      - 🇭🇰 香港-线路1-1H
-      - 🇸🇬 新加坡NO.1
-      - 🇺🇸 SS 美国1-1C
-      - 🇸🇬 1号专线 新加坡SG 146-1C
-      - 🇭🇰 香港-线路1-1M
-      - 🇯🇵 SS 日本3-1B
-      - 🇭🇰 香港-V6|08
-      - 🇮🇪 爱尔兰-都柏林-1F
-      - 🇭🇰 2号专线 香港HK 244-1D
+      - 🇭🇰 香港-线路1-1D
+      - 🇹🇼 SS 台湾2-1-1A
       - 🇯🇵 SS 日本1-1C
-      - 🇮🇪 爱尔兰-都柏林-1P
-      - 🇭🇰 3x备用专线香港1
-      - 🇺🇸 1号专线 美国US 205-1C
-      - 🇦🇺 澳大利亚原生1
-      - 🇸🇬 1号专线 新加坡SG 146-1A
-      - 🇭🇰 2号专线 香港HK 53-1E
-      - 🇰🇷 韩国
-      - 🇭🇰 香港-线路1-1K
-      - 🇩🇪 德国-V6|01 0.5x
-      - 🇦🇺 澳大利亚原生2
-      - 🇹🇷 SS 土耳其1-1B
-      - 🇯🇵 日本02
-      - 🇮🇳 印度2
-      - 🇮🇪 爱尔兰-都柏林-1J
-      - 🇨🇦 加拿大2
-      - 🇲🇽 SS 墨西哥1-1A
-      - 🇩🇪 德国-V6|02 0.5x
-      - 🇹🇭 泰国
-      - 🇭🇰 香港-线路1-1G
-      - 🇮🇱 SS 以色列1-1C
-      - 🇭🇰 香港03
-      - 🇭🇰 2号专线 香港HK 244-1B
-      - 🇺🇸 1号专线 美国US 205-1E
-      - 🇭🇰 香港-线路1-1E
-      - 🇺🇸 美国04
-      - 🇮🇪 爱尔兰-都柏林-1E
-      - 🇮🇪 爱尔兰-都柏林-1M
-      - 🇭🇰 香港-线路1-1N
-      - 🇲🇾 SS 马来西亚1-1C
-      - 🇫🇷 法国
-      - 🇫🇷 法国1
-      - 🇭🇰 1号专线 香港HK 113-1C
-      - 🇯🇵 2号专线 日本JP 75-1B
-      - 🇸🇬 新加坡
-      - 🇭🇰 2号专线 香港HK 244-1C
-      - 🇹🇼 1号专线 台湾TW 89-1B
-      - 🇮🇸 SS 冰岛1-1A
-      - 🇰🇷 韩国 专线NO2
-      - 🇺🇸 1号专线 美国US 205-1B
-      - 🇭🇰 2号专线 香港HK 53-1A
-      - 🇯🇵 日本-V6|06
-      - 🇭🇰 香港-V6|07
-      - 0.5x-1B
-      - 🇯🇵 1号专线 日本JP 103-1A
-      - 🇹🇷 SS 土耳其1-1A
-      - 🇹🇼 3x备用专线台湾1
+      - 🇺🇸 美国高速节点1
+      - 🇹🇼 SS 台湾1-1A
       - 🇧🇷 SS 巴西1-1C
-      - 🇳🇱 荷兰-V6|01 0.5x
-      - 🇩🇪 德国
-      - 🇺🇸 SS 美国1-1B
-      - 🇯🇵 日本
-      - 🇺🇸 美国07
-      - 🇭🇰 香港-线路1-1C
-      - 🇭🇰 SS 香港1-1B
-      - 🇮🇪 爱尔兰-都柏林-1O
-      - 🇮🇪 爱尔兰-都柏林-1B
-      - 🇭🇰 2号专线 香港HK 74-1B
-      - 🇭🇰 1号专线 香港HK 113-1B
+      - 🇯🇵 日本01-1B
+      - 🇭🇰 香港-V6|06-1A
+      - 🇯🇵 日本03-1B
+      - 🇺🇸 2号专线 美国US 110-1B
+      - 0.5x-1B
+      - 🇮🇪 爱尔兰-都柏林-1G
+      - 🇳🇱 荷兰-V6|01 0.5x-1A
+      - 🇩🇪 德国01|轻量
+      - 🇲🇾 SS 马来西亚1-1A
+      - 🇯🇵 日本-V6|05-1A
+      - 🇭🇰 香港-V6|08-1A
+      - 🇺🇸 SS 美国2-1-1B
+      - 🇮🇱 SS 以色列1-1C
+      - 🇮🇪 爱尔兰-都柏林-1E
+      - 🇭🇰 香港-V6|05 0.5x-1A
+      - 🇧🇷 SS 巴西1-1B
+      - 🇮🇱 SS 以色列1-1A
+      - 🇺🇸 美国NO.2-1B
+      - 🇹🇭 SS 泰国1-1B
+      - 🇲🇽 SS 墨西哥1-1A
+      - 🇺🇸 美国04-1B
+      - 🇭🇰 3x备用专线香港1-1A
+      - 🇭🇰 香港03-1A
+      - 🇭🇰 2号专线 香港HK 53-1A
+      - 🇺🇸 SS 美国1-1C
+      - 🇺🇸 美国-V6|01-1A
+      - 🇬🇧 英国2-1A
+      - 🇸🇬 1号专线 新加坡SG 146-1A
+      - 🇹🇼 台湾1-1A
+      - 🇬🇧 英国2-1B
+      - 🇹🇼 SS 台湾1-1C
+      - 🇳🇱 荷兰-V6|01 0.5x-1B
+      - 🇭🇰 2号专线 香港HK 53-1B
+      - 🇭🇰 香港-线路1-1O
+      - 🇮🇪 爱尔兰-都柏林-1H
+      - 🇯🇵 日本-V6|02-1B
+      - 🇨🇦 加拿大1-1A
+      - 🇦🇺 澳大利亚原生1-1A
+      - 🇯🇵 SS 日本3-1C
+      - 🇨🇳 中国联通节点1
+      - 🇮🇳 SS 印度1-1C
+      - 🇺🇸 美国05-1A
+      - 🇭🇰 香港NO.2-1B
+      - 🇹🇼 台湾2-1B
+      - 🇺🇸 美国02-1A
+      - 🇹🇭 SS 泰国1-1A
+      - 🇮🇳 印度2-1A
       - 🇯🇵 SS 日本1-1B
-      - 🇺🇸 美国02
+      - 🇯🇵 2号专线 日本JP 75-1B
       - 🇸🇬 1号专线 新加坡SG 146-1B
+      - 🇩🇪 德国-V6|03 0.5x-1B
+      - 🇩🇪 德国-V6|03 0.5x-1A
+      - 🇹🇼 3x备用专线台湾1-1A
+      - 🇭🇰 香港-线路1-1J
+      - 🇯🇵 日本-V6|04-1B
+      - 🇭🇰 SS 香港1-1A
+      - 🇹🇭 SS 泰国1-1C
+      - 🇳🇱 荷兰-V6|04 0.5x-1B
+      - 🇺🇸 美国07-1B
+      - 🇹🇼 台湾高速节点3
+      - 🇯🇵 日本-V6|07-1A
+      - 🇹🇼 SS 台湾1-1B
+      - 🇭🇰 3x备用专线香港1-1B
+      - 🇰🇷 韩国 专线NO2-1A
+      - 🇮🇪 爱尔兰-都柏林-1J
+      - 🇮🇪 爱尔兰-都柏林-1L
+      - 🇭🇰 香港-线路1-1H
+      - 🇹🇼 台湾01|家宽
+      - 🇭🇰 香港-线路1-1A
+      - 🇺🇸 1号专线 美国US 205-1B
+      - 🇸🇬 SS 新加坡 1-1B
+      - 🇬🇧 英国1-1A
+      - 🇸🇬 新加坡NO.2-1B
+      - 🇭🇰 1号专线 香港HK 113-1A
+      - 🇮🇪 爱尔兰-都柏林-1P
+      - 🇮🇳 SS 印度1-1B
+      - 🇺🇸 美国NO.2-1A
+      - 🇨🇦 加拿大1-1B
+      - 🇹🇼 台湾1-1B
+      - 0.5x-1A
+      - 🇺🇸 SS 美国1-1B
+      - 🇸🇬 SS 新加坡 1-1C
+      - 🇦🇺 澳大利亚原生1-1B
+      - 🇯🇵 1号专线 日本JP 103-1A
+      - 🇯🇵 1号专线 日本JP 103-1B
+      - 🇹🇼 台湾2-1A
+      - 🇭🇰 香港-V6|07-1A
+      - 🇩🇪 德国-V6|01 0.5x-1B
+      - 🇳🇱 荷兰-V6|04 0.5x-1A
+      - 🇹🇷 SS 土耳其1-1A
+      - 🇺🇸 美国01-1B
+      - 🇮🇪 爱尔兰-都柏林-1K
+      - 🇮🇸 SS 冰岛1-1C
+      - 🇹🇼 台湾高速节点
+      - 🇸🇬 新加坡NO.1-1B
+      - 🇭🇰 香港03-1B
+      - 🇰🇷 韩国 专线NO2-1B
+      - 🇮🇳 印度2-1B
+      - 🇹🇼 SS 台湾2-1-1C
+      - 🇹🇼 3x备用专线台湾1-1B
+      - 🇺🇸 美国NO.1-1B
+      - 🇭🇰 2号专线 香港HK 74-1B
+      - 🇭🇰 香港-V6|07-1B
+      - 🇰🇷 韩国 专线NO1-1A
+      - 🇯🇵 日本01-1A
+      - 🇫🇷 法国1-1B
+      - 🇯🇵 SS 日本3-1A
+      - 🇮🇪 爱尔兰-都柏林-1I
+      - 🇯🇵 日本-V6|02-1A
+      - 🇯🇵 日本-V6|06-1B
+      - 🇫🇷 法国-1B
+      - 🇯🇵 SS 日本3-1B
+      - 🇹🇷 SS 土耳其1-1B
+      - 🇯🇵 日本-V6|07-1B
+      - 🇮🇪 爱尔兰-都柏林-1B
+      - 🇰🇷 SS 韩国1-1A
+      - 🇯🇵 日本NO.2-1A
+      - 🇫🇷 法国2-1B
+      - 🇭🇰 香港-线路1-1M
+      - 🇬🇧 英国1-1B
+      - 🇮🇳 SS 印度1-1A
+      - 🇯🇵 日本02-1A
+      - 🇭🇰 香港-线路1-1L
+      - 🇯🇵 2号专线 日本JP 75-1A
+      - 🇩🇪 德国-V6|02 0.5x-1A
+      - 🇦🇺 澳大利亚原生2-1A
+      - 🇰🇷 韩国 专线NO1-1B
+      - 🇮🇱 SS 以色列1-1B
+      - 🇳🇱 荷兰-V6|02 0.5x-1B
+      - 🇮🇪 爱尔兰-都柏林-1M
+      - 🇭🇰 香港-线路1-1I
+      - 🇭🇰 香港-线路1-1P
+      - 🇺🇸 美国-V6|01-1B
+      - 🇦🇺 澳大利亚原生2-1B
+      - 🇹🇼 1号专线 台湾TW 89-1B
+      - 🇭🇰 香港-线路1-1N
+      - 🇲🇽 SS 墨西哥1-1C
+      - 🇺🇸 美国01-1A
+      - 🇭🇰 香港-线路1-1G
+      - 🇹🇼 SS 台湾2-1-1B
+      - 🇮🇪 爱尔兰-都柏林-1C
+      - 🇨🇦 加拿大2-1B
+      - 🇳🇱 荷兰-V6|03 0.5x-1A
+      - 🇧🇷 SS 巴西1-1A
+      - 🇺🇸 美国02-1B
+      - 🇲🇾 SS 马来西亚1-1C
+      - 🇹🇼 台湾高速节点2
+      - 🇩🇪 德国-V6|02 0.5x-1B
+      - 🇫🇷 法国1-1A
+      - 🇮🇳 印度1-1B
+      - 🇯🇵 日本02-1B
+      - 🇭🇰 SS 香港1-1B
+      - 🇮🇸 SS 冰岛1-1A
+      - 🇺🇸 美国07-1A
+      - 🇮🇪 爱尔兰-都柏林-1D
+      - 🇭🇰 香港-V6|08-1B
+      - 🇺🇸 美国NO.1-1A
+      - 🇭🇰 香港-线路1-1C
+      - 🇭🇰 2号专线 香港HK 244-1A
+      - 🇮🇳 印度1-1A
+      - 🇮🇪 爱尔兰-都柏林-1A
+      - 🇯🇵 日本-V6|04-1A
+      - 🇯🇵 日本NO.1-1B
+      - 🇸🇬 SS 新加坡 1-1A
+      - 🇺🇸 SS 美国2-1-1C
+      - 🇯🇵 日本03-1A
+      - 🇸🇬 新加坡NO.2-1A
+      - 🇯🇵 日本-V6|05-1B
+      - 🇯🇵 日本-V6|06-1A
+      - 🇲🇾 SS 马来西亚1-1B
+      - 🇯🇵 1号专线 日本JP 114-1A
+      - 🇸🇬 新加坡NO.1-1A
+      - 🇭🇰 香港-V6|05 0.5x-1B
+      - 🇩🇪 德国-V6|01 0.5x-1A
+      - 🇭🇰 香港-线路1-1E
+      - 🇫🇷 法国2-1A
+      - 🇯🇵 日本NO.1-1A
+      - 🇭🇰 香港-线路1-1K
+      - 🇫🇷 法国-1A
+      - 🇺🇸 1号专线 美国US 205-1A
+      - 🇺🇸 2号专线 美国US 110-1A
+      - 🇺🇸 美国05-1B
+      - 🇭🇰 香港-V4|02-1B
+      - 🇭🇰 1号专线 香港HK 113-1B
+      - 🇮🇪 爱尔兰-都柏林-1O
+      - 🇭🇰 SS 香港1-1C
+      - 🇳🇱 荷兰-V6|02 0.5x-1A
+      - 0.5x-1C
+      - 🇮🇸 SS 冰岛1-1B
+      - 🇭🇰 香港-线路1-1B
+      - 0.5x-1D
+      - 🇯🇵 日本NO.2-1B
+      - 🇭🇰 香港-V4|02-1A
+      - 🇳🇱 荷兰-V6|03 0.5x-1B
+      - 🇭🇰 香港-线路1-1F
+      - 🇮🇪 爱尔兰-都柏林-1N
+      - 🇯🇵 SS 日本1-1A
+      - 🇭🇰 香港-V6|06-1B
+      - 🇰🇷 韩国1
+      - 🇺🇸 美国04-1A
+      - 🇲🇽 SS 墨西哥1-1B
+      - 🇨🇦 加拿大2-1A
+      - 🇰🇷 SS 韩国1-1C
+      - 🇺🇸 SS 美国1-1A
+      - 🇰🇷 SS 韩国1-1B
+      - 🇯🇵 1号专线 日本JP 114-1B
+      - 🇹🇷 SS 土耳其1-1C
+      - 🇭🇰 2号专线 香港HK 244-1B
+      - 🇭🇰 香港NO.2-1A
+      - 🇮🇪 爱尔兰-都柏林-1F
+      - 🇹🇼 1号专线 台湾TW 89-1A
+      - 🇺🇸 SS 美国2-1-1A
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
