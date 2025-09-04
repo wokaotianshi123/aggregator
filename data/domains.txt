@@ -695,7 +695,7 @@ https://sytcloud.top	@#@#		@#@#		@#@#
 https://node.alvgw.xyz	@#@#		@#@#		@#@#	
 https://alvgw.xyz	@#@#		@#@#		@#@#	
 https://cc.baiyunfast.com/	@#@#		@#@#		@#@#	
-https://dimoyun.top	@#@#	dimoyun	@#@#		@#@#	
+https://dimoyun.top	@#@#		@#@#		@#@#	
 https://47.238.65.52	@#@#		@#@#		@#@#	
 https://hd.anytls.shop	@#@#		@#@#		@#@#	
 https://v2.glucloud.top	@#@#		@#@#		@#@#	
@@ -737,7 +737,7 @@ https://www.mianhuayun101.buzz	@#@#		@#@#		@#@#
 https://dsb-114514.ftymoe.dev	@#@#		@#@#		@#@#	
 https://dash.111160.xyz	@#@#		@#@#		@#@#	
 https://v2board.api.fty-run.cc	@#@#		@#@#		@#@#	
-https://foldjc.top	@#@#	foldjcyyds	@#@#		@#@#	
+https://foldjc.top	@#@#		@#@#		@#@#	
 https://sos.aaxaa.cc	@#@#		@#@#		@#@#	
 https://www.91chigua.tv	@#@#		@#@#		@#@#	
 https://www.qyjs.click	@#@#		@#@#		@#@#	
@@ -884,3 +884,4 @@ https://zhuitipai.shuguangyun.top	@#@#		@#@#		@#@#
 http://zusu.top	@#@#		@#@#		@#@#	
 https://d.kpyun.xyz	@#@#		@#@#		@#@#	
 https://dns.ubecloud.top	@#@#		@#@#		@#@#	
+https://vb.xnsm.link	@#@#		@#@#		@#@#	
