@@ -1517,7 +1517,7 @@ https://www.14000605.xyz	@#@#		@#@#		@#@#
 https://sitea.fly-gw.top	@#@#		@#@#		@#@#	
 https://gscloud.icu	@#@#		@#@#		@#@#	
 https://cf.gscloud.cfd	@#@#		@#@#		@#@#	
-https://usla.icola.top	@#@#		@#@#		@#@#	
+https://usla.icola.top	@#@#		@#@#		@#@#	/api?scheme=
 https://411611.xyz	@#@#	x411611	@#@#		@#@#	
 https://wocao.su7.me	@#@#		@#@#		@#@#	
 https://djxiyou.cgnet.jiayicdn.com	@#@#		@#@#		@#@#	
