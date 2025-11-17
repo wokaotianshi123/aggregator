@@ -2368,7 +2368,7 @@ https://console.thevpn.cloud	@#@#		@#@#		@#@#
 https://sdjk.speedlink.run	@#@#		@#@#		@#@#	
 https://0099009.xyz	@#@#		@#@#		@#@#	
 https://人民机场.shop	@#@#	NoQNfU29	@#@#		@#@#	
-https://10rjc.com	@#@#		@#@#		@#@#	/api?scheme=
+https://10rjc.com	@#@#		@#@#		@#@#	
 http://fastvpn.top	@#@#		@#@#		@#@#	
 https://777.7yzzz.lat	@#@#		@#@#		@#@#	
 https://ybsl.7yzzz.lat	@#@#		@#@#		@#@#	
@@ -2408,3 +2408,4 @@ https://yoservice.info	@#@#		@#@#		@#@#
 https://motoyayukiko.eplus2.jp	@#@#		@#@#		@#@#	
 https://xin.laotiehj6.top	@#@#		@#@#		@#@#	
 https://v3.bee-vps.com	@#@#		@#@#		@#@#	
+https://223360.xyz	@#@#		@#@#		@#@#	
