@@ -2368,7 +2368,7 @@ https://console.thevpn.cloud	@#@#		@#@#		@#@#
 https://sdjk.speedlink.run	@#@#		@#@#		@#@#	
 https://0099009.xyz	@#@#		@#@#		@#@#	
 https://人民机场.shop	@#@#	NoQNfU29	@#@#		@#@#	
-https://10rjc.com	@#@#		@#@#		@#@#	
+https://10rjc.com	@#@#		@#@#		@#@#	/api?scheme=
 http://fastvpn.top	@#@#		@#@#		@#@#	
 https://777.7yzzz.lat	@#@#		@#@#		@#@#	
 https://ybsl.7yzzz.lat	@#@#		@#@#		@#@#	
@@ -2433,3 +2433,4 @@ https://miaona.pro	@#@#		@#@#		@#@#
 https://miaona.me	@#@#		@#@#		@#@#	
 https://miaona.sbs	@#@#		@#@#		@#@#	
 https://miaona.app	@#@#		@#@#		@#@#	
+https://best-tizi.top/	@#@#		@#@#		@#@#	
