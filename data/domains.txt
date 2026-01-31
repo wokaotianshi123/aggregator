@@ -2368,7 +2368,7 @@ https://console.thevpn.cloud	@#@#		@#@#		@#@#
 https://sdjk.speedlink.run	@#@#		@#@#		@#@#	
 https://0099009.xyz	@#@#		@#@#		@#@#	
 https://人民机场.shop	@#@#	NoQNfU29	@#@#		@#@#	
-https://10rjc.com	@#@#		@#@#		@#@#	/api?scheme=
+https://10rjc.com	@#@#		@#@#		@#@#	
 http://fastvpn.top	@#@#		@#@#		@#@#	
 https://777.7yzzz.lat	@#@#		@#@#		@#@#	
 https://ybsl.7yzzz.lat	@#@#		@#@#		@#@#	
@@ -2718,3 +2718,4 @@ https://www.okvpn.cc	@#@#		@#@#		@#@#
 https://www.qqdou.cyou	@#@#		@#@#		@#@#	
 https://qihang.zone.id	@#@#		@#@#		@#@#	
 https://cloud.cafecat.club	@#@#		@#@#		@#@#	
+https://1.starbebo.sbs	@#@#		@#@#		@#@#	
