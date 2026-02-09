@@ -2368,7 +2368,7 @@ https://console.thevpn.cloud	@#@#		@#@#		@#@#
 https://sdjk.speedlink.run	@#@#		@#@#		@#@#	
 https://0099009.xyz	@#@#		@#@#		@#@#	
 https://人民机场.shop	@#@#	NoQNfU29	@#@#		@#@#	
-https://10rjc.com	@#@#		@#@#		@#@#	
+https://10rjc.com	@#@#		@#@#		@#@#	/api?scheme=
 http://fastvpn.top	@#@#		@#@#		@#@#	
 https://777.7yzzz.lat	@#@#		@#@#		@#@#	
 https://ybsl.7yzzz.lat	@#@#		@#@#		@#@#	
@@ -2766,3 +2766,4 @@ https://hmfd.ilailian.com	@#@#		@#@#		@#@#
 https://manage.titslee.net	@#@#		@#@#		@#@#	
 https://看片云.shop	@#@#	看片	@#@#		@#@#	
 https://xn--9kq838ftid.shop	@#@#	看片	@#@#		@#@#	
+https://vpn.hudie123.xyz	@#@#		@#@#		@#@#	
