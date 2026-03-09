@@ -2289,10 +2289,10 @@ https://web.phicloud.shop	@#@#		@#@#		@#@#
 https://maliaojc.top	@#@#	maliao	@#@#		@#@#	
 https://123xxx456.com	@#@#		@#@#		@#@#	
 https://jiasu1.u17.xyz	@#@#		@#@#		@#@#	
-https://fenghuang.co	@#@#		@#@#		@#@#	
+https://fenghuang.co	@#@#		@#@#		@#@#	/api?scheme=
 https://idc.ikun.su	@#@#		@#@#		@#@#	
 https://bobo.affx.net	@#@#		@#@#		@#@#	
-https://www.fenghuang.co	@#@#		@#@#		@#@#	
+https://www.fenghuang.co	@#@#		@#@#		@#@#	/api?scheme=
 https://488588233.xyz	@#@#		@#@#		@#@#	
 https://portal.dabei888.top	@#@#		@#@#		@#@#	
 https://www.doubao.de	@#@#		@#@#		@#@#	
