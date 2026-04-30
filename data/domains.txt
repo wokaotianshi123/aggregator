@@ -2837,7 +2837,7 @@ https://xiaomaimai14514.de5.net	@#@#		@#@#		@#@#
 https://eueua.cc	@#@#		@#@#		@#@#	
 https://scsc.fefeef.cn	@#@#		@#@#		@#@#	
 https://36y.me	@#@#		@#@#		@#@#	/api?scheme=
-https://frontend.skrspc.org	@#@#		@#@#		@#@#	
+https://frontend.skrspc.org	@#@#		@#@#		@#@#	/api?scheme=
 https://km95.net	@#@#		@#@#		@#@#	
 https://xfx104.xyz	@#@#		@#@#		@#@#	
 https://xfx102.xyz	@#@#		@#@#		@#@#	
@@ -2993,3 +2993,5 @@ https://store.zcyapp.org	@#@#		@#@#		@#@#
 http://txsg.ililil.cn	@#@#		@#@#		@#@#	
 https://2019.chegnxiaochang.cn	@#@#		@#@#		@#@#	
 https://www.huwa111.top	@#@#		@#@#		@#@#	
+https://www.203009.xyz	@#@#		@#@#		@#@#	
+https://q69w8.203009.xyz	@#@#		@#@#		@#@#	
