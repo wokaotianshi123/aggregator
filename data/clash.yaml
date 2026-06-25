@@ -5,339 +5,223 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇩🇪 德国-法兰克福-002-1A, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: b3922bfc-2b31-492f-a299-db26a3acbb6a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇸🇬 专线A1-新加坡1-3x, server: pop.defuzhuanfa.com, port: 35058, type: ss, cipher: chacha20-ietf-poly1305, password: 08656623-b467-4003-b784-d228c73ebb7d, udp: true}
-  - {name: 🇰🇷 D韩国1-家宽住宅I-KKIP--1x, server: kr1-lisa.vxrelay.xyz, port: 2523, type: anytls, password: 08656623-b467-4003-b784-d228c73ebb7d, udp: true}
-  - {name: 🇭🇰 专线A1-香港4-极-TLIC--3x, server: pop.vxrelay.xyz, port: 6740, type: ss, cipher: chacha20-ietf-poly1305, password: 08656623-b467-4003-b784-d228c73ebb7d, udp: true}
-  - {name: 🇺🇸 US-01-1D, server: cloud.bluexray.net, port: 5501, type: ss, cipher: chacha20-ietf-poly1305, password: f02b4974-7f48-4a0d-b2bf-1991e9f53e59, udp: true}
-  - {name: 🇯🇵 D日本4-4x-双-AUKT--4x, server: jp9-gomm.vxrelay.xyz, port: 36177, type: anytls, password: 08656623-b467-4003-b784-d228c73ebb7d, udp: true}
-  - {name: NODE1-VPN-1F, server: node1-vpn.hrzy.me, port: 443, type: trojan, password: 50580362-f1fd-4a3f-8f28-10f553db217f, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 D新加坡1-移动优化-1x, server: sgp2-dig.data-node.org, port: 2353, type: anytls, password: 08656623-b467-4003-b784-d228c73ebb7d, udp: true}
-  - {name: 🇺🇸 US-05-1B, server: cf.090227.xyz, port: 8443, type: vless, uuid: 39da9edc-fdc9-4ad5-a554-4e303cb3df10, tls: true, servername: vps.bluexray.net, client-fingerprint: chrome, network: ws, ws-opts: {path: /vless-cf, headers: {Host: vps.bluexray.net}}, udp: true}
-  - {name: YW-YWC, server: basic9873cheap.fq-number-01.co, port: 52891, type: ss, cipher: aes-128-gcm, password: c51967b2-cb68-4ddc, udp: true}
-  - {name: NODE2-VPN-1C, server: node2-vpn.hrzy.me, port: 443, type: trojan, password: cf437985-e674-427d-88f1-b1aaa933b85c, skip-cert-verify: false, udp: true}
-  - {name: MM-ARX, server: empty.node, port: 443, type: trojan, password: 2f39974f-dfd7-44c2-a2b7-413a491286d5, sni: empty.node, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 D香港2-住宅家宽IP解锁NETFLIXTVB等-3x, server: hk2-lisa.vxrelay.xyz, port: 2353, type: anytls, password: 08656623-b467-4003-b784-d228c73ebb7d, udp: true}
-  - {name: NODE2-VPN-1A, server: node2-vpn.hrzy.me, port: 443, type: trojan, password: 4dc3ba52-4474-43d2-b8b4-1fb4ffbb620b, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1C, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 1523a5fb-7fb5-4c5a-9d87-c777c84a69c2, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: NODE1-VPN-1A, server: node1-vpn.hrzy.me, port: 443, type: trojan, password: 4dc3ba52-4474-43d2-b8b4-1fb4ffbb620b, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国高速节点1, server: 144.34.178.66, port: 1443, type: trojan, password: b52cfb6b-426a-4552-83ac-91c10dbc06c5, sni: node4.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 D美国2-网页-视频浏览-1x, server: us2-dig.data-node.org, port: 2353, type: anytls, password: 08656623-b467-4003-b784-d228c73ebb7d, udp: true}
-  - {name: 🇺🇸 US-01-1B, server: cloud.bluexray.net, port: 5501, type: ss, cipher: chacha20-ietf-poly1305, password: 39da9edc-fdc9-4ad5-a554-4e303cb3df10, udp: true}
-  - {name: 🇯🇵 专线A1-日本4-家-IOKK--3x, server: pop.defuzhuanfa.com, port: 8641, type: ss, cipher: chacha20-ietf-poly1305, password: 08656623-b467-4003-b784-d228c73ebb7d, udp: true}
-  - {name: NODE2-VPN-1F, server: node2-vpn.hrzy.me, port: 443, type: trojan, password: 50580362-f1fd-4a3f-8f28-10f553db217f, skip-cert-verify: false, udp: true}
-  - {name: 🇻🇳 专线A1-越南1家宽住宅IP全解锁-3x, server: pop.defuzhuanfa.com, port: 24308, type: ss, cipher: chacha20-ietf-poly1305, password: 08656623-b467-4003-b784-d228c73ebb7d, udp: true}
-  - {name: NODE1-VPN-1D, server: node1-vpn.hrzy.me, port: 443, type: trojan, password: 36d9de9b-f6b7-4340-b4e8-551d70aaaee2, skip-cert-verify: false, udp: true}
-  - {name: 🇹🇼 台湾高速节点2, server: 118.232.199.29, port: 443, type: trojan, password: b52cfb6b-426a-4552-83ac-91c10dbc06c5, sni: node2.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: 🇳🇱 专线A1-荷兰1-3x, server: pop.vxrelay.xyz, port: 23639, type: ss, cipher: chacha20-ietf-poly1305, password: 08656623-b467-4003-b784-d228c73ebb7d, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1C, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 1523a5fb-7fb5-4c5a-9d87-c777c84a69c2, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: NODE1-VPN-1C, server: node1-vpn.hrzy.me, port: 443, type: trojan, password: cf437985-e674-427d-88f1-b1aaa933b85c, skip-cert-verify: false, udp: true}
-  - {name: NODE2-VPN-1E, server: node2-vpn.hrzy.me, port: 443, type: trojan, password: b76d0bad-6ac8-464e-b746-25926785751f, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 专线A1-美国4-家宽IP银行 视频全解锁-3x, server: pop.defuzhuanfa.com, port: 56512, type: ss, cipher: chacha20-ietf-poly1305, password: 08656623-b467-4003-b784-d228c73ebb7d, udp: true}
-  - {name: 🇭🇰 专线A1-香港3-极-EIIP--3x, server: pop.vxrelay.xyz, port: 49642, type: ss, cipher: chacha20-ietf-poly1305, password: 08656623-b467-4003-b784-d228c73ebb7d, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1B, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 98d83a14-ea8f-4eaf-bc77-91691e7b4755, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇺🇸 US-01-1C, server: cloud.bluexray.net, port: 5501, type: ss, cipher: chacha20-ietf-poly1305, password: a61e8530-57ef-477c-8bf8-dc2069e8ae72, udp: true}
-  - {name: 🇹🇼 专线A1-台湾1-流媒体全解锁TIKTOK优秀3x, server: pop.defuzhuanfa.com, port: 13599, type: ss, cipher: chacha20-ietf-poly1305, password: 08656623-b467-4003-b784-d228c73ebb7d, udp: true}
-  - {name: 🇺🇸 专线A1-美国2-三网优化3x, server: pop.defuzhuanfa.com, port: 50155, type: ss, cipher: chacha20-ietf-poly1305, password: 08656623-b467-4003-b784-d228c73ebb7d, udp: true}
-  - {name: 🇺🇸 专线A1-美国3-三网优化Y2B视频快-3x, server: pop.defuzhuanfa.com, port: 51467, type: ss, cipher: chacha20-ietf-poly1305, password: 08656623-b467-4003-b784-d228c73ebb7d, udp: true}
-  - {name: 🇸🇬 D新加坡3-网页视频浏览-1x, server: sgp3-lin.vxrelay.xyz, port: 2353, type: anytls, password: 08656623-b467-4003-b784-d228c73ebb7d, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1A, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: b3922bfc-2b31-492f-a299-db26a3acbb6a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1C, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 1523a5fb-7fb5-4c5a-9d87-c777c84a69c2, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇺🇸 专线A1-美国8-双-DUIA--3x, server: pop.defuzhuanfa.com, port: 8135, type: ss, cipher: chacha20-ietf-poly1305, password: 08656623-b467-4003-b784-d228c73ebb7d, udp: true}
-  - {name: 5W-TAE, server: 1.1.1.1, port: 443, type: ss, cipher: aes-128-gcm, password: 00000000000000000000000000000000, udp: true}
-  - {name: 🇺🇸 D美国1-网页-视频浏览-2x, server: us1-dig.data-node.org, port: 2353, type: anytls, password: 08656623-b467-4003-b784-d228c73ebb7d, udp: true}
-  - {name: 🇺🇸 US-05-1C, server: cf.090227.xyz, port: 8443, type: vless, uuid: a61e8530-57ef-477c-8bf8-dc2069e8ae72, tls: true, servername: vps.bluexray.net, client-fingerprint: chrome, network: ws, ws-opts: {path: /vless-cf, headers: {Host: vps.bluexray.net}}, udp: true}
-  - {name: 🇺🇸 HY-02 | US, server: usflare1.cloudaddy.top, port: 30003, type: hysteria2, password: 912221ec-a002-4f09-8a2c-fd181cc649a6, auth: 912221ec-a002-4f09-8a2c-fd181cc649a6, sni: www.iq.com, up: 5000, down: 5000, skip-cert-verify: true, udp: true}
-  - {name: 🇹🇼 台湾高速节点3, server: 118.232.199.14, port: 443, type: trojan, password: b52cfb6b-426a-4552-83ac-91c10dbc06c5, sni: node3.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1B, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 98d83a14-ea8f-4eaf-bc77-91691e7b4755, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: NODE2-VPN-1B, server: node2-vpn.hrzy.me, port: 443, type: trojan, password: d8ef0eb0-4f15-48e3-8962-ba949175f0cb, skip-cert-verify: false, udp: true}
-  - {name: 🇻🇳 D越南1-家宽住宅IP-流媒体全解锁TIKTOK优秀-1x, server: vn1-lis.vxrelay.xyz, port: 2523, type: anytls, password: 08656623-b467-4003-b784-d228c73ebb7d, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1C, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 1523a5fb-7fb5-4c5a-9d87-c777c84a69c2, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: NODE1-VPN-1E, server: node1-vpn.hrzy.me, port: 443, type: trojan, password: b76d0bad-6ac8-464e-b746-25926785751f, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 专线A1-新加坡3-3x, server: pop.defuzhuanfa.com, port: 37923, type: ss, cipher: chacha20-ietf-poly1305, password: 08656623-b467-4003-b784-d228c73ebb7d, udp: true}
-  - {name: 🇸🇬 D新加坡2-移动优化-1x, server: sgp1-vul.vxrelay.xyz, port: 2353, type: anytls, password: 08656623-b467-4003-b784-d228c73ebb7d, udp: true}
-  - {name: 🇯🇵 D日本3-网页视频浏览-1x, server: jp3-vul.vxrelay.xyz, port: 2353, type: anytls, password: 08656623-b467-4003-b784-d228c73ebb7d, udp: true}
-  - {name: 🇺🇸 US-01-1A, server: cloud.bluexray.net, port: 5501, type: ss, cipher: chacha20-ietf-poly1305, password: 1242d861-beb1-49c8-b529-7eac4dc3d157, udp: true}
-  - {name: 🇬🇧 专线A1-伦敦3-解-BIBC--3x, server: pop.vxrelay.xyz, port: 29110, type: ss, cipher: chacha20-ietf-poly1305, password: 08656623-b467-4003-b784-d228c73ebb7d, udp: true}
-  - {name: 🇺🇸 US-05-1D, server: cf.090227.xyz, port: 8443, type: vless, uuid: f02b4974-7f48-4a0d-b2bf-1991e9f53e59, tls: true, servername: vps.bluexray.net, client-fingerprint: chrome, network: ws, ws-opts: {path: /vless-cf, headers: {Host: vps.bluexray.net}}, udp: true}
-  - {name: 🇺🇸 HY-05| US, server: usflare1.cloudaddy.top, port: 30006, type: hysteria2, password: 912221ec-a002-4f09-8a2c-fd181cc649a6, auth: 912221ec-a002-4f09-8a2c-fd181cc649a6, sni: www.iq.com, up: 5000, down: 5000, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 D日本2-网页视频浏览-1x, server: jp2-linode.vxrelay.xyz, port: 2353, type: anytls, password: 08656623-b467-4003-b784-d228c73ebb7d, udp: true}
-  - {name: 🇺🇸 D美国8-3x-双-IPLK-行全解锁, server: us8new-lis.vxrelay.xyz, port: 2353, type: anytls, password: 08656623-b467-4003-b784-d228c73ebb7d, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1B, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 98d83a14-ea8f-4eaf-bc77-91691e7b4755, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇯🇵 专线A1-日本2-3x, server: pop.defuzhuanfa.com, port: 42721, type: ss, cipher: chacha20-ietf-poly1305, password: 08656623-b467-4003-b784-d228c73ebb7d, udp: true}
-  - {name: 🇰🇷 专线A1-韩国1家宽IP全解锁-3x, server: pop.vxrelay.xyz, port: 26881, type: ss, cipher: chacha20-ietf-poly1305, password: 08656623-b467-4003-b784-d228c73ebb7d, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1B, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 98d83a14-ea8f-4eaf-bc77-91691e7b4755, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇺🇸 专线A1-美国5-家宽 流媒体银行全解锁-3x, server: pop.defuzhuanfa.com, port: 21386, type: ss, cipher: chacha20-ietf-poly1305, password: 08656623-b467-4003-b784-d228c73ebb7d, udp: true}
-  - {name: NODE1-VPN-1B, server: node1-vpn.hrzy.me, port: 443, type: trojan, password: d8ef0eb0-4f15-48e3-8962-ba949175f0cb, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 D美国4-双ISP家宽IP-适合AI-CLAUDE等-3x, server: us4-lisa.vxrelay.xyz, port: 2353, type: anytls, password: 08656623-b467-4003-b784-d228c73ebb7d, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1A, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: b3922bfc-2b31-492f-a299-db26a3acbb6a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇺🇸 US-05-1A, server: cf.090227.xyz, port: 8443, type: vless, uuid: 1242d861-beb1-49c8-b529-7eac4dc3d157, tls: true, servername: vps.bluexray.net, client-fingerprint: chrome, network: ws, ws-opts: {path: /vless-cf, headers: {Host: vps.bluexray.net}}, udp: true}
-  - {name: 🇯🇵 专线A1-日本3-流媒体全解锁3x, server: pop.defuzhuanfa.com, port: 58490, type: ss, cipher: chacha20-ietf-poly1305, password: 08656623-b467-4003-b784-d228c73ebb7d, udp: true}
-  - {name: 🇹🇼 台湾高速节点, server: 103.137.63.77, port: 443, type: trojan, password: b52cfb6b-426a-4552-83ac-91c10dbc06c5, sni: node1.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 HY-03 | US, server: usflare1.cloudaddy.top, port: 30004, type: hysteria2, password: 912221ec-a002-4f09-8a2c-fd181cc649a6, auth: 912221ec-a002-4f09-8a2c-fd181cc649a6, sni: us1.cloudsegl1.ccwu.cc, up: 5000, down: 5000, skip-cert-verify: false, udp: true}
-  - {name: 🇳🇱 D-荷兰1-YOUTUBE视频带宽足-1x, server: ams1-dig.data-node.org, port: 2533, type: anytls, password: 08656623-b467-4003-b784-d228c73ebb7d, udp: true}
-  - {name: 🇺🇸 D美国3-网页-视频浏览-1x, server: us3-vul.vxrelay.xyz, port: 2353, type: anytls, password: 08656623-b467-4003-b784-d228c73ebb7d, udp: true}
-  - {name: 🇨🇳 中国联通节点1, server: 115.231.220.33, port: 5443, type: trojan, password: b52cfb6b-426a-4552-83ac-91c10dbc06c5, sni: nodecn1.jiayinetwork.es, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 专线A1-美国1-3x, server: pop.defuzhuanfa.com, port: 25429, type: ss, cipher: chacha20-ietf-poly1305, password: 08656623-b467-4003-b784-d228c73ebb7d, udp: true}
-  - {name: 🇭🇰 专线A1-香港2-极-TNCI--3x, server: pop.defuzhuanfa.com, port: 27502, type: ss, cipher: chacha20-ietf-poly1305, password: 08656623-b467-4003-b784-d228c73ebb7d, udp: true}
-  - {name: 🇸🇬 专线A1-新加坡2-3x, server: pop.defuzhuanfa.com, port: 57598, type: ss, cipher: chacha20-ietf-poly1305, password: 08656623-b467-4003-b784-d228c73ebb7d, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1A, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: b3922bfc-2b31-492f-a299-db26a3acbb6a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: NODE2-VPN-1D, server: node2-vpn.hrzy.me, port: 443, type: trojan, password: 36d9de9b-f6b7-4340-b4e8-551d70aaaee2, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 HY-04 | US, server: usflare1.cloudaddy.top, port: 30005, type: hysteria2, password: 912221ec-a002-4f09-8a2c-fd181cc649a6, auth: 912221ec-a002-4f09-8a2c-fd181cc649a6, sni: www.iq.com, up: 5000, down: 5000, skip-cert-verify: true, udp: true}
+  - {name: NODE2-VPN-1C, server: node2-vpn.hrzy.me, port: 443, type: trojan, password: 4dc3ba52-4474-43d2-b8b4-1fb4ffbb620b, skip-cert-verify: false, udp: true}
+  - {name: HD-PYW, server: 1.1.1.1, port: 443, type: ss, cipher: aes-128-gcm, password: 00000000000000000000000000000000, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1A, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 1523a5fb-7fb5-4c5a-9d87-c777c84a69c2, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: NODE1-VPN-1C, server: node1-vpn.hrzy.me, port: 443, type: trojan, password: 4dc3ba52-4474-43d2-b8b4-1fb4ffbb620b, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1E, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 2e1796e0-2ffb-44c5-b6e9-afb834e00f4b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: NODE2-VPN-1B, server: node2-vpn.hrzy.me, port: 443, type: trojan, password: 50580362-f1fd-4a3f-8f28-10f553db217f, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1B, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: c46bed48-bb8c-4d79-934f-e6cb205de477, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1F, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: ae31c0e8-f11e-4f57-a812-cd0209db0118, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇨🇳 中国联通节点1, server: 115.231.220.33, port: 5443, type: trojan, password: 43a601f0-97c8-48f5-b3aa-9cab7177ec8e, sni: nodecn1.jiayinetwork.es, skip-cert-verify: true, udp: true}
+  - {name: NODE1-VPN-1A, server: node1-vpn.hrzy.me, port: 443, type: trojan, password: b76d0bad-6ac8-464e-b746-25926785751f, skip-cert-verify: false, udp: true}
+  - {name: 🇹🇼 台湾高速节点3, server: 118.232.199.14, port: 443, type: trojan, password: 43a601f0-97c8-48f5-b3aa-9cab7177ec8e, sni: node3.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1F, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: ae31c0e8-f11e-4f57-a812-cd0209db0118, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇹🇼 台湾高速节点, server: 103.137.63.77, port: 443, type: trojan, password: 43a601f0-97c8-48f5-b3aa-9cab7177ec8e, sni: node1.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1E, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 2e1796e0-2ffb-44c5-b6e9-afb834e00f4b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1D, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 61941ddd-367d-4015-aaf3-c49817723f28, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: NODE2-VPN-1A, server: node2-vpn.hrzy.me, port: 443, type: trojan, password: b76d0bad-6ac8-464e-b746-25926785751f, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 US-05, server: cf.090227.xyz, port: 8443, type: vless, uuid: 8dc0ea13-03f6-47e7-a791-fc44297afd97, tls: true, servername: vps.bluexray.net, client-fingerprint: chrome, network: ws, ws-opts: {path: /vless-cf, headers: {Host: vps.bluexray.net}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1C, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: b2f6d1a4-778d-474f-ad0e-7b28c6367cb8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1D, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 61941ddd-367d-4015-aaf3-c49817723f28, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: ML-IDO, server: empty.node, port: 443, type: trojan, password: 54dc5522-07a5-4388-bb0f-b59cb780f647, sni: empty.node, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1A, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 1523a5fb-7fb5-4c5a-9d87-c777c84a69c2, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: NODE1-VPN-1E, server: node1-vpn.hrzy.me, port: 443, type: trojan, password: 36d9de9b-f6b7-4340-b4e8-551d70aaaee2, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1C, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: b2f6d1a4-778d-474f-ad0e-7b28c6367cb8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇹🇼 台湾高速节点2, server: 118.232.199.29, port: 443, type: trojan, password: 43a601f0-97c8-48f5-b3aa-9cab7177ec8e, sni: node2.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: NODE1-VPN-1D, server: node1-vpn.hrzy.me, port: 443, type: trojan, password: d8ef0eb0-4f15-48e3-8962-ba949175f0cb, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1D, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 61941ddd-367d-4015-aaf3-c49817723f28, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1E, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 2e1796e0-2ffb-44c5-b6e9-afb834e00f4b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: NODE1-VPN-1F, server: node1-vpn.hrzy.me, port: 443, type: trojan, password: 99884280-8f00-481e-8d2b-8e564f5a0fc7, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1F, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: ae31c0e8-f11e-4f57-a812-cd0209db0118, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1A, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 1523a5fb-7fb5-4c5a-9d87-c777c84a69c2, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1C, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: b2f6d1a4-778d-474f-ad0e-7b28c6367cb8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: NODE2-VPN-1E, server: node2-vpn.hrzy.me, port: 443, type: trojan, password: 36d9de9b-f6b7-4340-b4e8-551d70aaaee2, skip-cert-verify: false, udp: true}
+  - {name: NODE1-VPN-1B, server: node1-vpn.hrzy.me, port: 443, type: trojan, password: 50580362-f1fd-4a3f-8f28-10f553db217f, skip-cert-verify: false, udp: true}
+  - {name: NODE2-VPN-1D, server: node2-vpn.hrzy.me, port: 443, type: trojan, password: d8ef0eb0-4f15-48e3-8962-ba949175f0cb, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1A, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 1523a5fb-7fb5-4c5a-9d87-c777c84a69c2, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1B, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: c46bed48-bb8c-4d79-934f-e6cb205de477, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1F, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: ae31c0e8-f11e-4f57-a812-cd0209db0118, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 HY-04 | US, server: usflare1.cloudaddy.top, port: 30005, type: hysteria2, password: ccd405e8-6302-4301-b08d-d2823157392a, auth: ccd405e8-6302-4301-b08d-d2823157392a, sni: www.iq.com, up: 5000, down: 5000, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 HY-05| US, server: usflare1.cloudaddy.top, port: 30006, type: hysteria2, password: ccd405e8-6302-4301-b08d-d2823157392a, auth: ccd405e8-6302-4301-b08d-d2823157392a, sni: www.iq.com, up: 5000, down: 5000, skip-cert-verify: true, udp: true}
+  - {name: NODE2-VPN-1F, server: node2-vpn.hrzy.me, port: 443, type: trojan, password: 99884280-8f00-481e-8d2b-8e564f5a0fc7, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 HY-03 | US, server: usflare1.cloudaddy.top, port: 30004, type: hysteria2, password: ccd405e8-6302-4301-b08d-d2823157392a, auth: ccd405e8-6302-4301-b08d-d2823157392a, sni: us1.cloudsegl1.ccwu.cc, up: 5000, down: 5000, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1B, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: c46bed48-bb8c-4d79-934f-e6cb205de477, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 US-01, server: cloud.bluexray.net, port: 5501, type: ss, cipher: chacha20-ietf-poly1305, password: 8dc0ea13-03f6-47e7-a791-fc44297afd97, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1B, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: c46bed48-bb8c-4d79-934f-e6cb205de477, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1C, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: b2f6d1a4-778d-474f-ad0e-7b28c6367cb8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1E, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 2e1796e0-2ffb-44c5-b6e9-afb834e00f4b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 HY-02 | US, server: usflare1.cloudaddy.top, port: 30003, type: hysteria2, password: ccd405e8-6302-4301-b08d-d2823157392a, auth: ccd405e8-6302-4301-b08d-d2823157392a, sni: www.iq.com, up: 5000, down: 5000, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国高速节点1, server: 144.34.178.66, port: 1443, type: trojan, password: 43a601f0-97c8-48f5-b3aa-9cab7177ec8e, sni: node4.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: B7-KPX, server: basic9873cheap.fq-number-01.co, port: 52891, type: ss, cipher: aes-128-gcm, password: c51967b2-cb68-4ddc, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1D, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 61941ddd-367d-4015-aaf3-c49817723f28, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇸🇬 专线A1-新加坡1-3x
-      - 🇰🇷 D韩国1-家宽住宅I-KKIP--1x
-      - 🇭🇰 专线A1-香港4-极-TLIC--3x
-      - 🇺🇸 US-01-1D
-      - 🇯🇵 D日本4-4x-双-AUKT--4x
-      - NODE1-VPN-1F
-      - 🇸🇬 D新加坡1-移动优化-1x
-      - 🇺🇸 US-05-1B
-      - YW-YWC
       - NODE2-VPN-1C
-      - MM-ARX
-      - 🇭🇰 D香港2-住宅家宽IP解锁NETFLIXTVB等-3x
-      - NODE2-VPN-1A
-      - 🇩🇪 德国-法兰克福-002-1C
-      - NODE1-VPN-1A
-      - 🇺🇸 美国高速节点1
-      - 🇺🇸 D美国2-网页-视频浏览-1x
-      - 🇺🇸 US-01-1B
-      - 🇯🇵 专线A1-日本4-家-IOKK--3x
-      - NODE2-VPN-1F
-      - 🇻🇳 专线A1-越南1家宽住宅IP全解锁-3x
-      - NODE1-VPN-1D
-      - 🇹🇼 台湾高速节点2
-      - 🇳🇱 专线A1-荷兰1-3x
-      - 🇩🇪 德国-法兰克福-004-1C
-      - NODE1-VPN-1C
-      - NODE2-VPN-1E
-      - 🇺🇸 专线A1-美国4-家宽IP银行 视频全解锁-3x
-      - 🇭🇰 专线A1-香港3-极-EIIP--3x
-      - 🇩🇪 德国-法兰克福-004-1B
-      - 🇺🇸 US-01-1C
-      - 🇹🇼 专线A1-台湾1-流媒体全解锁TIKTOK优秀3x
-      - 🇺🇸 专线A1-美国2-三网优化3x
-      - 🇺🇸 专线A1-美国3-三网优化Y2B视频快-3x
-      - 🇸🇬 D新加坡3-网页视频浏览-1x
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇺🇸 专线A1-美国8-双-DUIA--3x
-      - 5W-TAE
-      - 🇺🇸 D美国1-网页-视频浏览-2x
-      - 🇺🇸 US-05-1C
-      - 🇺🇸 HY-02 | US
-      - 🇹🇼 台湾高速节点3
-      - 🇩🇪 德国-法兰克福-001-1B
-      - NODE2-VPN-1B
-      - 🇻🇳 D越南1-家宽住宅IP-流媒体全解锁TIKTOK优秀-1x
-      - 🇩🇪 德国-法兰克福-001-1C
-      - NODE1-VPN-1E
-      - 🇸🇬 专线A1-新加坡3-3x
-      - 🇸🇬 D新加坡2-移动优化-1x
-      - 🇯🇵 D日本3-网页视频浏览-1x
-      - 🇺🇸 US-01-1A
-      - 🇬🇧 专线A1-伦敦3-解-BIBC--3x
-      - 🇺🇸 US-05-1D
-      - 🇺🇸 HY-05| US
-      - 🇯🇵 D日本2-网页视频浏览-1x
-      - 🇺🇸 D美国8-3x-双-IPLK-行全解锁
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇯🇵 专线A1-日本2-3x
-      - 🇰🇷 专线A1-韩国1家宽IP全解锁-3x
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇺🇸 专线A1-美国5-家宽 流媒体银行全解锁-3x
-      - NODE1-VPN-1B
-      - 🇺🇸 D美国4-双ISP家宽IP-适合AI-CLAUDE等-3x
+      - HD-PYW
       - 🇩🇪 德国-法兰克福-001-1A
-      - 🇺🇸 US-05-1A
-      - 🇯🇵 专线A1-日本3-流媒体全解锁3x
-      - 🇹🇼 台湾高速节点
-      - 🇺🇸 HY-03 | US
-      - 🇳🇱 D-荷兰1-YOUTUBE视频带宽足-1x
-      - 🇺🇸 D美国3-网页-视频浏览-1x
+      - NODE1-VPN-1C
+      - 🇩🇪 德国-法兰克福-002-1E
+      - NODE2-VPN-1B
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇩🇪 德国-法兰克福-003-1F
       - 🇨🇳 中国联通节点1
-      - 🇺🇸 专线A1-美国1-3x
-      - 🇭🇰 专线A1-香港2-极-TNCI--3x
-      - 🇸🇬 专线A1-新加坡2-3x
-      - 🇩🇪 德国-法兰克福-004-1A
+      - NODE1-VPN-1A
+      - 🇹🇼 台湾高速节点3
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇹🇼 台湾高速节点
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇩🇪 德国-法兰克福-003-1D
+      - NODE2-VPN-1A
+      - 🇺🇸 US-05
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇩🇪 德国-法兰克福-002-1D
+      - ML-IDO
+      - 🇩🇪 德国-法兰克福-002-1A
+      - NODE1-VPN-1E
+      - 🇩🇪 德国-法兰克福-002-1C
+      - 🇹🇼 台湾高速节点2
+      - NODE1-VPN-1D
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇩🇪 德国-法兰克福-004-1E
+      - NODE1-VPN-1F
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇩🇪 德国-法兰克福-001-1C
+      - NODE2-VPN-1E
+      - NODE1-VPN-1B
       - NODE2-VPN-1D
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇩🇪 德国-法兰克福-001-1F
       - 🇺🇸 HY-04 | US
+      - 🇺🇸 HY-05| US
+      - NODE2-VPN-1F
+      - 🇺🇸 HY-03 | US
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇺🇸 US-01
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇺🇸 HY-02 | US
+      - 🇺🇸 美国高速节点1
+      - B7-KPX
+      - 🇩🇪 德国-法兰克福-001-1D
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇸🇬 专线A1-新加坡1-3x
-      - 🇰🇷 D韩国1-家宽住宅I-KKIP--1x
-      - 🇭🇰 专线A1-香港4-极-TLIC--3x
-      - 🇺🇸 US-01-1D
-      - 🇯🇵 D日本4-4x-双-AUKT--4x
-      - NODE1-VPN-1F
-      - 🇸🇬 D新加坡1-移动优化-1x
-      - 🇺🇸 US-05-1B
-      - YW-YWC
       - NODE2-VPN-1C
-      - MM-ARX
-      - 🇭🇰 D香港2-住宅家宽IP解锁NETFLIXTVB等-3x
-      - NODE2-VPN-1A
-      - 🇩🇪 德国-法兰克福-002-1C
-      - NODE1-VPN-1A
-      - 🇺🇸 美国高速节点1
-      - 🇺🇸 D美国2-网页-视频浏览-1x
-      - 🇺🇸 US-01-1B
-      - 🇯🇵 专线A1-日本4-家-IOKK--3x
-      - NODE2-VPN-1F
-      - 🇻🇳 专线A1-越南1家宽住宅IP全解锁-3x
-      - NODE1-VPN-1D
-      - 🇹🇼 台湾高速节点2
-      - 🇳🇱 专线A1-荷兰1-3x
-      - 🇩🇪 德国-法兰克福-004-1C
-      - NODE1-VPN-1C
-      - NODE2-VPN-1E
-      - 🇺🇸 专线A1-美国4-家宽IP银行 视频全解锁-3x
-      - 🇭🇰 专线A1-香港3-极-EIIP--3x
-      - 🇩🇪 德国-法兰克福-004-1B
-      - 🇺🇸 US-01-1C
-      - 🇹🇼 专线A1-台湾1-流媒体全解锁TIKTOK优秀3x
-      - 🇺🇸 专线A1-美国2-三网优化3x
-      - 🇺🇸 专线A1-美国3-三网优化Y2B视频快-3x
-      - 🇸🇬 D新加坡3-网页视频浏览-1x
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇺🇸 专线A1-美国8-双-DUIA--3x
-      - 5W-TAE
-      - 🇺🇸 D美国1-网页-视频浏览-2x
-      - 🇺🇸 US-05-1C
-      - 🇺🇸 HY-02 | US
-      - 🇹🇼 台湾高速节点3
-      - 🇩🇪 德国-法兰克福-001-1B
-      - NODE2-VPN-1B
-      - 🇻🇳 D越南1-家宽住宅IP-流媒体全解锁TIKTOK优秀-1x
-      - 🇩🇪 德国-法兰克福-001-1C
-      - NODE1-VPN-1E
-      - 🇸🇬 专线A1-新加坡3-3x
-      - 🇸🇬 D新加坡2-移动优化-1x
-      - 🇯🇵 D日本3-网页视频浏览-1x
-      - 🇺🇸 US-01-1A
-      - 🇬🇧 专线A1-伦敦3-解-BIBC--3x
-      - 🇺🇸 US-05-1D
-      - 🇺🇸 HY-05| US
-      - 🇯🇵 D日本2-网页视频浏览-1x
-      - 🇺🇸 D美国8-3x-双-IPLK-行全解锁
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇯🇵 专线A1-日本2-3x
-      - 🇰🇷 专线A1-韩国1家宽IP全解锁-3x
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇺🇸 专线A1-美国5-家宽 流媒体银行全解锁-3x
-      - NODE1-VPN-1B
-      - 🇺🇸 D美国4-双ISP家宽IP-适合AI-CLAUDE等-3x
+      - HD-PYW
       - 🇩🇪 德国-法兰克福-001-1A
-      - 🇺🇸 US-05-1A
-      - 🇯🇵 专线A1-日本3-流媒体全解锁3x
-      - 🇹🇼 台湾高速节点
-      - 🇺🇸 HY-03 | US
-      - 🇳🇱 D-荷兰1-YOUTUBE视频带宽足-1x
-      - 🇺🇸 D美国3-网页-视频浏览-1x
+      - NODE1-VPN-1C
+      - 🇩🇪 德国-法兰克福-002-1E
+      - NODE2-VPN-1B
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇩🇪 德国-法兰克福-003-1F
       - 🇨🇳 中国联通节点1
-      - 🇺🇸 专线A1-美国1-3x
-      - 🇭🇰 专线A1-香港2-极-TNCI--3x
-      - 🇸🇬 专线A1-新加坡2-3x
-      - 🇩🇪 德国-法兰克福-004-1A
+      - NODE1-VPN-1A
+      - 🇹🇼 台湾高速节点3
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇹🇼 台湾高速节点
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇩🇪 德国-法兰克福-003-1D
+      - NODE2-VPN-1A
+      - 🇺🇸 US-05
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇩🇪 德国-法兰克福-002-1D
+      - ML-IDO
+      - 🇩🇪 德国-法兰克福-002-1A
+      - NODE1-VPN-1E
+      - 🇩🇪 德国-法兰克福-002-1C
+      - 🇹🇼 台湾高速节点2
+      - NODE1-VPN-1D
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇩🇪 德国-法兰克福-004-1E
+      - NODE1-VPN-1F
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇩🇪 德国-法兰克福-001-1C
+      - NODE2-VPN-1E
+      - NODE1-VPN-1B
       - NODE2-VPN-1D
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇩🇪 德国-法兰克福-001-1F
       - 🇺🇸 HY-04 | US
+      - 🇺🇸 HY-05| US
+      - NODE2-VPN-1F
+      - 🇺🇸 HY-03 | US
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇺🇸 US-01
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇺🇸 HY-02 | US
+      - 🇺🇸 美国高速节点1
+      - B7-KPX
+      - 🇩🇪 德国-法兰克福-001-1D
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇸🇬 专线A1-新加坡1-3x
-      - 🇰🇷 D韩国1-家宽住宅I-KKIP--1x
-      - 🇭🇰 专线A1-香港4-极-TLIC--3x
-      - 🇺🇸 US-01-1D
-      - 🇯🇵 D日本4-4x-双-AUKT--4x
-      - NODE1-VPN-1F
-      - 🇸🇬 D新加坡1-移动优化-1x
-      - 🇺🇸 US-05-1B
-      - YW-YWC
       - NODE2-VPN-1C
-      - MM-ARX
-      - 🇭🇰 D香港2-住宅家宽IP解锁NETFLIXTVB等-3x
-      - NODE2-VPN-1A
-      - 🇩🇪 德国-法兰克福-002-1C
-      - NODE1-VPN-1A
-      - 🇺🇸 美国高速节点1
-      - 🇺🇸 D美国2-网页-视频浏览-1x
-      - 🇺🇸 US-01-1B
-      - 🇯🇵 专线A1-日本4-家-IOKK--3x
-      - NODE2-VPN-1F
-      - 🇻🇳 专线A1-越南1家宽住宅IP全解锁-3x
-      - NODE1-VPN-1D
-      - 🇹🇼 台湾高速节点2
-      - 🇳🇱 专线A1-荷兰1-3x
-      - 🇩🇪 德国-法兰克福-004-1C
-      - NODE1-VPN-1C
-      - NODE2-VPN-1E
-      - 🇺🇸 专线A1-美国4-家宽IP银行 视频全解锁-3x
-      - 🇭🇰 专线A1-香港3-极-EIIP--3x
-      - 🇩🇪 德国-法兰克福-004-1B
-      - 🇺🇸 US-01-1C
-      - 🇹🇼 专线A1-台湾1-流媒体全解锁TIKTOK优秀3x
-      - 🇺🇸 专线A1-美国2-三网优化3x
-      - 🇺🇸 专线A1-美国3-三网优化Y2B视频快-3x
-      - 🇸🇬 D新加坡3-网页视频浏览-1x
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇺🇸 专线A1-美国8-双-DUIA--3x
-      - 5W-TAE
-      - 🇺🇸 D美国1-网页-视频浏览-2x
-      - 🇺🇸 US-05-1C
-      - 🇺🇸 HY-02 | US
-      - 🇹🇼 台湾高速节点3
-      - 🇩🇪 德国-法兰克福-001-1B
-      - NODE2-VPN-1B
-      - 🇻🇳 D越南1-家宽住宅IP-流媒体全解锁TIKTOK优秀-1x
-      - 🇩🇪 德国-法兰克福-001-1C
-      - NODE1-VPN-1E
-      - 🇸🇬 专线A1-新加坡3-3x
-      - 🇸🇬 D新加坡2-移动优化-1x
-      - 🇯🇵 D日本3-网页视频浏览-1x
-      - 🇺🇸 US-01-1A
-      - 🇬🇧 专线A1-伦敦3-解-BIBC--3x
-      - 🇺🇸 US-05-1D
-      - 🇺🇸 HY-05| US
-      - 🇯🇵 D日本2-网页视频浏览-1x
-      - 🇺🇸 D美国8-3x-双-IPLK-行全解锁
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇯🇵 专线A1-日本2-3x
-      - 🇰🇷 专线A1-韩国1家宽IP全解锁-3x
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇺🇸 专线A1-美国5-家宽 流媒体银行全解锁-3x
-      - NODE1-VPN-1B
-      - 🇺🇸 D美国4-双ISP家宽IP-适合AI-CLAUDE等-3x
+      - HD-PYW
       - 🇩🇪 德国-法兰克福-001-1A
-      - 🇺🇸 US-05-1A
-      - 🇯🇵 专线A1-日本3-流媒体全解锁3x
-      - 🇹🇼 台湾高速节点
-      - 🇺🇸 HY-03 | US
-      - 🇳🇱 D-荷兰1-YOUTUBE视频带宽足-1x
-      - 🇺🇸 D美国3-网页-视频浏览-1x
+      - NODE1-VPN-1C
+      - 🇩🇪 德国-法兰克福-002-1E
+      - NODE2-VPN-1B
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇩🇪 德国-法兰克福-003-1F
       - 🇨🇳 中国联通节点1
-      - 🇺🇸 专线A1-美国1-3x
-      - 🇭🇰 专线A1-香港2-极-TNCI--3x
-      - 🇸🇬 专线A1-新加坡2-3x
-      - 🇩🇪 德国-法兰克福-004-1A
+      - NODE1-VPN-1A
+      - 🇹🇼 台湾高速节点3
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇹🇼 台湾高速节点
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇩🇪 德国-法兰克福-003-1D
+      - NODE2-VPN-1A
+      - 🇺🇸 US-05
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇩🇪 德国-法兰克福-002-1D
+      - ML-IDO
+      - 🇩🇪 德国-法兰克福-002-1A
+      - NODE1-VPN-1E
+      - 🇩🇪 德国-法兰克福-002-1C
+      - 🇹🇼 台湾高速节点2
+      - NODE1-VPN-1D
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇩🇪 德国-法兰克福-004-1E
+      - NODE1-VPN-1F
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇩🇪 德国-法兰克福-001-1C
+      - NODE2-VPN-1E
+      - NODE1-VPN-1B
       - NODE2-VPN-1D
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇩🇪 德国-法兰克福-001-1F
       - 🇺🇸 HY-04 | US
+      - 🇺🇸 HY-05| US
+      - NODE2-VPN-1F
+      - 🇺🇸 HY-03 | US
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇺🇸 US-01
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇺🇸 HY-02 | US
+      - 🇺🇸 美国高速节点1
+      - B7-KPX
+      - 🇩🇪 德国-法兰克福-001-1D
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -356,351 +240,230 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇸🇬 专线A1-新加坡1-3x
-      - 🇰🇷 D韩国1-家宽住宅I-KKIP--1x
-      - 🇭🇰 专线A1-香港4-极-TLIC--3x
-      - 🇺🇸 US-01-1D
-      - 🇯🇵 D日本4-4x-双-AUKT--4x
-      - NODE1-VPN-1F
-      - 🇸🇬 D新加坡1-移动优化-1x
-      - 🇺🇸 US-05-1B
-      - YW-YWC
       - NODE2-VPN-1C
-      - MM-ARX
-      - 🇭🇰 D香港2-住宅家宽IP解锁NETFLIXTVB等-3x
-      - NODE2-VPN-1A
-      - 🇩🇪 德国-法兰克福-002-1C
-      - NODE1-VPN-1A
-      - 🇺🇸 美国高速节点1
-      - 🇺🇸 D美国2-网页-视频浏览-1x
-      - 🇺🇸 US-01-1B
-      - 🇯🇵 专线A1-日本4-家-IOKK--3x
-      - NODE2-VPN-1F
-      - 🇻🇳 专线A1-越南1家宽住宅IP全解锁-3x
-      - NODE1-VPN-1D
-      - 🇹🇼 台湾高速节点2
-      - 🇳🇱 专线A1-荷兰1-3x
-      - 🇩🇪 德国-法兰克福-004-1C
-      - NODE1-VPN-1C
-      - NODE2-VPN-1E
-      - 🇺🇸 专线A1-美国4-家宽IP银行 视频全解锁-3x
-      - 🇭🇰 专线A1-香港3-极-EIIP--3x
-      - 🇩🇪 德国-法兰克福-004-1B
-      - 🇺🇸 US-01-1C
-      - 🇹🇼 专线A1-台湾1-流媒体全解锁TIKTOK优秀3x
-      - 🇺🇸 专线A1-美国2-三网优化3x
-      - 🇺🇸 专线A1-美国3-三网优化Y2B视频快-3x
-      - 🇸🇬 D新加坡3-网页视频浏览-1x
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇺🇸 专线A1-美国8-双-DUIA--3x
-      - 5W-TAE
-      - 🇺🇸 D美国1-网页-视频浏览-2x
-      - 🇺🇸 US-05-1C
-      - 🇺🇸 HY-02 | US
-      - 🇹🇼 台湾高速节点3
-      - 🇩🇪 德国-法兰克福-001-1B
-      - NODE2-VPN-1B
-      - 🇻🇳 D越南1-家宽住宅IP-流媒体全解锁TIKTOK优秀-1x
-      - 🇩🇪 德国-法兰克福-001-1C
-      - NODE1-VPN-1E
-      - 🇸🇬 专线A1-新加坡3-3x
-      - 🇸🇬 D新加坡2-移动优化-1x
-      - 🇯🇵 D日本3-网页视频浏览-1x
-      - 🇺🇸 US-01-1A
-      - 🇬🇧 专线A1-伦敦3-解-BIBC--3x
-      - 🇺🇸 US-05-1D
-      - 🇺🇸 HY-05| US
-      - 🇯🇵 D日本2-网页视频浏览-1x
-      - 🇺🇸 D美国8-3x-双-IPLK-行全解锁
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇯🇵 专线A1-日本2-3x
-      - 🇰🇷 专线A1-韩国1家宽IP全解锁-3x
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇺🇸 专线A1-美国5-家宽 流媒体银行全解锁-3x
-      - NODE1-VPN-1B
-      - 🇺🇸 D美国4-双ISP家宽IP-适合AI-CLAUDE等-3x
+      - HD-PYW
       - 🇩🇪 德国-法兰克福-001-1A
-      - 🇺🇸 US-05-1A
-      - 🇯🇵 专线A1-日本3-流媒体全解锁3x
-      - 🇹🇼 台湾高速节点
-      - 🇺🇸 HY-03 | US
-      - 🇳🇱 D-荷兰1-YOUTUBE视频带宽足-1x
-      - 🇺🇸 D美国3-网页-视频浏览-1x
+      - NODE1-VPN-1C
+      - 🇩🇪 德国-法兰克福-002-1E
+      - NODE2-VPN-1B
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇩🇪 德国-法兰克福-003-1F
       - 🇨🇳 中国联通节点1
-      - 🇺🇸 专线A1-美国1-3x
-      - 🇭🇰 专线A1-香港2-极-TNCI--3x
-      - 🇸🇬 专线A1-新加坡2-3x
-      - 🇩🇪 德国-法兰克福-004-1A
+      - NODE1-VPN-1A
+      - 🇹🇼 台湾高速节点3
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇹🇼 台湾高速节点
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇩🇪 德国-法兰克福-003-1D
+      - NODE2-VPN-1A
+      - 🇺🇸 US-05
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇩🇪 德国-法兰克福-002-1D
+      - ML-IDO
+      - 🇩🇪 德国-法兰克福-002-1A
+      - NODE1-VPN-1E
+      - 🇩🇪 德国-法兰克福-002-1C
+      - 🇹🇼 台湾高速节点2
+      - NODE1-VPN-1D
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇩🇪 德国-法兰克福-004-1E
+      - NODE1-VPN-1F
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇩🇪 德国-法兰克福-001-1C
+      - NODE2-VPN-1E
+      - NODE1-VPN-1B
       - NODE2-VPN-1D
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇩🇪 德国-法兰克福-001-1F
       - 🇺🇸 HY-04 | US
+      - 🇺🇸 HY-05| US
+      - NODE2-VPN-1F
+      - 🇺🇸 HY-03 | US
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇺🇸 US-01
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇺🇸 HY-02 | US
+      - 🇺🇸 美国高速节点1
+      - B7-KPX
+      - 🇩🇪 德国-法兰克福-001-1D
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 专线A1-香港4-极-TLIC--3x
-      - 🇭🇰 D香港2-住宅家宽IP解锁NETFLIXTVB等-3x
-      - 🇹🇼 台湾高速节点2
-      - 🇭🇰 专线A1-香港3-极-EIIP--3x
-      - 🇹🇼 专线A1-台湾1-流媒体全解锁TIKTOK优秀3x
       - 🇹🇼 台湾高速节点3
       - 🇹🇼 台湾高速节点
-      - 🇭🇰 专线A1-香港2-极-TNCI--3x
+      - 🇹🇼 台湾高速节点2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇸🇬 专线A1-新加坡1-3x
-      - 🇰🇷 D韩国1-家宽住宅I-KKIP--1x
-      - 🇭🇰 专线A1-香港4-极-TLIC--3x
-      - 🇺🇸 US-01-1D
-      - 🇯🇵 D日本4-4x-双-AUKT--4x
-      - NODE1-VPN-1F
-      - 🇸🇬 D新加坡1-移动优化-1x
-      - 🇺🇸 US-05-1B
-      - YW-YWC
       - NODE2-VPN-1C
-      - MM-ARX
-      - 🇭🇰 D香港2-住宅家宽IP解锁NETFLIXTVB等-3x
-      - NODE2-VPN-1A
-      - 🇩🇪 德国-法兰克福-002-1C
-      - NODE1-VPN-1A
-      - 🇺🇸 美国高速节点1
-      - 🇺🇸 D美国2-网页-视频浏览-1x
-      - 🇺🇸 US-01-1B
-      - 🇯🇵 专线A1-日本4-家-IOKK--3x
-      - NODE2-VPN-1F
-      - 🇻🇳 专线A1-越南1家宽住宅IP全解锁-3x
-      - NODE1-VPN-1D
-      - 🇹🇼 台湾高速节点2
-      - 🇳🇱 专线A1-荷兰1-3x
-      - 🇩🇪 德国-法兰克福-004-1C
-      - NODE1-VPN-1C
-      - NODE2-VPN-1E
-      - 🇺🇸 专线A1-美国4-家宽IP银行 视频全解锁-3x
-      - 🇭🇰 专线A1-香港3-极-EIIP--3x
-      - 🇩🇪 德国-法兰克福-004-1B
-      - 🇺🇸 US-01-1C
-      - 🇹🇼 专线A1-台湾1-流媒体全解锁TIKTOK优秀3x
-      - 🇺🇸 专线A1-美国2-三网优化3x
-      - 🇺🇸 专线A1-美国3-三网优化Y2B视频快-3x
-      - 🇸🇬 D新加坡3-网页视频浏览-1x
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇺🇸 专线A1-美国8-双-DUIA--3x
-      - 5W-TAE
-      - 🇺🇸 D美国1-网页-视频浏览-2x
-      - 🇺🇸 US-05-1C
-      - 🇺🇸 HY-02 | US
-      - 🇹🇼 台湾高速节点3
-      - 🇩🇪 德国-法兰克福-001-1B
-      - NODE2-VPN-1B
-      - 🇻🇳 D越南1-家宽住宅IP-流媒体全解锁TIKTOK优秀-1x
-      - 🇩🇪 德国-法兰克福-001-1C
-      - NODE1-VPN-1E
-      - 🇸🇬 专线A1-新加坡3-3x
-      - 🇸🇬 D新加坡2-移动优化-1x
-      - 🇯🇵 D日本3-网页视频浏览-1x
-      - 🇺🇸 US-01-1A
-      - 🇬🇧 专线A1-伦敦3-解-BIBC--3x
-      - 🇺🇸 US-05-1D
-      - 🇺🇸 HY-05| US
-      - 🇯🇵 D日本2-网页视频浏览-1x
-      - 🇺🇸 D美国8-3x-双-IPLK-行全解锁
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇯🇵 专线A1-日本2-3x
-      - 🇰🇷 专线A1-韩国1家宽IP全解锁-3x
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇺🇸 专线A1-美国5-家宽 流媒体银行全解锁-3x
-      - NODE1-VPN-1B
-      - 🇺🇸 D美国4-双ISP家宽IP-适合AI-CLAUDE等-3x
+      - HD-PYW
       - 🇩🇪 德国-法兰克福-001-1A
-      - 🇺🇸 US-05-1A
-      - 🇯🇵 专线A1-日本3-流媒体全解锁3x
-      - 🇹🇼 台湾高速节点
-      - 🇺🇸 HY-03 | US
-      - 🇳🇱 D-荷兰1-YOUTUBE视频带宽足-1x
-      - 🇺🇸 D美国3-网页-视频浏览-1x
+      - NODE1-VPN-1C
+      - 🇩🇪 德国-法兰克福-002-1E
+      - NODE2-VPN-1B
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇩🇪 德国-法兰克福-003-1F
       - 🇨🇳 中国联通节点1
-      - 🇺🇸 专线A1-美国1-3x
-      - 🇭🇰 专线A1-香港2-极-TNCI--3x
-      - 🇸🇬 专线A1-新加坡2-3x
-      - 🇩🇪 德国-法兰克福-004-1A
+      - NODE1-VPN-1A
+      - 🇹🇼 台湾高速节点3
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇹🇼 台湾高速节点
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇩🇪 德国-法兰克福-003-1D
+      - NODE2-VPN-1A
+      - 🇺🇸 US-05
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇩🇪 德国-法兰克福-002-1D
+      - ML-IDO
+      - 🇩🇪 德国-法兰克福-002-1A
+      - NODE1-VPN-1E
+      - 🇩🇪 德国-法兰克福-002-1C
+      - 🇹🇼 台湾高速节点2
+      - NODE1-VPN-1D
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇩🇪 德国-法兰克福-004-1E
+      - NODE1-VPN-1F
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇩🇪 德国-法兰克福-001-1C
+      - NODE2-VPN-1E
+      - NODE1-VPN-1B
       - NODE2-VPN-1D
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇩🇪 德国-法兰克福-001-1F
       - 🇺🇸 HY-04 | US
+      - 🇺🇸 HY-05| US
+      - NODE2-VPN-1F
+      - 🇺🇸 HY-03 | US
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇺🇸 US-01
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇺🇸 HY-02 | US
+      - 🇺🇸 美国高速节点1
+      - B7-KPX
+      - 🇩🇪 德国-法兰克福-001-1D
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇸🇬 专线A1-新加坡1-3x
-      - 🇰🇷 D韩国1-家宽住宅I-KKIP--1x
-      - 🇭🇰 专线A1-香港4-极-TLIC--3x
-      - 🇺🇸 US-01-1D
-      - 🇯🇵 D日本4-4x-双-AUKT--4x
-      - NODE1-VPN-1F
-      - 🇸🇬 D新加坡1-移动优化-1x
-      - 🇺🇸 US-05-1B
-      - YW-YWC
       - NODE2-VPN-1C
-      - MM-ARX
-      - 🇭🇰 D香港2-住宅家宽IP解锁NETFLIXTVB等-3x
-      - NODE2-VPN-1A
-      - 🇩🇪 德国-法兰克福-002-1C
-      - NODE1-VPN-1A
-      - 🇺🇸 美国高速节点1
-      - 🇺🇸 D美国2-网页-视频浏览-1x
-      - 🇺🇸 US-01-1B
-      - 🇯🇵 专线A1-日本4-家-IOKK--3x
-      - NODE2-VPN-1F
-      - 🇻🇳 专线A1-越南1家宽住宅IP全解锁-3x
-      - NODE1-VPN-1D
-      - 🇹🇼 台湾高速节点2
-      - 🇳🇱 专线A1-荷兰1-3x
-      - 🇩🇪 德国-法兰克福-004-1C
-      - NODE1-VPN-1C
-      - NODE2-VPN-1E
-      - 🇺🇸 专线A1-美国4-家宽IP银行 视频全解锁-3x
-      - 🇭🇰 专线A1-香港3-极-EIIP--3x
-      - 🇩🇪 德国-法兰克福-004-1B
-      - 🇺🇸 US-01-1C
-      - 🇹🇼 专线A1-台湾1-流媒体全解锁TIKTOK优秀3x
-      - 🇺🇸 专线A1-美国2-三网优化3x
-      - 🇺🇸 专线A1-美国3-三网优化Y2B视频快-3x
-      - 🇸🇬 D新加坡3-网页视频浏览-1x
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇺🇸 专线A1-美国8-双-DUIA--3x
-      - 5W-TAE
-      - 🇺🇸 D美国1-网页-视频浏览-2x
-      - 🇺🇸 US-05-1C
-      - 🇺🇸 HY-02 | US
-      - 🇹🇼 台湾高速节点3
-      - 🇩🇪 德国-法兰克福-001-1B
-      - NODE2-VPN-1B
-      - 🇻🇳 D越南1-家宽住宅IP-流媒体全解锁TIKTOK优秀-1x
-      - 🇩🇪 德国-法兰克福-001-1C
-      - NODE1-VPN-1E
-      - 🇸🇬 专线A1-新加坡3-3x
-      - 🇸🇬 D新加坡2-移动优化-1x
-      - 🇯🇵 D日本3-网页视频浏览-1x
-      - 🇺🇸 US-01-1A
-      - 🇬🇧 专线A1-伦敦3-解-BIBC--3x
-      - 🇺🇸 US-05-1D
-      - 🇺🇸 HY-05| US
-      - 🇯🇵 D日本2-网页视频浏览-1x
-      - 🇺🇸 D美国8-3x-双-IPLK-行全解锁
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇯🇵 专线A1-日本2-3x
-      - 🇰🇷 专线A1-韩国1家宽IP全解锁-3x
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇺🇸 专线A1-美国5-家宽 流媒体银行全解锁-3x
-      - NODE1-VPN-1B
-      - 🇺🇸 D美国4-双ISP家宽IP-适合AI-CLAUDE等-3x
+      - HD-PYW
       - 🇩🇪 德国-法兰克福-001-1A
-      - 🇺🇸 US-05-1A
-      - 🇯🇵 专线A1-日本3-流媒体全解锁3x
-      - 🇹🇼 台湾高速节点
-      - 🇺🇸 HY-03 | US
-      - 🇳🇱 D-荷兰1-YOUTUBE视频带宽足-1x
-      - 🇺🇸 D美国3-网页-视频浏览-1x
+      - NODE1-VPN-1C
+      - 🇩🇪 德国-法兰克福-002-1E
+      - NODE2-VPN-1B
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇩🇪 德国-法兰克福-003-1F
       - 🇨🇳 中国联通节点1
-      - 🇺🇸 专线A1-美国1-3x
-      - 🇭🇰 专线A1-香港2-极-TNCI--3x
-      - 🇸🇬 专线A1-新加坡2-3x
-      - 🇩🇪 德国-法兰克福-004-1A
+      - NODE1-VPN-1A
+      - 🇹🇼 台湾高速节点3
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇹🇼 台湾高速节点
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇩🇪 德国-法兰克福-003-1D
+      - NODE2-VPN-1A
+      - 🇺🇸 US-05
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇩🇪 德国-法兰克福-002-1D
+      - ML-IDO
+      - 🇩🇪 德国-法兰克福-002-1A
+      - NODE1-VPN-1E
+      - 🇩🇪 德国-法兰克福-002-1C
+      - 🇹🇼 台湾高速节点2
+      - NODE1-VPN-1D
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇩🇪 德国-法兰克福-004-1E
+      - NODE1-VPN-1F
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇩🇪 德国-法兰克福-001-1C
+      - NODE2-VPN-1E
+      - NODE1-VPN-1B
       - NODE2-VPN-1D
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇩🇪 德国-法兰克福-001-1F
       - 🇺🇸 HY-04 | US
+      - 🇺🇸 HY-05| US
+      - NODE2-VPN-1F
+      - 🇺🇸 HY-03 | US
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇺🇸 US-01
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇺🇸 HY-02 | US
+      - 🇺🇸 美国高速节点1
+      - B7-KPX
+      - 🇩🇪 德国-法兰克福-001-1D
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇸🇬 专线A1-新加坡1-3x
-      - 🇰🇷 D韩国1-家宽住宅I-KKIP--1x
-      - 🇭🇰 专线A1-香港4-极-TLIC--3x
-      - 🇺🇸 US-01-1D
-      - 🇯🇵 D日本4-4x-双-AUKT--4x
-      - NODE1-VPN-1F
-      - 🇸🇬 D新加坡1-移动优化-1x
-      - 🇺🇸 US-05-1B
-      - YW-YWC
       - NODE2-VPN-1C
-      - MM-ARX
-      - 🇭🇰 D香港2-住宅家宽IP解锁NETFLIXTVB等-3x
-      - NODE2-VPN-1A
-      - 🇩🇪 德国-法兰克福-002-1C
-      - NODE1-VPN-1A
-      - 🇺🇸 美国高速节点1
-      - 🇺🇸 D美国2-网页-视频浏览-1x
-      - 🇺🇸 US-01-1B
-      - 🇯🇵 专线A1-日本4-家-IOKK--3x
-      - NODE2-VPN-1F
-      - 🇻🇳 专线A1-越南1家宽住宅IP全解锁-3x
-      - NODE1-VPN-1D
-      - 🇹🇼 台湾高速节点2
-      - 🇳🇱 专线A1-荷兰1-3x
-      - 🇩🇪 德国-法兰克福-004-1C
-      - NODE1-VPN-1C
-      - NODE2-VPN-1E
-      - 🇺🇸 专线A1-美国4-家宽IP银行 视频全解锁-3x
-      - 🇭🇰 专线A1-香港3-极-EIIP--3x
-      - 🇩🇪 德国-法兰克福-004-1B
-      - 🇺🇸 US-01-1C
-      - 🇹🇼 专线A1-台湾1-流媒体全解锁TIKTOK优秀3x
-      - 🇺🇸 专线A1-美国2-三网优化3x
-      - 🇺🇸 专线A1-美国3-三网优化Y2B视频快-3x
-      - 🇸🇬 D新加坡3-网页视频浏览-1x
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇺🇸 专线A1-美国8-双-DUIA--3x
-      - 5W-TAE
-      - 🇺🇸 D美国1-网页-视频浏览-2x
-      - 🇺🇸 US-05-1C
-      - 🇺🇸 HY-02 | US
-      - 🇹🇼 台湾高速节点3
-      - 🇩🇪 德国-法兰克福-001-1B
-      - NODE2-VPN-1B
-      - 🇻🇳 D越南1-家宽住宅IP-流媒体全解锁TIKTOK优秀-1x
-      - 🇩🇪 德国-法兰克福-001-1C
-      - NODE1-VPN-1E
-      - 🇸🇬 专线A1-新加坡3-3x
-      - 🇸🇬 D新加坡2-移动优化-1x
-      - 🇯🇵 D日本3-网页视频浏览-1x
-      - 🇺🇸 US-01-1A
-      - 🇬🇧 专线A1-伦敦3-解-BIBC--3x
-      - 🇺🇸 US-05-1D
-      - 🇺🇸 HY-05| US
-      - 🇯🇵 D日本2-网页视频浏览-1x
-      - 🇺🇸 D美国8-3x-双-IPLK-行全解锁
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇯🇵 专线A1-日本2-3x
-      - 🇰🇷 专线A1-韩国1家宽IP全解锁-3x
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇺🇸 专线A1-美国5-家宽 流媒体银行全解锁-3x
-      - NODE1-VPN-1B
-      - 🇺🇸 D美国4-双ISP家宽IP-适合AI-CLAUDE等-3x
+      - HD-PYW
       - 🇩🇪 德国-法兰克福-001-1A
-      - 🇺🇸 US-05-1A
-      - 🇯🇵 专线A1-日本3-流媒体全解锁3x
-      - 🇹🇼 台湾高速节点
-      - 🇺🇸 HY-03 | US
-      - 🇳🇱 D-荷兰1-YOUTUBE视频带宽足-1x
-      - 🇺🇸 D美国3-网页-视频浏览-1x
+      - NODE1-VPN-1C
+      - 🇩🇪 德国-法兰克福-002-1E
+      - NODE2-VPN-1B
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇩🇪 德国-法兰克福-003-1F
       - 🇨🇳 中国联通节点1
-      - 🇺🇸 专线A1-美国1-3x
-      - 🇭🇰 专线A1-香港2-极-TNCI--3x
-      - 🇸🇬 专线A1-新加坡2-3x
-      - 🇩🇪 德国-法兰克福-004-1A
+      - NODE1-VPN-1A
+      - 🇹🇼 台湾高速节点3
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇹🇼 台湾高速节点
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇩🇪 德国-法兰克福-003-1D
+      - NODE2-VPN-1A
+      - 🇺🇸 US-05
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇩🇪 德国-法兰克福-002-1D
+      - ML-IDO
+      - 🇩🇪 德国-法兰克福-002-1A
+      - NODE1-VPN-1E
+      - 🇩🇪 德国-法兰克福-002-1C
+      - 🇹🇼 台湾高速节点2
+      - NODE1-VPN-1D
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇩🇪 德国-法兰克福-004-1E
+      - NODE1-VPN-1F
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇩🇪 德国-法兰克福-001-1C
+      - NODE2-VPN-1E
+      - NODE1-VPN-1B
       - NODE2-VPN-1D
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇩🇪 德国-法兰克福-001-1F
       - 🇺🇸 HY-04 | US
+      - 🇺🇸 HY-05| US
+      - NODE2-VPN-1F
+      - 🇺🇸 HY-03 | US
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇺🇸 US-01
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇺🇸 HY-02 | US
+      - 🇺🇸 美国高速节点1
+      - B7-KPX
+      - 🇩🇪 德国-法兰克福-001-1D
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -716,85 +479,56 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇸🇬 专线A1-新加坡1-3x
-      - 🇰🇷 D韩国1-家宽住宅I-KKIP--1x
-      - 🇭🇰 专线A1-香港4-极-TLIC--3x
-      - 🇺🇸 US-01-1D
-      - 🇯🇵 D日本4-4x-双-AUKT--4x
-      - NODE1-VPN-1F
-      - 🇸🇬 D新加坡1-移动优化-1x
-      - 🇺🇸 US-05-1B
-      - YW-YWC
       - NODE2-VPN-1C
-      - MM-ARX
-      - 🇭🇰 D香港2-住宅家宽IP解锁NETFLIXTVB等-3x
-      - NODE2-VPN-1A
-      - 🇩🇪 德国-法兰克福-002-1C
-      - NODE1-VPN-1A
-      - 🇺🇸 美国高速节点1
-      - 🇺🇸 D美国2-网页-视频浏览-1x
-      - 🇺🇸 US-01-1B
-      - 🇯🇵 专线A1-日本4-家-IOKK--3x
-      - NODE2-VPN-1F
-      - 🇻🇳 专线A1-越南1家宽住宅IP全解锁-3x
-      - NODE1-VPN-1D
-      - 🇹🇼 台湾高速节点2
-      - 🇳🇱 专线A1-荷兰1-3x
-      - 🇩🇪 德国-法兰克福-004-1C
-      - NODE1-VPN-1C
-      - NODE2-VPN-1E
-      - 🇺🇸 专线A1-美国4-家宽IP银行 视频全解锁-3x
-      - 🇭🇰 专线A1-香港3-极-EIIP--3x
-      - 🇩🇪 德国-法兰克福-004-1B
-      - 🇺🇸 US-01-1C
-      - 🇹🇼 专线A1-台湾1-流媒体全解锁TIKTOK优秀3x
-      - 🇺🇸 专线A1-美国2-三网优化3x
-      - 🇺🇸 专线A1-美国3-三网优化Y2B视频快-3x
-      - 🇸🇬 D新加坡3-网页视频浏览-1x
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇺🇸 专线A1-美国8-双-DUIA--3x
-      - 5W-TAE
-      - 🇺🇸 D美国1-网页-视频浏览-2x
-      - 🇺🇸 US-05-1C
-      - 🇺🇸 HY-02 | US
-      - 🇹🇼 台湾高速节点3
-      - 🇩🇪 德国-法兰克福-001-1B
-      - NODE2-VPN-1B
-      - 🇻🇳 D越南1-家宽住宅IP-流媒体全解锁TIKTOK优秀-1x
-      - 🇩🇪 德国-法兰克福-001-1C
-      - NODE1-VPN-1E
-      - 🇸🇬 专线A1-新加坡3-3x
-      - 🇸🇬 D新加坡2-移动优化-1x
-      - 🇯🇵 D日本3-网页视频浏览-1x
-      - 🇺🇸 US-01-1A
-      - 🇬🇧 专线A1-伦敦3-解-BIBC--3x
-      - 🇺🇸 US-05-1D
-      - 🇺🇸 HY-05| US
-      - 🇯🇵 D日本2-网页视频浏览-1x
-      - 🇺🇸 D美国8-3x-双-IPLK-行全解锁
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇯🇵 专线A1-日本2-3x
-      - 🇰🇷 专线A1-韩国1家宽IP全解锁-3x
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇺🇸 专线A1-美国5-家宽 流媒体银行全解锁-3x
-      - NODE1-VPN-1B
-      - 🇺🇸 D美国4-双ISP家宽IP-适合AI-CLAUDE等-3x
+      - HD-PYW
       - 🇩🇪 德国-法兰克福-001-1A
-      - 🇺🇸 US-05-1A
-      - 🇯🇵 专线A1-日本3-流媒体全解锁3x
-      - 🇹🇼 台湾高速节点
-      - 🇺🇸 HY-03 | US
-      - 🇳🇱 D-荷兰1-YOUTUBE视频带宽足-1x
-      - 🇺🇸 D美国3-网页-视频浏览-1x
+      - NODE1-VPN-1C
+      - 🇩🇪 德国-法兰克福-002-1E
+      - NODE2-VPN-1B
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇩🇪 德国-法兰克福-003-1F
       - 🇨🇳 中国联通节点1
-      - 🇺🇸 专线A1-美国1-3x
-      - 🇭🇰 专线A1-香港2-极-TNCI--3x
-      - 🇸🇬 专线A1-新加坡2-3x
-      - 🇩🇪 德国-法兰克福-004-1A
+      - NODE1-VPN-1A
+      - 🇹🇼 台湾高速节点3
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇹🇼 台湾高速节点
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇩🇪 德国-法兰克福-003-1D
+      - NODE2-VPN-1A
+      - 🇺🇸 US-05
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇩🇪 德国-法兰克福-002-1D
+      - ML-IDO
+      - 🇩🇪 德国-法兰克福-002-1A
+      - NODE1-VPN-1E
+      - 🇩🇪 德国-法兰克福-002-1C
+      - 🇹🇼 台湾高速节点2
+      - NODE1-VPN-1D
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇩🇪 德国-法兰克福-004-1E
+      - NODE1-VPN-1F
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇩🇪 德国-法兰克福-001-1C
+      - NODE2-VPN-1E
+      - NODE1-VPN-1B
       - NODE2-VPN-1D
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇩🇪 德国-法兰克福-001-1F
       - 🇺🇸 HY-04 | US
+      - 🇺🇸 HY-05| US
+      - NODE2-VPN-1F
+      - 🇺🇸 HY-03 | US
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇺🇸 US-01
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇺🇸 HY-02 | US
+      - 🇺🇸 美国高速节点1
+      - B7-KPX
+      - 🇩🇪 德国-法兰克福-001-1D
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
