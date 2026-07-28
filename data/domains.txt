@@ -3492,8 +3492,8 @@ https://x1.mumu268.indevs.in	@#@#		@#@#		@#@#
 https://aa.csmojbk.top	@#@#		@#@#		@#@#	
 https://www.ztnext.dpdns.org	@#@#		@#@#		@#@#	
 https://www.443808.xyz	@#@#		@#@#		@#@#	
-https://sub.aiyhok.com	@#@#		@#@#		@#@#	
-https://www.aiyhok.com	@#@#		@#@#		@#@#	
+https://sub.aiyhok.com	@#@#		@#@#		@#@#	/api?scheme=
+https://www.aiyhok.com	@#@#		@#@#		@#@#	/api?scheme=
 https://panel.linknode.me	@#@#		@#@#		@#@#	
 https://api.vpn2.cc	@#@#		@#@#		@#@#	
 https://dddd01-lvm.acgcloud.top	@#@#		@#@#		@#@#	
@@ -3738,3 +3738,5 @@ https://www.mofa.mom	@#@#		@#@#		@#@#
 https://mofa.mom	@#@#		@#@#		@#@#	
 https://domflare.com	@#@#		@#@#		@#@#	
 https://ydtjs.cc	@#@#		@#@#		@#@#	
+https://fengcheyun.club	@#@#		@#@#		@#@#	
+https://fengcheyun.co	@#@#		@#@#		@#@#	
