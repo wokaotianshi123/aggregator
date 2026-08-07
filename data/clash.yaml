@@ -5,443 +5,407 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇰🇷 KR韩国2-1B, server: kr2.catzl.top, port: 40042, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1A, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 4d39a1f0-6eb7-49bd-8738-b64ed873cb70, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1B, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 2663e436-f4a9-4f73-8e3f-024fffd3f02d, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 HK-A-1C, server: 207.57.128.27, port: 8081, type: vless, uuid: 087126da-17e7-4ff6-b47f-7a17da963d2f, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bilDohzULHmvZE7BP9ym6URVT6R1DM06v2LLqNo7lh0, short-id: "a1b2c3d4" }, servername: aws.amazon.com, client-fingerprint: safari, network: tcp, udp: true}
-  - {name: 备用线路 A, server: cdn2.caihongmao.org, port: 443, type: vless, uuid: 9f19b115-e7b1-4d3d-8a8c-df462acf798c, tls: true, servername: cdn2.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn2.caihongmao.org}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1B, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 2663e436-f4a9-4f73-8e3f-024fffd3f02d, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇰🇷 韩国节点-B-1D, server: kr-b.bnsss.cc, port: 8080, type: vless, uuid: 98006c75-793a-4892-80f6-88538aed5ff7, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GP-JgvD9yK2QmWphYepITYbwqecHp1XeqHcCB-wlaC4, short-id: "1e92c68e" }, servername: aws.amazon.com, client-fingerprint: ios, network: tcp, udp: true}
-  - {name: 🇻🇳 VN越南2-1B, server: vn2.nbjc.top, port: 11682, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
-  - {name: 🇬🇧 UK英国1-1A, server: uk1.catzl.top, port: 40081, type: anytls, password: 8f57d794-64ec-432a-8a79-1066ada34e71, udp: true}
-  - {name: 🇹🇼 TW台湾1-1A, server: tw1.catzl.top, port: 40071, type: anytls, password: 8f57d794-64ec-432a-8a79-1066ada34e71, udp: true}
-  - {name: 🇺🇸 US美国3-1A, server: us3.catzl.top, port: 40023, type: anytls, password: 8f57d794-64ec-432a-8a79-1066ada34e71, udp: true}
-  - {name: 🇸🇬 SG新加坡1-1B, server: sg1.catzl.top, port: 40031, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
-  - {name: 🇺🇸 US美国2-1A, server: us2.catzl.top, port: 40022, type: anytls, password: 8f57d794-64ec-432a-8a79-1066ada34e71, udp: true}
-  - {name: 🇬🇧 UK英国2-1B, server: uk2.catzl.top, port: 40082, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
-  - {name: 🇰🇷 韩国节点-B-1E, server: kr-b.bnsss.cc, port: 8080, type: vless, uuid: 3a19568d-6974-4d98-8276-cc2a69fabee9, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GP-JgvD9yK2QmWphYepITYbwqecHp1XeqHcCB-wlaC4, short-id: "1e92c68e" }, servername: aws.amazon.com, client-fingerprint: firefox, network: tcp, udp: true}
-  - {name: 🇭🇰 HK香港3-1B, server: hk3.catzl.top, port: 40013, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
-  - {name: 🇩🇪 DE德国1-1A, server: de1.catzl.top, port: 40061, type: anytls, password: 8f57d794-64ec-432a-8a79-1066ada34e71, udp: true}
-  - {name: 🇭🇰 HK-A-1E, server: 207.57.128.27, port: 8081, type: vless, uuid: 3a19568d-6974-4d98-8276-cc2a69fabee9, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bilDohzULHmvZE7BP9ym6URVT6R1DM06v2LLqNo7lh0, short-id: "a1b2c3d4" }, servername: aws.amazon.com, client-fingerprint: safari, network: tcp, udp: true}
-  - {name: 🇬🇧 UK英国2-1A, server: uk2.catzl.top, port: 40082, type: anytls, password: 8f57d794-64ec-432a-8a79-1066ada34e71, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1H, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 35505ca5-da5e-406f-a579-88e537425735, udp: true}
-  - {name: 🇭🇰 HK香港2-1A, server: hk2.catzl.top, port: 40012, type: anytls, password: 8f57d794-64ec-432a-8a79-1066ada34e71, udp: true}
-  - {name: 🇻🇳 VN越南1-1A, server: vn1.nbjc.top, port: 11681, type: anytls, password: 8f57d794-64ec-432a-8a79-1066ada34e71, udp: true}
-  - {name: 🇺🇸 US 美国 1, server: mg.l3v1.my, port: 443, type: anytls, password: e44f9319-ec88-4337-8624-215347254bbf, udp: true, skip-cert-verify: true}
-  - {name: 🇭🇰 HK-A-1B, server: 207.57.128.27, port: 8081, type: vless, uuid: 4785a971-ee67-43f3-9662-0fc0d1e04e69, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bilDohzULHmvZE7BP9ym6URVT6R1DM06v2LLqNo7lh0, short-id: "a1b2c3d4" }, servername: aws.amazon.com, client-fingerprint: qq, network: tcp, udp: true}
-  - {name: 🇻🇳 VN越南1-1B, server: vn1.nbjc.top, port: 11681, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
-  - {name: 🇯🇵 JP日本1-1A, server: jp4.catzl.top, port: 40054, type: anytls, password: 8f57d794-64ec-432a-8a79-1066ada34e71, udp: true}
-  - {name: 🇻🇳 VN越南3-1A, server: vn3.nbjc.top, port: 11683, type: anytls, password: 8f57d794-64ec-432a-8a79-1066ada34e71, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1B, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 2663e436-f4a9-4f73-8e3f-024fffd3f02d, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 DE德国1-1B, server: de1.catzl.top, port: 40061, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
-  - {name: 🇩🇪 DE德国3-1A, server: de3.catzl.top, port: 40063, type: anytls, password: 8f57d794-64ec-432a-8a79-1066ada34e71, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1C, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 69b8eec5-8c56-4c0b-8329-ba4540243980, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1E, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: da91ef3b-4fff-4c54-914c-165fc296b568, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1A, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 234b096b-e10a-4732-93a4-868955f7f857, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1E, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: da91ef3b-4fff-4c54-914c-165fc296b568, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇮🇹 IT意大利1-1A, server: it1.nbjc.top, port: 40091, type: anytls, password: 8f57d794-64ec-432a-8a79-1066ada34e71, udp: true}
-  - {name: 🇹🇼 TW台湾2-1B, server: tw2.catzl.top, port: 40072, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
-  - {name: 🇸🇬 优选新线 B, server: cdn5.caihongmao.org, port: 443, type: vless, uuid: 9f19b115-e7b1-4d3d-8a8c-df462acf798c, tls: true, servername: cdn5.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn5.caihongmao.org}}, udp: true}
-  - {name: 🇸🇬 SG新加坡1-1A, server: sg1.catzl.top, port: 40031, type: anytls, password: 8f57d794-64ec-432a-8a79-1066ada34e71, udp: true}
-  - {name: 🇸🇬 优选新线 D, server: cdn7.caihongmao.org, port: 443, type: vless, uuid: 9f19b115-e7b1-4d3d-8a8c-df462acf798c, tls: true, servername: cdn7.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn7.caihongmao.org}}, udp: true}
-  - {name: 🇺🇸 US美国2-1B, server: us2.catzl.top, port: 40022, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
-  - {name: M4-PSC, server: empty.node, port: 443, type: trojan, password: 487e85ad-bc8c-40d3-948f-36c8963ecb6b, sni: empty.node, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1B, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 6e2c086d-50c6-44c2-aea9-887d45c69cc6, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1E, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: da91ef3b-4fff-4c54-914c-165fc296b568, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇮🇹 IT意大利2-1B, server: it2.nbjc.top, port: 40092, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
-  - {name: 🇩🇪 DE德国3-1B, server: de3.catzl.top, port: 40063, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
-  - {name: 🇭🇰 HK香港2-1B, server: hk2.catzl.top, port: 40012, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
-  - {name: 🇭🇰 HK香港1-1B, server: hk1.catzl.top, port: 40011, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
-  - {name: 🇹🇼 台湾高速节点2, server: 118.232.199.29, port: 443, type: trojan, password: 2b03faaa-bf88-4ff1-9c24-44db2e02d0a2, sni: node2.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1G, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: ff801128-49cc-4e73-b47b-3e4060f44c35, udp: true}
-  - {name: 🇰🇷 韩国节点-B-1B, server: kr-b.bnsss.cc, port: 8080, type: vless, uuid: 4785a971-ee67-43f3-9662-0fc0d1e04e69, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GP-JgvD9yK2QmWphYepITYbwqecHp1XeqHcCB-wlaC4, short-id: "1e92c68e" }, servername: aws.amazon.com, client-fingerprint: edge, network: tcp, udp: true}
-  - {name: 🇹🇼 TW台湾3-1B, server: tw3.catzl.top, port: 40073, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1D, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: fab382ab-520f-4879-b4fe-74f248e3a699, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 HK香港1-1A, server: hk1.catzl.top, port: 40011, type: anytls, password: 8f57d794-64ec-432a-8a79-1066ada34e71, udp: true}
-  - {name: 🇻🇳 VN越南2-1A, server: vn2.nbjc.top, port: 11682, type: anytls, password: 8f57d794-64ec-432a-8a79-1066ada34e71, udp: true}
-  - {name: 🇨🇳 中国联通节点1, server: 115.231.220.33, port: 5443, type: trojan, password: 2b03faaa-bf88-4ff1-9c24-44db2e02d0a2, sni: nodecn1.jiayinetwork.es, skip-cert-verify: true, udp: true}
-  - {name: 🇹🇼 TW台湾2-1A, server: tw2.catzl.top, port: 40072, type: anytls, password: 8f57d794-64ec-432a-8a79-1066ada34e71, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1C, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 69b8eec5-8c56-4c0b-8329-ba4540243980, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1C, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: e2b84dfc-1670-4aaa-a9ae-82bc6ddf5518, udp: true}
-  - {name: 🇩🇪 DE德国2-1A, server: de2.catzl.top, port: 40062, type: anytls, password: 8f57d794-64ec-432a-8a79-1066ada34e71, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1D, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: fab382ab-520f-4879-b4fe-74f248e3a699, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇸🇬 优选新线 A, server: cdn4.caihongmao.org, port: 443, type: vless, uuid: 9f19b115-e7b1-4d3d-8a8c-df462acf798c, tls: true, servername: cdn4.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn4.caihongmao.org}}, udp: true}
-  - {name: 🇸🇬 优选新线 C, server: cdn6.caihongmao.org, port: 443, type: vless, uuid: 9f19b115-e7b1-4d3d-8a8c-df462acf798c, tls: true, servername: cdn6.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn6.caihongmao.org}}, udp: true}
-  - {name: 🇬🇧 UK英国1-1B, server: uk1.catzl.top, port: 40081, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1A, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 4d39a1f0-6eb7-49bd-8738-b64ed873cb70, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇰🇷 KR韩国1-1B, server: kr1.catzl.top, port: 40041, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1A, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 4d39a1f0-6eb7-49bd-8738-b64ed873cb70, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1C, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 69b8eec5-8c56-4c0b-8329-ba4540243980, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇰🇷 韩国节点-B-1C, server: kr-b.bnsss.cc, port: 8080, type: vless, uuid: 087126da-17e7-4ff6-b47f-7a17da963d2f, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GP-JgvD9yK2QmWphYepITYbwqecHp1XeqHcCB-wlaC4, short-id: "1e92c68e" }, servername: aws.amazon.com, client-fingerprint: ios, network: tcp, udp: true}
-  - {name: 🇯🇵 JP日本2-1B, server: jp5.catzl.top, port: 40055, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
-  - {name: 🇹🇼 TW台湾1-1B, server: tw1.catzl.top, port: 40071, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1B, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 2663e436-f4a9-4f73-8e3f-024fffd3f02d, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇸🇬 SG新加坡2-1B, server: sg2.catzl.top, port: 40032, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
-  - {name: 🇸🇬 SG新加坡2-1A, server: sg2.catzl.top, port: 40032, type: anytls, password: 8f57d794-64ec-432a-8a79-1066ada34e71, udp: true}
-  - {name: G I C A B N H T H N, server: expired.example.com, port: 80, type: vmess, uuid: e2846adb-a51e-4af1-9e06-47d0db7016f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /expired, headers: {Host: expired.example.com}}, udp: true}
-  - {name: 🇹🇼 TW台湾3-1A, server: tw3.catzl.top, port: 40073, type: anytls, password: 8f57d794-64ec-432a-8a79-1066ada34e71, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1D, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: fab382ab-520f-4879-b4fe-74f248e3a699, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1A, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 4d39a1f0-6eb7-49bd-8738-b64ed873cb70, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇺🇸 US美国1-1A, server: us1.catzl.top, port: 40021, type: anytls, password: 8f57d794-64ec-432a-8a79-1066ada34e71, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1E, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 09151720-25c8-46fe-af9b-f6c349ea254e, udp: true}
-  - {name: 🇰🇷 KR韩国2-1A, server: kr2.catzl.top, port: 40042, type: anytls, password: 8f57d794-64ec-432a-8a79-1066ada34e71, udp: true}
-  - {name: 🇮🇹 IT意大利1-1B, server: it1.nbjc.top, port: 40091, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
-  - {name: 🇰🇷 KR韩国1-1A, server: kr1.catzl.top, port: 40041, type: anytls, password: 8f57d794-64ec-432a-8a79-1066ada34e71, udp: true}
-  - {name: 🇹🇼 台湾高速节点3, server: 118.232.199.14, port: 443, type: trojan, password: 2b03faaa-bf88-4ff1-9c24-44db2e02d0a2, sni: node3.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国高速节点1, server: 144.34.178.66, port: 1443, type: trojan, password: 2b03faaa-bf88-4ff1-9c24-44db2e02d0a2, sni: node4.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港HK6, server: hk6.e3v5.com, port: 10086, type: ss, cipher: 2022-blake3-aes-128-gcm, password: OTU1NzRlMDQzZTk3NjM4Yw==:ZTQ0ZjkzMTktZWM4OC00Mw==, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1C, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 69b8eec5-8c56-4c0b-8329-ba4540243980, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇺🇸 US美国1-1B, server: us1.catzl.top, port: 40021, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
-  - {name: 🇺🇸 US美国3-1B, server: us3.catzl.top, port: 40023, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
-  - {name: 🇩🇪 DE德国2-1B, server: de2.catzl.top, port: 40062, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
-  - {name: 🇮🇹 IT意大利3-1B, server: it3.nbjc.top, port: 40093, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
-  - {name: 🇭🇰 HK香港3-1A, server: hk3.catzl.top, port: 40013, type: anytls, password: 8f57d794-64ec-432a-8a79-1066ada34e71, udp: true}
-  - {name: 🇭🇰 HK-A-1D, server: 207.57.128.27, port: 8081, type: vless, uuid: 98006c75-793a-4892-80f6-88538aed5ff7, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bilDohzULHmvZE7BP9ym6URVT6R1DM06v2LLqNo7lh0, short-id: "a1b2c3d4" }, servername: aws.amazon.com, client-fingerprint: edge, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1D, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: fab382ab-520f-4879-b4fe-74f248e3a699, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇻🇳 VN越南3-1B, server: vn3.nbjc.top, port: 11683, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
-  - {name: 🇮🇹 IT意大利2-1A, server: it2.nbjc.top, port: 40092, type: anytls, password: 8f57d794-64ec-432a-8a79-1066ada34e71, udp: true}
-  - {name: 🇯🇵 JP日本1-1B, server: jp4.catzl.top, port: 40054, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1F, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: d61c56bd-cc6d-400f-ba8d-704550a3e9dd, udp: true}
-  - {name: 🇭🇰 HK-A-1A, server: 207.57.128.27, port: 8081, type: vless, uuid: f6585e24-74a4-4ad8-a524-3ee517ddc38a, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bilDohzULHmvZE7BP9ym6URVT6R1DM06v2LLqNo7lh0, short-id: "a1b2c3d4" }, servername: aws.amazon.com, client-fingerprint: edge, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1E, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: da91ef3b-4fff-4c54-914c-165fc296b568, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1D, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: da91ef3b-4fff-4c54-914c-165fc296b568, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇭🇰 HK香港1, server: hk1.catzl.top, port: 40011, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1D, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: da91ef3b-4fff-4c54-914c-165fc296b568, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇭🇰 HK香港3, server: hk3.catzl.top, port: 40013, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
+  - {name: 🇭🇰 HK-A-1B, server: 207.57.128.27, port: 8081, type: vless, uuid: 3a19568d-6974-4d98-8276-cc2a69fabee9, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bilDohzULHmvZE7BP9ym6URVT6R1DM06v2LLqNo7lh0, short-id: "a1b2c3d4" }, servername: aws.amazon.com, client-fingerprint: qq, network: tcp, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1I, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: ca416cd9-feaa-4337-ba4e-3cbcfb6720e7, udp: true}
+  - {name: 🇭🇰 HK-A-1E, server: 207.57.128.27, port: 8081, type: vless, uuid: f6585e24-74a4-4ad8-a524-3ee517ddc38a, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bilDohzULHmvZE7BP9ym6URVT6R1DM06v2LLqNo7lh0, short-id: "a1b2c3d4" }, servername: aws.amazon.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1F, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: e75b6043-739e-4b00-a5e4-2b5ac1b99866, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 备用线路 A-1B, server: cdn2.caihongmao.org, port: 443, type: vless, uuid: 6dda4052-8310-4db1-afea-bd48433a6799, tls: true, servername: cdn2.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn2.caihongmao.org}}, udp: true}
+  - {name: 🇨🇳 中国联通节点1, server: 115.231.220.33, port: 5443, type: trojan, password: c36be343-ace7-421c-8205-10654b681ebc, sni: nodecn1.jiayinetwork.es, skip-cert-verify: true, udp: true}
+  - {name: 🇻🇳 VN越南1, server: vn1.nbjc.top, port: 11681, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1C, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 4d39a1f0-6eb7-49bd-8738-b64ed873cb70, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇭🇰 HK香港2, server: hk2.catzl.top, port: 40012, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
+  - {name: 🇯🇵 JP日本2, server: jp5.catzl.top, port: 40055, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
+  - {name: 🇸🇬 优选新线 A-1A, server: cdn4.caihongmao.org, port: 443, type: vless, uuid: 9f19b115-e7b1-4d3d-8a8c-df462acf798c, tls: true, servername: cdn4.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn4.caihongmao.org}}, udp: true}
+  - {name: 🇩🇪 DE德国3, server: de3.catzl.top, port: 40063, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1E, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 2663e436-f4a9-4f73-8e3f-024fffd3f02d, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
   - {name: 🇭🇰 HONG KONG 01-1D, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: a8e0aa23-57da-41ec-8f24-d7c1b27499af, udp: true}
-  - {name: 🇰🇷 韩国节点-B-1A, server: kr-b.bnsss.cc, port: 8080, type: vless, uuid: f6585e24-74a4-4ad8-a524-3ee517ddc38a, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GP-JgvD9yK2QmWphYepITYbwqecHp1XeqHcCB-wlaC4, short-id: "1e92c68e" }, servername: aws.amazon.com, client-fingerprint: safari, network: tcp, udp: true}
-  - {name: 🇮🇹 IT意大利3-1A, server: it3.nbjc.top, port: 40093, type: anytls, password: 8f57d794-64ec-432a-8a79-1066ada34e71, udp: true}
-  - {name: 🇹🇼 台湾高速节点, server: 103.137.63.77, port: 443, type: trojan, password: 2b03faaa-bf88-4ff1-9c24-44db2e02d0a2, sni: node1.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: 我的, server: 198.2.237.18, port: 8882, type: ss, cipher: chacha20-ietf-poly1305, password: 7a3e4f20-b477-4d5c-b8cc-c3b06c701831, udp: true}
-  - {name: 🇯🇵 JP日本2-1A, server: jp5.catzl.top, port: 40055, type: anytls, password: 8f57d794-64ec-432a-8a79-1066ada34e71, udp: true}
+  - {name: 🇺🇸 US美国2, server: us2.catzl.top, port: 40022, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
+  - {name: 🇮🇹 IT意大利3, server: it3.nbjc.top, port: 40093, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1A, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: fab382ab-520f-4879-b4fe-74f248e3a699, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇸🇬 优选新线 D-1B, server: cdn7.caihongmao.org, port: 443, type: vless, uuid: 6dda4052-8310-4db1-afea-bd48433a6799, tls: true, servername: cdn7.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn7.caihongmao.org}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1C, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 4d39a1f0-6eb7-49bd-8738-b64ed873cb70, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇰🇷 KR韩国2, server: kr2.catzl.top, port: 40042, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
+  - {name: 🇭🇰 HK-A-1A, server: 207.57.128.27, port: 8081, type: vless, uuid: 98006c75-793a-4892-80f6-88538aed5ff7, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bilDohzULHmvZE7BP9ym6URVT6R1DM06v2LLqNo7lh0, short-id: "a1b2c3d4" }, servername: aws.amazon.com, client-fingerprint: ios, network: tcp, udp: true}
+  - {name: 🇺🇸 US美国1, server: us1.catzl.top, port: 40021, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1B, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 69b8eec5-8c56-4c0b-8329-ba4540243980, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇰🇷 KR韩国1, server: kr1.catzl.top, port: 40041, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
+  - {name: 🇸🇬 优选新线 A-1B, server: cdn4.caihongmao.org, port: 443, type: vless, uuid: 6dda4052-8310-4db1-afea-bd48433a6799, tls: true, servername: cdn4.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn4.caihongmao.org}}, udp: true}
+  - {name: 🇰🇷 韩国节点-B-1B, server: kr-b.bnsss.cc, port: 8080, type: vless, uuid: 3a19568d-6974-4d98-8276-cc2a69fabee9, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GP-JgvD9yK2QmWphYepITYbwqecHp1XeqHcCB-wlaC4, short-id: "1e92c68e" }, servername: aws.amazon.com, client-fingerprint: edge, network: tcp, udp: true}
+  - {name: 🇸🇬 优选新线 C-1A, server: cdn6.caihongmao.org, port: 443, type: vless, uuid: 9f19b115-e7b1-4d3d-8a8c-df462acf798c, tls: true, servername: cdn6.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn6.caihongmao.org}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1G, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 21c442a2-b4c5-470b-9def-262ed8c0bfd5, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇭🇰 HK-01, server: m.cqwer.xyz, port: 443, type: vmess, uuid: bf48eef6-1ae5-4808-8fa3-4cf47fffba6f, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1E, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 2663e436-f4a9-4f73-8e3f-024fffd3f02d, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1G, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: e2b84dfc-1670-4aaa-a9ae-82bc6ddf5518, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1A, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: d61c56bd-cc6d-400f-ba8d-704550a3e9dd, udp: true}
+  - {name: 🇻🇳 VN越南2, server: vn2.nbjc.top, port: 11682, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1D, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: da91ef3b-4fff-4c54-914c-165fc296b568, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇯🇵 JP日本1, server: jp4.catzl.top, port: 40054, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1B, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 69b8eec5-8c56-4c0b-8329-ba4540243980, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1C, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 4d39a1f0-6eb7-49bd-8738-b64ed873cb70, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇰🇷 韩国节点-B-1A, server: kr-b.bnsss.cc, port: 8080, type: vless, uuid: 98006c75-793a-4892-80f6-88538aed5ff7, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GP-JgvD9yK2QmWphYepITYbwqecHp1XeqHcCB-wlaC4, short-id: "1e92c68e" }, servername: aws.amazon.com, client-fingerprint: safari, network: tcp, udp: true}
+  - {name: 🇸🇬 优选新线 B-1B, server: cdn5.caihongmao.org, port: 443, type: vless, uuid: 6dda4052-8310-4db1-afea-bd48433a6799, tls: true, servername: cdn5.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn5.caihongmao.org}}, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1H, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 09151720-25c8-46fe-af9b-f6c349ea254e, udp: true}
+  - {name: 🇸🇬 SG新加坡1, server: sg1.catzl.top, port: 40031, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
+  - {name: 🇮🇹 IT意大利1, server: it1.nbjc.top, port: 40091, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
+  - {name: 🇭🇰 香港HK6-1A, server: hk6.e3v5.com, port: 10086, type: ss, cipher: 2022-blake3-aes-128-gcm, password: OTU1NzRlMDQzZTk3NjM4Yw==:ZTQ0ZjkzMTktZWM4OC00Mw==, udp: true}
+  - {name: 🇰🇷 韩国节点-B-1C, server: kr-b.bnsss.cc, port: 8080, type: vless, uuid: 4785a971-ee67-43f3-9662-0fc0d1e04e69, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GP-JgvD9yK2QmWphYepITYbwqecHp1XeqHcCB-wlaC4, short-id: "1e92c68e" }, servername: aws.amazon.com, client-fingerprint: ios, network: tcp, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1C, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 6e2c086d-50c6-44c2-aea9-887d45c69cc6, udp: true}
+  - {name: 🇹🇼 台湾高速节点, server: 103.137.63.77, port: 443, type: trojan, password: c36be343-ace7-421c-8205-10654b681ebc, sni: node1.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1F, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: e75b6043-739e-4b00-a5e4-2b5ac1b99866, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇹🇼 台湾高速节点3, server: 118.232.199.14, port: 443, type: trojan, password: c36be343-ace7-421c-8205-10654b681ebc, sni: node3.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1E, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 2663e436-f4a9-4f73-8e3f-024fffd3f02d, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇰🇷 韩国节点-B-1E, server: kr-b.bnsss.cc, port: 8080, type: vless, uuid: f6585e24-74a4-4ad8-a524-3ee517ddc38a, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GP-JgvD9yK2QmWphYepITYbwqecHp1XeqHcCB-wlaC4, short-id: "1e92c68e" }, servername: aws.amazon.com, client-fingerprint: safari, network: tcp, udp: true}
+  - {name: 🇭🇰 香港HK6-1B, server: hk6.e3v5.com, port: 10086, type: ss, cipher: 2022-blake3-aes-128-gcm, password: OTU1NzRlMDQzZTk3NjM4Yw==:NTg3NTMwZjEtMjJlMS00YQ==, udp: true}
+  - {name: 🇬🇧 UK英国1, server: uk1.catzl.top, port: 40081, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1D, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: da91ef3b-4fff-4c54-914c-165fc296b568, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇬🇧 UK英国2, server: uk2.catzl.top, port: 40082, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
+  - {name: 我的, server: 198.2.237.18, port: 8882, type: ss, cipher: chacha20-ietf-poly1305, password: f99d77dd-fcd6-467a-976e-33360779db8f, udp: true}
+  - {name: 🇭🇰 HK-A-1C, server: 207.57.128.27, port: 8081, type: vless, uuid: 4785a971-ee67-43f3-9662-0fc0d1e04e69, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bilDohzULHmvZE7BP9ym6URVT6R1DM06v2LLqNo7lh0, short-id: "a1b2c3d4" }, servername: aws.amazon.com, client-fingerprint: safari, network: tcp, udp: true}
+  - {name: 🇹🇼 TW台湾3, server: tw3.catzl.top, port: 40073, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
+  - {name: 🇹🇼 TW台湾1, server: tw1.catzl.top, port: 40071, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1B, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: ff801128-49cc-4e73-b47b-3e4060f44c35, udp: true}
+  - {name: 🇩🇪 DE德国1, server: de1.catzl.top, port: 40061, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
+  - {name: 备用线路 A-1A, server: cdn2.caihongmao.org, port: 443, type: vless, uuid: 9f19b115-e7b1-4d3d-8a8c-df462acf798c, tls: true, servername: cdn2.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn2.caihongmao.org}}, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1E, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 234b096b-e10a-4732-93a4-868955f7f857, udp: true}
+  - {name: 🇹🇼 TW台湾2, server: tw2.catzl.top, port: 40072, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
+  - {name: G I C A B N H T H N, server: expired.example.com, port: 80, type: vmess, uuid: b0bb4e16-afd6-47bc-84ec-9783f015bc7f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /expired, headers: {Host: expired.example.com}}, udp: true}
+  - {name: 🇸🇬 优选新线 C-1B, server: cdn6.caihongmao.org, port: 443, type: vless, uuid: 6dda4052-8310-4db1-afea-bd48433a6799, tls: true, servername: cdn6.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn6.caihongmao.org}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1G, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 21c442a2-b4c5-470b-9def-262ed8c0bfd5, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇮🇹 IT意大利2, server: it2.nbjc.top, port: 40092, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
+  - {name: 🇺🇸 US美国3, server: us3.catzl.top, port: 40023, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
+  - {name: 🇸🇬 SG新加坡2, server: sg2.catzl.top, port: 40032, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
+  - {name: 🇭🇰 HK-A-1D, server: 207.57.128.27, port: 8081, type: vless, uuid: 087126da-17e7-4ff6-b47f-7a17da963d2f, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bilDohzULHmvZE7BP9ym6URVT6R1DM06v2LLqNo7lh0, short-id: "a1b2c3d4" }, servername: aws.amazon.com, client-fingerprint: firefox, network: tcp, udp: true}
+  - {name: MG-FZP, server: empty.node, port: 443, type: trojan, password: 77cf4e90-ebd3-405c-8abb-6d00709125b5, sni: empty.node, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1A, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: fab382ab-520f-4879-b4fe-74f248e3a699, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 US 美国 1-1B, server: mg.l3v1.my, port: 443, type: anytls, password: 587530f1-22e1-4a79-a5b6-0f59be33fb66, udp: true, skip-cert-verify: true}
+  - {name: 🇰🇷 韩国节点-B-1D, server: kr-b.bnsss.cc, port: 8080, type: vless, uuid: 087126da-17e7-4ff6-b47f-7a17da963d2f, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GP-JgvD9yK2QmWphYepITYbwqecHp1XeqHcCB-wlaC4, short-id: "1e92c68e" }, servername: aws.amazon.com, client-fingerprint: ios, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1F, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: e75b6043-739e-4b00-a5e4-2b5ac1b99866, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1F, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: e75b6043-739e-4b00-a5e4-2b5ac1b99866, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1E, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 2663e436-f4a9-4f73-8e3f-024fffd3f02d, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇻🇳 VN越南3, server: vn3.nbjc.top, port: 11683, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1G, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 21c442a2-b4c5-470b-9def-262ed8c0bfd5, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇹🇼 台湾高速节点2, server: 118.232.199.29, port: 443, type: trojan, password: c36be343-ace7-421c-8205-10654b681ebc, sni: node2.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1A, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: fab382ab-520f-4879-b4fe-74f248e3a699, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇸🇬 优选新线 B-1A, server: cdn5.caihongmao.org, port: 443, type: vless, uuid: 9f19b115-e7b1-4d3d-8a8c-df462acf798c, tls: true, servername: cdn5.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn5.caihongmao.org}}, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1F, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 35505ca5-da5e-406f-a579-88e537425735, udp: true}
+  - {name: 🇩🇪 DE德国2, server: de2.catzl.top, port: 40062, type: anytls, password: 57202e7a-13b6-44fd-af8a-118246b800e9, udp: true}
+  - {name: 🇺🇸 US 美国 1-1A, server: mg.l3v1.my, port: 443, type: anytls, password: e44f9319-ec88-4337-8624-215347254bbf, udp: true, skip-cert-verify: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1B, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 69b8eec5-8c56-4c0b-8329-ba4540243980, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1C, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 4d39a1f0-6eb7-49bd-8738-b64ed873cb70, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 美国高速节点1, server: 144.34.178.66, port: 1443, type: trojan, password: c36be343-ace7-421c-8205-10654b681ebc, sni: node4.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 优选新线 D-1A, server: cdn7.caihongmao.org, port: 443, type: vless, uuid: 9f19b115-e7b1-4d3d-8a8c-df462acf798c, tls: true, servername: cdn7.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn7.caihongmao.org}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1A, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: fab382ab-520f-4879-b4fe-74f248e3a699, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1G, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 21c442a2-b4c5-470b-9def-262ed8c0bfd5, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1B, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 69b8eec5-8c56-4c0b-8329-ba4540243980, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇰🇷 KR韩国2-1B
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇭🇰 HK-A-1C
-      - 备用线路 A
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇰🇷 韩国节点-B-1D
-      - 🇻🇳 VN越南2-1B
-      - 🇬🇧 UK英国1-1A
-      - 🇹🇼 TW台湾1-1A
-      - 🇺🇸 US美国3-1A
-      - 🇸🇬 SG新加坡1-1B
-      - 🇺🇸 US美国2-1A
-      - 🇬🇧 UK英国2-1B
-      - 🇰🇷 韩国节点-B-1E
-      - 🇭🇰 HK香港3-1B
-      - 🇩🇪 DE德国1-1A
-      - 🇭🇰 HK-A-1E
-      - 🇬🇧 UK英国2-1A
-      - 🇭🇰 HONG KONG 01-1H
-      - 🇭🇰 HK香港2-1A
-      - 🇻🇳 VN越南1-1A
-      - 🇺🇸 US 美国 1
-      - 🇭🇰 HK-A-1B
-      - 🇻🇳 VN越南1-1B
-      - 🇯🇵 JP日本1-1A
-      - 🇻🇳 VN越南3-1A
-      - 🇩🇪 德国-法兰克福-004-1B
-      - 🇩🇪 DE德国1-1B
-      - 🇩🇪 DE德国3-1A
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇩🇪 德国-法兰克福-001-1E
-      - 🇭🇰 HONG KONG 01-1A
-      - 🇩🇪 德国-法兰克福-004-1E
-      - 🇮🇹 IT意大利1-1A
-      - 🇹🇼 TW台湾2-1B
-      - 🇸🇬 优选新线 B
-      - 🇸🇬 SG新加坡1-1A
-      - 🇸🇬 优选新线 D
-      - 🇺🇸 US美国2-1B
-      - M4-PSC
-      - 🇭🇰 HONG KONG 01-1B
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇮🇹 IT意大利2-1B
-      - 🇩🇪 DE德国3-1B
-      - 🇭🇰 HK香港2-1B
-      - 🇭🇰 HK香港1-1B
-      - 🇹🇼 台湾高速节点2
-      - 🇭🇰 HONG KONG 01-1G
-      - 🇰🇷 韩国节点-B-1B
-      - 🇹🇼 TW台湾3-1B
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇭🇰 HK香港1-1A
-      - 🇻🇳 VN越南2-1A
-      - 🇨🇳 中国联通节点1
-      - 🇹🇼 TW台湾2-1A
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇭🇰 HONG KONG 01-1C
-      - 🇩🇪 DE德国2-1A
       - 🇩🇪 德国-法兰克福-002-1D
-      - 🇸🇬 优选新线 A
-      - 🇸🇬 优选新线 C
-      - 🇬🇧 UK英国1-1B
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇰🇷 KR韩国1-1B
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇩🇪 德国-法兰克福-002-1C
-      - 🇰🇷 韩国节点-B-1C
-      - 🇯🇵 JP日本2-1B
-      - 🇹🇼 TW台湾1-1B
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇸🇬 SG新加坡2-1B
-      - 🇸🇬 SG新加坡2-1A
-      - G I C A B N H T H N
-      - 🇹🇼 TW台湾3-1A
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇺🇸 US美国1-1A
-      - 🇭🇰 HONG KONG 01-1E
-      - 🇰🇷 KR韩国2-1A
-      - 🇮🇹 IT意大利1-1B
-      - 🇰🇷 KR韩国1-1A
-      - 🇹🇼 台湾高速节点3
-      - 🇺🇸 美国高速节点1
-      - 🇭🇰 香港HK6
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇺🇸 US美国1-1B
-      - 🇺🇸 US美国3-1B
-      - 🇩🇪 DE德国2-1B
-      - 🇮🇹 IT意大利3-1B
-      - 🇭🇰 HK香港3-1A
-      - 🇭🇰 HK-A-1D
+      - 🇭🇰 HK香港1
       - 🇩🇪 德国-法兰克福-001-1D
-      - 🇻🇳 VN越南3-1B
-      - 🇮🇹 IT意大利2-1A
-      - 🇯🇵 JP日本1-1B
-      - 🇭🇰 HONG KONG 01-1F
-      - 🇭🇰 HK-A-1A
+      - 🇭🇰 HK香港3
+      - 🇭🇰 HK-A-1B
+      - 🇭🇰 HONG KONG 01-1I
+      - 🇭🇰 HK-A-1E
+      - 🇩🇪 德国-法兰克福-003-1F
+      - 备用线路 A-1B
+      - 🇨🇳 中国联通节点1
+      - 🇻🇳 VN越南1
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇭🇰 HK香港2
+      - 🇯🇵 JP日本2
+      - 🇸🇬 优选新线 A-1A
+      - 🇩🇪 DE德国3
       - 🇩🇪 德国-法兰克福-003-1E
       - 🇭🇰 HONG KONG 01-1D
+      - 🇺🇸 US美国2
+      - 🇮🇹 IT意大利3
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇸🇬 优选新线 D-1B
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇰🇷 KR韩国2
+      - 🇭🇰 HK-A-1A
+      - 🇺🇸 US美国1
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇰🇷 KR韩国1
+      - 🇸🇬 优选新线 A-1B
+      - 🇰🇷 韩国节点-B-1B
+      - 🇸🇬 优选新线 C-1A
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇭🇰 HK-01
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇭🇰 HONG KONG 01-1G
+      - 🇭🇰 HONG KONG 01-1A
+      - 🇻🇳 VN越南2
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇯🇵 JP日本1
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇩🇪 德国-法兰克福-002-1C
       - 🇰🇷 韩国节点-B-1A
-      - 🇮🇹 IT意大利3-1A
+      - 🇸🇬 优选新线 B-1B
+      - 🇭🇰 HONG KONG 01-1H
+      - 🇸🇬 SG新加坡1
+      - 🇮🇹 IT意大利1
+      - 🇭🇰 香港HK6-1A
+      - 🇰🇷 韩国节点-B-1C
+      - 🇭🇰 HONG KONG 01-1C
       - 🇹🇼 台湾高速节点
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇹🇼 台湾高速节点3
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇰🇷 韩国节点-B-1E
+      - 🇭🇰 香港HK6-1B
+      - 🇬🇧 UK英国1
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇬🇧 UK英国2
       - 我的
-      - 🇯🇵 JP日本2-1A
+      - 🇭🇰 HK-A-1C
+      - 🇹🇼 TW台湾3
+      - 🇹🇼 TW台湾1
+      - 🇭🇰 HONG KONG 01-1B
+      - 🇩🇪 DE德国1
+      - 备用线路 A-1A
+      - 🇭🇰 HONG KONG 01-1E
+      - 🇹🇼 TW台湾2
+      - G I C A B N H T H N
+      - 🇸🇬 优选新线 C-1B
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇮🇹 IT意大利2
+      - 🇺🇸 US美国3
+      - 🇸🇬 SG新加坡2
+      - 🇭🇰 HK-A-1D
+      - MG-FZP
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇺🇸 US 美国 1-1B
+      - 🇰🇷 韩国节点-B-1D
+      - 🇩🇪 德国-法兰克福-001-1F
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇻🇳 VN越南3
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 🇹🇼 台湾高速节点2
+      - 🇩🇪 德国-法兰克福-001-1A
+      - 🇸🇬 优选新线 B-1A
+      - 🇭🇰 HONG KONG 01-1F
+      - 🇩🇪 DE德国2
+      - 🇺🇸 US 美国 1-1A
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇺🇸 美国高速节点1
+      - 🇸🇬 优选新线 D-1A
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇩🇪 德国-法兰克福-001-1B
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇰🇷 KR韩国2-1B
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇭🇰 HK-A-1C
-      - 备用线路 A
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇰🇷 韩国节点-B-1D
-      - 🇻🇳 VN越南2-1B
-      - 🇬🇧 UK英国1-1A
-      - 🇹🇼 TW台湾1-1A
-      - 🇺🇸 US美国3-1A
-      - 🇸🇬 SG新加坡1-1B
-      - 🇺🇸 US美国2-1A
-      - 🇬🇧 UK英国2-1B
-      - 🇰🇷 韩国节点-B-1E
-      - 🇭🇰 HK香港3-1B
-      - 🇩🇪 DE德国1-1A
-      - 🇭🇰 HK-A-1E
-      - 🇬🇧 UK英国2-1A
-      - 🇭🇰 HONG KONG 01-1H
-      - 🇭🇰 HK香港2-1A
-      - 🇻🇳 VN越南1-1A
-      - 🇺🇸 US 美国 1
-      - 🇭🇰 HK-A-1B
-      - 🇻🇳 VN越南1-1B
-      - 🇯🇵 JP日本1-1A
-      - 🇻🇳 VN越南3-1A
-      - 🇩🇪 德国-法兰克福-004-1B
-      - 🇩🇪 DE德国1-1B
-      - 🇩🇪 DE德国3-1A
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇩🇪 德国-法兰克福-001-1E
-      - 🇭🇰 HONG KONG 01-1A
-      - 🇩🇪 德国-法兰克福-004-1E
-      - 🇮🇹 IT意大利1-1A
-      - 🇹🇼 TW台湾2-1B
-      - 🇸🇬 优选新线 B
-      - 🇸🇬 SG新加坡1-1A
-      - 🇸🇬 优选新线 D
-      - 🇺🇸 US美国2-1B
-      - M4-PSC
-      - 🇭🇰 HONG KONG 01-1B
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇮🇹 IT意大利2-1B
-      - 🇩🇪 DE德国3-1B
-      - 🇭🇰 HK香港2-1B
-      - 🇭🇰 HK香港1-1B
-      - 🇹🇼 台湾高速节点2
-      - 🇭🇰 HONG KONG 01-1G
-      - 🇰🇷 韩国节点-B-1B
-      - 🇹🇼 TW台湾3-1B
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇭🇰 HK香港1-1A
-      - 🇻🇳 VN越南2-1A
-      - 🇨🇳 中国联通节点1
-      - 🇹🇼 TW台湾2-1A
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇭🇰 HONG KONG 01-1C
-      - 🇩🇪 DE德国2-1A
       - 🇩🇪 德国-法兰克福-002-1D
-      - 🇸🇬 优选新线 A
-      - 🇸🇬 优选新线 C
-      - 🇬🇧 UK英国1-1B
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇰🇷 KR韩国1-1B
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇩🇪 德国-法兰克福-002-1C
-      - 🇰🇷 韩国节点-B-1C
-      - 🇯🇵 JP日本2-1B
-      - 🇹🇼 TW台湾1-1B
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇸🇬 SG新加坡2-1B
-      - 🇸🇬 SG新加坡2-1A
-      - G I C A B N H T H N
-      - 🇹🇼 TW台湾3-1A
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇺🇸 US美国1-1A
-      - 🇭🇰 HONG KONG 01-1E
-      - 🇰🇷 KR韩国2-1A
-      - 🇮🇹 IT意大利1-1B
-      - 🇰🇷 KR韩国1-1A
-      - 🇹🇼 台湾高速节点3
-      - 🇺🇸 美国高速节点1
-      - 🇭🇰 香港HK6
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇺🇸 US美国1-1B
-      - 🇺🇸 US美国3-1B
-      - 🇩🇪 DE德国2-1B
-      - 🇮🇹 IT意大利3-1B
-      - 🇭🇰 HK香港3-1A
-      - 🇭🇰 HK-A-1D
+      - 🇭🇰 HK香港1
       - 🇩🇪 德国-法兰克福-001-1D
-      - 🇻🇳 VN越南3-1B
-      - 🇮🇹 IT意大利2-1A
-      - 🇯🇵 JP日本1-1B
-      - 🇭🇰 HONG KONG 01-1F
-      - 🇭🇰 HK-A-1A
+      - 🇭🇰 HK香港3
+      - 🇭🇰 HK-A-1B
+      - 🇭🇰 HONG KONG 01-1I
+      - 🇭🇰 HK-A-1E
+      - 🇩🇪 德国-法兰克福-003-1F
+      - 备用线路 A-1B
+      - 🇨🇳 中国联通节点1
+      - 🇻🇳 VN越南1
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇭🇰 HK香港2
+      - 🇯🇵 JP日本2
+      - 🇸🇬 优选新线 A-1A
+      - 🇩🇪 DE德国3
       - 🇩🇪 德国-法兰克福-003-1E
       - 🇭🇰 HONG KONG 01-1D
+      - 🇺🇸 US美国2
+      - 🇮🇹 IT意大利3
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇸🇬 优选新线 D-1B
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇰🇷 KR韩国2
+      - 🇭🇰 HK-A-1A
+      - 🇺🇸 US美国1
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇰🇷 KR韩国1
+      - 🇸🇬 优选新线 A-1B
+      - 🇰🇷 韩国节点-B-1B
+      - 🇸🇬 优选新线 C-1A
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇭🇰 HK-01
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇭🇰 HONG KONG 01-1G
+      - 🇭🇰 HONG KONG 01-1A
+      - 🇻🇳 VN越南2
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇯🇵 JP日本1
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇩🇪 德国-法兰克福-002-1C
       - 🇰🇷 韩国节点-B-1A
-      - 🇮🇹 IT意大利3-1A
+      - 🇸🇬 优选新线 B-1B
+      - 🇭🇰 HONG KONG 01-1H
+      - 🇸🇬 SG新加坡1
+      - 🇮🇹 IT意大利1
+      - 🇭🇰 香港HK6-1A
+      - 🇰🇷 韩国节点-B-1C
+      - 🇭🇰 HONG KONG 01-1C
       - 🇹🇼 台湾高速节点
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇹🇼 台湾高速节点3
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇰🇷 韩国节点-B-1E
+      - 🇭🇰 香港HK6-1B
+      - 🇬🇧 UK英国1
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇬🇧 UK英国2
       - 我的
-      - 🇯🇵 JP日本2-1A
+      - 🇭🇰 HK-A-1C
+      - 🇹🇼 TW台湾3
+      - 🇹🇼 TW台湾1
+      - 🇭🇰 HONG KONG 01-1B
+      - 🇩🇪 DE德国1
+      - 备用线路 A-1A
+      - 🇭🇰 HONG KONG 01-1E
+      - 🇹🇼 TW台湾2
+      - G I C A B N H T H N
+      - 🇸🇬 优选新线 C-1B
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇮🇹 IT意大利2
+      - 🇺🇸 US美国3
+      - 🇸🇬 SG新加坡2
+      - 🇭🇰 HK-A-1D
+      - MG-FZP
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇺🇸 US 美国 1-1B
+      - 🇰🇷 韩国节点-B-1D
+      - 🇩🇪 德国-法兰克福-001-1F
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇻🇳 VN越南3
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 🇹🇼 台湾高速节点2
+      - 🇩🇪 德国-法兰克福-001-1A
+      - 🇸🇬 优选新线 B-1A
+      - 🇭🇰 HONG KONG 01-1F
+      - 🇩🇪 DE德国2
+      - 🇺🇸 US 美国 1-1A
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇺🇸 美国高速节点1
+      - 🇸🇬 优选新线 D-1A
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇩🇪 德国-法兰克福-001-1B
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇰🇷 KR韩国2-1B
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇭🇰 HK-A-1C
-      - 备用线路 A
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇰🇷 韩国节点-B-1D
-      - 🇻🇳 VN越南2-1B
-      - 🇬🇧 UK英国1-1A
-      - 🇹🇼 TW台湾1-1A
-      - 🇺🇸 US美国3-1A
-      - 🇸🇬 SG新加坡1-1B
-      - 🇺🇸 US美国2-1A
-      - 🇬🇧 UK英国2-1B
-      - 🇰🇷 韩国节点-B-1E
-      - 🇭🇰 HK香港3-1B
-      - 🇩🇪 DE德国1-1A
-      - 🇭🇰 HK-A-1E
-      - 🇬🇧 UK英国2-1A
-      - 🇭🇰 HONG KONG 01-1H
-      - 🇭🇰 HK香港2-1A
-      - 🇻🇳 VN越南1-1A
-      - 🇺🇸 US 美国 1
-      - 🇭🇰 HK-A-1B
-      - 🇻🇳 VN越南1-1B
-      - 🇯🇵 JP日本1-1A
-      - 🇻🇳 VN越南3-1A
-      - 🇩🇪 德国-法兰克福-004-1B
-      - 🇩🇪 DE德国1-1B
-      - 🇩🇪 DE德国3-1A
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇩🇪 德国-法兰克福-001-1E
-      - 🇭🇰 HONG KONG 01-1A
-      - 🇩🇪 德国-法兰克福-004-1E
-      - 🇮🇹 IT意大利1-1A
-      - 🇹🇼 TW台湾2-1B
-      - 🇸🇬 优选新线 B
-      - 🇸🇬 SG新加坡1-1A
-      - 🇸🇬 优选新线 D
-      - 🇺🇸 US美国2-1B
-      - M4-PSC
-      - 🇭🇰 HONG KONG 01-1B
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇮🇹 IT意大利2-1B
-      - 🇩🇪 DE德国3-1B
-      - 🇭🇰 HK香港2-1B
-      - 🇭🇰 HK香港1-1B
-      - 🇹🇼 台湾高速节点2
-      - 🇭🇰 HONG KONG 01-1G
-      - 🇰🇷 韩国节点-B-1B
-      - 🇹🇼 TW台湾3-1B
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇭🇰 HK香港1-1A
-      - 🇻🇳 VN越南2-1A
-      - 🇨🇳 中国联通节点1
-      - 🇹🇼 TW台湾2-1A
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇭🇰 HONG KONG 01-1C
-      - 🇩🇪 DE德国2-1A
       - 🇩🇪 德国-法兰克福-002-1D
-      - 🇸🇬 优选新线 A
-      - 🇸🇬 优选新线 C
-      - 🇬🇧 UK英国1-1B
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇰🇷 KR韩国1-1B
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇩🇪 德国-法兰克福-002-1C
-      - 🇰🇷 韩国节点-B-1C
-      - 🇯🇵 JP日本2-1B
-      - 🇹🇼 TW台湾1-1B
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇸🇬 SG新加坡2-1B
-      - 🇸🇬 SG新加坡2-1A
-      - G I C A B N H T H N
-      - 🇹🇼 TW台湾3-1A
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇺🇸 US美国1-1A
-      - 🇭🇰 HONG KONG 01-1E
-      - 🇰🇷 KR韩国2-1A
-      - 🇮🇹 IT意大利1-1B
-      - 🇰🇷 KR韩国1-1A
-      - 🇹🇼 台湾高速节点3
-      - 🇺🇸 美国高速节点1
-      - 🇭🇰 香港HK6
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇺🇸 US美国1-1B
-      - 🇺🇸 US美国3-1B
-      - 🇩🇪 DE德国2-1B
-      - 🇮🇹 IT意大利3-1B
-      - 🇭🇰 HK香港3-1A
-      - 🇭🇰 HK-A-1D
+      - 🇭🇰 HK香港1
       - 🇩🇪 德国-法兰克福-001-1D
-      - 🇻🇳 VN越南3-1B
-      - 🇮🇹 IT意大利2-1A
-      - 🇯🇵 JP日本1-1B
-      - 🇭🇰 HONG KONG 01-1F
-      - 🇭🇰 HK-A-1A
+      - 🇭🇰 HK香港3
+      - 🇭🇰 HK-A-1B
+      - 🇭🇰 HONG KONG 01-1I
+      - 🇭🇰 HK-A-1E
+      - 🇩🇪 德国-法兰克福-003-1F
+      - 备用线路 A-1B
+      - 🇨🇳 中国联通节点1
+      - 🇻🇳 VN越南1
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇭🇰 HK香港2
+      - 🇯🇵 JP日本2
+      - 🇸🇬 优选新线 A-1A
+      - 🇩🇪 DE德国3
       - 🇩🇪 德国-法兰克福-003-1E
       - 🇭🇰 HONG KONG 01-1D
+      - 🇺🇸 US美国2
+      - 🇮🇹 IT意大利3
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇸🇬 优选新线 D-1B
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇰🇷 KR韩国2
+      - 🇭🇰 HK-A-1A
+      - 🇺🇸 US美国1
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇰🇷 KR韩国1
+      - 🇸🇬 优选新线 A-1B
+      - 🇰🇷 韩国节点-B-1B
+      - 🇸🇬 优选新线 C-1A
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇭🇰 HK-01
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇭🇰 HONG KONG 01-1G
+      - 🇭🇰 HONG KONG 01-1A
+      - 🇻🇳 VN越南2
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇯🇵 JP日本1
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇩🇪 德国-法兰克福-002-1C
       - 🇰🇷 韩国节点-B-1A
-      - 🇮🇹 IT意大利3-1A
+      - 🇸🇬 优选新线 B-1B
+      - 🇭🇰 HONG KONG 01-1H
+      - 🇸🇬 SG新加坡1
+      - 🇮🇹 IT意大利1
+      - 🇭🇰 香港HK6-1A
+      - 🇰🇷 韩国节点-B-1C
+      - 🇭🇰 HONG KONG 01-1C
       - 🇹🇼 台湾高速节点
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇹🇼 台湾高速节点3
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇰🇷 韩国节点-B-1E
+      - 🇭🇰 香港HK6-1B
+      - 🇬🇧 UK英国1
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇬🇧 UK英国2
       - 我的
-      - 🇯🇵 JP日本2-1A
+      - 🇭🇰 HK-A-1C
+      - 🇹🇼 TW台湾3
+      - 🇹🇼 TW台湾1
+      - 🇭🇰 HONG KONG 01-1B
+      - 🇩🇪 DE德国1
+      - 备用线路 A-1A
+      - 🇭🇰 HONG KONG 01-1E
+      - 🇹🇼 TW台湾2
+      - G I C A B N H T H N
+      - 🇸🇬 优选新线 C-1B
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇮🇹 IT意大利2
+      - 🇺🇸 US美国3
+      - 🇸🇬 SG新加坡2
+      - 🇭🇰 HK-A-1D
+      - MG-FZP
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇺🇸 US 美国 1-1B
+      - 🇰🇷 韩国节点-B-1D
+      - 🇩🇪 德国-法兰克福-001-1F
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇻🇳 VN越南3
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 🇹🇼 台湾高速节点2
+      - 🇩🇪 德国-法兰克福-001-1A
+      - 🇸🇬 优选新线 B-1A
+      - 🇭🇰 HONG KONG 01-1F
+      - 🇩🇪 DE德国2
+      - 🇺🇸 US 美国 1-1A
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇺🇸 美国高速节点1
+      - 🇸🇬 优选新线 D-1A
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇩🇪 德国-法兰克福-001-1B
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -460,463 +424,422 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇰🇷 KR韩国2-1B
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇭🇰 HK-A-1C
-      - 备用线路 A
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇰🇷 韩国节点-B-1D
-      - 🇻🇳 VN越南2-1B
-      - 🇬🇧 UK英国1-1A
-      - 🇹🇼 TW台湾1-1A
-      - 🇺🇸 US美国3-1A
-      - 🇸🇬 SG新加坡1-1B
-      - 🇺🇸 US美国2-1A
-      - 🇬🇧 UK英国2-1B
-      - 🇰🇷 韩国节点-B-1E
-      - 🇭🇰 HK香港3-1B
-      - 🇩🇪 DE德国1-1A
-      - 🇭🇰 HK-A-1E
-      - 🇬🇧 UK英国2-1A
-      - 🇭🇰 HONG KONG 01-1H
-      - 🇭🇰 HK香港2-1A
-      - 🇻🇳 VN越南1-1A
-      - 🇺🇸 US 美国 1
-      - 🇭🇰 HK-A-1B
-      - 🇻🇳 VN越南1-1B
-      - 🇯🇵 JP日本1-1A
-      - 🇻🇳 VN越南3-1A
-      - 🇩🇪 德国-法兰克福-004-1B
-      - 🇩🇪 DE德国1-1B
-      - 🇩🇪 DE德国3-1A
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇩🇪 德国-法兰克福-001-1E
-      - 🇭🇰 HONG KONG 01-1A
-      - 🇩🇪 德国-法兰克福-004-1E
-      - 🇮🇹 IT意大利1-1A
-      - 🇹🇼 TW台湾2-1B
-      - 🇸🇬 优选新线 B
-      - 🇸🇬 SG新加坡1-1A
-      - 🇸🇬 优选新线 D
-      - 🇺🇸 US美国2-1B
-      - M4-PSC
-      - 🇭🇰 HONG KONG 01-1B
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇮🇹 IT意大利2-1B
-      - 🇩🇪 DE德国3-1B
-      - 🇭🇰 HK香港2-1B
-      - 🇭🇰 HK香港1-1B
-      - 🇹🇼 台湾高速节点2
-      - 🇭🇰 HONG KONG 01-1G
-      - 🇰🇷 韩国节点-B-1B
-      - 🇹🇼 TW台湾3-1B
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇭🇰 HK香港1-1A
-      - 🇻🇳 VN越南2-1A
-      - 🇨🇳 中国联通节点1
-      - 🇹🇼 TW台湾2-1A
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇭🇰 HONG KONG 01-1C
-      - 🇩🇪 DE德国2-1A
       - 🇩🇪 德国-法兰克福-002-1D
-      - 🇸🇬 优选新线 A
-      - 🇸🇬 优选新线 C
-      - 🇬🇧 UK英国1-1B
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇰🇷 KR韩国1-1B
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇩🇪 德国-法兰克福-002-1C
-      - 🇰🇷 韩国节点-B-1C
-      - 🇯🇵 JP日本2-1B
-      - 🇹🇼 TW台湾1-1B
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇸🇬 SG新加坡2-1B
-      - 🇸🇬 SG新加坡2-1A
-      - G I C A B N H T H N
-      - 🇹🇼 TW台湾3-1A
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇺🇸 US美国1-1A
-      - 🇭🇰 HONG KONG 01-1E
-      - 🇰🇷 KR韩国2-1A
-      - 🇮🇹 IT意大利1-1B
-      - 🇰🇷 KR韩国1-1A
-      - 🇹🇼 台湾高速节点3
-      - 🇺🇸 美国高速节点1
-      - 🇭🇰 香港HK6
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇺🇸 US美国1-1B
-      - 🇺🇸 US美国3-1B
-      - 🇩🇪 DE德国2-1B
-      - 🇮🇹 IT意大利3-1B
-      - 🇭🇰 HK香港3-1A
-      - 🇭🇰 HK-A-1D
+      - 🇭🇰 HK香港1
       - 🇩🇪 德国-法兰克福-001-1D
-      - 🇻🇳 VN越南3-1B
-      - 🇮🇹 IT意大利2-1A
-      - 🇯🇵 JP日本1-1B
-      - 🇭🇰 HONG KONG 01-1F
-      - 🇭🇰 HK-A-1A
+      - 🇭🇰 HK香港3
+      - 🇭🇰 HK-A-1B
+      - 🇭🇰 HONG KONG 01-1I
+      - 🇭🇰 HK-A-1E
+      - 🇩🇪 德国-法兰克福-003-1F
+      - 备用线路 A-1B
+      - 🇨🇳 中国联通节点1
+      - 🇻🇳 VN越南1
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇭🇰 HK香港2
+      - 🇯🇵 JP日本2
+      - 🇸🇬 优选新线 A-1A
+      - 🇩🇪 DE德国3
       - 🇩🇪 德国-法兰克福-003-1E
       - 🇭🇰 HONG KONG 01-1D
+      - 🇺🇸 US美国2
+      - 🇮🇹 IT意大利3
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇸🇬 优选新线 D-1B
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇰🇷 KR韩国2
+      - 🇭🇰 HK-A-1A
+      - 🇺🇸 US美国1
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇰🇷 KR韩国1
+      - 🇸🇬 优选新线 A-1B
+      - 🇰🇷 韩国节点-B-1B
+      - 🇸🇬 优选新线 C-1A
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇭🇰 HK-01
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇭🇰 HONG KONG 01-1G
+      - 🇭🇰 HONG KONG 01-1A
+      - 🇻🇳 VN越南2
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇯🇵 JP日本1
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇩🇪 德国-法兰克福-002-1C
       - 🇰🇷 韩国节点-B-1A
-      - 🇮🇹 IT意大利3-1A
+      - 🇸🇬 优选新线 B-1B
+      - 🇭🇰 HONG KONG 01-1H
+      - 🇸🇬 SG新加坡1
+      - 🇮🇹 IT意大利1
+      - 🇭🇰 香港HK6-1A
+      - 🇰🇷 韩国节点-B-1C
+      - 🇭🇰 HONG KONG 01-1C
       - 🇹🇼 台湾高速节点
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇹🇼 台湾高速节点3
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇰🇷 韩国节点-B-1E
+      - 🇭🇰 香港HK6-1B
+      - 🇬🇧 UK英国1
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇬🇧 UK英国2
       - 我的
-      - 🇯🇵 JP日本2-1A
+      - 🇭🇰 HK-A-1C
+      - 🇹🇼 TW台湾3
+      - 🇹🇼 TW台湾1
+      - 🇭🇰 HONG KONG 01-1B
+      - 🇩🇪 DE德国1
+      - 备用线路 A-1A
+      - 🇭🇰 HONG KONG 01-1E
+      - 🇹🇼 TW台湾2
+      - G I C A B N H T H N
+      - 🇸🇬 优选新线 C-1B
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇮🇹 IT意大利2
+      - 🇺🇸 US美国3
+      - 🇸🇬 SG新加坡2
+      - 🇭🇰 HK-A-1D
+      - MG-FZP
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇺🇸 US 美国 1-1B
+      - 🇰🇷 韩国节点-B-1D
+      - 🇩🇪 德国-法兰克福-001-1F
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇻🇳 VN越南3
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 🇹🇼 台湾高速节点2
+      - 🇩🇪 德国-法兰克福-001-1A
+      - 🇸🇬 优选新线 B-1A
+      - 🇭🇰 HONG KONG 01-1F
+      - 🇩🇪 DE德国2
+      - 🇺🇸 US 美国 1-1A
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇺🇸 美国高速节点1
+      - 🇸🇬 优选新线 D-1A
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇩🇪 德国-法兰克福-001-1B
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇹🇼 TW台湾1-1A
-      - 🇭🇰 HK香港3-1B
-      - 🇭🇰 HK香港2-1A
-      - 🇹🇼 TW台湾2-1B
-      - 🇭🇰 HK香港2-1B
-      - 🇭🇰 HK香港1-1B
-      - 🇹🇼 台湾高速节点2
-      - 🇹🇼 TW台湾3-1B
-      - 🇭🇰 HK香港1-1A
-      - 🇹🇼 TW台湾2-1A
-      - 🇹🇼 TW台湾1-1B
-      - 🇹🇼 TW台湾3-1A
-      - 🇹🇼 台湾高速节点3
-      - 🇭🇰 香港HK6
-      - 🇭🇰 HK香港3-1A
+      - 🇭🇰 HK香港1
+      - 🇭🇰 HK香港3
+      - 🇭🇰 HK香港2
+      - 🇭🇰 香港HK6-1A
       - 🇹🇼 台湾高速节点
+      - 🇹🇼 台湾高速节点3
+      - 🇭🇰 香港HK6-1B
+      - 🇹🇼 TW台湾3
+      - 🇹🇼 TW台湾1
+      - 🇹🇼 TW台湾2
+      - 🇹🇼 台湾高速节点2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇰🇷 KR韩国2-1B
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇭🇰 HK-A-1C
-      - 备用线路 A
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇰🇷 韩国节点-B-1D
-      - 🇻🇳 VN越南2-1B
-      - 🇬🇧 UK英国1-1A
-      - 🇹🇼 TW台湾1-1A
-      - 🇺🇸 US美国3-1A
-      - 🇸🇬 SG新加坡1-1B
-      - 🇺🇸 US美国2-1A
-      - 🇬🇧 UK英国2-1B
-      - 🇰🇷 韩国节点-B-1E
-      - 🇭🇰 HK香港3-1B
-      - 🇩🇪 DE德国1-1A
-      - 🇭🇰 HK-A-1E
-      - 🇬🇧 UK英国2-1A
-      - 🇭🇰 HONG KONG 01-1H
-      - 🇭🇰 HK香港2-1A
-      - 🇻🇳 VN越南1-1A
-      - 🇺🇸 US 美国 1
-      - 🇭🇰 HK-A-1B
-      - 🇻🇳 VN越南1-1B
-      - 🇯🇵 JP日本1-1A
-      - 🇻🇳 VN越南3-1A
-      - 🇩🇪 德国-法兰克福-004-1B
-      - 🇩🇪 DE德国1-1B
-      - 🇩🇪 DE德国3-1A
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇩🇪 德国-法兰克福-001-1E
-      - 🇭🇰 HONG KONG 01-1A
-      - 🇩🇪 德国-法兰克福-004-1E
-      - 🇮🇹 IT意大利1-1A
-      - 🇹🇼 TW台湾2-1B
-      - 🇸🇬 优选新线 B
-      - 🇸🇬 SG新加坡1-1A
-      - 🇸🇬 优选新线 D
-      - 🇺🇸 US美国2-1B
-      - M4-PSC
-      - 🇭🇰 HONG KONG 01-1B
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇮🇹 IT意大利2-1B
-      - 🇩🇪 DE德国3-1B
-      - 🇭🇰 HK香港2-1B
-      - 🇭🇰 HK香港1-1B
-      - 🇹🇼 台湾高速节点2
-      - 🇭🇰 HONG KONG 01-1G
-      - 🇰🇷 韩国节点-B-1B
-      - 🇹🇼 TW台湾3-1B
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇭🇰 HK香港1-1A
-      - 🇻🇳 VN越南2-1A
-      - 🇨🇳 中国联通节点1
-      - 🇹🇼 TW台湾2-1A
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇭🇰 HONG KONG 01-1C
-      - 🇩🇪 DE德国2-1A
       - 🇩🇪 德国-法兰克福-002-1D
-      - 🇸🇬 优选新线 A
-      - 🇸🇬 优选新线 C
-      - 🇬🇧 UK英国1-1B
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇰🇷 KR韩国1-1B
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇩🇪 德国-法兰克福-002-1C
-      - 🇰🇷 韩国节点-B-1C
-      - 🇯🇵 JP日本2-1B
-      - 🇹🇼 TW台湾1-1B
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇸🇬 SG新加坡2-1B
-      - 🇸🇬 SG新加坡2-1A
-      - G I C A B N H T H N
-      - 🇹🇼 TW台湾3-1A
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇺🇸 US美国1-1A
-      - 🇭🇰 HONG KONG 01-1E
-      - 🇰🇷 KR韩国2-1A
-      - 🇮🇹 IT意大利1-1B
-      - 🇰🇷 KR韩国1-1A
-      - 🇹🇼 台湾高速节点3
-      - 🇺🇸 美国高速节点1
-      - 🇭🇰 香港HK6
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇺🇸 US美国1-1B
-      - 🇺🇸 US美国3-1B
-      - 🇩🇪 DE德国2-1B
-      - 🇮🇹 IT意大利3-1B
-      - 🇭🇰 HK香港3-1A
-      - 🇭🇰 HK-A-1D
+      - 🇭🇰 HK香港1
       - 🇩🇪 德国-法兰克福-001-1D
-      - 🇻🇳 VN越南3-1B
-      - 🇮🇹 IT意大利2-1A
-      - 🇯🇵 JP日本1-1B
-      - 🇭🇰 HONG KONG 01-1F
-      - 🇭🇰 HK-A-1A
+      - 🇭🇰 HK香港3
+      - 🇭🇰 HK-A-1B
+      - 🇭🇰 HONG KONG 01-1I
+      - 🇭🇰 HK-A-1E
+      - 🇩🇪 德国-法兰克福-003-1F
+      - 备用线路 A-1B
+      - 🇨🇳 中国联通节点1
+      - 🇻🇳 VN越南1
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇭🇰 HK香港2
+      - 🇯🇵 JP日本2
+      - 🇸🇬 优选新线 A-1A
+      - 🇩🇪 DE德国3
       - 🇩🇪 德国-法兰克福-003-1E
       - 🇭🇰 HONG KONG 01-1D
+      - 🇺🇸 US美国2
+      - 🇮🇹 IT意大利3
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇸🇬 优选新线 D-1B
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇰🇷 KR韩国2
+      - 🇭🇰 HK-A-1A
+      - 🇺🇸 US美国1
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇰🇷 KR韩国1
+      - 🇸🇬 优选新线 A-1B
+      - 🇰🇷 韩国节点-B-1B
+      - 🇸🇬 优选新线 C-1A
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇭🇰 HK-01
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇭🇰 HONG KONG 01-1G
+      - 🇭🇰 HONG KONG 01-1A
+      - 🇻🇳 VN越南2
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇯🇵 JP日本1
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇩🇪 德国-法兰克福-002-1C
       - 🇰🇷 韩国节点-B-1A
-      - 🇮🇹 IT意大利3-1A
+      - 🇸🇬 优选新线 B-1B
+      - 🇭🇰 HONG KONG 01-1H
+      - 🇸🇬 SG新加坡1
+      - 🇮🇹 IT意大利1
+      - 🇭🇰 香港HK6-1A
+      - 🇰🇷 韩国节点-B-1C
+      - 🇭🇰 HONG KONG 01-1C
       - 🇹🇼 台湾高速节点
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇹🇼 台湾高速节点3
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇰🇷 韩国节点-B-1E
+      - 🇭🇰 香港HK6-1B
+      - 🇬🇧 UK英国1
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇬🇧 UK英国2
       - 我的
-      - 🇯🇵 JP日本2-1A
+      - 🇭🇰 HK-A-1C
+      - 🇹🇼 TW台湾3
+      - 🇹🇼 TW台湾1
+      - 🇭🇰 HONG KONG 01-1B
+      - 🇩🇪 DE德国1
+      - 备用线路 A-1A
+      - 🇭🇰 HONG KONG 01-1E
+      - 🇹🇼 TW台湾2
+      - G I C A B N H T H N
+      - 🇸🇬 优选新线 C-1B
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇮🇹 IT意大利2
+      - 🇺🇸 US美国3
+      - 🇸🇬 SG新加坡2
+      - 🇭🇰 HK-A-1D
+      - MG-FZP
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇺🇸 US 美国 1-1B
+      - 🇰🇷 韩国节点-B-1D
+      - 🇩🇪 德国-法兰克福-001-1F
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇻🇳 VN越南3
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 🇹🇼 台湾高速节点2
+      - 🇩🇪 德国-法兰克福-001-1A
+      - 🇸🇬 优选新线 B-1A
+      - 🇭🇰 HONG KONG 01-1F
+      - 🇩🇪 DE德国2
+      - 🇺🇸 US 美国 1-1A
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇺🇸 美国高速节点1
+      - 🇸🇬 优选新线 D-1A
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇩🇪 德国-法兰克福-001-1B
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇰🇷 KR韩国2-1B
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇭🇰 HK-A-1C
-      - 备用线路 A
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇰🇷 韩国节点-B-1D
-      - 🇻🇳 VN越南2-1B
-      - 🇬🇧 UK英国1-1A
-      - 🇹🇼 TW台湾1-1A
-      - 🇺🇸 US美国3-1A
-      - 🇸🇬 SG新加坡1-1B
-      - 🇺🇸 US美国2-1A
-      - 🇬🇧 UK英国2-1B
-      - 🇰🇷 韩国节点-B-1E
-      - 🇭🇰 HK香港3-1B
-      - 🇩🇪 DE德国1-1A
-      - 🇭🇰 HK-A-1E
-      - 🇬🇧 UK英国2-1A
-      - 🇭🇰 HONG KONG 01-1H
-      - 🇭🇰 HK香港2-1A
-      - 🇻🇳 VN越南1-1A
-      - 🇺🇸 US 美国 1
-      - 🇭🇰 HK-A-1B
-      - 🇻🇳 VN越南1-1B
-      - 🇯🇵 JP日本1-1A
-      - 🇻🇳 VN越南3-1A
-      - 🇩🇪 德国-法兰克福-004-1B
-      - 🇩🇪 DE德国1-1B
-      - 🇩🇪 DE德国3-1A
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇩🇪 德国-法兰克福-001-1E
-      - 🇭🇰 HONG KONG 01-1A
-      - 🇩🇪 德国-法兰克福-004-1E
-      - 🇮🇹 IT意大利1-1A
-      - 🇹🇼 TW台湾2-1B
-      - 🇸🇬 优选新线 B
-      - 🇸🇬 SG新加坡1-1A
-      - 🇸🇬 优选新线 D
-      - 🇺🇸 US美国2-1B
-      - M4-PSC
-      - 🇭🇰 HONG KONG 01-1B
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇮🇹 IT意大利2-1B
-      - 🇩🇪 DE德国3-1B
-      - 🇭🇰 HK香港2-1B
-      - 🇭🇰 HK香港1-1B
-      - 🇹🇼 台湾高速节点2
-      - 🇭🇰 HONG KONG 01-1G
-      - 🇰🇷 韩国节点-B-1B
-      - 🇹🇼 TW台湾3-1B
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇭🇰 HK香港1-1A
-      - 🇻🇳 VN越南2-1A
-      - 🇨🇳 中国联通节点1
-      - 🇹🇼 TW台湾2-1A
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇭🇰 HONG KONG 01-1C
-      - 🇩🇪 DE德国2-1A
       - 🇩🇪 德国-法兰克福-002-1D
-      - 🇸🇬 优选新线 A
-      - 🇸🇬 优选新线 C
-      - 🇬🇧 UK英国1-1B
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇰🇷 KR韩国1-1B
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇩🇪 德国-法兰克福-002-1C
-      - 🇰🇷 韩国节点-B-1C
-      - 🇯🇵 JP日本2-1B
-      - 🇹🇼 TW台湾1-1B
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇸🇬 SG新加坡2-1B
-      - 🇸🇬 SG新加坡2-1A
-      - G I C A B N H T H N
-      - 🇹🇼 TW台湾3-1A
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇺🇸 US美国1-1A
-      - 🇭🇰 HONG KONG 01-1E
-      - 🇰🇷 KR韩国2-1A
-      - 🇮🇹 IT意大利1-1B
-      - 🇰🇷 KR韩国1-1A
-      - 🇹🇼 台湾高速节点3
-      - 🇺🇸 美国高速节点1
-      - 🇭🇰 香港HK6
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇺🇸 US美国1-1B
-      - 🇺🇸 US美国3-1B
-      - 🇩🇪 DE德国2-1B
-      - 🇮🇹 IT意大利3-1B
-      - 🇭🇰 HK香港3-1A
-      - 🇭🇰 HK-A-1D
+      - 🇭🇰 HK香港1
       - 🇩🇪 德国-法兰克福-001-1D
-      - 🇻🇳 VN越南3-1B
-      - 🇮🇹 IT意大利2-1A
-      - 🇯🇵 JP日本1-1B
-      - 🇭🇰 HONG KONG 01-1F
-      - 🇭🇰 HK-A-1A
+      - 🇭🇰 HK香港3
+      - 🇭🇰 HK-A-1B
+      - 🇭🇰 HONG KONG 01-1I
+      - 🇭🇰 HK-A-1E
+      - 🇩🇪 德国-法兰克福-003-1F
+      - 备用线路 A-1B
+      - 🇨🇳 中国联通节点1
+      - 🇻🇳 VN越南1
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇭🇰 HK香港2
+      - 🇯🇵 JP日本2
+      - 🇸🇬 优选新线 A-1A
+      - 🇩🇪 DE德国3
       - 🇩🇪 德国-法兰克福-003-1E
       - 🇭🇰 HONG KONG 01-1D
+      - 🇺🇸 US美国2
+      - 🇮🇹 IT意大利3
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇸🇬 优选新线 D-1B
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇰🇷 KR韩国2
+      - 🇭🇰 HK-A-1A
+      - 🇺🇸 US美国1
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇰🇷 KR韩国1
+      - 🇸🇬 优选新线 A-1B
+      - 🇰🇷 韩国节点-B-1B
+      - 🇸🇬 优选新线 C-1A
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇭🇰 HK-01
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇭🇰 HONG KONG 01-1G
+      - 🇭🇰 HONG KONG 01-1A
+      - 🇻🇳 VN越南2
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇯🇵 JP日本1
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇩🇪 德国-法兰克福-002-1C
       - 🇰🇷 韩国节点-B-1A
-      - 🇮🇹 IT意大利3-1A
+      - 🇸🇬 优选新线 B-1B
+      - 🇭🇰 HONG KONG 01-1H
+      - 🇸🇬 SG新加坡1
+      - 🇮🇹 IT意大利1
+      - 🇭🇰 香港HK6-1A
+      - 🇰🇷 韩国节点-B-1C
+      - 🇭🇰 HONG KONG 01-1C
       - 🇹🇼 台湾高速节点
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇹🇼 台湾高速节点3
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇰🇷 韩国节点-B-1E
+      - 🇭🇰 香港HK6-1B
+      - 🇬🇧 UK英国1
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇬🇧 UK英国2
       - 我的
-      - 🇯🇵 JP日本2-1A
+      - 🇭🇰 HK-A-1C
+      - 🇹🇼 TW台湾3
+      - 🇹🇼 TW台湾1
+      - 🇭🇰 HONG KONG 01-1B
+      - 🇩🇪 DE德国1
+      - 备用线路 A-1A
+      - 🇭🇰 HONG KONG 01-1E
+      - 🇹🇼 TW台湾2
+      - G I C A B N H T H N
+      - 🇸🇬 优选新线 C-1B
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇮🇹 IT意大利2
+      - 🇺🇸 US美国3
+      - 🇸🇬 SG新加坡2
+      - 🇭🇰 HK-A-1D
+      - MG-FZP
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇺🇸 US 美国 1-1B
+      - 🇰🇷 韩国节点-B-1D
+      - 🇩🇪 德国-法兰克福-001-1F
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇻🇳 VN越南3
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 🇹🇼 台湾高速节点2
+      - 🇩🇪 德国-法兰克福-001-1A
+      - 🇸🇬 优选新线 B-1A
+      - 🇭🇰 HONG KONG 01-1F
+      - 🇩🇪 DE德国2
+      - 🇺🇸 US 美国 1-1A
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇺🇸 美国高速节点1
+      - 🇸🇬 优选新线 D-1A
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇩🇪 德国-法兰克福-001-1B
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇰🇷 KR韩国2-1B
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇭🇰 HK-A-1C
-      - 备用线路 A
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇰🇷 韩国节点-B-1D
-      - 🇻🇳 VN越南2-1B
-      - 🇬🇧 UK英国1-1A
-      - 🇹🇼 TW台湾1-1A
-      - 🇺🇸 US美国3-1A
-      - 🇸🇬 SG新加坡1-1B
-      - 🇺🇸 US美国2-1A
-      - 🇬🇧 UK英国2-1B
-      - 🇰🇷 韩国节点-B-1E
-      - 🇭🇰 HK香港3-1B
-      - 🇩🇪 DE德国1-1A
-      - 🇭🇰 HK-A-1E
-      - 🇬🇧 UK英国2-1A
-      - 🇭🇰 HONG KONG 01-1H
-      - 🇭🇰 HK香港2-1A
-      - 🇻🇳 VN越南1-1A
-      - 🇺🇸 US 美国 1
-      - 🇭🇰 HK-A-1B
-      - 🇻🇳 VN越南1-1B
-      - 🇯🇵 JP日本1-1A
-      - 🇻🇳 VN越南3-1A
-      - 🇩🇪 德国-法兰克福-004-1B
-      - 🇩🇪 DE德国1-1B
-      - 🇩🇪 DE德国3-1A
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇩🇪 德国-法兰克福-001-1E
-      - 🇭🇰 HONG KONG 01-1A
-      - 🇩🇪 德国-法兰克福-004-1E
-      - 🇮🇹 IT意大利1-1A
-      - 🇹🇼 TW台湾2-1B
-      - 🇸🇬 优选新线 B
-      - 🇸🇬 SG新加坡1-1A
-      - 🇸🇬 优选新线 D
-      - 🇺🇸 US美国2-1B
-      - M4-PSC
-      - 🇭🇰 HONG KONG 01-1B
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇮🇹 IT意大利2-1B
-      - 🇩🇪 DE德国3-1B
-      - 🇭🇰 HK香港2-1B
-      - 🇭🇰 HK香港1-1B
-      - 🇹🇼 台湾高速节点2
-      - 🇭🇰 HONG KONG 01-1G
-      - 🇰🇷 韩国节点-B-1B
-      - 🇹🇼 TW台湾3-1B
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇭🇰 HK香港1-1A
-      - 🇻🇳 VN越南2-1A
-      - 🇨🇳 中国联通节点1
-      - 🇹🇼 TW台湾2-1A
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇭🇰 HONG KONG 01-1C
-      - 🇩🇪 DE德国2-1A
       - 🇩🇪 德国-法兰克福-002-1D
-      - 🇸🇬 优选新线 A
-      - 🇸🇬 优选新线 C
-      - 🇬🇧 UK英国1-1B
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇰🇷 KR韩国1-1B
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇩🇪 德国-法兰克福-002-1C
-      - 🇰🇷 韩国节点-B-1C
-      - 🇯🇵 JP日本2-1B
-      - 🇹🇼 TW台湾1-1B
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇸🇬 SG新加坡2-1B
-      - 🇸🇬 SG新加坡2-1A
-      - G I C A B N H T H N
-      - 🇹🇼 TW台湾3-1A
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇺🇸 US美国1-1A
-      - 🇭🇰 HONG KONG 01-1E
-      - 🇰🇷 KR韩国2-1A
-      - 🇮🇹 IT意大利1-1B
-      - 🇰🇷 KR韩国1-1A
-      - 🇹🇼 台湾高速节点3
-      - 🇺🇸 美国高速节点1
-      - 🇭🇰 香港HK6
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇺🇸 US美国1-1B
-      - 🇺🇸 US美国3-1B
-      - 🇩🇪 DE德国2-1B
-      - 🇮🇹 IT意大利3-1B
-      - 🇭🇰 HK香港3-1A
-      - 🇭🇰 HK-A-1D
+      - 🇭🇰 HK香港1
       - 🇩🇪 德国-法兰克福-001-1D
-      - 🇻🇳 VN越南3-1B
-      - 🇮🇹 IT意大利2-1A
-      - 🇯🇵 JP日本1-1B
-      - 🇭🇰 HONG KONG 01-1F
-      - 🇭🇰 HK-A-1A
+      - 🇭🇰 HK香港3
+      - 🇭🇰 HK-A-1B
+      - 🇭🇰 HONG KONG 01-1I
+      - 🇭🇰 HK-A-1E
+      - 🇩🇪 德国-法兰克福-003-1F
+      - 备用线路 A-1B
+      - 🇨🇳 中国联通节点1
+      - 🇻🇳 VN越南1
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇭🇰 HK香港2
+      - 🇯🇵 JP日本2
+      - 🇸🇬 优选新线 A-1A
+      - 🇩🇪 DE德国3
       - 🇩🇪 德国-法兰克福-003-1E
       - 🇭🇰 HONG KONG 01-1D
+      - 🇺🇸 US美国2
+      - 🇮🇹 IT意大利3
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇸🇬 优选新线 D-1B
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇰🇷 KR韩国2
+      - 🇭🇰 HK-A-1A
+      - 🇺🇸 US美国1
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇰🇷 KR韩国1
+      - 🇸🇬 优选新线 A-1B
+      - 🇰🇷 韩国节点-B-1B
+      - 🇸🇬 优选新线 C-1A
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇭🇰 HK-01
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇭🇰 HONG KONG 01-1G
+      - 🇭🇰 HONG KONG 01-1A
+      - 🇻🇳 VN越南2
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇯🇵 JP日本1
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇩🇪 德国-法兰克福-002-1C
       - 🇰🇷 韩国节点-B-1A
-      - 🇮🇹 IT意大利3-1A
+      - 🇸🇬 优选新线 B-1B
+      - 🇭🇰 HONG KONG 01-1H
+      - 🇸🇬 SG新加坡1
+      - 🇮🇹 IT意大利1
+      - 🇭🇰 香港HK6-1A
+      - 🇰🇷 韩国节点-B-1C
+      - 🇭🇰 HONG KONG 01-1C
       - 🇹🇼 台湾高速节点
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇹🇼 台湾高速节点3
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇰🇷 韩国节点-B-1E
+      - 🇭🇰 香港HK6-1B
+      - 🇬🇧 UK英国1
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇬🇧 UK英国2
       - 我的
-      - 🇯🇵 JP日本2-1A
+      - 🇭🇰 HK-A-1C
+      - 🇹🇼 TW台湾3
+      - 🇹🇼 TW台湾1
+      - 🇭🇰 HONG KONG 01-1B
+      - 🇩🇪 DE德国1
+      - 备用线路 A-1A
+      - 🇭🇰 HONG KONG 01-1E
+      - 🇹🇼 TW台湾2
+      - G I C A B N H T H N
+      - 🇸🇬 优选新线 C-1B
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇮🇹 IT意大利2
+      - 🇺🇸 US美国3
+      - 🇸🇬 SG新加坡2
+      - 🇭🇰 HK-A-1D
+      - MG-FZP
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇺🇸 US 美国 1-1B
+      - 🇰🇷 韩国节点-B-1D
+      - 🇩🇪 德国-法兰克福-001-1F
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇻🇳 VN越南3
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 🇹🇼 台湾高速节点2
+      - 🇩🇪 德国-法兰克福-001-1A
+      - 🇸🇬 优选新线 B-1A
+      - 🇭🇰 HONG KONG 01-1F
+      - 🇩🇪 DE德国2
+      - 🇺🇸 US 美国 1-1A
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇺🇸 美国高速节点1
+      - 🇸🇬 优选新线 D-1A
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇩🇪 德国-法兰克福-001-1B
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -932,111 +855,102 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇰🇷 KR韩国2-1B
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇭🇰 HK-A-1C
-      - 备用线路 A
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇰🇷 韩国节点-B-1D
-      - 🇻🇳 VN越南2-1B
-      - 🇬🇧 UK英国1-1A
-      - 🇹🇼 TW台湾1-1A
-      - 🇺🇸 US美国3-1A
-      - 🇸🇬 SG新加坡1-1B
-      - 🇺🇸 US美国2-1A
-      - 🇬🇧 UK英国2-1B
-      - 🇰🇷 韩国节点-B-1E
-      - 🇭🇰 HK香港3-1B
-      - 🇩🇪 DE德国1-1A
-      - 🇭🇰 HK-A-1E
-      - 🇬🇧 UK英国2-1A
-      - 🇭🇰 HONG KONG 01-1H
-      - 🇭🇰 HK香港2-1A
-      - 🇻🇳 VN越南1-1A
-      - 🇺🇸 US 美国 1
-      - 🇭🇰 HK-A-1B
-      - 🇻🇳 VN越南1-1B
-      - 🇯🇵 JP日本1-1A
-      - 🇻🇳 VN越南3-1A
-      - 🇩🇪 德国-法兰克福-004-1B
-      - 🇩🇪 DE德国1-1B
-      - 🇩🇪 DE德国3-1A
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇩🇪 德国-法兰克福-001-1E
-      - 🇭🇰 HONG KONG 01-1A
-      - 🇩🇪 德国-法兰克福-004-1E
-      - 🇮🇹 IT意大利1-1A
-      - 🇹🇼 TW台湾2-1B
-      - 🇸🇬 优选新线 B
-      - 🇸🇬 SG新加坡1-1A
-      - 🇸🇬 优选新线 D
-      - 🇺🇸 US美国2-1B
-      - M4-PSC
-      - 🇭🇰 HONG KONG 01-1B
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇮🇹 IT意大利2-1B
-      - 🇩🇪 DE德国3-1B
-      - 🇭🇰 HK香港2-1B
-      - 🇭🇰 HK香港1-1B
-      - 🇹🇼 台湾高速节点2
-      - 🇭🇰 HONG KONG 01-1G
-      - 🇰🇷 韩国节点-B-1B
-      - 🇹🇼 TW台湾3-1B
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇭🇰 HK香港1-1A
-      - 🇻🇳 VN越南2-1A
-      - 🇨🇳 中国联通节点1
-      - 🇹🇼 TW台湾2-1A
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇭🇰 HONG KONG 01-1C
-      - 🇩🇪 DE德国2-1A
       - 🇩🇪 德国-法兰克福-002-1D
-      - 🇸🇬 优选新线 A
-      - 🇸🇬 优选新线 C
-      - 🇬🇧 UK英国1-1B
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇰🇷 KR韩国1-1B
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇩🇪 德国-法兰克福-002-1C
-      - 🇰🇷 韩国节点-B-1C
-      - 🇯🇵 JP日本2-1B
-      - 🇹🇼 TW台湾1-1B
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇸🇬 SG新加坡2-1B
-      - 🇸🇬 SG新加坡2-1A
-      - G I C A B N H T H N
-      - 🇹🇼 TW台湾3-1A
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇺🇸 US美国1-1A
-      - 🇭🇰 HONG KONG 01-1E
-      - 🇰🇷 KR韩国2-1A
-      - 🇮🇹 IT意大利1-1B
-      - 🇰🇷 KR韩国1-1A
-      - 🇹🇼 台湾高速节点3
-      - 🇺🇸 美国高速节点1
-      - 🇭🇰 香港HK6
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇺🇸 US美国1-1B
-      - 🇺🇸 US美国3-1B
-      - 🇩🇪 DE德国2-1B
-      - 🇮🇹 IT意大利3-1B
-      - 🇭🇰 HK香港3-1A
-      - 🇭🇰 HK-A-1D
+      - 🇭🇰 HK香港1
       - 🇩🇪 德国-法兰克福-001-1D
-      - 🇻🇳 VN越南3-1B
-      - 🇮🇹 IT意大利2-1A
-      - 🇯🇵 JP日本1-1B
-      - 🇭🇰 HONG KONG 01-1F
-      - 🇭🇰 HK-A-1A
+      - 🇭🇰 HK香港3
+      - 🇭🇰 HK-A-1B
+      - 🇭🇰 HONG KONG 01-1I
+      - 🇭🇰 HK-A-1E
+      - 🇩🇪 德国-法兰克福-003-1F
+      - 备用线路 A-1B
+      - 🇨🇳 中国联通节点1
+      - 🇻🇳 VN越南1
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇭🇰 HK香港2
+      - 🇯🇵 JP日本2
+      - 🇸🇬 优选新线 A-1A
+      - 🇩🇪 DE德国3
       - 🇩🇪 德国-法兰克福-003-1E
       - 🇭🇰 HONG KONG 01-1D
+      - 🇺🇸 US美国2
+      - 🇮🇹 IT意大利3
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇸🇬 优选新线 D-1B
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇰🇷 KR韩国2
+      - 🇭🇰 HK-A-1A
+      - 🇺🇸 US美国1
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇰🇷 KR韩国1
+      - 🇸🇬 优选新线 A-1B
+      - 🇰🇷 韩国节点-B-1B
+      - 🇸🇬 优选新线 C-1A
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇭🇰 HK-01
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇭🇰 HONG KONG 01-1G
+      - 🇭🇰 HONG KONG 01-1A
+      - 🇻🇳 VN越南2
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇯🇵 JP日本1
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇩🇪 德国-法兰克福-002-1C
       - 🇰🇷 韩国节点-B-1A
-      - 🇮🇹 IT意大利3-1A
+      - 🇸🇬 优选新线 B-1B
+      - 🇭🇰 HONG KONG 01-1H
+      - 🇸🇬 SG新加坡1
+      - 🇮🇹 IT意大利1
+      - 🇭🇰 香港HK6-1A
+      - 🇰🇷 韩国节点-B-1C
+      - 🇭🇰 HONG KONG 01-1C
       - 🇹🇼 台湾高速节点
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇹🇼 台湾高速节点3
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇰🇷 韩国节点-B-1E
+      - 🇭🇰 香港HK6-1B
+      - 🇬🇧 UK英国1
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇬🇧 UK英国2
       - 我的
-      - 🇯🇵 JP日本2-1A
+      - 🇭🇰 HK-A-1C
+      - 🇹🇼 TW台湾3
+      - 🇹🇼 TW台湾1
+      - 🇭🇰 HONG KONG 01-1B
+      - 🇩🇪 DE德国1
+      - 备用线路 A-1A
+      - 🇭🇰 HONG KONG 01-1E
+      - 🇹🇼 TW台湾2
+      - G I C A B N H T H N
+      - 🇸🇬 优选新线 C-1B
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇮🇹 IT意大利2
+      - 🇺🇸 US美国3
+      - 🇸🇬 SG新加坡2
+      - 🇭🇰 HK-A-1D
+      - MG-FZP
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇺🇸 US 美国 1-1B
+      - 🇰🇷 韩国节点-B-1D
+      - 🇩🇪 德国-法兰克福-001-1F
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇻🇳 VN越南3
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 🇹🇼 台湾高速节点2
+      - 🇩🇪 德国-法兰克福-001-1A
+      - 🇸🇬 优选新线 B-1A
+      - 🇭🇰 HONG KONG 01-1F
+      - 🇩🇪 DE德国2
+      - 🇺🇸 US 美国 1-1A
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇺🇸 美国高速节点1
+      - 🇸🇬 优选新线 D-1A
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇩🇪 德国-法兰克福-001-1B
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
