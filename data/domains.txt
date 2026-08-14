@@ -3535,7 +3535,7 @@ https://eeevpn.com	@#@#		@#@#		@#@#
 https://kjcat.eu.cc	@#@#		@#@#		@#@#	
 https://houtai.lzlwiki.cn	@#@#		@#@#		@#@#	
 https://qingyu-node.xyz	@#@#		@#@#		@#@#	
-https://cicadanet.com	@#@#		@#@#		@#@#	/api?scheme=
+https://cicadanet.com	@#@#		@#@#		@#@#	
 https://whalevpn.top	@#@#		@#@#		@#@#	
 https://api.lingdongtsud.homes	@#@#		@#@#		@#@#	
 https://ru.whalevpn.top	@#@#		@#@#		@#@#	
